@@ -117,10 +117,10 @@ Student (WhatsApp)
 ### 5.2 Weekly content: what is the week, and what comes next
 
 - **Content model (verified):** `Batch` has dates and a program. A `Course Level` has a list of `Learning Units` with a **week number**. A `Learning Unit` has content items: `VideoClass`, `Quiz`, `Assignment`, `NoteContent`, `CourseProject`. A video has links per language (YouTube or Plio). A quiz has questions, options, a correct option, `points` and `failed_points`, with translations.
-- **Which week:** the doctype **Weekly Student Flow** (week start, week end, a child table of students with `current_week_no`). `get_student_current_week` takes the first flow whose end date is today or later. It does not filter by batch and has no sort order.
-- **Who sets the week (confirmed by the lead developer, 2026-10-30):** the Tuesday 4 pm release is **triggered by hand in Glific**. The activity for a week is the **same for all students in a batch**, and the team **updates it by hand each week**. Nothing in `frappe_tap` does it (no cron, no code). **Not verified:** where the team makes the weekly update. The live WhatsApp content calls read the week from `Weekly Student Flow` (`get_student_current_week`: the first record whose end date is today or later, no batch filter, no order, then the student's `current_week_no`), so it is probably there. The old code that built `Weekly Student Flow` (Monday to Sunday) was removed from `journey_2026` and was never in `hooks.py`.
+- **What the live Glific flow really uses (from the lead's flow export, 2026-11-02):** the TLM26 flow does **not** call these content calls or `Weekly Student Flow`. For each step it reads a row of a **Google Sheet** (`link_google_sheet`), chosen by the student's batch group (`TLM26_AllStudents_Batch1`, `Batch2`, `Batch MCD`, `Batch Moga_P`). The row gives the video link, the assignment id, the activity name, the allowed media types (`submission_type_1`, `submission_type_2`), `audio_check` and the quiz questions with their answer keys. See section 5.8.
+- **Who sets the week (confirmed by the lead developer, 2026-10-30):** the Tuesday 4 pm release is **triggered by hand in Glific**. The activity for a week is the **same for all students in a batch**, and the team **updates it by hand each week**. Nothing in `frappe_tap` does it (no cron, no code). Given the flow export, the update is most likely made in the Google Sheet. `Weekly Student Flow` and `get_student_current_week` exist in `frappe_tap` but this flow does not use them. The old code that built `Weekly Student Flow` was removed from `journey_2026` and was never in `hooks.py`.
 - **Who decides the next step:** the Glific flow. The read calls return the current week's content every time. They do not check what the student already did. There is no limit on activities per week on this path.
-- **Calls that Glific makes to read content (all in `api.py`, all read-only):**
+- **Content calls that exist in `api.py` (all read-only). The TLM26 flow does not use them:**
 
 | Call | Auth | Returns |
 |---|---|---|
@@ -137,7 +137,8 @@ Student (WhatsApp)
 
 - **Verified:** nothing on the live path records "video watched", "quiz started", each answer, a score, a pass or fail, points, a level, a streak or gems. All the content calls only read.
 - The doctypes for that exist (`StudentQuizAttempt` with its answers, `StudentContentLog`, `ProgramEnrollment` with points and streaks), but only the **switched-off** `summer_program` code writes to them.
-- Glific checks the student's quiz answer itself, because it receives the correct option. **Not verified:** where Glific keeps quiz results (probably flow variables or contact fields).
+- **The quiz runs inside Glific** (verified in the flow export): 5 questions with 3 options (A, B, C), the answer key from the Google Sheet, +1 point for each correct answer. Glific adds the points to its contact fields `total_points` and `activity_points`. The answers themselves are not saved in Frappe.
+- **Where WhatsApp progress lives (verified in the flow export):** in **Glific contact fields**: `total_points`, `activity_points`, `streak`, `special_gems`, `last_flow_incomplete`, `activity2026_submission_id`, `wrong_sub`, `quiz_notdone` and others. Not in `frappe_tap`.
 - **Result for TapApp:** the app's backend has to store video, quiz and points records itself. No existing record fits.
 
 ### 5.4 Submitting work
@@ -159,7 +160,7 @@ Student (WhatsApp)
 
 **Rules that do not exist on this path:** no "one submission a week", no duplicate check, no idempotency key. Every call creates a new primary submission. (The `save_submission` version had those rules, but it needs an active `ProgramEnrollment`.)
 
-**Not verified:** which Glific flows call the regular `submit_artwork`, and which call the demo one.
+**Answered (2026-11-02):** the TLM26 flow calls the regular `submit_artwork` with `student_id` (section 5.8). Which other flows call the demo one is not needed for TapApp.
 
 ### 5.5 Feedback and how it reaches the student
 
@@ -201,6 +202,28 @@ The code is still there and some calls are still whitelisted (`save_submission`,
 The Glific flow files of the Summer Program (in `/var/home/rjs/dev/tap`) call these switched-off endpoints. Under our assumption they are not relevant, so this page does not list them.
 
 ---
+
+### 5.8 The live Glific flow (TLM26 main flow, version `Tlm26_MainFlow_FirstStep_v1`)
+
+This is the flow the lead developer gave us (`Tlm26_MainFlow_FirstStep.json`, 2026-11-02). The v1 app mimics it. The file also holds the flows `Tlm26_Quiz_Flow` and `TLM26_Activity_FeedabckFlow`, and flows for other programs (`Godrej_tomorrow_maker`, `HourOfAI_2026`) that do not matter for TapApp.
+
+**The order of the steps in the flow:** greeting ("Activity time"), then the **video**, then the **submission**, then the **quiz**, then the **feedback** later.
+
+| Step | What the flow does | Points |
+|---|---|---|
+| Video | Sends a link to the video (from the sheet row). Waits **5 minutes**, then gives the points. There is no check that the student watched it. | +10 |
+| Submission | Waits up to 1 hour for the student's message. It accepts an image or a video. It checks the **media type after the student sends it** against the allowed types in the sheet. If the type is right: +25 points and a call to `submit_artwork` with `student_id` (from the contact field), `assignment_id` (from the sheet) and the file link. The call returns `submission_id`, which the flow stores in `activity2026_submission_id`. If the type is wrong: "You will get 25 points only if you submit your work as photo/video", then **a second chance** (a "Try Again" button). After the second wrong try the flow goes on without the 25 points. | +25 |
+| Voice note (some activities) | If the sheet row says `audio_check` is not "No", the flow asks for a voice note and calls `submit_artwork_audio` with the `submission_id`. | none |
+| Quiz | Starts a message "Let's start the quiz". 5 questions, one at a time, 3 options each. After each answer: "Correct answer" or the correct answer is shown. At the end: "You answered x/5". | +1 for each correct answer |
+| Feedback | Started later (by the delivery job, or entered after a wait). Asks the student to tap to see the feedback. Calls `submission_feedback` with the `submission_id`, then sends `overall_feedback_translated`, the audio (if the audio link is not `Null`), and then checks `submission_validity`. **Valid:** +10 points and praise images. **Invalid:** another path (the field `wrong_sub`). Then a message with total points, gems and streak. | +10 if valid |
+
+**Calls to `frappe_tap`:** only `submit_artwork`, `submit_artwork_audio` and `submission_feedback`, all under `tap_lms.imgana.submission`. Each call sends an **`authorization` header** (the name is in the flow; we did not copy the value). This is also the answer to the question of the header: the live flow sends one.
+
+**What it also does that the app does not need in v1:** certificates with the points (`create_certificate`), streaks (+1 for each submission) and special gems (+2 in some cases), nudge messages (templates such as `summerprogramquiz_nudge`, `sub_1main`), the groups that mark where a student stands (`Activity2026_NotStarted`, `Activity2026_Sibmission_NotReceived`), and the other programs.
+
+**Two things the lead developer told us (2026-11-02):**
+1. Because of a limit in Glific and WhatsApp, the flow can only check **afterwards** that the submission has the right media type (image or video). It gives the student **two chances**.
+2. **Sending again after the work was found invalid** (by the AI feedback) is an **app-only feature**. It is not part of the WhatsApp flow.
 
 ## 6. Authentication and the API surface
 
@@ -258,9 +281,9 @@ The Glific flow files of the Summer Program (in `/var/home/rjs/dev/tap`) call th
 
 1. **Which branch is deployed?** We assume `journey_2026`. The submit call the lead developer gave us matches this branch (section 1). Please confirm the branch once, in writing.
 2. **Is the `Authorization` header required and checked in production, and where?** A local test (`save_submission` family) accepted calls with no token and rejected a wrong one. Please test `submit_artwork` on production with no header, a wrong header and a valid header, and say if there is a layer in front (for example Cloudflare or a load balancer).
-3. **Is the team's manual weekly update made in `Weekly Student Flow`?** The WhatsApp content calls read the week from there, so we assume yes. The TapApp sync script reads the same record (v1 requirements, R-93).
+3. **Answered (2026-11-02):** the TLM26 flow reads the activity from a Google Sheet for each batch group, not from `Weekly Student Flow` (section 5.8). Nothing is needed for v1. For v1.1 we still need to know where the team updates the sheet each week.
 4. **Siblings:** how the second child gets a `Student` record is outside this project. We assume it is done (R-34). Please tell us if the plan changes.
-5. **Where do quiz results and points live today** (Glific contact fields? BigQuery?), if not in Frappe?
+5. **Answered (2026-11-02):** quiz results and points live in Glific contact fields (`total_points`, `activity_points`, `streak`, `special_gems`), not in Frappe (section 5.3).
 6. **Is "Enable Batch Feedback Delivery" on in production?**
 7. **Does anything still call `ready_to_receive_feedback`?**
 8. **Is `tap_plg` / `rag_service` / `tap_ai` on a newer branch** than the health and monitoring branches on this machine? Does production use one shared RabbitMQ broker or one per server?

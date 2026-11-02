@@ -1,6 +1,6 @@
 # Content specification (draft)
 
-**Status:** proposal. Two points are open (section 8). Nothing here is decided until the team agrees.
+**Status:** proposal, for later. The v1 test release uses a hardcoded flow with content from the curriculum team (v1 requirements R-61 and O-9). The current-activity file (section 6a) is not needed in v1. Two points are open (section 8). Nothing here is decided until the team agrees.
 **For:** the TapApp team and the curriculum team. It supports R-18 to R-25, R-52, R-54, R-55, R-57, R-58, R-79 and R-91 in the [v1 requirements](v1-requirements.md), and open decision O-9.
 
 ## 1. The idea

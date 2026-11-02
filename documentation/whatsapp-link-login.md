@@ -333,7 +333,7 @@ We compared the field lists and the main rules in the code (v1 requirements, sec
 - Feedback is requested when the work is submitted. A scheduled job in `frappe_tap` starts the Glific feedback flow at 15:00, 16:30 and 21:00 IST for every submission whose feedback is ready (v1 requirements, R-80 and O-28). The app and the Worker do not call `ready_to_receive_feedback`. The flow is changed to send the app link for an app student (O-28).
 - Quizzes: the live calls only read the questions. Nothing stores an attempt, an answer or a score, so `tapapp` runs the quiz for the app (v1 requirements, R-91).
 
-The existing calls cannot be changed without the client's approval, because they are in production. `submit_artwork` accepts calls that carry no key, and `submission_feedback` answers anyone who knows the submission id. So the Worker calls `submit_artwork` with its service key. New read-only methods in `tapapp` read the feedback and the valid or not valid result from `Submission`. See the v1 requirements: "Rules for our changes", R-89, R-50 and O-17.
+The existing calls cannot be changed without the client's approval, because they are in production. `submit_artwork` accepts calls that carry no key, and `submission_feedback` answers anyone who knows the submission id. So the Worker calls `submit_artwork` with its service key. New read-only methods in `tapapp` read the feedback and the valid or not valid result from `Submission`. See the v1 requirements: "Rules for our changes", R-89 and R-50.
 
 ### Decision
 
