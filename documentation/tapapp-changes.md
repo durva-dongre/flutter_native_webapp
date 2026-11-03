@@ -38,11 +38,11 @@ These must be fixed before any real child uses the module.
 4. **Award and webhook calls only need "logged in".** `submission_verified_webhook` (`learner.py:596`) and `award_achievement` (`achievements.py:46`) have no role or key check. Anyone who is logged in could award points.
 5. **Export calls only need "logged in" too** (`export.py:544`, `:604`) and return quiz data.
 6. **No rate limit** on `login_with_password`, `check_phone` or the OTP calls. `check_phone` also shows whether a phone is registered.
-7. **Points are added again on every retry.** There is no idempotency key. The cap check and the update are two separate steps, so two calls at the same time can both pass (R-38).
-8. **Token design.** The token lasts 90 days and refreshes without a check. The secret comes from a `Secrets` doctype and is cached in Redis. There is no way to revoke a token.
+7. **Points are added again on every retry.** Nothing stops the same call from counting twice (an idempotency key would do this). The weekly cap check and the update are two separate steps, so two calls at the same time can both pass the check (R-38).
+8. **Token design.** The token lasts 90 days and is renewed silently, without checking the student again. The secret comes from a `Secrets` doctype and is cached in Redis. There is no way to revoke a token.
 9. **Commits in the middle of a request** (`frappe.db.commit()` and raw `SAVEPOINT` in many places) can leave half-written data after an error.
 10. **Fixed values in code:** the OTP, the token lifetimes, `SUBMISSION_XP = 25`, `max_weekly_activities or 2`, the owner `'Administrator'` on raw inserts (`achievements.py:63`, `learner.py:400`), and the level `"Level 1"`. R-41 says these must be settings on the server.
-11. **Raw SQL with column names built from the request** (`set_clause`, `col_list`). It is filtered today, so it is safe, but it is fragile.
+11. **Raw SQL with column names built from the request** (`set_clause`, `col_list`). The names are checked against a list today, so it is safe now, but a small change could make it unsafe.
 
 **What to do.** Remove `allow_guest` from all of these. Every call must take **one Worker credential** (an API key or an HMAC), and the Worker tells you the phone and the student. Check on each call that the student belongs to that phone (R-81). Never trust a typed phone number (R-33).
 
@@ -52,8 +52,8 @@ These must be fixed before any real child uses the module.
 |---|---|---|---|
 | **Login** | A password. Teacher and class model (`teacher`, `admin_code`, grade, division, roll number). | A signed WhatsApp magic link that carries the phone. The **Worker** checks the link and signs the token. The backend trusts only the Worker. No password and no OTP. | R-31 to R-34, R-81, `whatsapp-link-login.md` |
 | **Children of a phone** | A `Tapapp Auth` row for each phone, with a profile table. Nothing in `tapapp` creates the profile rows (not verified where they come from). `Auth Profile.student` is a link that is not unique. | Read the children from `Student where phone = X`, in both the 10-digit and 12-digit forms. Only students with an enrollment in an active batch. No profile table. | R-34, LS4 |
-| **Progress record** | `Tapapp Learner` with `xp`, `level`, `streak` and more, plus `Tapapp Enroll`. | One record, `ProgramEnrollment`. It is empty today because the old Summer Program engine is off. You fill the fields you need. No second copy. | R-48 |
-| **Progress counters** | `update_content_progress` keeps counters (`videos_completed`, `quizzes_completed`, `submission_index`) with GREATEST. | A record for each step (video watched, each quiz answer, work sent), each with an idempotency key. | R-38, R-40 |
+| **Progress record** | `Tapapp Learner` with `xp`, `level`, `streak` and more, plus `Tapapp Enroll`. | One record, `ProgramEnrollment`. It is empty today because the old Summer Program engine is off. It keeps only the summary numbers (the point fields it already has). Every step is a row in a new table, `Tapapp Step`, that links to it. No second copy. | R-48 |
+| **Progress counters** | `update_content_progress` keeps counters (`videos_completed`, `quizzes_completed`, `submission_index`) and uses the SQL function GREATEST, which keeps the larger number. | A row for each step (video marked as watched, each quiz answer, work sent), each with a key that stops the same step from being saved twice (the `idempotency_key`). | R-38, R-40 |
 | **Points** | The client sends the XP. `SUBMISSION_XP = 25` is given when a webhook arrives. | The server decides. Video +10, sharing the work +25 (at once), each correct quiz answer +1, correct submission +10 (after valid feedback only). Values are settings. | R-37, R-41, R-75 |
 | **Level** | A string, `"Level 1"` by default. | Worked out from the points with thresholds in settings. | R-41 |
 | **Profile edits** | Written to the Tapapp tables only. `school` cannot be edited. | Writing to `Student` is a change to production data and needs approval. Ask before you add it. | R-74, "Rules for our changes" |
@@ -94,14 +94,14 @@ We compared the two branches. Copy **only** `tapapp/` and its DocTypes. These it
 
 **Good news.** The module does not import `summer_program`, `journey`, `api.py`, `glific_*` or `ca.*`, so it is self-contained. It uses raw Postgres SQL, and `journey_2026` is also Postgres.
 
-`ProgramEnrollment` has the same fields on both branches. It already has point fields (`total_points`, `total_quiz_points`, `total_submission_points` and others) but no step or idempotency fields. Adding fields to it is a change to a production doctype, so please tell us which fields you need before you add them.
+`ProgramEnrollment` has the same fields on both branches. It already has point fields (`total_points`, `total_quiz_points`, `total_submission_points` and others) but no step or idempotency fields. Do not add step fields to it. Put the steps in a new table, `Tapapp Step`, with a Link field to `ProgramEnrollment` (indexed), the `student`, the step type, the unit, the quiz fields, the points and a unique `idempotency_key`. Tell us before you add any other field to `ProgramEnrollment`.
 
 ## 7. Suggested order (smallest useful step first)
 
 1. Copy `tapapp/` and its DocTypes only. Solve the `Secrets` problem. Do not copy the daily jobs or the `ca` hooks. Check that `bench migrate` passes on `journey_2026`.
 2. **Close the security holes** (section 2): no guest access, one Worker credential on every call, a check that the student belongs to the phone.
 3. **Remove the password and OTP code,** `Tapapp Learner`, `Tapapp Auth Profile`, streaks, gems, archetype, the weekly cap and both jobs. Read the children from `Student`.
-4. **Add the step log in `ProgramEnrollment`,** with idempotency keys, and a small settings table for the point values.
+4. **Add the new `Tapapp Step` table,** one row for each step, linked to `ProgramEnrollment`, with a unique idempotency key. Keep only the summary numbers on `ProgramEnrollment`. Add a small settings table for the point values and the video minimum time.
 5. **Add the server quiz.**
 6. **Add the submission call and the valid-feedback check,** and the +10 award.
 7. **Add "My projects", the placeholder tags and the empty banner call.**
@@ -113,6 +113,6 @@ Please send us the plan for steps 1 to 4 before you start. If anything in the re
 ## 8. Please check these for us
 
 - Where do the `Tapapp Auth Profile` rows come from today? We found no code that creates them.
-- Does any `Student` user (role) really exist, so that `Tapapp Learner` read access for the `Student` role matters?
+- Do any users with the role `Student` exist? If they do, the read access that this role has on `Tapapp Learner` matters.
 - Are `PyJWT` and `psutil` installed on the production server?
 - Is anything outside `tapapp/` and `hooks.py` using these DocTypes? We found nothing.

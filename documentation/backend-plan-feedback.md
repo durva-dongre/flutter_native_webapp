@@ -5,9 +5,9 @@
 
 ## How to read this
 
-This note compares it with our **latest requirements**.
+This note compares the plan with our **latest requirements**.
 
-**The requirements document (`v1-requirements.md`) always wins.** as it is reviewed by the stakeholders. If this plan and the requirements say different things, we follow the requirements. Please also read `system-understanding.md`. It describes how the current TAP backend works, checked in the code on branch `journey_2026`.
+**The requirements document (`v1-requirements.md`) always wins.** It was reviewed with the stakeholders. If this plan and the requirements say different things, we follow the requirements. Please also read `system-understanding.md`. It describes how the current TAP backend works, checked in the code on branch `journey_2026`.
 
 **What v1 is.** v1 is a **test release in mid-November** for a very small group of kids (30 to 100). They are already registered. Each kid gets a magic link. The flow is simple and fixed: greeting, video, submission, then quiz. We keep v1 small. Many items in the plan are good ideas for later, not for v1.
 
@@ -24,7 +24,7 @@ The `tapapp` code will be added to the `frappe_tap` branch `journey_2026`, as a 
 | 3 | A **new submission flow**: Frappe signs an upload URL, the file goes to GCP, a queue worker checks it, then `finalize`, then a handoff to an "external review system". | Use the existing call `submit_artwork(assignment_id, student_id, submission)` as it is (R-27, R-89). The "external review system" already exists: `tap_plg`, `rag_service` and the feedback consumer. You do not need handoff code or a result webhook. |
 | 4 | **New Submission statuses**: Uploading, Pending Review, In Review, Approved, Rejected, Expired. | Keep the existing statuses (Pending, Processing, Completed, Failed). Valid or not valid comes from the field `submission_validity` (Valid or Invalid) (R-76). |
 | 5 | **Overwrite `submission_url`** with the R2 URL after approval. | Do not overwrite it. The student's own work stays in GCS. Only the Gallery gets a copy in R2, made after the feedback says the work is valid (R-88). The existing pipeline also uses `submission_url`. |
-| 6 | **One retry only**, then `attempt_limit_reached`. | After invalid work the student sends corrected work (R-76). The next activity opens only after valid feedback (R-83). If we stop after one retry, a student with a second invalid result is stuck. Do not limit the attempts in v1. |
+| 6 | **One retry only**, then the state `attempt_limit_reached`. | After invalid work the student sends corrected work (R-76). The next activity opens only after valid feedback (R-83). If we stop after one retry, a student with a second invalid result is stuck. Do not limit the attempts in v1. |
 | 7 | **GCP keys in Shared Settings** inside Frappe, and Frappe makes the signed URLs. | The Cloudflare Worker holds the Google Cloud service account. The Worker gives the app a short upload link and reads the files (R-82, R-88, R-89). Keys must not be stored in the Frappe database. |
 | 8 | A magic link that is **single use** (Redis token, deleted at once). | A link must work more than once until it expires. A phone can lose its saved data, and the student must be able to open the same link again (see `whatsapp-link-login.md`, LS1 and LS2). |
 | 9 | **Weekly cap, weekly reset, streaks, gems**, and a "Tuesday 4 pm" release. | v1 has **no weekly limit and no deadline** (R-39, R-72). **Streaks are paused** (kids do not understand them). Gems are not in the design. The only pace rule is R-83. |
@@ -34,7 +34,7 @@ The `tapapp` code will be added to the `frappe_tap` branch `journey_2026`, as a 
 
 1. **The valid-feedback gate (R-83).** `advance_unit` moves forward when a video or quiz is done. Something must keep the next activity closed until the feedback for the submission is valid.
 2. **A quiz that runs on the server (R-91).** We need calls to start the quiz and to answer one question. The server sends one question at a time, checks each answer, accepts answer N+1 only after answer N, and stores every answer. The browser never gets the correct answer. In your plan the app sends the answers in one batch.
-3. **Safe repeats (R-38, R-40).** If the phone sends the same step twice, points must be given only once. Use an idempotency key for each step, not only for the points queue.
+3. **Safe repeats (R-38, R-40).** If the phone sends the same step twice, points must be given only once. Use an idempotency key for each step (a key that stops the same step from being saved twice), not only for the points queue.
 4. **The point rules (R-75).** Video +10, sharing the work +25 (given at once), each correct quiz answer +1, correct submission +10 (given after valid feedback). Your settings have no separate value for the +25.
 5. **The full feedback (R-16, R-56).** Feedback has a text, a translated text and an audio file. Your plan has one `feedback` field. The Results screen needs all three.
 6. **Valid or not valid (R-92).** A result with grade 0 or the text "technical issue" counts as **not valid**.
@@ -52,15 +52,15 @@ The `tapapp` code will be added to the `frappe_tap` branch `journey_2026`, as a 
 
 - **Ask TAP with an AI chat** (Durable Object, LLM, BigQuery). v1 has prepopulated questions only (R-70).
 - **Events** (`Event Campaign`, `Student Event Enrollment`, `events.json`). These are for v1.1 (R-86). For v1 we only **leave room** for them (R-94). The banner may also target a batch, a school, a state or a random group, and show information messages. Your event scope does not cover those.
-- **The Gallery listing by school, district and state with widening.** Choosing which students' work is shown is a later setting (R-85).
+- **The Gallery listing by school, district and state, which widens the search step by step when there is little work.** Choosing which students' work is shown is a later setting (R-85).
 - **The ops dashboard, the Redis points queue, the layered rate limits, nightly analytics, BigQuery export and the load-test suite.** For a test with under 100 kids this is too much. The Worker already has rate limits.
 - **Outreach stages** (`no_response`, `reengagement_exhausted`, `delivery_failure`) and their nudge jobs. They need Glific messages that v1 does not have.
 
 ## 4. Please fix inside the document
 
 - Section 4 uploads to **GCP**, but the API list says **private R2**. The consumer is called both a "GCP event" and an "R2 event" consumer. Pick one.
-- **Names differ in places:** Student Event Enrollment statuses (active, completed, missed, versus enrolled, active, completed, missed); PE `points` versus `weekly_points` and `total_points`; the folder is `tap_app`, `tapapp` and `app_submission`.
-- The dashboard's **stage funnel** uses values (`video_watched`, `binge_limit`) that are not in the PE stage list.
+- **Names differ in places:** Student Event Enrollment statuses (active, completed, missed, versus enrolled, active, completed, missed); the Program Enrollment field is called `points` in one place and `weekly_points` and `total_points` in another; the folder is `tap_app`, `tapapp` and `app_submission`.
+- The dashboard's **stage funnel** uses values (`video_watched`, `binge_limit`) that are not in the Program Enrollment stage list.
 - **`skills_json` and a "skill-weight map"** are still mentioned, but the field was removed.
 - The plan says the **Worker lives in the frappe repo.** Our Worker is in the Flutter repo (`flutter_native_webapp/worker`).
 

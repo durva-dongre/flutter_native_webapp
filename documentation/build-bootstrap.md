@@ -4,7 +4,7 @@
 
 **How to use it.** Paste this file (or its path) as the first message. Then say which milestone (section 6) to work on.
 
-Date written: 2026-10-29.
+Written 2026-10-29. Last updated 2026-11-03.
 
 ---
 
@@ -45,7 +45,8 @@ Out of scope for v1: teacher or parent roles, the installed app, voice recording
 3. `documentation/whatsapp-link-login.md`: the login by WhatsApp link (decisions A1 to A17, the link format, the Worker and Frappe calls).
 4. `documentation/content-spec.md`: the content files and the CDN (draft).
 5. `documentation/production-readiness.md`: prototype problems to fix (AP1 to AP9).
-6. `documentation/architecture-tenets.md`, `frontend.md`, `deployment.md`, `codes.md`.
+6. `documentation/v1-task-breakdown.md`: the list of tasks with their effort and tests. `documentation/tapapp-changes.md`: what must change in the `tapapp` backend module.
+7. `documentation/architecture-tenets.md`, `frontend.md`, `deployment.md`, `codes.md`.
 
 ## 4. Assumptions to build on
 
@@ -53,12 +54,12 @@ Treat these as true. Each one has a place in the docs. If one turns out false, t
 
 1. **The deployed backend is `frappe_tap` branch `journey_2026`.** The submit call is `imgana.submission.submit_artwork(assignment_id, student_id, submission)`.
 2. **The Worker sends `Authorization: token <key>:<secret>`** on every call to Frappe. Production may or may not require it, but sending it is always safe.
-3. **`ProgramEnrollment` is an empty table.** The Summer Program engine that filled it is switched off. `tapapp` stores progress (steps, points, quiz attempts) itself (R-40, R-48, R-75, R-87, R-91).
+3. **`ProgramEnrollment` is an empty table.** The Summer Program engine that filled it is switched off. `tapapp` stores progress itself: every step (video marked as watched, each quiz answer, work sent) is a row in a new table, `Tapapp Step`, linked to `ProgramEnrollment`, and `ProgramEnrollment` keeps only the summary points (R-40, R-48, R-75, R-87, R-91).
 4. **Nothing in `frappe_tap` stores** "video watched", quiz answers or points. We store them.
 5. **Siblings on one phone are separate `Student` records** with their own Glific ID. How they are created is not our job (R-34).
 6. **There is no weekly release and no deadline in v1.** The flow is linear and hardcoded. The next activity opens after the work is submitted and the feedback is valid (R-83). The weekly release file (R-93) is later.
 7. **The v1 flow is hardcoded, and its content is downloaded from the CDN** (R-18, decided 2026-11-02). The curriculum team provides the content. The tech team builds the JSON files (by hand or with a small script) and uploads them to R2 with a manifest, in the shape of `content-spec.md`. The Publish step from Frappe is later. Languages in v1: Hindi and English.
-8. **Feedback is shown in the Results step.** A scheduled job in `frappe_tap` starts the Glific feedback flow at 15:00, 16:30 and 21:00 IST. The WhatsApp message carries a signed magic link that opens the Results step (R-50, R-68).
+8. **Feedback is shown in the Results step.** A scheduled job in `frappe_tap` starts the Glific feedback flow at 15:00, 16:30 and 21:00 IST. The WhatsApp message carries a signed magic link that opens the Results step (R-50, R-68). How the app students get that message (a new Glific flow) is recommended in O-28 and is not approved yet.
 9. **Points:** video +10, sharing the work +25, correct quiz answer +1, correct submission +10. The +10 comes after valid feedback. A result with grade 0 or the "technical issue" text counts as not valid (R-75, R-92).
 
 ## 5. Where the code is today
@@ -81,12 +82,12 @@ Each milestone can start now. The "stub" column says what to fake until an answe
 | M0 | Clean up the prototype | Remove the Groq code and the AI review. Remove hard-coded values. Bundle fonts. Replace the loader GIF. Make errors friendly with a Retry button. | `production-readiness.md` (AP1 to AP9), R-43, R-44 | none |
 | M1 | App shell | Three tabs (Home, Gallery, Me). "Who is learning". Welcome back. Offline screen with Retry (R-71). Settings and Edit profile. The TAP Buddy picture is the profile picture (R-60). No photos of students. | R-1 to R-8, R-60, R-71, R-73, R-74 | fake data behind repositories (R-53) |
 | M2 | Login and Worker | Verify the signed WhatsApp link, issue a login token, list the phone's children, `select_student`. The Worker checks that the student belongs to the phone on every call (R-81). Rate limits. | `whatsapp-link-login.md`, R-31 to R-34, R-81, R-82 | siblings: assume they exist |
-| M3 | Activity: Watch and Quiz | Watch step with an "I watched it" button (R-90). The quiz runs on the server: one question at a time, the answer checked on the server, the order checked, every answer stored (R-91). Steps saved at once (R-40). | R-61, R-62, R-67, R-90, R-91 | content from local JSON |
+| M3 | Activity: Watch and Quiz | Watch step with an "I watched it" button that turns on after 5 minutes (R-90). The quiz runs on the server: one question at a time, the answer checked on the server, the order checked, every answer stored (R-91). Steps saved at once (R-40). | R-61, R-62, R-67, R-90, R-91 | content from local JSON |
 | M4 | Activity: Make | Photo or video capture. Resize photos to JPEG on the phone (R-12). Upload through a temporary link. The Worker calls `submit_artwork` (R-89). Retry on failure (R-13). A message when the camera is refused (R-11). | R-9, R-11 to R-15, R-63, R-64, R-89 | the upload target: a test bucket |
 | M5 | Results and points | The Results chat: feedback messages with speaker icons, "Yes" button, the "YOU WON" card (R-68). Points for each step. Valid or not valid, and "send again" (R-76). "Points will be provided after feedback" label. | R-68, R-69, R-75, R-76, R-83, R-92, F-6 | feedback from a fake record; the message and link: a fake "feedback ready" message |
-| M6 | Progress in `tapapp` | New records for steps, points and quiz attempts. Behind an interface, so the table can change. Level worked out from points. | R-37 to R-41, R-48, R-87 | none; mark every write to a production table |
+| M6 | Progress in `tapapp` | The new `Tapapp Step` table (one row for each step, with a unique key so a repeat is saved once), linked to `ProgramEnrollment`, which keeps the summary points. Keep it behind an interface, so the storage can change later. The level is worked out from the points. | R-37 to R-41, R-48, R-87 | none; mark every write to a production table |
 | M7 | Content from the CDN | A loader that reads the manifest and the files from the CDN, with the small first-run copy in the app (R-20). Download retry (R-22). Build the content files for the hardcoded flow. | `content-spec.md`, R-18 to R-22, R-79 | a local folder until the R2 bucket exists |
-| M8 | Gallery and Me | Gallery with valid work only, the student's initials (not the full name), random order. My projects. Copy to R2 after valid feedback. | R-6, R-7, R-58, R-59, R-85, R-87, R-88 | Skill chips: the fixed placeholder tags (R-95). Copies in R2 are deleted when the student moves to a new batch (R-96) |
+| M8 | Gallery and Me | Gallery with valid work only, the student's initials (not the full name), random order. My projects. Copy to R2 after valid feedback. The skill chips are the fixed placeholder tags (R-95). Copies in R2 are deleted when the student moves to a new batch (R-96). | R-6, R-7, R-58, R-59, R-85, R-87, R-88, R-95, R-96 | none |
 | M9 | Leave room for the banner and events (v1.1) | A banner slot above the activity card, and one Worker place that returns an empty banner list. No event code in v1. | R-5, R-86, R-94 | none |
 
 **Done means** the checks in `v1-requirements.md`, section 13 ("QA"), pass.
@@ -97,14 +98,14 @@ Names are suggestions. Keep them small and put the checks in the Worker.
 
 - `POST /auth/link`: verify a signed link, return a phone token and the children of the phone.
 - `POST /auth/select-student`: check the child belongs to the phone, return a student token.
-- `GET /home`: the student, points, the current activity (from the CDN file).
+- `GET /home`: the student, the points and the next activity for the student (from the hardcoded flow content).
 - `POST /steps`: save a step (video watched, quiz answered, work sent). Needs an idempotency key.
 - `POST /quiz/start` and `POST /quiz/answer`: run the quiz.
 - `POST /submissions/upload-link` and `POST /submissions`: temporary upload link, then the call to `submit_artwork` once for each upload.
 - `GET /submissions/:id/feedback`: the feedback, valid or not, and the audio link.
 - `GET /me/projects`, `GET /gallery`.
 
-Frappe calls the Worker may use: the read calls in `api.py` (`get_student_by_phone_and_name`, `get_student_video_content`, `get_student_quiz_content`, `get_quiz_by_id`, `get_quiz_question_details`; the last one returns the correct answer, so only the Worker calls it), `submit_artwork`, `submission_feedback`, and reads of `Submission`, `Student`, `Student Enrollment`, `Weekly Student Flow`.
+Frappe calls the Worker may use: the read calls in `api.py` (`get_student_by_phone_and_name`, `get_student_video_content`, `get_student_quiz_content`, `get_quiz_by_id`, `get_quiz_question_details`; the last one returns the correct answer, so only the Worker calls it), `submit_artwork`, `submission_feedback`, and reads of `Submission`, `Student` and `Student Enrollment`. The content read calls in `api.py` exist, but the live WhatsApp flow does not use them: it reads a Google Sheet (see `system-understanding.md`, 5.8). v1 uses hardcoded content, so the Worker does not need them.
 
 ## 8. Open items (do not wait for them)
 
@@ -113,7 +114,6 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 | Open | Effect on the build |
 |---|---|
 | Is `journey_2026` the deployed branch? | Test `submit_artwork` against dev and production early. |
-| Is the manual weekly update made in `Weekly Student Flow`? | The sync script reads it. Change the source if it is elsewhere. |
 | O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the client's approval and the Glific team) | M5 stays on a fake message until it is approved |
 | The WhatsApp nudge (R-66) needs a new Glific message and approval | Leave it out until it is approved |
 
@@ -123,6 +123,7 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 - Test inside the **WhatsApp browser** on a real Android phone, not only in Chrome. Known limits: no speech synthesis, no background sending, camera, microphone and storage work. The video type is decided by the URL extension first (`.webm` becomes video).
 - Add tests for: the Worker's student-belongs-to-phone check, the quiz order check, idempotent steps, and the "not valid" rule.
 - Ask the lead developer to test `submit_artwork` on production with no header, a wrong header and a valid header.
+- There is no CI. The checks run on a developer's machine with one command, and a git pre-push hook runs the quick ones. Both are task E4 in `v1-task-breakdown.md`. Run the full set before each release.
 
 ## 10. When you change a requirement
 

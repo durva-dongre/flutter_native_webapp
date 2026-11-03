@@ -37,7 +37,7 @@ current/<batch-id>.json                    (the current activity for a batch, R-
 
 ## 4. The manifest
 
-The app downloads `manifest.json` first. It lists every file and its hash, so the app downloads only what changed (R-19).
+The app downloads `manifest.json` first. It lists every file with its hash (a fingerprint made from the content of the file), so the app can see which files changed and download only those (R-19).
 
 ```json
 {
@@ -91,7 +91,7 @@ One file for each unit and language. It holds what the Watch, Make and Quiz step
 
 Rules:
 - **No answer key.** The correct option of each question stays on the server. The server checks each answer (R-91).
-- `submission_types` can be `image`, `video` or `text`. Voice is later (R-10).
+- In v1, `submission_types` holds `image` and `video` (R-9). Text and voice are later (R-63, R-10).
 - Quiz questions are text only in v1 (R-67).
 - A question picture, if it comes later, is a field `image` with a file path.
 
@@ -134,13 +134,14 @@ Rules:
 }
 ```
 
-- A **sync script** writes this file. It uses the same logic as the WhatsApp content calls: the current week from `Weekly Student Flow` (`get_student_current_week`), then the batch's `Learning Unit` for that week (`get_learning_units_by_week`). It rewrites the file only if something changed. Whether the team's manual weekly update is made in `Weekly Student Flow` is still to be confirmed (R-93).
+- A **sync script** writes this file. The WhatsApp flow reads the activity from a Google Sheet for each batch group (see `system-understanding.md`, 5.8), so the script reads the same sheet row and writes the file only when something changed. This is for later (R-93). It needs read access to that sheet, and the team must keep it up to date each week.
+- `deadline_at` is for later too. There is no deadline in v1 (R-72).
 - It is not part of the versioned content: the app reads it often, and the CDN caches it for about a minute.
 - The app compares `released_at` with what it knows. A newer value means a new activity.
 
 ## 7. Checking before publish
 
-- Each file type has a **JSON Schema** (`manifest/1`, `unit/1`, `flow/1`). The publish job checks every file against it.
+- Each file type has a **JSON Schema** (a small file that describes the allowed shape of the file: `manifest/1`, `unit/1`, `flow/1`). The publish job checks every file against it.
 - Extra checks:
   - every language in the manifest has a unit file, a flow file and (for messages that need audio) a clip;
   - every audio file named in a message exists and its `text_hash` matches;
