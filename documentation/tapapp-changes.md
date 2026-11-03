@@ -1,7 +1,7 @@
 # What needs to change in `tapapp`
 
 **For:** the author of the `tapapp` module (about 4,900 lines in `frappe_tap_dd`, branch `pal-v2`).
-**Date:** 2026-11-02
+**Date:** 2026-11-03
 **Read with:** `v1-requirements.md`, `system-understanding.md`, `whatsapp-link-login.md` and `backend-plan-feedback.md`.
 
 ## How to read this
