@@ -23,7 +23,7 @@ Out of scope for v1: teacher or parent roles, the installed app, voice recording
 - **Simple English.** The team are not native speakers: short sentences, common words, in chat and in docs.
 - **Ask only blocking questions.** If a safe default exists, state it and continue.
 - **Say "done" only after the user says yes.** Do not claim a change is finished before that.
-- **Do not change production `frappe_tap` logic** without the client's approval. The list of items that need approval is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
+- **Do not change production `frappe_tap` logic** without the product team's approval. The list of items that need approval is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
 - **The Frappe key lives only in the Worker** (R-82). The app and the browser never see it.
 - **Flutter is pinned to 3.47.1** (`pubspec.yaml`: `>=3.47.1 <3.48.0`). Build releases with `scripts/build_web.sh`, not plain `flutter build web`.
 - **Follow `architecture-tenets.md`:** dependencies go `app → features → shared → domain → core`. A feature never uses another feature. Repositories are the only way to data. Screens stay thin. Move code or change code, not both in one commit. Check with `dart scripts/check_architecture.dart`.
@@ -60,7 +60,8 @@ Treat these as true. Each one has a place in the docs. If one turns out false, t
 6. **There is no weekly release and no deadline in v1.** The flow is linear and hardcoded. The next activity opens after the work is submitted and the feedback is valid (R-83). The weekly release file (R-93) is later.
 7. **The v1 flow is hardcoded, and its content is downloaded from the CDN** (R-18, decided 2026-11-02). The curriculum team provides the content. The tech team builds the JSON files (by hand or with a small script) and uploads them to R2 with a manifest, in the shape of `content-spec.md`. The Publish step from Frappe is later. Languages in v1: Hindi and English.
 8. **Feedback is shown in the Results step.** A scheduled job in `frappe_tap` starts the Glific feedback flow at 15:00, 16:30 and 21:00 IST. The WhatsApp message carries a signed magic link that opens the Results step (R-50, R-68). How the app students get that message (a new Glific flow) is recommended in O-28 and is not approved yet.
-9. **Points:** video +10, sharing the work +25, correct quiz answer +1, correct submission +10. The +10 comes after valid feedback. A result with grade 0 or the "technical issue" text counts as not valid (R-75, R-92).
+9. **The test content (task B0).** The lead's Glific flow reads the video links, the quiz questions, the answer key and the assignment ids from a Google Sheet. Find out where the test content will live before you build the quiz (B5, B11), and check that every assignment id exists in Frappe, because `submit_artwork` fails for an unknown assignment.
+10. **Points:** video +10, sharing the work +25, correct quiz answer +1, correct submission +10. The +10 comes after valid feedback. A result with grade 0 or the "technical issue" text counts as not valid (R-75, R-92).
 
 ## 5. Where the code is today
 
@@ -80,14 +81,15 @@ Each milestone can start now. The "stub" column says what to fake until an answe
 | # | Milestone | What to build | Docs | Stub until |
 |---|---|---|---|---|
 | M0 | Clean up the prototype | Remove the Groq code and the AI review. Remove hard-coded values. Bundle fonts. Replace the loader GIF. Make errors friendly with a Retry button. | `production-readiness.md` (AP1 to AP9), R-43, R-44 | none |
-| M1 | App shell | Three tabs (Home, Gallery, Me). "Who is learning". Welcome back. Offline screen with Retry (R-71). Settings and Edit profile. The TAP Buddy picture is the profile picture (R-60). No photos of students. | R-1 to R-8, R-60, R-71, R-73, R-74 | fake data behind repositories (R-53) |
+| M1 | App shell | Three tabs (Home, Gallery, Me). "Who is learning". Welcome back. Offline screen with Retry (R-71). Settings and Edit profile. The TAP Buddy picture is the profile picture (R-60). No photos of students. All text in Hindi and English, with one translated fallback for "Champ" (R-23 to R-25). The Gallery tab has an empty state with example works. | R-1 to R-8, R-60, R-71, R-73, R-74 | fake data behind repositories (R-53) |
 | M2 | Login and Worker | Verify the signed WhatsApp link, issue a login token, list the phone's children, `select_student`. The Worker checks that the student belongs to the phone on every call (R-81). Rate limits. | `whatsapp-link-login.md`, R-31 to R-34, R-81, R-82 | siblings: assume they exist |
 | M3 | Activity: Watch and Quiz | Watch step with an "I watched it" button that turns on after 5 minutes (R-90). The quiz runs on the server: one question at a time, the answer checked on the server, the order checked, every answer stored (R-91). Steps saved at once (R-40). | R-61, R-62, R-67, R-90, R-91 | content from local JSON |
 | M4 | Activity: Make | Photo or video capture. Resize photos to JPEG on the phone (R-12). Upload through a temporary link. The Worker calls `submit_artwork` (R-89). Retry on failure (R-13). A message when the camera is refused (R-11). | R-9, R-11 to R-15, R-63, R-64, R-89 | the upload target: a test bucket |
-| M5 | Results and points | The Results chat: feedback messages with speaker icons, "Yes" button, the "YOU WON" card (R-68). Points for each step. Valid or not valid, and "send again" (R-76). "Points will be provided after feedback" label. | R-68, R-69, R-75, R-76, R-83, R-92, F-6 | feedback from a fake record; the message and link: a fake "feedback ready" message |
+| M5 | Results and points | The Results chat: feedback messages with speaker icons, "Yes" button, the "YOU WON" card (R-68). Points for each step. Valid or not valid, and "send again" (R-76). "Points will be provided after feedback" label. The waiting screen and the "taking longer than expected" state. The audio player that is hidden when a clip is missing (R-17, R-54, R-55). The picture badge, also when Make is postponed (R-69). | R-68, R-69, R-75, R-76, R-83, R-92, F-6 | feedback from a fake record; the message and link: a fake "feedback ready" message |
 | M6 | Progress in `tapapp` | The new `Tapapp Step` table (one row for each step, with a unique key so a repeat is saved once), linked to `ProgramEnrollment`, which keeps the summary points. Keep it behind an interface, so the storage can change later. The level is worked out from the points. | R-37 to R-41, R-48, R-87 | none; mark every write to a production table |
 | M7 | Content from the CDN | A loader that reads the manifest and the files from the CDN, with the small first-run copy in the app (R-20). Download retry (R-22). Build the content files for the hardcoded flow. | `content-spec.md`, R-18 to R-22, R-79 | a local folder until the R2 bucket exists |
 | M8 | Gallery and Me | Gallery with valid work only, the student's initials (not the full name), random order. My projects. Copy to R2 after valid feedback. The skill chips are the fixed placeholder tags (R-95). Copies in R2 are deleted when the student moves to a new batch (R-96). | R-6, R-7, R-58, R-59, R-85, R-87, R-88, R-95, R-96 | none |
+| M10 | Feedback link for app students | Set `feedback_flow_id` after the upload, mark the app student at the first login, a webhook that makes the signed feedback link, a Worker route for the link, and a deep link to the Results step (O-28 Option B, R-50). The Glific team builds the new flow. | R-16, R-50, O-28 | a fake "feedback ready" message until the product team approves |
 | M9 | Leave room for the banner and events (v1.1) | A banner slot above the activity card, and one Worker place that returns an empty banner list. No event code in v1. | R-5, R-86, R-94 | none |
 
 **Done means** the checks in `v1-requirements.md`, section 13 ("QA"), pass.
@@ -103,7 +105,8 @@ Names are suggestions. Keep them small and put the checks in the Worker.
 - `POST /quiz/start` and `POST /quiz/answer`: run the quiz.
 - `POST /submissions/upload-link` and `POST /submissions`: temporary upload link, then the call to `submit_artwork` once for each upload.
 - `GET /submissions/:id/feedback`: the feedback, valid or not, and the audio link.
-- `GET /me/projects`, `GET /gallery`.
+- `POST /auth/feedback-link`: verify a signed feedback link, sign the student in, and return the submission to open (the Results step).
+- `GET /me/projects`, `GET /gallery`, `GET /banners` (returns an empty list in v1).
 
 Frappe calls the Worker may use: the read calls in `api.py` (`get_student_by_phone_and_name`, `get_student_video_content`, `get_student_quiz_content`, `get_quiz_by_id`, `get_quiz_question_details`; the last one returns the correct answer, so only the Worker calls it), `submit_artwork`, `submission_feedback`, and reads of `Submission`, `Student` and `Student Enrollment`. The content read calls in `api.py` exist, but the live WhatsApp flow does not use them: it reads a Google Sheet (see `system-understanding.md`, 5.8). v1 uses hardcoded content, so the Worker does not need them.
 
@@ -114,8 +117,10 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 | Open | Effect on the build |
 |---|---|
 | Is `journey_2026` the deployed branch? | Test `submit_artwork` against dev and production early. |
-| O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the client's approval and the Glific team) | M5 stays on a fake message until it is approved |
+| O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the product team's approval and the Glific team) | M5 stays on a fake message until it is approved |
 | The WhatsApp nudge (R-66) needs a new Glific message and approval | Leave it out until it is approved |
+| Where the test content lives (B0): the quiz questions and the answer key are in a Google Sheet, not in the Frappe quiz tables | Find out first. B5, B11 and D4 wait for it. |
+| Do all test kids have a Glific contact with `student_id`, and do the siblings exist as separate `Student` records? | If not, the feedback job skips the kid, and the name picker shows one child. |
 
 ## 9. Testing
 

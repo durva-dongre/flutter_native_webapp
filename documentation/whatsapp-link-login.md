@@ -4,7 +4,7 @@
 
 **Update (2026-10-22):** version 1 now uses a link that carries the **phone**, and a **name picker** after login. This matches the "Who is learning" and "Switch profile" screens in the Figma. The first draft used one link for each student and no picker. See A3, A11 and the new risk 14.
 
-**Update 2 (2026-10-22, reviewed 2026-10-29):** progress, submissions and feedback now follow the [v1 requirements](v1-requirements.md). We assume the deployed backend is `frappe_tap` branch `journey_2026` (see [system-understanding.md](system-understanding.md)). `ProgramEnrollment` is the single progress record, with no copy in `Tapapp Learner` (R-48). Because the Summer Program engine is switched off there, we treat it as an empty table that `tapapp` fills. Submissions go through the existing `submit_artwork`. `frappe_tap` is in production, so we change none of its existing logic without the client's approval. This changes "Registration", "Progress between WhatsApp and the app" and the open questions below.
+**Update 2 (2026-10-22, reviewed 2026-10-29):** progress, submissions and feedback now follow the [v1 requirements](v1-requirements.md). We assume the deployed backend is `frappe_tap` branch `journey_2026` (see [system-understanding.md](system-understanding.md)). `ProgramEnrollment` is the single progress record, with no copy in `Tapapp Learner` (R-48). Because the Summer Program engine is switched off there, we treat it as an empty table that `tapapp` fills. Submissions go through the existing `submit_artwork`. `frappe_tap` is in production, so we change none of its existing logic without the product team's approval. This changes "Registration", "Progress between WhatsApp and the app" and the open questions below.
 
 **Codes used in these documents:** see [codes.md](codes.md).
 
@@ -72,7 +72,7 @@ If someone changes the phone in the link, the signature does not fit, and the Wo
 | A11 | The link carries an ID with a **type** in front. A login link carries the **phone** (`ph:919876543210`). A link about one child can carry the student (`st:ST00000123`). Later, the link can carry another kind of ID without a new format. The phone is inside the signed text, so nobody can change it, but anyone who sees the link can read it. We accept this, because the link goes to that phone's owner. |
 | A12 | A message about one child names the student ("Feedback for Asha is ready"). A login link for a phone does not name anyone. After login the app shows the name picker. With one child, the first screen says "Hi Asha" and has a "Not you?" button that opens the picker. |
 | A13 | When a student is picked (or opened by an `st:` link), the Worker checks that the student belongs to the phone and has a `Student Enrollment` in an active batch (the latest date of joining decides the active batch). It creates no new progress record (see "Registration"). |
-| A14 | We log events from the first day, so the client can measure drop-offs (see "Events to log"). |
+| A14 | We log events from the first day, so the product team can measure drop-offs (see "Events to log"). |
 | A15 | The link can say **where to go** after login (for example the feedback for one submission). The place is inside the signed text, so nobody can change it. The app accepts only places from a fixed list. |
 | A16 | One Frappe function creates every link. All notification jobs (content, reminders, escalations, feedback) call it. |
 | A17 | Each student has **one progress record**: the `ProgramEnrollment` (v1 requirements, R-48). Prototype `Tapapp Learner` rows hold no real data and are deleted before launch. If this changes, the old rule applies: one learner for each student, with a unique rule on the `student` field (or a lock in code). |
@@ -277,7 +277,7 @@ flowchart TD
 
 ### The phone-number screen
 
-The student types the phone number. The server finds the students with this phone (`Student.phone`). It sends **one** message with a link for that phone (limit LS6). If a student is found but has no Glific ID (`Student.glific_id`), no message can be sent. The screen still gives the same answer, so the student is stuck. We log this case (see "Events to log") and the client must decide how these students get a link (for example, a staff-made link).
+The student types the phone number. The server finds the students with this phone (`Student.phone`). It sends **one** message with a link for that phone (limit LS6). If a student is found but has no Glific ID (`Student.glific_id`), no message can be sent. The screen still gives the same answer, so the student is stuck. We log this case (see "Events to log") and the product team must decide how these students get a link (for example, a staff-made link).
 
 The screen always says: "If this number is registered, we sent a link to your WhatsApp." The text and the response time are the same for every number.
 
@@ -304,7 +304,7 @@ sequenceDiagram
 
 ## Events to log (A14)
 
-Log each event with the student ID (or learner ID), the time, and `src` where it makes sense. The client can then see where students stop.
+Log each event with the student ID (or learner ID), the time, and `src` where it makes sense. The product team can then see where students stop.
 
 Use the existing structured logging in Frappe (`emit` in `tap_lms/monitoring.py`). It writes JSON logs that go to Cloud Logging. Glific logs already go to BigQuery, and the two can be joined on `student_id` or `glific_id`. Log the student ID, **not** the phone number.
 
@@ -320,7 +320,7 @@ Use the existing structured logging in Frappe (`emit` in `tap_lms/monitoring.py`
 
 ## Progress between WhatsApp and the app
 
-The client wants students to switch between WhatsApp and the app without losing progress. The client's rule says there is one progress record for all channels. `ProgramEnrollment` is that record (v1 requirements, R-48). Decided in the review. On `journey_2026` nothing fills it today, so `tapapp` does.
+The product team wants students to switch between WhatsApp and the app without losing progress. The product team's rule says there is one progress record for all channels. `ProgramEnrollment` is that record (v1 requirements, R-48). Decided in the review. On `journey_2026` nothing fills it today, so `tapapp` does.
 
 Today there are two separate places for progress:
 - **WhatsApp system:** on `journey_2026` the Glific flows keep the journey. `frappe_tap` stores the submissions and the feedback. The Summer Program engine (`ProgramEnrollment` state machine, points) is switched off.
@@ -333,11 +333,11 @@ We compared the field lists and the main rules in the code (v1 requirements, sec
 - Feedback is requested when the work is submitted. A scheduled job in `frappe_tap` starts the Glific feedback flow at 15:00, 16:30 and 21:00 IST for every submission whose feedback is ready (v1 requirements, R-80 and O-28). The app and the Worker do not call `ready_to_receive_feedback`. The flow is changed to send the app link for an app student (O-28).
 - Quizzes: the live calls only read the questions. Nothing stores an attempt, an answer or a score, so `tapapp` runs the quiz for the app (v1 requirements, R-91).
 
-The existing calls cannot be changed without the client's approval, because they are in production. `submit_artwork` accepts calls that carry no key, and `submission_feedback` answers anyone who knows the submission id. So the Worker calls `submit_artwork` with its service key. New read-only methods in `tapapp` read the feedback and the valid or not valid result from `Submission`. See the v1 requirements: "Rules for our changes", R-89 and R-50.
+The existing calls cannot be changed without the product team's approval, because they are in production. `submit_artwork` accepts calls that carry no key, and `submission_feedback` answers anyone who knows the submission id. So the Worker calls `submit_artwork` with its service key. New read-only methods in `tapapp` read the feedback and the valid or not valid result from `Submission`. See the v1 requirements: "Rules for our changes", R-89 and R-50.
 
 ### Decision
 
-The client's rule says one progress record for all channels. `ProgramEnrollment` is that record, with no copy in `Tapapp Learner` (v1 requirements, R-48). The earlier idea "copy once, one side at a time" is dropped. You can find it in the git history.
+The product team's rule says one progress record for all channels. `ProgramEnrollment` is that record, with no copy in `Tapapp Learner` (v1 requirements, R-48). The earlier idea "copy once, one side at a time" is dropped. You can find it in the git history.
 
 ## What must be built or changed
 
@@ -377,7 +377,7 @@ These methods live in `tapapp`. The login methods only read `frappe_tap` data (s
 
 ### Glific
 
-**Approval.** Everything in this section changes Glific flows or WhatsApp templates that students receive. Adding links to the existing reminder, escalation and content messages also changes production behavior (the `pe_dispatcher` handlers and `feedback_consumer`). The client must approve these before we build them (v1 requirements, "Rules for our changes").
+**Approval.** Everything in this section changes Glific flows or WhatsApp templates that students receive. Adding links to the existing reminder, escalation and content messages also changes production behavior (the `pe_dispatcher` handlers and `feedback_consumer`). The product team must approve these before we build them (v1 requirements, "Rules for our changes").
 
 - One flow that Frappe starts for one contact. It reads the link (and the student's name, for a message about one child) from the flow variables and sends the template message. Frappe uses this same flow for the first message to a student and for the phone-number screen.
 - Glific does not call Frappe for this feature.
@@ -406,7 +406,7 @@ These methods live in `tapapp`. The login methods only read `frappe_tap` data (s
 | Q6 | Who creates the old-system records (`Student`) for students who join later without WhatsApp? |
 | Q7 | Do the school or shared-device flows (a teacher's phone with a class roster and a password) stay next to the parent flow? The code has `teacher`, `admin_code`, roster and bulk-update parts. If yes, the phone-number screen must apply only to parent phones. |
 | Q8 | Closed. On `journey_2026` students do not need an active `ProgramEnrollment`. The check is a `Student Enrollment` in an active batch. |
-| Q9 | Feedback and notifications: what exactly is sent, and when? Decided in the review: a scheduled job in `frappe_tap` starts the existing Glific feedback flow at 15:00, 16:30 and 21:00 IST for every submission whose feedback is ready. We change the flow so that it sends the app link for an app student and the feedback message itself for a WhatsApp-only student. The flow change needs the client's approval (v1 requirements, O-28). |
+| Q9 | Feedback and notifications: what exactly is sent, and when? Decided in the review: a scheduled job in `frappe_tap` starts the existing Glific feedback flow at 15:00, 16:30 and 21:00 IST for every submission whose feedback is ready. We change the flow so that it sends the app link for an app student and the feedback message itself for a WhatsApp-only student. The flow change needs the product team's approval (v1 requirements, O-28). |
 | Q10 | Closed here. TAP Buddy (the prototype's chat helper) and Ask TAP are now R-70 in the v1 requirements (v1: prepopulated questions only). |
 | Q11 | The name picker lists the students found with `Student.phone`. Are there students whose own record has a different phone (for example only a parent's phone in another field)? How many students can share one phone? The code accepts 10-digit and 12-digit phones and `phone` is not unique, so the data probably holds both forms. |
 
@@ -421,7 +421,7 @@ These methods live in `tapapp`. The login methods only read `frappe_tap` data (s
    - `history.replaceState` clears the address bar after login. We have **not** tested if Chrome history keeps the original address.
    - Also test that login by link works in Chrome, which starts with empty saved data.
 5. **Cost and abuse.** WhatsApp bills every template message. On the phone-number screen, anyone can type any number, so a stranger could trigger many messages to parents. A phone gets one link, however many children it has. The limits, the cap (LS6) and the bot check (LS5) are required.
-6. **Delivery.** If WhatsApp cannot deliver the message, the student sees nothing. Log delivery failures in Frappe. Check with the client if free-form messages within 24 hours of the student's last message are free for the Glific plan. We have not verified this.
+6. **Delivery.** If WhatsApp cannot deliver the message, the student sees nothing. Log delivery failures in Frappe. Check with the product team if free-form messages within 24 hours of the student's last message are free for the Glific plan. We have not verified this.
 7. **Long sessions on shared phones.** A 30-day login on a family phone stays open for anyone who picks it up. Add a visible "Log out" and the ability to cancel tokens (S8) before launch.
 8. **Two systems at the same time.** Until all channels use the one progress record (R-48), a student who uses both WhatsApp and the app can see different progress in each.
 9. **Teacher and class phones.** A teacher's phone may have a roster of up to 200 students. With a phone link, the name picker could list up to 200 children. Cap the list, or show it only for parent phones. Decide Q7 first.

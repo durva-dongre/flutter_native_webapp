@@ -20,11 +20,11 @@ We read the code. We did not run it. Where we could not check something, this no
 |---|---|
 | Profile and auth plumbing, the Postgres access, the shape of the content export | Keep, with changes |
 | Login with a password, the OTP reset, `check_phone`, `admin_code`, `teacher` | Remove |
-| `Tapapp Learner`, `Tapapp Auth Profile` | Remove. Progress goes into `ProgramEnrollment` (R-48) and children come from `Student`. |
+| `Tapapp Learner`, `Tapapp Auth Profile` | Do not copy them. They never existed on `journey_2026` and the prototype holds no real data, so no removal patch is needed. Progress goes into `ProgramEnrollment` and the new `Tapapp Step` table (R-48), and children come from `Student`. |
 | XP, streak, gems, level window, archetype, achievements, weekly cap | Remove from v1 (R-39, R-72, section 2 of the requirements) |
 | Both daily jobs (`nightly_window_maintenance`, `tapapp_analytics_report`) | Leave out of v1 |
 | Progress counters, the content export | Rewrite (sections 3 and 4) |
-| Quiz, submissions, points rules, valid-feedback check | Missing. Add (section 4). |
+| Quiz, submissions, points rules, valid-feedback check, the feedback link | Missing. Add (section 4). |
 
 ## 2. Fix first: security
 
@@ -56,20 +56,26 @@ These must be fixed before any real child uses the module.
 | **Progress counters** | `update_content_progress` keeps counters (`videos_completed`, `quizzes_completed`, `submission_index`) and uses the SQL function GREATEST, which keeps the larger number. | A row for each step (video marked as watched, each quiz answer, work sent), each with a key that stops the same step from being saved twice (the `idempotency_key`). | R-38, R-40 |
 | **Points** | The client sends the XP. `SUBMISSION_XP = 25` is given when a webhook arrives. | The server decides. Video +10, sharing the work +25 (at once), each correct quiz answer +1, correct submission +10 (after valid feedback only). Values are settings. | R-37, R-41, R-75 |
 | **Level** | A string, `"Level 1"` by default. | Worked out from the points with thresholds in settings. | R-41 |
-| **Profile edits** | Written to the Tapapp tables only. `school` cannot be edited. | Writing to `Student` is a change to production data and needs approval. Ask before you add it. | R-74, "Rules for our changes" |
+| **Profile edits** (P2, task B17) | Written to the Tapapp tables only. `school` cannot be edited. | Writing to `Student` is a change to production data and needs approval. Ask before you add it. Until then the screen shows the data and cannot save. | R-74, "Rules for our changes" |
 | **Content export** | `export_program_content` returns the whole payload in the HTTP answer. `include_r2` is not used. `export_content` reads the table `Citizenship Content` (the wrong one). It includes quiz data. | Write JSON files to R2 as in `content-spec.md`, one for each unit and language, with a manifest. Remove the correct answers from files the browser gets. | R-18, R-91 |
 
 ## 4. Missing: please add
 
 1. **The quiz on the server (R-91).** Start a quiz and answer one question. The server sends one question at a time, checks each answer, accepts answer N+1 only after answer N, and stores the attempt and every answer. The correct answer never goes to the browser.
-2. **Submissions (R-27, R-89).** Nothing links to `Submission` today. Add: give the app a short upload link (the Worker holds the Google Cloud service account), then call `submit_artwork(assignment_id, student_id, submission)` once for each upload. The call has no duplicate check, so do not send the same work twice.
+2. **Submissions (R-27, R-89; task B6).** Nothing links to `Submission` today. The **Worker** makes the short upload link, because it holds the Google Cloud service account (task C5). The **backend** gets the file link from the Worker, makes sure one upload is sent only once, and calls `submit_artwork(assignment_id, student_id, submission)`. The call has no duplicate check of its own, so the backend must supply one.
 3. **Valid or not valid (R-76, R-92).** Read `Submission.submission_validity`. A result with grade 0 or the text "technical issue" counts as **not valid**. Give the +10 only for a valid result. Nothing checks this today.
 4. **The valid-feedback gate (R-83).** The next activity opens only after the work is submitted and the feedback is valid.
 5. **"My projects" data (R-87),** from `Submission`, the points and steps you store, and the course assignments.
-6. **Placeholder tags (R-95).** A fixed set for every student. No field per student.
-7. **Deletion (R-96).** Photos, videos and the R2 copies are deleted when the student moves to a new batch.
-8. **A banner call that returns an empty list (R-94).** No event code in v1. We only leave room for it.
-9. **Tools for the test group:** register the kids who are missing, and a script that makes the magic links for the 30 to 100 kids.
+6. **Placeholder tags (R-95).** A fixed set for every student. The app keeps the list, so the backend needs no field and no call.
+7. **Deletion (R-96), after the test release (task B13, Later).** Photos, videos and the R2 copies are deleted when the student moves to a new batch. This is a once-a-year rule, so it is not part of the test release.
+8. **No banner call in the backend.** The Worker returns the empty banner list (R-94). No event code in v1. We only leave room for it.
+9. **Tools for the test group:** register the kids who are missing, check that each test kid has a Glific contact with the field `student_id` (without it the feedback job skips the kid and does not retry), and a script that makes the magic links for the 30 to 100 kids.
+10. **The feedback link for app students (O-28, Option B; task B14).** (a) Right after the upload, set `feedback_flow_id` on the `Submission` to the new Glific flow for app students. (b) Record that the student is an app student at the first login with the link. Store this flag in a `tapapp` table (for example the student id and the time of the first login), not as a new field on `Student`, so it needs no approval for a `Student` write. (c) A webhook that makes the signed feedback link, which carries the student and the Results step (R-50). This needs the product team's approval and the Glific team's new flow.
+11. **Find where the test content lives first (task B0).** The lead's Glific flow reads the video links, the quiz questions, the answer key and the assignment ids from a Google Sheet, not from the Frappe quiz tables. `submit_artwork` fails when the assignment id is not in Frappe. Check this before you build the quiz. Also decide, in the same task, where the quiz answer key is kept on the server: a small Frappe table, or private storage that the Worker reads. The answer key must never be in the files that the CDN serves.
+12. **Audio clips, example works and the quiz answer key (task B18).** Build the part of the content that is not the unit and flow files: the audio clips with their status (a clip is out of date when its text changed, R-54, R-55), the curriculum's example works (R-58), and the quiz answer key for the server only. This is needed even if the first test bundles the content in the app.
+13. **Smaller points:** +1 point for each correct quiz answer (R-75). The level thresholds (the points needed for each level) go in the settings (R-41). The idempotency key for an upload is made for each upload attempt, so "send again" after an invalid result (R-76) makes a new `submit_artwork` call.
+
+**P2 tasks (they can follow the first test; the plan and the effort are in `v1-task-breakdown.md`):** saving the student's chat on the server (task B15, R-84); sending the app's events to BigQuery in the same format as the WhatsApp events (task B16, O-18); and the edit-profile route (task B17, R-74).
 
 ## 5. Leave out of v1
 
@@ -90,7 +96,7 @@ We compared the two branches. Copy **only** `tapapp/` and its DocTypes. These it
 | **`hooks.py`** | The two daily jobs are not on `journey_2026`. Do not add them in v1. The `hooks.py` on `pal-v2` also has live `ca.*` entries and a comment block (lines 49-77) that mention the `ca` module. **Do not copy those.** |
 | **Python packages** | The code imports `jwt` and `psutil`. `requirements.txt` on `journey_2026` does not list them. Frappe normally installs them, but we did not verify it. If login moves to the Worker, `jwt` is not needed. |
 | **Tests** | The files in `tapapp/test/` need a live server and fixed test data. Do not ship them as unit tests. |
-| **Migrations** | There are no `tapapp` patches or fixtures to carry. DocType files are picked up by `bench migrate`. Removing `Tapapp Learner` or adding a unique index needs a patch. |
+| **Migrations** | There are no `tapapp` patches or fixtures to carry. DocType files are picked up by `bench migrate`. Because you do not copy the old DocTypes, nothing needs removing and no patch is needed. Only the new DocTypes are created (`Tapapp Step` and the settings). The unique index on `idempotency_key` is part of the new DocType. |
 
 **Good news.** The module does not import `summer_program`, `journey`, `api.py`, `glific_*` or `ca.*`, so it is self-contained. It uses raw Postgres SQL, and `journey_2026` is also Postgres.
 
@@ -98,21 +104,19 @@ We compared the two branches. Copy **only** `tapapp/` and its DocTypes. These it
 
 ## 7. Suggested order (smallest useful step first)
 
-1. Copy `tapapp/` and its DocTypes only. Solve the `Secrets` problem. Do not copy the daily jobs or the `ca` hooks. Check that `bench migrate` passes on `journey_2026`.
+0. **Find where the test content lives (B0)** before you build the quiz (see section 4, item 11).
+1. Copy the `tapapp/` code only. Do not copy the old DocTypes (`Tapapp Learner`, `Tapapp Auth`, `Tapapp Auth Profile` and the others), the daily jobs or the `ca` hooks. Solve the `Secrets` problem. Check that `bench migrate` passes on `journey_2026`.
 2. **Close the security holes** (section 2): no guest access, one Worker credential on every call, a check that the student belongs to the phone.
-3. **Remove the password and OTP code,** `Tapapp Learner`, `Tapapp Auth Profile`, streaks, gems, archetype, the weekly cap and both jobs. Read the children from `Student`.
+3. **Leave out the password and OTP code,** `Tapapp Learner`, `Tapapp Auth Profile`, streaks, gems, archetype, the weekly cap and both jobs (do not carry them over). Read the children from `Student`.
 4. **Add the new `Tapapp Step` table,** one row for each step, linked to `ProgramEnrollment`, with a unique idempotency key. Keep only the summary numbers on `ProgramEnrollment`. Add a small settings table for the point values and the video minimum time.
 5. **Add the server quiz.**
 6. **Add the submission call and the valid-feedback check,** and the +10 award.
-7. **Add "My projects", the placeholder tags and the empty banner call.**
+7. **Add the data for "My projects" and the feedback link (B14).** The placeholder tags and the empty banner list are not in the backend.
 8. **Fix the content export** to write the CDN files from `content-spec.md`.
-9. **Add the deletion on batch change** and **rewrite the tests** as Frappe unit tests.
+9. **Rewrite the tests** as Frappe unit tests. (The deletion on batch change comes after the test release, task B13.)
 
 Please send us the plan for steps 1 to 4 before you start. If anything in the requirements is not clear, ask. Do not guess.
 
-## 8. Please check these for us
+## 8. Please check this for us
 
-- Where do the `Tapapp Auth Profile` rows come from today? We found no code that creates them.
-- Do any users with the role `Student` exist? If they do, the read access that this role has on `Tapapp Learner` matters.
-- Are `PyJWT` and `psutil` installed on the production server?
-- Is anything outside `tapapp/` and `hooks.py` using these DocTypes? We found nothing.
+- Are `PyJWT` and `psutil` installed on the production server? (If login moves fully to the Worker, `jwt` is not needed.)
