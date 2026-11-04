@@ -39,7 +39,7 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 | See the v1 tasks and effort               | [v1 task breakdown](v1-task-breakdown.md)           |
 | Change screens, providers, or caching     | [Frontend](frontend.md)                             |
 | Understand onboarding and classroom rules | [Learning Flows](learning-flows.md)                 |
-| Call endpoints from Postman               | [API Reference](api-reference.md)                   |
+| Call the prototype Worker from Postman (old, before v1) | [API Reference](api-reference.md) |
 | Maintain Frappe jobs and DocTypes         | [Frappe Backend](frappe-backend.md)                 |
 | Add a course, language, flow, or image    | [Content and Assets](content-and-assets.md)         |
 | Release the app and Worker                | [Deployment](deployment.md)                         |
