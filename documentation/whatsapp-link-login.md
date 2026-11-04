@@ -153,15 +153,14 @@ We use Frappe's built-in API token for a service user:
 
 **Step 1: `link_login(phone)`, when the link is opened.**
 1. Find the students with this phone (`Student.phone`) that have an enrollment in an active batch. If there are none, refuse.
-2. Find the phone's `Tapapp Auth` record. If there is none, create it from the phone. (This is a record in `tapapp`, not in `frappe_tap`.)
-3. Return the list of students (student ID, first name, grade, course) and, for each, whether onboarding is finished. Cap the list (see risk 9).
+2. Return the list of students (student ID, first name, grade, course) and, for each, whether onboarding is finished. Cap the list (see risk 9).
 
 **Step 2: `select_student(phone, student_id)`, when the student picks a name (or the app opens the only child, or an `st:` link is used).**
 1. Check that the student belongs to this phone and has an enrollment in an active batch.
 2. Return the student ID, the name, and whether onboarding is finished.
 
 Rules:
-- Brothers and sisters share a phone. The first call creates the `Tapapp Auth` record. Each child's pick only returns that child.
+- Brothers and sisters can share a phone. `link_login` returns all the children with that phone. It reads them from `Student` and saves nothing in Frappe. The Worker signs the login tokens. When a child is picked, `select_student` returns the data of that child only.
 - A link preview should not log anyone in. The token is after `#`, which is not sent to the server, and preview tools do not run the app. We should test this.
 
 **If R-48 changes** (the prototype model), `select_student` also gets or creates a `Tapapp Learner` and its profile row. That must be safe against a second tap or two taps at the same time (A17).
@@ -349,7 +348,7 @@ These methods live in `tapapp`. The login methods only read `frappe_tap` data (s
 |---|---|---|
 | `make_webapp_link(id, dest)` (internal, not a web method; `id` is a phone or a student) | Called by Frappe code only | Creates the signed link (A16). The notification jobs call it (content delivery, reminders, escalations, feedback ready). It does not send anything. |
 | `send_link_to_student(student, dest)` (internal, not a web method) | Called by Frappe code only (a job, an event, or `send_login_links`) | Calls `make_webapp_link`. Finds the Glific contact (`Student.glific_id`). Starts the Glific flow with `start_contact_flow`, passing the link and the name in `default_results`. A later version can change the channel here. |
-| `link_login(phone)` | Only the Worker's service user (API token, role check) | Finds the students of the phone. Creates the phone's `Tapapp Auth` record if needed. Returns the list of students. |
+| `link_login(phone)` | Only the Worker's service user (API token, role check) | Finds the students of the phone. Stores nothing. Returns the list of students. |
 | `select_student(phone, student_id)` | Only the Worker's service user (API token, role check) | Checks that the student belongs to the phone and has an enrollment in an active batch. Returns the student ID, name and onboarding status. |
 | `send_login_links(phone)` | Only the Worker's service user (API token, role check) | Finds students with this phone. If there are any, sends one link for the phone (LS6). Gives the same answer and takes the same time for every phone. Logs every send and every failure. |
 | `check_phone`, `login_with_password`, `forgot_password_*`, `reset_password` | Anyone (guest) | Not used for students (A9). They are in `tapapp_auth.py`, so we own them. Lock or remove them so they cannot be called. This closes known gaps S1, S2 and S4. If teachers use passwords, keep that path separate. |

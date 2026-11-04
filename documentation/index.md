@@ -35,6 +35,7 @@ The Flutter app calls the Worker URL defined in `lib/core/constants/app_constant
 | Start building in a new chat              | [Build bootstrap](build-bootstrap.md)               |
 | Fix `tapapp` before it moves to `frappe_tap` | [tapapp changes](tapapp-changes.md)              |
 | Start the backend work (handoff note)    | [handoff: backend](handoff-backend.md)           |
+| See the Worker to backend calls          | [API contract](api-contract.md)                     |
 | See the v1 tasks and effort               | [v1 task breakdown](v1-task-breakdown.md)           |
 | Change screens, providers, or caching     | [Frontend](frontend.md)                             |
 | Understand onboarding and classroom rules | [Learning Flows](learning-flows.md)                 |
