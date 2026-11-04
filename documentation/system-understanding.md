@@ -248,7 +248,7 @@ This is the flow the lead developer gave us (`Tlm26_MainFlow_FirstStep.json`, 20
 | The student and their children by phone | `Student` (phone 12 digits, own `glific_id`, name, grade, language, enrollments) | Siblings: see section 9. |
 | The active batch and course | `Student Enrollment` (latest date joined), `Course Level` | Read by `tapapp`. |
 | This week's activity (video, quiz, assignment) | `Weekly Student Flow` (week) plus `Course Level`, `Learning Unit`, `VideoClass`, `Quiz`, `Assignment` | The team sets it by hand each week for the whole batch, and where is not verified (v1 requirements, R-93). |
-| Quiz questions and the correct answer | `Quiz Question` and its options | The Worker must remove the correct answer before it reaches the browser (R-91). |
+| Quiz questions and the correct answer | `Quiz Question` and its options | The correct answer must not be in the CDN files. It goes to the app only with the quiz start call, and the server checks the answers again (R-91). |
 | Save "video watched", quiz answers, points, level | **Nothing** | New records in `tapapp` or `frappe_tap` (R-87, R-90). |
 | Submit work | `submit_artwork(assignment_id, student_id, submission)` | Open to anyone. The Worker must call it. R-89. |
 | The student's own submitted file | `Submission.submission_url` in the Authenticated bucket | Plain link. The Worker reads GCS with a service account (R-88). |
@@ -284,7 +284,7 @@ This is the flow the lead developer gave us (`Tlm26_MainFlow_FirstStep.json`, 20
 3. **Answered (2026-11-02):** the TLM26 flow reads the activity from a Google Sheet for each batch group, not from `Weekly Student Flow` (section 5.8). Nothing is needed for v1. For v1.1 we still need to know where the team updates the sheet each week.
 4. **Siblings:** how the second child gets a `Student` record is outside this project. We assume it is done (R-34). Please tell us if the plan changes.
 5. **Answered (2026-11-02):** quiz results and points live in Glific contact fields (`total_points`, `activity_points`, `streak`, `special_gems`), not in Frappe (section 5.3).
-6. **Is "Enable Batch Feedback Delivery" on in production?**
+6. **Is "Enable Batch Feedback Delivery" on in production, and on the dev server?** The v1 test runs on the dev server (A18).
 7. **Does anything still call `ready_to_receive_feedback`?**
 8. **Is `tap_plg` / `rag_service` / `tap_ai` on a newer branch** than the health and monitoring branches on this machine? Does production use one shared RabbitMQ broker or one per server?
 9. **Which `rag_service` models are used in production** (the code names Gemini models; the install notes mention a Groq key)?

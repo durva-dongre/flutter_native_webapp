@@ -135,6 +135,8 @@ Add tests as you go. Start with: the ownership checks, the weekly cap under para
 
 ## 7. Which Frappe repo each finding applies to
 
+> **Old (2026-11-04).** This section plans to merge `pal-v2` into `pal-v2-health`. That plan is out of date. Decided: `tapapp` lives only in `frappe_tap`, branch `journey_2026`, and only the `tapapp` module moves (R-46, task B1). Read the rest of this section only for background.
+
 The backend review read the `tapapp` code in the fork `frappe_tap_dd`, branch `pal-v2`. The plan is to merge it into `frappe_tap`, branch `pal-v2-health` (the branch with the extra logging, not yet in the main branch). The `tapapp` review above was done on the fork. We later read parts of `frappe_tap` (branch `pal-v2-health`), `tap_plg` and `rag_service`, only for the submission pipeline (section 8). These backend items still need a re-check after the merge: the scheduler queue and timeout (B6, section 4), who holds the `Student` role (B2), and the logging notes.
 
 **How the two branches relate** (compared inside the fork, which has both):

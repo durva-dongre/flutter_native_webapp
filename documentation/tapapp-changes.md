@@ -44,13 +44,13 @@ These must be fixed before any real child uses the module.
 10. **Fixed values in code:** the OTP, the token lifetimes, `SUBMISSION_XP = 25`, `max_weekly_activities or 2`, the owner `'Administrator'` on raw inserts (`achievements.py:63`, `learner.py:400`), and the level `"Level 1"`. R-41 says these must be settings on the server.
 11. **Raw SQL with column names built from the request** (`set_clause`, `col_list`). The names are checked against a list today, so it is safe now, but a small change could make it unsafe.
 
-**What to do.** Remove `allow_guest` from all of these. Every call must take **one Worker credential** (an API key or an HMAC), and the Worker tells you the phone and the student. Check on each call that the student belongs to that phone (R-81). Never trust a typed phone number (R-33).
+**What to do.** Remove `allow_guest` from all of these. Every call must take **one Worker credential** (an API key or an HMAC), and the Worker tells you the phone and the student. The Worker checks once, at `select_student`, that the student belongs to the phone. After that, every call carries the `student_id` and not the phone (R-81). Use that `student_id`. Never trust a typed phone number (R-33) or a `student_id` that comes from the request body.
 
 ## 3. Change to match the requirements
 
 | Area | Today | What we need | Requirement |
 |---|---|---|---|
-| **Login** | A password. Teacher and class model (`teacher`, `admin_code`, grade, division, roll number). | A signed WhatsApp magic link that carries the phone. The **Worker** checks the link and signs the token. The backend trusts only the Worker. No password and no OTP. | R-31 to R-34, R-81, `whatsapp-link-login.md` |
+| **Login** | A password. Teacher and class model (`teacher`, `admin_code`, grade, division, roll number). | A signed WhatsApp magic link that carries the phone. **Frappe may create the link** (one function makes every link, A16), using a secret that it shares with the Worker. The **Worker** checks the link and issues the access tokens. Frappe does not issue login tokens and does not store a one-time token. The backend trusts only the Worker. No password and no OTP. | R-31 to R-34, R-81, `whatsapp-link-login.md` |
 | **Children of a phone** | A `Tapapp Auth` row for each phone, with a profile table. Nothing in `tapapp` creates the profile rows (not verified where they come from). `Auth Profile.student` is a link that is not unique. | Read the children from `Student where phone = X`, in both the 10-digit and 12-digit forms. Only students with an enrollment in an active batch. No profile table. | R-34, LS4 |
 | **Progress record** | `Tapapp Learner` with `xp`, `level`, `streak` and more, plus `Tapapp Enroll`. | One record, `ProgramEnrollment`. It is empty today because the old Summer Program engine is off. It keeps only the summary numbers (the point fields it already has). Every step is a row in a new table, `Tapapp Step`, that links to it. No second copy. | R-48 |
 | **Progress counters** | `update_content_progress` keeps counters (`videos_completed`, `quizzes_completed`, `submission_index`) and uses the SQL function GREATEST, which keeps the larger number. | A row for each step (video marked as watched, each quiz answer, work sent), each with a key that stops the same step from being saved twice (the `idempotency_key`). | R-38, R-40 |
@@ -61,7 +61,7 @@ These must be fixed before any real child uses the module.
 
 ## 4. Missing: please add
 
-1. **The quiz on the server (R-91).** Start a quiz and answer one question. The server sends one question at a time, checks each answer, accepts answer N+1 only after answer N, and stores the attempt and every answer. The correct answer never goes to the browser.
+1. **The quiz on the server (R-91).** Start a quiz and send the answers. The start call returns all questions with the correct answers (decided on 2026-11-04), so the app can show right or wrong at once, also without a network. The app sends all answers when the quiz ends. The server checks every answer again, stores the attempt and every answer, and gives the points. The correct answers must not be in the CDN files.
 2. **Submissions (R-27, R-89; task B6).** Nothing links to `Submission` today. The **Worker** makes the short upload link, because it holds the Google Cloud service account (task C5). The **backend** gets the file link from the Worker, makes sure one upload is sent only once, and calls `submit_artwork(assignment_id, student_id, submission)`. The call has no duplicate check of its own, so the backend must supply one.
 3. **Valid or not valid (R-76, R-92).** Read `Submission.submission_validity`. A result with grade 0 or the text "technical issue" counts as **not valid**. Give the +10 only for a valid result. Nothing checks this today.
 4. **The valid-feedback gate (R-83).** The next activity opens only after the work is submitted and the feedback is valid.
@@ -75,7 +75,7 @@ These must be fixed before any real child uses the module.
 12. **Audio clips, example works and the quiz answer key (task B18).** Build the part of the content that is not the unit and flow files: the audio clips with their status (a clip is out of date when its text changed, R-54, R-55), the curriculum's example works (R-58), and the quiz answer key for the server only. This is needed even if the first test bundles the content in the app.
 13. **Smaller points:** +1 point for each correct quiz answer (R-75). The level thresholds (the points needed for each level) go in the settings (R-41). The idempotency key for an upload is made for each upload attempt, so "send again" after an invalid result (R-76) makes a new `submit_artwork` call.
 
-**P2 tasks (they can follow the first test; the plan and the effort are in `v1-task-breakdown.md`):** saving the student's chat on the server (task B15, R-84); sending the app's events to BigQuery in the same format as the WhatsApp events (task B16, O-18); and the edit-profile route (task B17, R-74).
+**Needed in v1 (P1):** saving every interaction of the student, including the chat, and sending it to a new BigQuery table in the same format as the WhatsApp events if possible (tasks B15 and B16, R-84, O-18). **P2 (it can follow the first test):** the edit-profile route (task B17, R-74). The plan and the effort are in `v1-task-breakdown.md`.
 
 ## 5. Leave out of v1
 
@@ -106,7 +106,7 @@ We compared the two branches. Copy **only** `tapapp/` and its DocTypes. These it
 
 0. **Find where the test content lives (B0)** before you build the quiz (see section 4, item 11).
 1. Copy the `tapapp/` code only. Do not copy the old DocTypes (`Tapapp Learner`, `Tapapp Auth`, `Tapapp Auth Profile` and the others), the daily jobs or the `ca` hooks. Solve the `Secrets` problem. Check that `bench migrate` passes on `journey_2026`.
-2. **Close the security holes** (section 2): no guest access, one Worker credential on every call, a check that the student belongs to the phone.
+2. **Close the security holes** (section 2): no guest access, one Worker credential on every call, every call uses the `student_id` that the Worker sends (R-81).
 3. **Leave out the password and OTP code,** `Tapapp Learner`, `Tapapp Auth Profile`, streaks, gems, archetype, the weekly cap and both jobs (do not carry them over). Read the children from `Student`.
 4. **Add the new `Tapapp Step` table,** one row for each step, linked to `ProgramEnrollment`, with a unique idempotency key. Keep only the summary numbers on `ProgramEnrollment`. Add a small settings table for the point values and the video minimum time.
 5. **Add the server quiz.**

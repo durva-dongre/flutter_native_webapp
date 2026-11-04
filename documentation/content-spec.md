@@ -8,7 +8,7 @@
 - The curriculum team writes content in **Frappe** (the master copy). Today that already holds courses, units, videos, quizzes and assignments with translations.
 - A **Publish** step turns that content into **versioned files** and puts them in object storage (R2) behind a CDN.
 - The app downloads the files. It never reads Frappe for content. This keeps load off `frappe_tap` (R-78).
-- Everything the app shows from content is in these files, except the **quiz answers**. Those stay on the server (R-91).
+- Everything the app shows from content is in these files, except the **quiz answers**. Those stay on the server and come to the app with the quiz start call, not through the CDN (R-91).
 
 ## 2. Who does what (proposed)
 
@@ -90,7 +90,7 @@ One file for each unit and language. It holds what the Watch, Make and Quiz step
 ```
 
 Rules:
-- **No answer key.** The correct option of each question stays on the server. The server checks each answer (R-91).
+- **No answer key in these files.** The correct option of each question stays on the server. It reaches the app with the quiz start call, and the server checks every answer again (R-91).
 - In v1, `submission_types` holds `image` and `video` (R-9). Text and voice are later (R-63, R-10).
 - Quiz questions are text only in v1 (R-67).
 - A question picture, if it comes later, is a field `image` with a file path.

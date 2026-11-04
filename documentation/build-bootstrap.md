@@ -23,7 +23,7 @@ Out of scope for v1: teacher or parent roles, the installed app, voice recording
 - **Simple English.** The team are not native speakers: short sentences, common words, in chat and in docs.
 - **Ask only blocking questions.** If a safe default exists, state it and continue.
 - **Say "done" only after the user says yes.** Do not claim a change is finished before that.
-- **Do not change production `frappe_tap` logic** without the product team's approval. The list of items that need approval is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
+- **The v1 test runs on the dev server, not on production.** Do not change production `frappe_tap` logic, and do not deploy to production, without the product team's approval. The list of items that need approval is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
 - **The Frappe key lives only in the Worker** (R-82). The app and the browser never see it.
 - **Flutter is pinned to 3.47.1** (`pubspec.yaml`: `>=3.47.1 <3.48.0`). Build releases with `scripts/build_web.sh`, not plain `flutter build web`.
 - **Follow `architecture-tenets.md`:** dependencies go `app → features → shared → domain → core`. A feature never uses another feature. Repositories are the only way to data. Screens stay thin. Move code or change code, not both in one commit. Check with `dart scripts/check_architecture.dart`.
@@ -82,8 +82,8 @@ Each milestone can start now. The "stub" column says what to fake until an answe
 |---|---|---|---|---|
 | M0 | Clean up the prototype | Remove the Groq code and the AI review. Remove hard-coded values. Bundle fonts. Replace the loader GIF. Make errors friendly with a Retry button. | `production-readiness.md` (AP1 to AP9), R-43, R-44 | none |
 | M1 | App shell | Three tabs (Home, Gallery, Me). "Who is learning". Welcome back. Offline screen with Retry (R-71). Settings and Edit profile. The TAP Buddy picture is the profile picture (R-60). No photos of students. All text in Hindi and English, with one translated fallback for "Champ" (R-23 to R-25). The Gallery tab has an empty state with example works. | R-1 to R-8, R-60, R-71, R-73, R-74 | fake data behind repositories (R-53) |
-| M2 | Login and Worker | Verify the signed WhatsApp link, issue a login token, list the phone's children, `select_student`. The Worker checks that the student belongs to the phone on every call (R-81). Rate limits. | `whatsapp-link-login.md`, R-31 to R-34, R-81, R-82 | siblings: assume they exist |
-| M3 | Activity: Watch and Quiz | Watch step with an "I watched it" button that turns on after 5 minutes (R-90). The quiz runs on the server: one question at a time, the answer checked on the server, the order checked, every answer stored (R-91). Steps saved at once (R-40). | R-61, R-62, R-67, R-90, R-91 | content from local JSON |
+| M2 | Login and Worker | Verify the signed WhatsApp link, issue a login token, list the phone's children, `select_student`. The Worker checks that the student belongs to the phone at `select_student`; after that every call carries the `student_id` (R-81). Rate limits. | `whatsapp-link-login.md`, R-31 to R-34, R-81, R-82 | siblings: assume they exist |
+| M3 | Activity: Watch and Quiz | Watch step with an "I watched it" button that turns on after 5 minutes (R-90). The quiz starts with one server call that returns all questions with the correct answers. The app gives feedback at once, also offline, and sends the answers when the quiz ends. The server checks them again and stores every answer (R-91). Steps saved at once (R-40). | R-61, R-62, R-67, R-90, R-91 | content from local JSON |
 | M4 | Activity: Make | Photo or video capture. Resize photos to JPEG on the phone (R-12). Upload through a temporary link. The Worker calls `submit_artwork` (R-89). Retry on failure (R-13). A message when the camera is refused (R-11). | R-9, R-11 to R-15, R-63, R-64, R-89 | the upload target: a test bucket |
 | M5 | Results and points | The Results chat: feedback messages with speaker icons, "Yes" button, the "YOU WON" card (R-68). Points for each step. Valid or not valid, and "send again" (R-76). "Points will be provided after feedback" label. The waiting screen and the "taking longer than expected" state. The audio player that is hidden when a clip is missing (R-17, R-54, R-55). The picture badge, also when Make is postponed (R-69). | R-68, R-69, R-75, R-76, R-83, R-92, F-6 | feedback from a fake record; the message and link: a fake "feedback ready" message |
 | M6 | Progress in `tapapp` | The new `Tapapp Step` table (one row for each step, with a unique key so a repeat is saved once), linked to `ProgramEnrollment`, which keeps the summary points. Keep it behind an interface, so the storage can change later. The level is worked out from the points. | R-37 to R-41, R-48, R-87 | none; mark every write to a production table |
@@ -99,7 +99,7 @@ Each milestone can start now. The "stub" column says what to fake until an answe
 Names are suggestions. Keep them small and put the checks in the Worker.
 
 - `POST /auth/link`: verify a signed link, return a phone token and the children of the phone.
-- `POST /auth/select-student`: check the child belongs to the phone, return a student token.
+- `POST /auth/select-student`: check the child belongs to the phone, return a student token. Later calls use the `student_id` in the token, not the phone (R-81).
 - `GET /home`: the student, the points and the next activity for the student (from the hardcoded flow content).
 - `POST /steps`: save a step (video watched, quiz answered, work sent). Needs an idempotency key.
 - `POST /quiz/start` and `POST /quiz/answer`: run the quiz.
@@ -116,7 +116,7 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 
 | Open | Effect on the build |
 |---|---|
-| Is `journey_2026` the deployed branch? | Test `submit_artwork` against dev and production early. |
+| Is `journey_2026` the deployed branch? | Test `submit_artwork` against the dev server early (the v1 test runs there). Test production before any later production release. |
 | O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the product team's approval and the Glific team) | M5 stays on a fake message until it is approved |
 | The WhatsApp nudge (R-66) needs a new Glific message and approval | Leave it out until it is approved |
 | Where the test content lives (B0): the quiz questions and the answer key are in a Google Sheet, not in the Frappe quiz tables | Find out first. B5, B11 and D4 wait for it. |
@@ -127,7 +127,7 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 - `flutter analyze`, `flutter test`, `dart scripts/check_architecture.dart`, `npm run format:check`, `cd worker && npx wrangler deploy --dry-run`.
 - Test inside the **WhatsApp browser** on a real Android phone, not only in Chrome. Known limits: no speech synthesis, no background sending, camera, microphone and storage work. The video type is decided by the URL extension first (`.webm` becomes video).
 - Add tests for: the Worker's student-belongs-to-phone check, the quiz order check, idempotent steps, and the "not valid" rule.
-- Ask the lead developer to test `submit_artwork` on production with no header, a wrong header and a valid header.
+- Ask the lead developer to test `submit_artwork` on the dev server with no header, a wrong header and a valid header. Do the same on production before any production release.
 - There is no CI. The checks run on a developer's machine with one command, and a git pre-push hook runs the quick ones. Both are task E4 in `v1-task-breakdown.md`. Run the full set before each release.
 
 ## 10. When you change a requirement

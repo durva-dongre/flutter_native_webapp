@@ -168,7 +168,7 @@ Rules:
 
 ## Login token
 
-The Worker signs the token with the shared token secret. It has the same claims as today (`phone`, `type: access`, `iat`, `exp`, `jti`), plus one new one: `sid` (student ID). If `Tapapp Learner` ever stays (R-48 says it does not), there is also `lid` (learner ID). Frappe ignores claims it does not know, so it still accepts the token. Frappe still checks that `phone` matches the request. Later releases can move the checks from `phone` to `sid`, and then drop `phone`.
+The Worker signs the token with the shared token secret. It has the same claims as today (`phone`, `type: access`, `iat`, `exp`, `jti`), plus one new one: `sid` (student ID). If `Tapapp Learner` ever stays (R-48 says it does not), there is also `lid` (learner ID). Frappe ignores claims it does not know, so it still accepts the token. From 2026-11-04 (R-81), the Worker checks the phone only once, at `select_student`. After that, every call to Frappe carries the `student_id` (`sid`) from the token, and Frappe checks the credential and uses that `student_id`. A brother or a sister who shares the phone, or who signs in from another device, can never reach the other child's data. The `phone` claim stays in the token only for the name picker.
 
 With a phone link, the Worker first gives the app a token that has only the phone. After the student picks a name (`select_student`), the Worker gives a new token with `sid`. Calls that are about one student (submissions, progress, feedback) are refused with the first token.
 
