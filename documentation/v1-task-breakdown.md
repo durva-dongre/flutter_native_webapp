@@ -11,7 +11,7 @@
 - **What stays manual:** the WhatsApp in-app browser, the phone camera and video playback cannot be automated. They are tested by hand on real phones (E2) with a written checklist.
 - **Priority.** **P1**: needed for the mid-November test release. **P2**: in the requirements for v1, but it can follow the first test, or we ask if the test group needs it (see A16). **Later**: not in the test release. Other later items (events, a stronger login, tiered rewards and so on) are not listed. See section 2 of the requirements.
 - **Depends on** lists the tasks that must be done (or at least started) first. A to E are the groups below.
-- **Assumptions:** the test runs on the dev server, not on production. `journey_2026` is the deployed branch. The test group is 30 to 100 pre-registered kids. The flow is hardcoded: greeting, video, submission, quiz. Each kid gets a magic link. The three daily feedback windows stay as they are.
+- **Assumptions:** the test runs on the dev server, not on production. `journey_2026` is the deployed branch (confirmed). The test group is 30 to 100 pre-registered kids. The flow is hardcoded: greeting, video, submission, quiz. Each kid gets a magic link. The three daily feedback windows stay as they are.
 - **Dates.** The test release is in mid-November. This list was updated on 3 November, so about 9 to 13 working days remain.
 
 ## Totals (days)
@@ -109,7 +109,7 @@
 
 | ID | Item | Who | Needed by |
 |---|---|---|---|
-| A1 | Confirm in writing that `journey_2026` is the deployed branch. Test `submit_artwork` on the dev server (the test runs there) with no header, a wrong header and a valid header. Do the same on production before any production release. | Lead developer | before B1 |
+| A1 | `journey_2026` is the deployed branch (confirmed 2026-11-04). Still open: test `submit_artwork` on the dev server (the test runs there) with no header, a wrong header and a valid header. Do the same on production before any production release. | Lead developer | before B2 |
 | A2 | Approvals from the product team for changes in `frappe_tap`: the `tapapp` module, the new `Tapapp Step` table, writes to the existing point fields of `ProgramEnrollment`, and `Student` writes (see "Rules for our changes"), and the feedback link message and its Glific flow change (O-28). | You, with the product team | before we deploy to production. The test on the dev server does not wait for it. |
 | A3 | Content for the hardcoded flow (video links, quiz questions, assignment text, messages, audio, example works) in Hindi and English. | Manu coordinates | before B0, B11, B18 and D11 |
 | A4 | Figma fixes F-1 to F-8: no deadline countdown, the waiting-state label, the "I watched it" button, the 40 versus 50 points mismatch. A copy of the Figma file for read access. | Designer | before D3 to D6 |

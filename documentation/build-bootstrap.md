@@ -116,7 +116,7 @@ The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, 
 
 | Open | Effect on the build |
 |---|---|
-| Is `journey_2026` the deployed branch? | Test `submit_artwork` against the dev server early (the v1 test runs there). Test production before any later production release. |
+| Header check on `submit_artwork` (the branch is confirmed: `journey_2026`) | Test `submit_artwork` against the dev server early (the v1 test runs there). Test production before any later production release. |
 | O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the product team's approval and the Glific team) | M5 stays on a fake message until it is approved |
 | The WhatsApp nudge (R-66) needs a new Glific message and approval | Leave it out until it is approved |
 | Where the test content lives (B0): the quiz questions and the answer key are in a Google Sheet, not in the Frappe quiz tables | Find out first. B5, B11 and D4 wait for it. |

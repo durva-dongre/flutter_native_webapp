@@ -2,7 +2,7 @@
 
 **For:** the TapApp team. Use this page so you do not have to read the backend code each time.
 **Based on:** `frappe_tap`, branch `journey_2026` (last commit 2026-10-27), read on 2026-10-29. It replaces the older `TAP_LMS_System_Understanding.md` from branch `pal-v2-health` for everything TapApp needs.
-**Assumption:** the team deploys one branch and the lead developer knows which. We assume that branch is `journey_2026`. Flows and code on every other branch are not relevant. If this is wrong, this page and the requirements that follow it need a second pass.
+**Confirmed (2026-11-04):** the deployed branch is `journey_2026`. Flows and code on every other branch are not relevant.
 **How it was checked:** by reading the code. Nothing was run. Each fact is marked:
 - **Verified**: seen in the code on `journey_2026`.
 - **Not verified**: we could not confirm it from the code. Ask the team (see section 9).
@@ -279,7 +279,7 @@ This is the flow the lead developer gave us (`Tlm26_MainFlow_FirstStep.json`, 20
 
 ## 9. Open questions for the team
 
-1. **Which branch is deployed?** We assume `journey_2026`. The submit call the lead developer gave us matches this branch (section 1). Please confirm the branch once, in writing.
+1. **Which branch is deployed?** Answered: `journey_2026` (confirmed 2026-11-04).
 2. **Is the `Authorization` header required and checked in production, and where?** A local test (`save_submission` family) accepted calls with no token and rejected a wrong one. Please test `submit_artwork` on production with no header, a wrong header and a valid header, and say if there is a layer in front (for example Cloudflare or a load balancer).
 3. **Answered (2026-11-02):** the TLM26 flow reads the activity from a Google Sheet for each batch group, not from `Weekly Student Flow` (section 5.8). Nothing is needed for v1. For v1.1 we still need to know where the team updates the sheet each week.
 4. **Siblings:** how the second child gets a `Student` record is outside this project. We assume it is done (R-34). Please tell us if the plan changes.

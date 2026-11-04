@@ -4,7 +4,7 @@
 
 **Update (2026-10-22):** version 1 now uses a link that carries the **phone**, and a **name picker** after login. This matches the "Who is learning" and "Switch profile" screens in the Figma. The first draft used one link for each student and no picker. See A3, A11 and the new risk 14.
 
-**Update 2 (2026-10-22, reviewed 2026-10-29):** progress, submissions and feedback now follow the [v1 requirements](v1-requirements.md). We assume the deployed backend is `frappe_tap` branch `journey_2026` (see [system-understanding.md](system-understanding.md)). `ProgramEnrollment` is the single progress record, with no copy in `Tapapp Learner` (R-48). Because the Summer Program engine is switched off there, we treat it as an empty table that `tapapp` fills. Submissions go through the existing `submit_artwork`. `frappe_tap` is in production, so we change none of its existing logic without the product team's approval. This changes "Registration", "Progress between WhatsApp and the app" and the open questions below.
+**Update 2 (2026-10-22, reviewed 2026-10-29):** progress, submissions and feedback now follow the [v1 requirements](v1-requirements.md). The deployed backend is `frappe_tap` branch `journey_2026` (confirmed 2026-11-04) (see [system-understanding.md](system-understanding.md)). `ProgramEnrollment` is the single progress record, with no copy in `Tapapp Learner` (R-48). Because the Summer Program engine is switched off there, we treat it as an empty table that `tapapp` fills. Submissions go through the existing `submit_artwork`. `frappe_tap` is in production, so we change none of its existing logic without the product team's approval. This changes "Registration", "Progress between WhatsApp and the app" and the open questions below.
 
 **Codes used in these documents:** see [codes.md](codes.md).
 
@@ -449,4 +449,4 @@ These methods live in `tapapp`. The login methods only read `frappe_tap` data (s
 6. At the same time: test the WhatsApp browser with a throw-away link (other Android makers, and one iPhone as a quick check).
 7. Glific: the flow and the template.
 8. Lock or remove the password and OTP methods for students. See [known gaps](known-gaps.md), items S1, S2 and S4.
-9. Confirm with the lead developer that `journey_2026` is the deployed branch (see `system-understanding.md`), and who fills `Weekly Student Flow`.
+9. Who fills `Weekly Student Flow`. (The deployed branch is `journey_2026`, confirmed 2026-11-04.)

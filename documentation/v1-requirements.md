@@ -4,7 +4,7 @@
 
 **Status of this page.** Draft for review. Nothing here is final until the product team confirms it.
 
-**Assumption about the backend.** The team deploys one branch of `frappe_tap` and only the lead developer knows which. We assume it is `journey_2026`. Flows and code on other branches do not count. If this is wrong, the rows that follow the backend need a second pass. They are R-27, R-38 to R-40, R-48, R-75, R-76, R-80, R-82, R-87, R-89, R-91, R-92 and O-28. See [system-understanding.md](system-understanding.md).
+**The backend branch (confirmed 2026-11-04).** The deployed branch of `frappe_tap` is `journey_2026`. Flows and code on other branches do not count. The rows that follow the backend are R-27, R-38 to R-40, R-48, R-75, R-76, R-80, R-82, R-87, R-89, R-91, R-92 and O-28. See [system-understanding.md](system-understanding.md).
 
 **Codes used in these documents**
 
