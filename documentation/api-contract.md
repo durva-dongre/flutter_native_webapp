@@ -40,7 +40,7 @@ The backend is the only place that gives points. It answers with the points for 
 | Video marked as watched | +10 | At once. |
 | Work sent (shared) | +25 | At once, when the submission is accepted. |
 | Quiz: each correct answer | +1 | When the server checks the answers. |
-| Valid feedback | +10 | When the feedback arrives and the work is valid. Grade 0, or the text "technical issue", is **not valid** (R-92). |
+| Valid feedback | +10 | Once for each submission, when the backend sees valid feedback. Grade 0, or the text "technical issue", is **not valid** (R-92). A repeated or retried read of the feedback must never give it twice. |
 
 ## 3. Calls
 
@@ -59,10 +59,13 @@ The backend is the only place that gives points. It answers with the points for 
 
 ### 3.2 Progress and home
 
-**`get_progress(student_id)`**
-- Out:
+**`get_progress(student_id, if_modified_since)`**
+- In: `if_modified_since` is optional. It is the `last_modified` value from the last answer.
+- Out when nothing changed: `data: {changed: false, last_modified}`. This keeps the load on the server low (R-78).
+- Out when something changed:
   ```
   data: {
+    changed: true, last_modified,
     points_total, points_activity,
     completed_units: [unit_id],          // units with valid feedback (R-83)
     steps: [{unit_id, step_type, status, points, at}],
@@ -127,7 +130,7 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
   }
   ```
 - Errors: `NOT_READY` is allowed instead of `status: "waiting"`. Pick one way and keep it (open question 1).
-- Notes: feedback comes in the daily windows (15:00, 16:30, 21:00 IST). The `+10` is given once, when the feedback is read as valid. `audio_url` is a link the Worker can turn into a short-lived one.
+- Notes: feedback comes in the daily windows (15:00, 16:30, 21:00 IST). This call only **reports** the points. It must not be the only place that gives the `+10`. The `+10` is given once for each submission, with a guard in the database, so a repeated read never gives it twice. Task B7 decides if a hook, a job or the first read gives it. `audio_url` is a link the Worker can turn into a short-lived one.
 
 **`get_projects(student_id)`**
 - Out: `data.projects`: a list of `{submission_id, unit_id, title, status, valid, submitted_at, media_ref}`, newest first. `media_ref` is a storage path. The Worker makes the short-lived link (R-88).
