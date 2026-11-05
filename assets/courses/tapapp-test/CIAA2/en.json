@@ -1,0 +1,889 @@
+{
+    "id": "CIAA2",
+    "nm": "✿ Creative Art",
+    "desc": "In this activity, students will learn about the first element of art, line, and create a mandala using different types of lines.",
+    "vrt": "arts",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "CIAA2-U01",
+            "ord": 1,
+            "nm": "Lines Make a Mandala 🔵",
+            "desc": "Lines\nMandala art",
+            "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U01-V01",
+                    "nm": "Can lines build a mandala? 🔵",
+                    "desc": "In this activity, students will learn about the first element of art, line, and create a mandala using different types of lines.",
+                    "yt": "zOUtn4wSEuE",
+                    "dur": "00:03:49"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U01-A01",
+                    "nm": "Create a Bird Mandala Art 🔵",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of the mandala you created using different types of lines 🎨",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U01-Q01",
+                "nm": "Can circles become mandalas? 🔵",
+                "qs": [
+                    {
+                        "q": "What is the meaning of the word 'Mandala' in Sanskrit?",
+                        "opts": {
+                            "1": "Art",
+                            "2": "Pattern",
+                            "3": "Circle"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does Mandala Art benefit individuals?",
+                        "opts": {
+                            "1": "It helps in building patience and focus.",
+                            "2": "It improves mathematical skills.",
+                            "3": "It teaches advanced painting techniques."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which element of art is primarily focused on in this activity?",
+                        "opts": {
+                            "1": "Colors",
+                            "2": "Lines",
+                            "3": "Textures"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were to create a Mandala Art piece shaped like a fish, which step would you perform first?",
+                        "opts": {
+                            "1": "Fill the design with patterns.",
+                            "2": "Color the sketch with vibrant colors.",
+                            "3": "Sketch the outline with a pencil."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to create a Mandala Art piece that represents a feeling of tranquility. Which elements would you focus on to achieve this creatively?",
+                        "opts": {
+                            "1": "Dense textures and dark shades.",
+                            "2": "Soft, curvy lines and cool colors.",
+                            "3": "Bright, contrasting colors and zigzag lines."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U02",
+            "ord": 2,
+            "nm": "Circles Grow Outward 🌀",
+            "desc": "Lines\nMandala art",
+            "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U02-V01",
+                    "nm": "Can circles grow into mandalas? 🌀",
+                    "desc": "In this activity, students will observe and use at least three patterns to create simple circular mandalas.",
+                    "yt": "https://youtube.com/shorts/Qwq4fr4VEnU?feature=share",
+                    "dur": "00:02:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U02-A01",
+                    "nm": "Draw a Patterned Circle Mandala 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your mandala artwork.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U02-Q01",
+                "nm": "Can you draw a perfect mandala? ⭕",
+                "qs": [
+                    {
+                        "q": "What is the initial shape used to start a simple mandala?",
+                        "opts": {
+                            "1": "A triangle",
+                            "2": "A square",
+                            "3": "A circle"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is maintaining uniformity important in creating a mandala?",
+                        "opts": {
+                            "1": "It ensures the mandala is colorful",
+                            "2": "It helps in using fewer colors",
+                            "3": "It keeps the patterns at the same distance and size"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which tool can be used to draw multiple circles in a mandala?",
+                        "opts": {
+                            "1": "Compass",
+                            "2": "Ruler",
+                            "3": "Protractor"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want to create a mandala inspired by natural elements, what could you include?",
+                        "opts": {
+                            "1": "Digital patterns",
+                            "2": "Leaf-like vine curves",
+                            "3": "Geometric shapes only"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively incorporate the concept of 'kaju katli' into your mandala design?",
+                        "opts": {
+                            "1": "By adding a square border around the mandala",
+                            "2": "By using a half-diamond shape for a layer",
+                            "3": "By coloring each section with a single color"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U03",
+            "ord": 3,
+            "nm": "Paper Folds into Life 🍃",
+            "desc": "Origami\nPaper Craft",
+            "rwc": "Origami Papers, Sketchpens, Glue",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U03-V01",
+                    "nm": "Can paper fold into flowers? 🍃",
+                    "desc": "In this activity, students will create an attractive bookmark using origami techniques.",
+                    "yt": "-sIhmVit5G4",
+                    "dur": "00:04:56"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U03-A01",
+                    "nm": "Make a Nature Inspired Wall Hanging 🍃",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your origami bookmark",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U03-Q01",
+                "nm": "Can craft become a message? 🎀",
+                "qs": [
+                    {
+                        "q": "What is the main theme for the hanging decor project?",
+                        "opts": {
+                            "1": "Nature",
+                            "2": "Space",
+                            "3": "Technology"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What skill is primarily emphasized in creating the decor?",
+                        "opts": {
+                            "1": "Mathematics",
+                            "2": "History",
+                            "3": "Creativity"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which technique is NOT mentioned as part of this activity?",
+                        "opts": {
+                            "1": "Paper folding",
+                            "2": "Paper cutting",
+                            "3": "Wood carving"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a student wants to create a decor piece using their imagination, which skill should they primarily use?",
+                        "opts": {
+                            "1": "Communication",
+                            "2": "Creativity",
+                            "3": "Analysis"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can a shy student effectively communicate their art piece in a video?",
+                        "opts": {
+                            "1": "By discussing the historical context of their work",
+                            "2": "By mentioning their name, class, and favorite part of their hanging",
+                            "3": "By not talking"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U04",
+            "ord": 4,
+            "nm": "Tulips Rise from Folds 🌷",
+            "desc": "Origami\nPaper Craft",
+            "rwc": "Origami Papers, Sketchpens, Glue",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U04-V01",
+                    "nm": "Can folds make tulips bloom? 🌷",
+                    "desc": "In this activity, students will learn the technique of folding origami paper and create three flowers using different colors and combinations.",
+                    "yt": "c34PaTD9Y78",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U04-A01",
+                    "nm": "Fold Three Origami Tulips 🌷",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your origami flowers",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U04-Q01",
+                "nm": "Can old paper become origami? 🌷",
+                "qs": [
+                    {
+                        "q": "What is the main material that you'll need to create origami objects?",
+                        "opts": {
+                            "1": "Scissors",
+                            "2": "Glue",
+                            "3": "Paper"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the primary goal of SDG 12?",
+                        "opts": {
+                            "1": "Reduce waste and create creative things from simple materials",
+                            "2": "Promote the use of complex materials",
+                            "3": "Increase consumption of new products"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "During the origami process, what is crucial for making the folds look neat and realistic?",
+                        "opts": {
+                            "1": "Pressing the folds neatly",
+                            "2": "Using scissors to cut edges",
+                            "3": "Adding more glue"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were to create a unique origami shape beyond the tulip, which skill would help you the most?",
+                        "opts": {
+                            "1": "Using expensive materials",
+                            "2": "Following the same steps strictly",
+                            "3": "Creativity in folding techniques"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively use old magazine paper based on the principles in the script?",
+                        "opts": {
+                            "1": "Throw it away to make space",
+                            "2": "Cut it into confetti",
+                            "3": "Fold it into origami art"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U05",
+            "ord": 5,
+            "nm": "Objects Turn to Characters 🤖",
+            "desc": "Figure study",
+            "rwc": "Drawing Sheet, Pencil, Eraser, Ruler, Sketchpen, Colors",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U05-V01",
+                    "nm": "Can a cup become character? 🤖",
+                    "desc": "In this activity, students will find inspiration for figure drawing in everyday objects and explore creative connections between shapes, forms, and human anatomy.",
+                    "yt": "hC4f21IYkOM",
+                    "dur": "00:04:34"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U05-A01",
+                    "nm": "Transform an Object Into a Character 🤖",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your artwork showing how you turned an object to a character",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U05-Q01",
+                "nm": "Can a spoon become a character? 🥄",
+                "qs": [
+                    {
+                        "q": "What do you think is the main focus in this art activity?",
+                        "opts": {
+                            "1": "Art Transformation",
+                            "2": "Cartoon Designing",
+                            "3": "Skecthing"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of transforming everyday objects into figures or characters?",
+                        "opts": {
+                            "1": "To enhance creativity and problem-solving skills",
+                            "2": "To learn about historical art styles",
+                            "3": "To improve technical drawing skills"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What materials are needed in order to design a character?",
+                        "opts": {
+                            "1": "Art book, eraser, colors, and sketch pencils",
+                            "2": "Clay and paint",
+                            "3": "Markers and canvas"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were given a spoon, how might you creatively transform it into a character?",
+                        "opts": {
+                            "1": "Use it as a background element",
+                            "2": "Turn it into a tree",
+                            "3": "Create a knife with the spoon as the body"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "For a classroom project, how can you apply your creativity to transform a book into a fictional character?",
+                        "opts": {
+                            "1": "Turn the book into a wise old wizard",
+                            "2": "Use it to build a model house",
+                            "3": "Draw random patterns on it"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U06",
+            "ord": 6,
+            "nm": "Shapes Build a Face 🎭",
+            "desc": "Character Designing \nGeometrical Figures",
+            "rwc": "Paper, Pencil, Ruler, Colors",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U06-V01",
+                    "nm": "Can shapes draw a face? 🎭",
+                    "desc": "In this activity, students will explore the art of character design by using and manipulating basic geometric shapes.",
+                    "yt": "9lm-BECZTEc",
+                    "dur": "00:03:36"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U06-A01",
+                    "nm": "Design a Geometric Character 🎭",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your shape based character",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U06-Q01",
+                "nm": "Can shapes build a face? 🔷",
+                "qs": [
+                    {
+                        "q": "What materials are required for this activity?",
+                        "opts": {
+                            "1": "Charcoal and sketchbooks",
+                            "2": "Watercolors and canvas",
+                            "3": "Pencils, erasers, a black marker, and crayons"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is using geometric shapes beneficial in character designing?",
+                        "opts": {
+                            "1": "They simplify the drawing process",
+                            "2": "They add color to the characters",
+                            "3": "They make characters look realistic"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which shapes were suggested for creating the base of a character's face in the lesson?",
+                        "opts": {
+                            "1": "Square with rounded corners",
+                            "2": "Circles",
+                            "3": "Rectangles"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively apply the lesson's technique to solve a real-life problem?",
+                        "opts": {
+                            "1": "Create a comic strip about the problem",
+                            "2": "Use watercolors to map out the problem",
+                            "3": "Break down the problem into smaller, manageable parts"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were to create a new character using the techniques from the lesson, how could you enhance its uniqueness?",
+                        "opts": {
+                            "1": "Combine different geometric shapes in unexpected ways",
+                            "2": "Copy an existing character exactly",
+                            "3": "Use only circles for the entire character"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U07",
+            "ord": 7,
+            "nm": "Sticks and Strings Dream 🌙",
+            "desc": "Craft",
+            "rwc": "Cardboard, Fevicol, Scissors, Glue, Colors, Rope",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U07-V01",
+                    "nm": "Can sticks catch your dreams? 🌙",
+                    "desc": "In this activity, students will craft their own dream catcher using recyclable natural materials like twigs, shells, feathers, petals, and ice cream sticks.",
+                    "yt": "k7_BVxSB6v0",
+                    "dur": "00:06:16"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U07-A01",
+                    "nm": "Build a Nature Inspired Dream Catcher 🌙",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your dream catcher.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U07-Q01",
+                "nm": "What do dream catchers catch? 🕸️",
+                "qs": [
+                    {
+                        "q": "What did Native American tribes use Dream Catchers for?",
+                        "opts": {
+                            "1": "To protect their dreams",
+                            "2": "To decorate their homes",
+                            "3": "To catch fish"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does the hoop in a Dream Catcher represent?",
+                        "opts": {
+                            "1": "A spider web",
+                            "2": "The circle of life",
+                            "3": "A dream"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which materials can be used to make the hoop of a Dream Catcher?",
+                        "opts": {
+                            "1": "Metal only",
+                            "2": "Plastic only",
+                            "3": "Wood, metal, or cardboard"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you don't have colored paper, what creative method can you use to make feathers for a Dream Catcher?",
+                        "opts": {
+                            "1": "Color white paper and cut it into feather shapes",
+                            "2": "Use plastic feathers from old toys",
+                            "3": "Draw feathers on the wall"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively use common materials to make a Dream Catcher if you lack traditional materials?",
+                        "opts": {
+                            "1": "Use a glass bottle as the hoop",
+                            "2": "Use a wooden spoon as the hoop",
+                            "3": "Use a paper plate to make the hoop"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U08",
+            "ord": 8,
+            "nm": "Paper City Dreams Big 🏙️",
+            "desc": "Exploring the use of Shapes",
+            "rwc": "Colorful, Texture, Paper, Glue, Scissors, Marker",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U08-V01",
+                    "nm": "Can shapes build dream cities? 🏙️",
+                    "desc": "In this activity, students will create an imaginary dream city using paper cut-out shapes inspired by the artist Paul Klee.",
+                    "yt": "isrOnW7D698",
+                    "dur": "00:04:45"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U08-A01",
+                    "nm": "Build a Dream City Collage 🏙️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your dream city artwork.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U08-Q01",
+                "nm": "Can you build a dream city? 🏙️",
+                "qs": [
+                    {
+                        "q": "Who is the artist that inspired the Dream City activity?",
+                        "opts": {
+                            "1": "Vincent van Gogh",
+                            "2": "Pablo Picasso",
+                            "3": "Paul Klee"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What artistic style is Paul Klee known for?",
+                        "opts": {
+                            "1": "Realistic portraits and landscapes",
+                            "2": "Abstract sculptures and installations",
+                            "3": "Using geometrical shapes, bold lines, and bright colors"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What materials are suggested for creating the Dream City?",
+                        "opts": {
+                            "1": "Colored papers, scissors, glue, and markers",
+                            "2": "Clay and sculpting tools",
+                            "3": "Oil paints and canvas"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you make your Dream City unique when creating it?",
+                        "opts": {
+                            "1": "By following a strict blueprint",
+                            "2": "By copying another artist's work exactly",
+                            "3": "By arranging shapes and colors in your own creative way"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should you do if you don't have specific colored papers for the activity?",
+                        "opts": {
+                            "1": "Use alternative papers or magazine cutouts",
+                            "2": "Use only black and white paper",
+                            "3": "Cancel the activity"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U09",
+            "ord": 9,
+            "nm": "Bottles Bloom into Flowers 🌺",
+            "desc": "Plastic Pollution, Sustainable Development",
+            "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U09-V01",
+                    "nm": "Can bottles bloom into flowers? 🌺",
+                    "desc": "In this activity, students will identify and describe how plastic harms ocean creatures and use collected materials to create vibrant flower hangings from plastic bottles.",
+                    "yt": "6EzwKKBDJDo",
+                    "dur": "00:05:00"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U09-A01",
+                    "nm": "Make a Plastic Bottle Flower Hanging 🌺",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your plastic bottle wall hanging.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U09-Q01",
+                "nm": "Can plastic become painted art? 🎨",
+                "qs": [
+                    {
+                        "q": "What are we learning in today's art activity?",
+                        "opts": {
+                            "1": "Practicing drawing and sketching skills",
+                            "2": "Learning about different types of paint",
+                            "3": "Creating artwork using recycled materials"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the meaning of decomposition?",
+                        "opts": {
+                            "1": "Melting due to heat",
+                            "2": "Changing color over time",
+                            "3": "Breaking into smaller parts due to rotting"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you ensure that paint adheres well to plastic when painting?",
+                        "opts": {
+                            "1": "By using very thin paint",
+                            "2": "By painting in thick layers only",
+                            "3": "By not adding too much water to the paint"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to create a new type of artwork using recycled materials, what could you do differently?",
+                        "opts": {
+                            "1": "Paint on new canvases",
+                            "2": "Use old magazines to create a collage",
+                            "3": "Purchase new art supplies"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How might you creatively solve the problem of plastic pollution in your community?",
+                        "opts": {
+                            "1": "Organize a community art project using collected plastic waste",
+                            "2": "Encourage people to use single-use plastics",
+                            "3": "Buy more plastic bags to ensure they are always reused"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CIAA2-U10",
+            "ord": 10,
+            "nm": "Scraps Hang as Art 🎑",
+            "desc": "Plastic Pollution, Sustainable Development",
+            "rwc": "Plastic Bottles, Waste Papers, Markers, Paints, Brushes, Thread, Scissors, Tape",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CIAA2-U10-V01",
+                    "nm": "Can waste hang as art? 🎑",
+                    "desc": "In this activity, students will use recycled materials to create a decorative wall hanging.",
+                    "yt": "OBQKrXlS9ro",
+                    "dur": "00:03:12"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CIAA2-U10-A01",
+                    "nm": "Make a Recycled Wall Hanging 🎑",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear picture of your recycled hanging",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CIAA2-U10-Q01",
+                "nm": "Can waste become wall art? 🖼️",
+                "qs": [
+                    {
+                        "q": "What sustainable development goal is related to the activity?",
+                        "opts": {
+                            "1": "SDG 15: Life on Land",
+                            "2": "SDG 12: Responsible Consumption and Production",
+                            "3": "SDG 4: Quality Education"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main purpose of the activity?",
+                        "opts": {
+                            "1": "To practice drawing techniques",
+                            "2": "To create art using recycled materials",
+                            "3": "To learn how to paint landscapes"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you have magazine paper and old packaging boxes, which step would you perform first to create the wall hanging?",
+                        "opts": {
+                            "1": "Glue the paper to the cardboard base",
+                            "2": "Cut a cardboard base in any shape",
+                            "3": "Attach a string to hang the art"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively add texture to your recycled wall hanging?",
+                        "opts": {
+                            "1": "Use only smooth, perfectly cut pieces of paper",
+                            "2": "Tear paper scraps into different shapes for layering",
+                            "3": "Avoid using any overlapping elements"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What creative element must be included in the design according to the rules?",
+                        "opts": {
+                            "1": "A painted border",
+                            "2": "A hanging element using thread or rope",
+                            "3": "A metallic frame"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

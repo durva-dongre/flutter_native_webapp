@@ -1,0 +1,889 @@
+{
+    "id": "CPC4",
+    "nm": "❯ Coding with Python",
+    "desc": "In this activity, Students will code a Python quiz app that tests users on balanced diet knowledge. Correct answers show facts about food groups and nutrition.",
+    "vrt": "coding",
+    "lvl": "4",
+    "units": [
+        {
+            "id": "CPC4-U01",
+            "ord": 1,
+            "nm": "Quiz Feeds the Mind 🥦",
+            "desc": "Concepts: Conditional ranges, logical operators.\n\nFunctions/Keywords: if, elif, else, input(), print().",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U01-V01",
+                    "nm": "Can Python quiz your food? 🥦",
+                    "desc": "In this activity, Students will code a Python quiz that tests users on balanced diet knowledge. Correct answers show facts about food groups and nutrition.",
+                    "yt": "x07ic4NPQek",
+                    "dur": "00:05:11"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U01-A01",
+                    "nm": "Code a Healthy Plate Quiz 🥦",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Healthy Plate Quiz program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U01-Q01",
+                "nm": "Can Python quiz your friends? 🐍",
+                "qs": [
+                    {
+                        "q": "What is the role of proteins in our body according to the script?",
+                        "opts": {
+                            "1": "They give us energy to stay active",
+                            "2": "They protect us from diseases",
+                            "3": "They make our body strong and build muscles"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should be displayed before the quiz starts ?",
+                        "opts": {
+                            "1": "The first question of the quiz",
+                            "2": "Instructions for the quiz",
+                            "3": "Welcome to the Healthy Plate Quiz!"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which nutrient should a user choose for the question 'Which nutrient helps in body building?' in the quiz logic?",
+                        "opts": {
+                            "1": "Proteins",
+                            "2": "Carbohydrates",
+                            "3": "Vitamins"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a user encounters an error due to incorrect syntax, what might be the reason ?",
+                        "opts": {
+                            "1": "Wrong options for quiz answers",
+                            "2": "Incorrect equals sign, colon, or option in double quotes",
+                            "3": "Incorrect quiz questions"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "In the context of coding the quiz, how should the user input be checked ?",
+                        "opts": {
+                            "1": "By writing comments in the code",
+                            "2": "Using print statements only",
+                            "3": "Using if-else conditional statements"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U02",
+            "ord": 2,
+            "nm": "Age Unlocks the Wheel 🚗",
+            "desc": "Concepts: Conditional ranges, logical operators.\n\nFunctions/Keywords: if, elif, else, input(), print().",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U02-V01",
+                    "nm": "Can age unlock a license? 🚗",
+                    "desc": "In this activity, students will write a Python program that uses conditional statements (if, elif, else) to decide whether a person is eligible for a driving license based on their age input.",
+                    "yt": "Cz6tzF4qoFw",
+                    "dur": "00:03:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U02-A01",
+                    "nm": "Build a License Eligibility Checker 🚗",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Driving License Eligibility Program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U02-Q01",
+                "nm": "Old enough to drive yet? 🚗",
+                "qs": [
+                    {
+                        "q": "What is the eligibility requirement for obtaining a driver's license ?",
+                        "opts": {
+                            "1": "Age must be 18 years or older.",
+                            "2": "Age must be exactly 16 years.",
+                            "3": "Age must be less than 16 years."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the role of conditional statements in programming ?",
+                        "opts": {
+                            "1": "To perform arithmetic calculations.",
+                            "2": "To help make decisions within the program.",
+                            "3": "To store user input data."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If someone is 17 years old, which part of the code determines their eligibility for a learner’s license?",
+                        "opts": {
+                            "1": "elif 16<= age <18:",
+                            "2": "if age>=18:",
+                            "3": "else:"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Rohan is writing a program to check driving license eligibility but is stuck on how to get the user’s age as input. What should he do?",
+                        "opts": {
+                            "1": "Use the input() function to collect the user's age.",
+                            "2": "Directly assign a random age to a variable.",
+                            "3": "Ask the user to enter their age on paper."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Priya wants to ensure her program can decide if someone is eligible for a driver’s license or a learner’s license. What is the best way to implement decision-making in her program?",
+                        "opts": {
+                            "1": "Use a loop to continuously ask for age until eligibility is determined.",
+                            "2": "Implement conditional statements like if, elif, and else.",
+                            "3": "Create multiple separate programs for each eligibility check."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U03",
+            "ord": 3,
+            "nm": "Footprint Gets Calculated 🌍",
+            "desc": "Concepts: Carbon footprint, emission calculation, user input handling, aggregation (total emissions), decision making using thresholds.\n\nFunctions/Keywords: input(), int(), float(), print(), if, else, +, *, variables",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U03-V01",
+                    "nm": "Can code measure your footprint? 🌍",
+                    "desc": "In this activity, Students will create program that asks users questions about travel, electricity, and food habits, calculates estimated carbon footprint, and provides eco-friendly suggestions.",
+                    "yt": "YDe5z732ASU",
+                    "dur": "00:04:09"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U03-A01",
+                    "nm": "Code a Carbon Footprint Calculator 🌍",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the carbon footprint calculator program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U03-Q01",
+                "nm": "What's your carbon footprint? 🌍",
+                "qs": [
+                    {
+                        "q": "What does a carbon footprint primarily measure in terms of daily activities?",
+                        "opts": {
+                            "1": "Amount of plastic recycled",
+                            "2": "Greenhouse gas emissions like CO2",
+                            "3": "Total energy consumption"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can we calculate carbon emissions from plastic use?",
+                        "opts": {
+                            "1": "By weighing the plastic items",
+                            "2": "By measuring the volume of plastic used",
+                            "3": "By multiplying the number of plastic items by 0.1"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a person uses 30 plastic items daily, how much CO2 does that contribute?",
+                        "opts": {
+                            "1": "3 kg of CO2",
+                            "2": "3 kg of CO2",
+                            "3": "0.3 kg of CO2"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A person wants to keep their carbon footprint low. If they use 5 plastic items daily and waste 2kg of food weekly, what is their total carbon footprint?",
+                        "opts": {
+                            "1": "5.5 kg of CO2",
+                            "2": "15 kg of CO2",
+                            "3": "7.5 kg of CO2"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "To achieve a 'Good job' status , what should be the maximum daily plastic use and weekly food waste?",
+                        "opts": {
+                            "1": "Daily plastic use: 15 items, Weekly food waste: 4 kg",
+                            "2": "Daily plastic use: 5 items, Weekly food waste: 1 kg",
+                            "3": "Daily plastic use: 10 items, Weekly food waste: 3 kg"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U04",
+            "ord": 4,
+            "nm": "Numbers Track the Carbon 📊",
+            "desc": "Concepts: Carbon footprint calculation, emission factors (per km and per unit electricity), aggregation (total emissions), threshold-based decision making.\n\nFunctions/Keywords: input(), float(), print(), if, else, +, *, variables",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U04-V01",
+                    "nm": "Can Python track car emissions? 📊",
+                    "desc": "In today’s activity students will learn about SDG 13 climate action and  explore how coding can be used as a tool to understand and reduce our environmental impact—specifically through calculating our carbon footprint. They will learn how daily habits, such as driving a car or using electricity, contribute to CO₂ emissions and how we they can measure and analyze that impact using a simple Python program.",
+                    "yt": "OG3HRdfGYeE",
+                    "dur": "00:05:45"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U04-A01",
+                    "nm": "Calculate Travel Carbon Emissions 📊",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Carbon Footprint Calculator Program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U04-Q01",
+                "nm": "How much CO₂ did you emit? 💨",
+                "qs": [
+                    {
+                        "q": "What is the approximate amount of CO₂ released for every kWh of electricity generated?",
+                        "opts": {
+                            "1": "1.5 kg",
+                            "2": "0.21 kg",
+                            "3": "0.85 kg"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to understand our carbon footprint according to the script?",
+                        "opts": {
+                            "1": "To reduce environmental impact and spread awareness",
+                            "2": "To improve coding skills only",
+                            "3": "To increase the use of fossil fuels"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a car travels 150 kilometers, what is the estimated carbon emission using the script's data?",
+                        "opts": {
+                            "1": "12.5 kg",
+                            "2": "31.5 kg",
+                            "3": "31.5 kg"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A family wants to reduce their carbon footprint and they're using 600 kWh per month. What is one suggestion based on the script?",
+                        "opts": {
+                            "1": "Create more emissions",
+                            "2": "Use renewable energy sources for electricity",
+                            "3": "Increase car usage"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You're tasked with reducing emissions for a community, which strategy would be most effective?",
+                        "opts": {
+                            "1": "Promote more car usage",
+                            "2": "Encourage public transport and solar energy",
+                            "3": "Increase coal-based electricity production"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U05",
+            "ord": 5,
+            "nm": "Seats Fill the Hall 🎬",
+            "desc": "Concepts: Lists, nested loops (rows and columns), indexing, seat mapping, condition checking (reserved vs available).\n\nFunctions/Keywords: list [], for, range(), if, else, print(), input(), int(), end=\"\"",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U05-V01",
+                    "nm": "Can lists map cinema seats? 🎬",
+                    "desc": "In this activity, students will create a Python program that simulates a movie ticket reservation system. The program should allow users to reserve seats in a cinema hall. The hall has rows and columns of seats, and users can choose a seat to book.",
+                    "yt": "G45K6CGxQ_c",
+                    "dur": "00:04:26"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U05-A01",
+                    "nm": "Build a Seat Booking System 🎬",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the movie ticket booking program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U05-Q01",
+                "nm": "Can Python book your seat? 🎟️",
+                "qs": [
+                    {
+                        "q": "What statement is used to display a heading in the movie ticket booking system?",
+                        "opts": {
+                            "1": "if-else statement",
+                            "2": "input function",
+                            "3": "print statement"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does 'end=\"\"' in the print statement do in the ticket booking system?",
+                        "opts": {
+                            "1": "It creates a new list.",
+                            "2": "It ensures there is a space after each printed value.",
+                            "3": "It ends the program."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you check if a seat is already reserved using Python logic ?",
+                        "opts": {
+                            "1": "By checking if the seat position is in a reserved list.",
+                            "2": "By using a switch case statement.",
+                            "3": "By creating a dictionary."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A theater has 3 rows and 4 columns. If a user selects row 1 and column 2, and it is already reserved, what will the output be?",
+                        "opts": {
+                            "1": "Booked successfully.",
+                            "2": "Already booked.",
+                            "3": "Seat not found."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to implement a function that allows users to book multiple seats at once. What should be your first step?",
+                        "opts": {
+                            "1": "Remove the reserved list entirely.",
+                            "2": "Modify the program to accept and process lists of seat positions.",
+                            "3": "Change the seating arrangement to 2 rows and 5 columns."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U06",
+            "ord": 6,
+            "nm": "The Loop That Lives Inside 🎡",
+            "desc": "Concepts: Nested loops, nested conditions, 2D data representation (tables and seats), indexing, condition checking (membership in list).\n\nFunctions/Keywords: for, range(), if, else, in, print(), list [], tuples (), end=\"\"",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U06-V01",
+                    "nm": "Can Code Save You a Seat? 💺",
+                    "desc": "Students will be able to understand the concept of Nested if & Nested loop by creating a seat reservation system which displays reserved & available seats per table.",
+                    "yt": "p3sPoJ_61Nw",
+                    "dur": "00:06:21"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U06-A01",
+                    "nm": "Build a Seat Booking Brain 💺",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Healthy Plate Quiz program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U06-Q01",
+                "nm": "Taken or Free — Which Seat Is It? 🎟️",
+                "qs": [
+                    {
+                        "q": "What does the 'tables' variable represent in the script?",
+                        "opts": {
+                            "1": "The number of seats per table",
+                            "2": "The index of reserved seats",
+                            "3": "The number of tables available"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main purpose of using nested loops in the context of this script?",
+                        "opts": {
+                            "1": "To display the reservation status of seats",
+                            "2": "To handle multi-layered problems by managing repetitive tasks",
+                            "3": "To create a syntax error for learning purposes"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does the script determine if a seat is reserved?",
+                        "opts": {
+                            "1": "By checking if the seat number is odd",
+                            "2": "By matching the table index with seat index 0",
+                            "3": "By checking if the (table, seat) pair is in the reserved_seats list"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a new requirement is to add a fifth chair to each table, what change should be made in the script?",
+                        "opts": {
+                            "1": "Increase the 'seats_per_table' variable to 5",
+                            "2": "Increase the 'tables' variable to 5",
+                            "3": "Add more reserved seats to the 'reserved_seats' list"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A user finds that the code is not printing 'Reserved' or 'Available' correctly. What should they check first?",
+                        "opts": {
+                            "1": "Verify if the print statements are correctly capitalized",
+                            "2": "Check if the 'tables' variable is set to the correct number",
+                            "3": "Ensure the syntax and logical structure of the nested loops and conditions"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U07",
+            "ord": 7,
+            "nm": "Stock Finds Its Value 📦",
+            "desc": "Concepts: Lists, indexing, aggregation (total value), looping over items, tracking maximum value.\n\nFunctions/Keywords: for, range(), len(), print(), list [], +, *.",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U07-V01",
+                    "nm": "Can loops find priciest item? 📦",
+                    "desc": "Students will design an inventory tracker where items (stored in a list) have quantities and prices. The program will calculate the total value of the inventory and display the name of the most expensive item.",
+                    "yt": "P0Yyor1m-fY",
+                    "dur": "00:04:19"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U07-A01",
+                    "nm": "Build an Inventory Tracker 📦",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the inventory tracker program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U07-Q01",
+                "nm": "Can a list track stock? 📦",
+                "qs": [
+                    {
+                        "q": "What does the index represent in a list in Python ?",
+                        "opts": {
+                            "1": "The position of an item in the list, starting from 1.",
+                            "2": "The position of an item in the list, starting from 0.",
+                            "3": "The value of the item in the list."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is the inventory tracking system important for a shop owner ?",
+                        "opts": {
+                            "1": "It helps to calculate the total expense generated by the shop.",
+                            "2": "It allows tracking of total inventory value and identifying the most expensive item.",
+                            "3": "It assists in managing employee schedules and salaries."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How would you update the most expensive item's index in the inventory tracking program?",
+                        "opts": {
+                            "1": "Compare current item's price with the stored most expensive item’s price and update if it is higher.",
+                            "2": "Recalculate the total value of all items each time an item is added or removed.",
+                            "3": "Use a separate list to keep track of prices and update it periodically."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A small bookstore uses an inventory tracking system and notices discrepancies in stock. What is the best action to resolve this issue?",
+                        "opts": {
+                            "1": "Switch to a manual inventory system to avoid technology errors.",
+                            "2": "Conduct a physical count of items and compare with the system records to identify discrepancies.",
+                            "3": "Reduce the inventory size to make it easier to manage without errors."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A retail manager is considering upgrading their inventory tracking system to improve efficiency. What is the best decision they can make?",
+                        "opts": {
+                            "1": "Implement a system that only tracks sales data to reduce costs.",
+                            "2": "Continue using the existing system and hire more staff for manual checks.",
+                            "3": "Upgrade to a real-time tracking system to improve accuracy and reduce stock discrepancies."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U08",
+            "ord": 8,
+            "nm": "Names Mark Attendance 📓",
+            "desc": "Concepts\nAttendance tracking, Lists, For loops, Input handling, If-else statements, String manipulation, User interaction\n\nFunctions/Keywords\nfor, if, else, list, append(), input(), strip(), upper(), print()",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U08-V01",
+                    "nm": "Can code mark your attendance? 📓",
+                    "desc": "Students will learn to create an attendance tracking system using Python arrays (lists). They will write a program that allows user to mark attendance for students. The program will store student names in an array and allow the programmer to mark each student as present or absent. The system will display the list of students and their attendance status at the end. Additionally, students will implement functions to add a student to the list, mark attendance for each student, and display the final attendance report.",
+                    "yt": "wvu5HlACa0o",
+                    "dur": "00:03:27"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U08-A01",
+                    "nm": "Code an Attendance Tracking System 📓",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Attendance Tracking System program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U08-Q01",
+                "nm": "Can Python take attendance? 📋",
+                "qs": [
+                    {
+                        "q": "What function is used to convert user input to uppercase in the attendance tracking system?",
+                        "opts": {
+                            "1": ".upper()",
+                            "2": ".lower()",
+                            "3": ".capitalize()"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is the .strip() function used in the attendance tracking system code?",
+                        "opts": {
+                            "1": "To convert input to uppercase",
+                            "2": "To remove any leading or trailing spaces from the input",
+                            "3": "To append \"absent\" to the list"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How would you apply the attendance tracking logic to mark a new student's attendance?",
+                        "opts": {
+                            "1": "By using a different programming language",
+                            "2": "By creating a new variable and starting the logic from scratch",
+                            "3": "By adding the student's name to the list and using the same input and append logic"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A school is considering implementing a digital attendance tracking system to reduce manual errors and save time. What should the school do to ensure the system is effective?",
+                        "opts": {
+                            "1": "Trust that the system will work without any testing",
+                            "2": "Create a digital attendance system and test it with various classrooms",
+                            "3": "Use the system only with students who have perfect attendance records"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A teacher notices that some students are absent but the system marks them as present due to input errors. What is the best way to minimize such errors in the future?",
+                        "opts": {
+                            "1": "Add more complex code to the system",
+                            "2": "Train students and teachers to double-check their input before submission",
+                            "3": "Ignore the errors as they are not significant"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U09",
+            "ord": 9,
+            "nm": "Events Remind You First 📅",
+            "desc": "Concepts: Lists (storing paired data), iteration, data extraction (name and date), condition checking (equal and greater than), event tracking.\n\nFunctions/Keywords: list [], for, if, else, print(), input(), int(), ==, >",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U09-V01",
+                    "nm": "Can dates trigger event reminders? 📅",
+                    "desc": "Students will write a program that stores events and their dates in a list, then reminds you when an event is coming up, with a friendly message displaying the event name and date.",
+                    "yt": "Vi3Im41aQiE",
+                    "dur": "00:03:18"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U09-A01",
+                    "nm": "Build an Event Reminder System 📅",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the event reminder system program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U09-Q01",
+                "nm": "Did you miss an event? 📅",
+                "qs": [
+                    {
+                        "q": "What is the first step in creating the reminder system according to the script?",
+                        "opts": {
+                            "1": "Use the print statement to display the heading: Event Reminder System",
+                            "2": "Create a list called events with names and dates",
+                            "3": "Take input from the user to know today's date"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What will the system do if the user enters a date that matches an event date in the list?",
+                        "opts": {
+                            "1": "It will print a message saying 'Today is your [Event Name]'",
+                            "2": "It will ignore the user input and display all events",
+                            "3": "It will only display events occurring after the entered date"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does the system handle events that occur after the user's entered date?",
+                        "opts": {
+                            "1": "It prints reminders of upcoming events with their dates",
+                            "2": "It deletes all past events",
+                            "3": "It hides all events"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a user enters today's date as 20, what will the system output according to the script?",
+                        "opts": {
+                            "1": "All reminders for events after the 20th will be shown",
+                            "2": "The system will not respond",
+                            "3": "The system will display 'No events today'"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Suppose a user wants to add a new event for the 29th. What is the first step they should take according to the steps in the script?",
+                        "opts": {
+                            "1": "Directly input the new event's date",
+                            "2": "Add the new event and date to the events list",
+                            "3": "Print the event name on the screen"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U10",
+            "ord": 10,
+            "nm": "Books Return on Time 📚",
+            "desc": "Concepts: Lists (storing paired data), iteration, data extraction (name and date), date comparison, reminder logic.\n\nFunctions/Keywords: list [], for, if, else, print(), input(), int(), ==, <",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U10-V01",
+                    "nm": "Can due dates remind readers? 📚",
+                    "desc": "In this activity students will learn how to create a simple Library Book Reminder System using lists, loops, and conditional statements in Python.\nThey will practice taking user input, comparing dates, and generating reminders, helping them understand real-life applications of basic programming concepts.",
+                    "yt": "IE3JlUOCQqU",
+                    "dur": "00:02:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U10-A01",
+                    "nm": "Build a Library Book Reminder 📚",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Library Book Reminder System program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U10-Q01",
+                "nm": "Did you return your book? 📚",
+                "qs": [
+                    {
+                        "q": "What is the first step in creating the library book reminder system according to the script?",
+                        "opts": {
+                            "1": "Create a list called book",
+                            "2": "Print the heading Library Book Reminder System",
+                            "3": "Take the current date as input"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What will the system do if the current date input by the user is less than any stored dates in the list?",
+                        "opts": {
+                            "1": "Print nothing",
+                            "2": "Print reminders for the current date only",
+                            "3": "Print all reminders"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which Python structure is used to separate the list content in the reminder system?",
+                        "opts": {
+                            "1": "While loop",
+                            "2": "For loop",
+                            "3": "If-else statement"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If today's date is the 25th and the list contains return dates of the 20th, 25th, and 30th, what will be printed?",
+                        "opts": {
+                            "1": "Return Math book today",
+                            "2": "No reminders will be printed",
+                            "3": "All reminders will be printed"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can this reminder system be adapted for daily reminders apart from returning books?",
+                        "opts": {
+                            "1": "By adding more books to the list",
+                            "2": "By changing the input format to string",
+                            "3": "By using the same logic to input and check daily tasks"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

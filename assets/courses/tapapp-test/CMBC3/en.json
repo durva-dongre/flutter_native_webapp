@@ -1,0 +1,889 @@
+{
+    "id": "CMBC3",
+    "nm": "◇ Micro:bit Makers",
+    "desc": "Students design a mini LED animation on Microbit’s LED grid to represent emotions or patterns. They learn sequencing and loops using show leds and pause blocks.",
+    "vrt": "coding",
+    "lvl": "3",
+    "units": [
+        {
+            "id": "CMBC3-U01",
+            "ord": 1,
+            "nm": "Lights Tell Your Mood 💡",
+            "desc": "Shoe LEDs, Repeat",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U01-V01",
+                    "nm": "Can LEDs show your mood? 💡",
+                    "desc": "Students design a mini LED animation on Microbit’s LED grid to represent emotions or patterns. They learn sequencing and loops using show leds and pause blocks.",
+                    "yt": "1A2BegLpsfs",
+                    "dur": "00:02:23"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U01-A01",
+                    "nm": "Code an LED Mood Animation 💡",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of your code and Micro:bit!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U01-Q01",
+                "nm": "Can arms speak silently? 🤫",
+                "qs": [
+                    {
+                        "q": "What is the primary purpose of the 'Silent Language' activity as described in the script?",
+                        "opts": {
+                            "1": "To learn about different coding languages",
+                            "2": "To convey moods using blinking lights",
+                            "3": "To study human expressions"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should be done after selecting the button A pressed block from the input menu?",
+                        "opts": {
+                            "1": "Select the repeat block from the loops menu",
+                            "2": "Insert a clear screen block immediately",
+                            "3": "Add forever blocks"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block should be used to create a pause between animations?",
+                        "opts": {
+                            "1": "Show icon block",
+                            "2": "Pause block",
+                            "3": "Repeat block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a student wants to make an animation for a 'Surprised' emotion, what should they do after duplicating the existing block?",
+                        "opts": {
+                            "1": "Change the icon to a surprised face and adjust the pause duration",
+                            "2": "Only change the button input to button A",
+                            "3": "Remove the pause block entirely"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A student notices their animation is too fast and difficult to follow. How can they improve it?",
+                        "opts": {
+                            "1": "Use multiple show icon blocks",
+                            "2": "Increase the duration of the pause block",
+                            "3": "Increase the number of repeat blocks"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U02",
+            "ord": 2,
+            "nm": "Streets Light Themselves 🌙",
+            "desc": "light Level block, if- else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U02-V01",
+                    "nm": "Can darkness turn lights on? 🌙",
+                    "desc": "In this engaging activity, students will harness the power of a light sensor to address a pressing local issue: night-time safety in poorly-lit areas of their community. Using their creativity and technical skills, participants will design and construct a light sensor device aimed at enhancing safety for pedestrians and residents during evening hours.They will learn the use of conitional statements in coding while engaging in real-world problem-solving. This activity will empower students to use their technical skills to to improve community safety, promoting a sense of agency and civic responsibility.",
+                    "yt": "i96W0_Fsq30",
+                    "dur": "00:02:59"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U02-A01",
+                    "nm": "Build a Light Guard System 🌙",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the LED turning on in dark!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U02-Q01",
+                "nm": "Is it dark enough yet? 🌑",
+                "qs": [
+                    {
+                        "q": "What is the range of values the Micro:bit light sensor can detect?",
+                        "opts": {
+                            "1": "0 to 100",
+                            "2": "-5 to 50",
+                            "3": "0 to 255"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used for making decisions, like checking if it's dark?",
+                        "opts": {
+                            "1": "Show LED block",
+                            "2": "if/else block",
+                            "3": "Forever block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is the Forever block essential for the \"Light Guard\" project?",
+                        "opts": {
+                            "1": "It runs the code only one time.",
+                            "2": "It stops the code after one check.",
+                            "3": "It allows the code to continuously check the light level."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the light sensor reads exactly 20, what will the Micro:bit display?",
+                        "opts": {
+                            "1": "The LED will turn ON.",
+                            "2": "The screen will be cleared (LED turns OFF).",
+                            "3": "The code will stop."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want the light to turn on only when it's very dark, how should you change the code?",
+                        "opts": {
+                            "1": "Change the comparison value from 20 to a higher number like 100.",
+                            "2": "Change the comparison value from 20 to a lower number like 5.",
+                            "3": "Replace the less than sign with a greater than sign."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U03",
+            "ord": 3,
+            "nm": "Quiz on the Grid 📋",
+            "desc": "On Button Pressed , if-else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U03-V01",
+                    "nm": "Can buttons run a quiz? 📋",
+                    "desc": "Students design a simple quiz on Microbit where pressing buttons displays questions or options on the LED grid, and correct answers trigger a “smiley” icon.",
+                    "yt": "IR7Uqyl4l-M",
+                    "dur": "00:04:12"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U03-A01",
+                    "nm": "Code Your Own Quiz Game 📋",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video showing the score display!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U03-Q01",
+                "nm": "Can micro:bit quiz you? 🧠",
+                "qs": [
+                    {
+                        "q": "Which block is used to store data such as quiz questions in the micro:bit project?",
+                        "opts": {
+                            "1": "Show string block",
+                            "2": "Variable block",
+                            "3": "If-else logic block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the primary purpose of the show string block in the micro:bit project described in the script?",
+                        "opts": {
+                            "1": "To input commands",
+                            "2": "To display text on the LED panel",
+                            "3": "To store the score"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How do you initialize the score in the micro:bit quiz game?",
+                        "opts": {
+                            "1": "Set score = 0",
+                            "2": "Set score = 10",
+                            "3": "Set score = 5"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a student wants to ensure that the quiz game displays the first question, which block configuration should they use?",
+                        "opts": {
+                            "1": "Use if-else block with question = 1 and show string block",
+                            "2": "Place button A block inside the show string block",
+                            "3": "Use the change score by 1 block immediately"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A student notices the micro:bit quiz game doesn't proceed to the next question after answering. Which step should they verify to solve this issue?",
+                        "opts": {
+                            "1": "Ensure 'change question by 1' is used after each question",
+                            "2": "Check if the score block is correctly placed",
+                            "3": "Verify the LED panel is functioning"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U04",
+            "ord": 4,
+            "nm": "Bin Thinks for Itself 🗑️",
+            "desc": "magnetometer sensor, if-else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U04-V01",
+                    "nm": "Can a bin alert you? 🗑️",
+                    "desc": "Students will build a model smart dustbin using Micro:bit and a tilt sensor. When the dustbin is full (lid stays open), the system sends a visual or sound alert.",
+                    "yt": "-S1zBmGuhUE",
+                    "dur": "00:04:09"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U04-A01",
+                    "nm": "Build a Smart Dustbin Alert 🗑️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the OPEN/CLOSE alert!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U04-Q01",
+                "nm": "Is your dustbin full yet? 🗑️",
+                "qs": [
+                    {
+                        "q": "What is the main purpose of the Smart Dustbin Alert System created using Micro:bit?",
+                        "opts": {
+                            "1": "To alert when the dustbin is full or left open for too long.",
+                            "2": "To lock the dustbin securely.",
+                            "3": "To automatically empty the dustbin."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is cleanliness important in the development of smart cities as mentioned in the script?",
+                        "opts": {
+                            "1": "It attracts more tourists to the city.",
+                            "2": "It improves city aesthetics.",
+                            "3": "It reduces pollution and ensures health safety."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to display the direction detected by the sensor on the Micro:bit screen?",
+                        "opts": {
+                            "1": "Show LED block",
+                            "2": "Pause block",
+                            "3": "Play melody block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the tilt sensor in the smart dustbin system detects a pitch greater than 5, what should be displayed on the Micro:bit screen?",
+                        "opts": {
+                            "1": "Open",
+                            "2": "Alert",
+                            "3": "Close"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can the tilt sensor mechanism be applied to a DIY home automation project?",
+                        "opts": {
+                            "1": "To control the temperature of a room.",
+                            "2": "To automatically water plants.",
+                            "3": "To activate lights or fans when tilted."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U05",
+            "ord": 5,
+            "nm": "Messages Cross the Air 📡",
+            "desc": "On Radio Recieved",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U05-V01",
+                    "nm": "Can two microbits talk? 📡",
+                    "desc": "Using radio set group and on radio received blocks, students send messages or icons between two Microbits on the simulator. Button A sends one icon, Button B sends another.",
+                    "yt": "3QuNYnSNxro",
+                    "dur": "00:02:47"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U05-A01",
+                    "nm": "Send Radio Messages Between Microbits 📡",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the icons being received!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U05-Q01",
+                "nm": "Can micro:bits talk wirelessly? 📡",
+                "qs": [
+                    {
+                        "q": "What block is used to send a text signal from one micro:bit to another?",
+                        "opts": {
+                            "1": "radio send string block",
+                            "2": "show icon block",
+                            "3": "radio received string block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of the 'radio set group' block in the activity?",
+                        "opts": {
+                            "1": "To send a smiley face to the other micro:bit",
+                            "2": "To display icons on the micro:bit",
+                            "3": "To ensure both micro:bits can communicate on the same channel"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want to display a smiley face on the second micro:bit when button A is pressed, which block should you use to receive the signal?",
+                        "opts": {
+                            "1": "radio send number block",
+                            "2": "clear screen block",
+                            "3": "radio received string block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You are tasked with designing a new feature. How would you modify the code to send a 'Wave' icon instead of a 'Heart' when button B is pressed?",
+                        "opts": {
+                            "1": "Change the radio set group number to a different value",
+                            "2": "Use the radio send string block with 'Wave' and show icon block with a wave icon",
+                            "3": "Use the radio send number block with a new number and show icon block with a wave icon"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you troubleshoot if the micro:bits are not displaying the icons as expected when buttons are pressed?",
+                        "opts": {
+                            "1": "Check if both micro:bits have the same radio set group number",
+                            "2": "Verify if the show icon block is placed in the on start block",
+                            "3": "Ensure the forever block is not deleted"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U06",
+            "ord": 6,
+            "nm": "Wrist Reads the Sun 🌞",
+            "desc": "temperature sensor",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U06-V01",
+                    "nm": "Can your wrist read sunlight? 🌞",
+                    "desc": "Students will simulate a wearable device that warns users about high light intensity, encouraging sun safety. Uses Micro:bit's light sensor and a visual/sound alert.",
+                    "yt": "bYDpUSgd92Q",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U06-A01",
+                    "nm": "Build a Wearable UV Detector 🌞",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the audio alert working!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U06-Q01",
+                "nm": "Can skin detect UV rays? 🌞",
+                "qs": [
+                    {
+                        "q": "What is the main function of the Wearable UV Detector project?",
+                        "opts": {
+                            "1": "To warn users when the light intensity or temperature is too high",
+                            "2": "To track the number of steps taken by a user",
+                            "3": "To measure the distance traveled by a user"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to monitor light intensity and temperature using the Wearable UV Detector?",
+                        "opts": {
+                            "1": "To increase the battery life of the device",
+                            "2": "To help prevent skin damage and other health issues from sun exposure",
+                            "3": "To improve internet connectivity"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to continuously run the code in the Wearable UV Detector project?",
+                        "opts": {
+                            "1": "Repeat block",
+                            "2": "Forever block",
+                            "3": "While block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the light level is greater than 250, what actions should the device take according to the script?",
+                        "opts": {
+                            "1": "Log the data and send an email alert",
+                            "2": "Increase the brightness of the screen",
+                            "3": "Sound an alert and change the screen icon to a sad face"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should you do if you notice that the light level detection is not working as expected during testing?",
+                        "opts": {
+                            "1": "Ignore it and continue with the project",
+                            "2": "Check the code and ensure the light level block is correctly set up",
+                            "3": "Immediately restart the device without checking the code"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U07",
+            "ord": 7,
+            "nm": "Tables Build Themselves 🔢",
+            "desc": "if else, show string",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U07-V01",
+                    "nm": "Can a button make tables? 🔢",
+                    "desc": "Students will use the Addition and Multiplication operations to generate tables Faster. Button A Adds one to current number + updates the Display and Pressing Button B will show the table of current number. Button A+B resets the Tables Generator.",
+                    "yt": "LYSeLGmacQk",
+                    "dur": "00:03:38"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U07-A01",
+                    "nm": "Code a Smart Table Generator 🔢",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the multiplication logic!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U07-Q01",
+                "nm": "Can buttons count for you? 🔢",
+                "qs": [
+                    {
+                        "q": "Which button should you press to increase the number by one on the Micro:bit?",
+                        "opts": {
+                            "1": "Button A + B",
+                            "2": "Button B",
+                            "3": "Button A"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens when you press Button B on the Micro:bit?",
+                        "opts": {
+                            "1": "The multiplication symbol is displayed",
+                            "2": "The number decreases by one",
+                            "3": "The table for the current number is generated"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block should you use to display the number on the screen in Micro:bit?",
+                        "opts": {
+                            "1": "change variable",
+                            "2": "show number",
+                            "3": "on button A pressed"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A student wants to write the table of 5. What should they do first after setting the initial 'current' value to 0?",
+                        "opts": {
+                            "1": "Reset the Micro:bit",
+                            "2": "Press Button B five times",
+                            "3": "Press Button A five times"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the multiplication table is not resetting, what combination should be pressed to reset the Micro:bit?",
+                        "opts": {
+                            "1": "Press Button B multiple times",
+                            "2": "Press Button A + B",
+                            "3": "Press Button A once"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U08",
+            "ord": 8,
+            "nm": "Food Habits Get Logged 🥗",
+            "desc": "- 40% of the total studetns watch at least 70% of the video\n- 40% of the student submit image of their code\n- 40% students score 3/5 in quiz",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U08-V01",
+                    "nm": "Can you log food waste? 🥗",
+                    "desc": "Students will create a simple food waste logger on Micro:bit. Every time food is wasted, they press a button and the count is displayed. They reflect on weekly consumption.",
+                    "yt": "cTGzYitHPjE",
+                    "dur": "00:02:43"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U08-A01",
+                    "nm": "Build a Food Waste Logger 🥗",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of the total count display!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U08-Q01",
+                "nm": "How much food got wasted? 🍽️",
+                "qs": [
+                    {
+                        "q": "What is the primary function of the micro:bit project discussed in the script?",
+                        "opts": {
+                            "1": "To play games",
+                            "2": "To log food waste occurrences",
+                            "3": "To display the time"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is reducing food waste important as mentioned in the script?",
+                        "opts": {
+                            "1": "It helps in increasing food production",
+                            "2": "It saves resources like water, energy, and labor",
+                            "3": "It enables faster internet speeds"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens when button A is pressed on the micro:bit in the project?",
+                        "opts": {
+                            "1": "The micro:bit shuts down",
+                            "2": "The total waste count is reset to zero",
+                            "3": "The waste count is increased by 1 and the message 'don't waste food' is displayed"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a participant realizes they pressed button A by mistake, how can they adjust the count accurately?",
+                        "opts": {
+                            "1": "Press button B to display the count and mentally subtract the mistake",
+                            "2": "Manually adjust the variable value by editing the code",
+                            "3": "Restart the micro:bit to reset the count"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A user wants to know how many times food waste was logged at the end of the week. What should they do according to the script?",
+                        "opts": {
+                            "1": "Press button B to display the total waste count",
+                            "2": "Restart the micro:bit and check the initial value",
+                            "3": "Press button A repeatedly"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U09",
+            "ord": 9,
+            "nm": "Rock Paper Shakes 🤜",
+            "desc": "if- else,",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U09-V01",
+                    "nm": "Can a shake pick randomly? 🤜",
+                    "desc": "Students will create the classic game of Rock, Paper, Scissors. The program will use a random number to select an option on shake and display a corresponding icon on the screen, reinforcing game logic and variables.",
+                    "yt": "Ew96pQVsKNc",
+                    "dur": "00:03:34"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U09-A01",
+                    "nm": "Code Rock Paper Scissors Game 🤜",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of you shaking the Micro:bit!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U09-Q01",
+                "nm": "Can shaking decide your move? ✊",
+                "qs": [
+                    {
+                        "q": "What is the correct sequence of actions for deleting unnecessary blocks in the Microbit App?",
+                        "opts": {
+                            "1": "Drag the onstart and Forever blocks to the left and delete them",
+                            "2": "Select the onshake block from the input menu",
+                            "3": "Replace the value of the random block from 10 to 3"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does the 'onshake' block do in the Microbit project for Rock, Paper, Scissors?",
+                        "opts": {
+                            "1": "It deletes the onstart and Forever blocks from the project",
+                            "2": "It displays the string 'Hello' when the Microbit is shaken",
+                            "3": "It assigns a random value to the 'value' variable"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you represent 'Rock' in the Microbit project?",
+                        "opts": {
+                            "1": "By showing the string 'R' when the value is 1",
+                            "2": "By displaying the string 'Hello'",
+                            "3": "By setting the value variable to 0"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your Microbit project is not displaying 'P' for Paper, what could be a possible solution?",
+                        "opts": {
+                            "1": "Verify the onstart block is set to 0",
+                            "2": "Ensure the Forever block is not deleted",
+                            "3": "Check if the comparison block correctly checks if the value is equal to 2"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should you do if the Microbit does not show any result upon shaking?",
+                        "opts": {
+                            "1": "Verify that the onshake block contains a correctly configured random value assignment",
+                            "2": "Delete the input menu from the project",
+                            "3": "Re-install the Microbit App"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U10",
+            "ord": 10,
+            "nm": "Disaster Finds a Signal 🚨",
+            "desc": "onshake block, temperature sensor.",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U10-V01",
+                    "nm": "Can radio signals warn disasters? 🚨",
+                    "desc": "Students will simulate how micro:bit devices can be used in early warning systems by sending and receiving alerts via radio signals.",
+                    "yt": "ZoykCZrt120",
+                    "dur": "00:03:50"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U10-A01",
+                    "nm": "Build a Disaster Alert System 🚨",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video of both alerts working!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U10-Q01",
+                "nm": "Can micro:bit alert disasters? 🚨",
+                "qs": [
+                    {
+                        "q": "What is the purpose of the Disaster Alert System project using the micro:bit?",
+                        "opts": {
+                            "1": "To create a gaming console using micro:bit",
+                            "2": "To send alert messages during disasters using radio signals",
+                            "3": "To broadcast music using radio waves"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens when button A is pressed on the first micro:bit?",
+                        "opts": {
+                            "1": "Micro:bit 1 displays the FLOOD message",
+                            "2": "The first radio signal is sent and micro:bit 2 displays FIRE",
+                            "3": "Micro:bit 2 sends a signal back to micro:bit 1"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to check the received signal in the micro:bit coding process?",
+                        "opts": {
+                            "1": "The show icon block",
+                            "2": "The forever block",
+                            "3": "The if/else logic block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You are in a situation where you need to quickly alert your family about an approaching storm. Which button should you press on the micro:bit to send the appropriate alert?",
+                        "opts": {
+                            "1": "Button B",
+                            "2": "Button A+B",
+                            "3": "Button A"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine a scenario where none of the predefined signals are received by the second micro:bit. What will be displayed on the receiver micro:bit?",
+                        "opts": {
+                            "1": "A string saying 'ERROR'",
+                            "2": "An icon tick indicating everything is okay",
+                            "3": "A default message saying 'No Signal'"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

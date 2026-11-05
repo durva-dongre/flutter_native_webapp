@@ -1,0 +1,889 @@
+{
+    "id": "COC2",
+    "nm": "✱ OctoStudio Apps",
+    "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+    "vrt": "coding",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "COC2-U01",
+            "ord": 1,
+            "nm": "Hero Clears the Air 🌿",
+            "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment).\n\nBlocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U01-V01",
+                    "nm": "Can a hero clean the air? 🌿",
+                    "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+                    "yt": "OUl1KF7JPtM",
+                    "dur": "00:04:18"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U01-A01",
+                    "nm": "Animate a Clean Air Hero 🌿",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಪುಶ್ ಬಟನ್ LED ಸರ್ಕ್ಯೂಟ್ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿರುವ ವೀಡಿಯೊ / ಚಿತ್ರವನ್ನು ಶೇರ್ ಮಾಡಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U01-Q01",
+                "nm": "Can code clean the air? 🌫️",
+                "qs": [
+                    {
+                        "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ಒಂದು ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಅನೇಕ ದೃಶ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೇ ಬ್ಲಾಕ್",
+                            "2": "ವೆನ್ ಪ್ಲೇ ಬ್ಲಾಕ್",
+                            "3": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್ ರಚನೆ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸೆಂಡ್ ಬ್ಲಾಕ್‌ನ ಉದ್ದೇಶವೇನು?",
+                        "opts": {
+                            "1": "ಮತ್ತೊಂದು ಸ್ಪ್ರೈಟ್ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸಂದೇಶ ಕಳುಹಿಸಲು",
+                            "2": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಲು",
+                            "3": "ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಮರೆಮಾಡಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಹುಡುಗಿಯ ಸಂಭಾಷಣೆ ನಿರ್ದಿಷ್ಟ ಸಮಯ ಕಾಣಿಸಬೇಕಿದ್ದರೆ ಯಾವ ಬ್ಲಾಕ್‌ಗಳು ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಸೆಂಡ್ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳು",
+                            "2": "ಸೇ ಮತ್ತು ವೇಟ್ ಬ್ಲಾಕ್‌ಗಳು",
+                            "3": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್ ಮತ್ತು ಹೈಡ್ ಬ್ಲಾಕ್‌ಗಳು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮಲಿನ ವಾತಾವರಣದಿಂದ ಶುದ್ಧ ವಾತಾವರಣಕ್ಕೆ ಪರಿವರ್ತನೆ ತೋರಿಸಲು ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಸ್ವಿಚ್ ಬ್ಯಾಕ್‌ಡ್ರಾಪ್, ಸೇ ಮತ್ತು ಸೆಂಡ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸಂಯೋಜಿಸಿ",
+                            "2": "ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ ಮೋಡ ಚಿತ್ರಿಸಿ",
+                            "3": "ಕೇವಲ ಸೇ ಬ್ಲಾಕ್ ಬಳಸಿ ಪರಿವರ್ತನೆ ವಿವರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಹೊಗೆ ಕಾಣಿಸಿಕೊಂಡ ನಂತರ ವೇಗವಾಗಿ ಸ್ವಚ್ಛ ಮಾಡುವ ಹೊಸ ಪಾತ್ರ ಸೇರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಹೊಸ ಪಾತ್ರದ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸಲು ಸೆಂಡ್ ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "2": "ಪಾತ್ರ ಪರಿಚಯಿಸಲು ಸೇ ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "3": "ಪಾತ್ರ ಚಿತ್ರಿಸಲು ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U02",
+            "ord": 2,
+            "nm": "Seed Grows a Hero 🌱",
+            "desc": "Concepts: Animation, conditionals, events \nBlocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U02-V01",
+                    "nm": "Can a seed become a tree? 🌱",
+                    "desc": "In this activity, students will build a Climate Hero animation in OctoStudio. They’ll design a scene where a kid, guided by an elder, plants a seed, waters it, and watches it grow into a tree using show/hide, say, and send-and-receive blocks. Understand how trees help reduce climate change while practising event-driven coding and sequencing.",
+                    "yt": "wDW1RLUuB9g",
+                    "dur": "00:04:44"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U02-A01",
+                    "nm": "Animate a Tree Planting Story 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "OctoStudio ವೃಕ್ಷಾರೋಪಣ ಅನಿಮೇಷನ್‌ನ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U02-Q01",
+                "nm": "Can a sprite speak? 🗣️",
+                "qs": [
+                    {
+                        "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+                        "opts": {
+                            "1": "ಕಾರುಗಳಿಗೆ ನೀರು ಹಾಕುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು",
+                            "2": "ಜಾಗತಿಕ ತಾಪಮಾನದ ಬಗ್ಗೆ ಮಾತನಾಡುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು",
+                            "3": "ಪರಿಸರ ಸಹಾಯಕ್ಕೆ ಮರ ನೆಡುವ ಪಾತ್ರ ಅನಿಮೇಟ್ ಮಾಡಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಮಾತನಾಡುವಂತೆ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ವರ್ಗ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ವರ್ಡ್ಸ್ ಅಂಡ್ ಸೌಂಡ್ಸ್",
+                            "2": "ಮೋಷನ್",
+                            "3": "ಕಂಟ್ರೋಲ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಸೇ ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸ್ಪ್ರೈಟ್ ನೆಗೆಯುವಂತೆ ಮಾಡುತ್ತದೆ",
+                            "2": "ಸ್ಪ್ರೈಟ್ ಸಂದೇಶ ಹೇಳುವಂತೆ ಮಾಡುತ್ತದೆ",
+                            "3": "ಸ್ಪ್ರೈಟ್ ಮುಂದೆ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಮುದುಕ ಸ್ಪ್ರೈಟ್ ಏನು ಹೇಳುತ್ತದೆ?",
+                        "opts": {
+                            "1": "\"ಮರ ನೆಡುವುದು ನಮ್ಮ ಭೂಮಿಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ.\"",
+                            "2": "\"ಪ್ರತಿದಿನ ಗಿಡಗಳಿಗೆ ನೀರು ಹಾಕಿ.\"",
+                            "3": "\"ಭೂಮಿಯನ್ನು ಉಳಿಸೋಣ!\""
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬೀಜ ಸ್ಪ್ರೈಟ್ 'plant' ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಬೀಜ ಮಾಯವಾಗುತ್ತದೆ",
+                            "2": "ನೀರಿನ ಸ್ಪ್ರೈಟ್ ಮಾಯವಾಗುತ್ತದೆ",
+                            "3": "ಬೀಜ ಗಿಡವಾಗಿ ಬೆಳೆದು ಪರದೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U03",
+            "ord": 3,
+            "nm": "Share the Leftovers 🍱",
+            "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization.\n\nBlocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U03-V01",
+                    "nm": "Can sharing stop food waste? 🍱",
+                    "desc": "In this activity, students will use OctoStudio to create a short animated conversation where a child shares their leftover food with someone. Students will understand the importance of not wasting food and how sharing leftover food can contribute to Sustainable Development Goal 2: Zero Hunger. They will create an interactive conversation using OctoStudio blocks like send message and recieve message.",
+                    "yt": "D9yqZG1liuo",
+                    "dur": "00:06:24"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U03-A01",
+                    "nm": "Animate a Food Sharing Scene 🍱",
+                    "sub_types": "image,video",
+                    "unguided_text": "“ಆಹಾರ ವ್ಯರ್ಥತೆಗೆ ಬೇಡ” (Say No to Food Waste) OctoStudio ಅನಿಮೇಶನ್‌ನ ವೀಡಿಯೊ ಅಥವಾ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U03-Q01",
+                "nm": "Does food waste matter? 🍱",
+                "qs": [
+                    {
+                        "q": "ಈ ಅನಿಮೇಷನ್ ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಸಂದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ನೀರು ಉಳಿಸಿ",
+                            "2": "ಹೆಚ್ಚು ಮರುಬಳಕೆ ಮಾಡಿ",
+                            "3": "ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಚಟುವಟಿಕೆಗೆ ಯಾವ ಸುಸ್ಥಿರ ಅಭಿವೃದ್ಧಿ ಗುರಿ ಸಂಬಂಧಿಸಿದೆ?",
+                        "opts": {
+                            "1": "SDG 3 - ಉತ್ತಮ ಆರೋಗ್ಯ ಮತ್ತು ಯೋಗಕ್ಷೇಮ",
+                            "2": "SDG 2 - ಶೂನ್ಯ ಹಸಿವು",
+                            "3": "SDG 1 - ಬಡತನ ನಿರ್ಮೂಲನೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್‌ಗಳ ನಡುವೆ ಸಂವಹನ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೇ ಬ್ಲಾಕ್",
+                            "2": "ಸೆಂಡ್ ಬ್ಲಾಕ್",
+                            "3": "ವೇಟ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಆಹಾರ ವ್ಯರ್ಥದ ಬಗ್ಗೆ ಅನಿಮೇಷನ್ ಸೃಜನಾತ್ಮಕವಾಗಿ ಉತ್ತಮಗೊಳಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಕೇವಲ ಕಪ್ಪು ಮತ್ತು ಬಿಳಿ ಬಣ್ಣ ಬಳಸಿ",
+                            "2": "ಎಲ್ಲ ಸಂಭಾಷಣೆ ತೆಗೆದುಹಾಕಿ",
+                            "3": "ಸಮುದಾಯ ಆಹಾರ ಹಂಚಿಕೊಳ್ಳುವ ಹೆಚ್ಚಿನ ಪಾತ್ರಗಳನ್ನು ಸೇರಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ' ಸಂದೇಶ ವಿಭಿನ್ನ ಸನ್ನಿವೇಶದಲ್ಲಿ ಅನಿಮೇಷನ್‌ನ ಮೂಲಕ ತೋರಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಪಾತ್ರಗಳಿಲ್ಲದೆ ಕೇವಲ ಆಹಾರ ವಸ್ತುಗಳ ಮೇಲೆ ಗಮನ ಕೊಡಿ",
+                            "2": "ರೆಸ್ಟೋರೆಂಟ್‌ನಲ್ಲಿ ಗ್ರಾಹಕರು ಉಳಿದ ಆಹಾರ ದಾನ ಮಾಡುವ ಅನಿಮೇಷನ್ ರಚಿಸಿ",
+                            "3": "ಪಠ್ಯ ಅಥವಾ ಧ್ವನಿ ಇಲ್ಲದ ಅನಿಮೇಷನ್ ಮಾಡಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U04",
+            "ord": 4,
+            "nm": "Every Drop Saved 💧",
+            "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing.\n\nBlocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U04-V01",
+                    "nm": "Can you catch dripping water? 💧",
+                    "desc": "Students will learn how to create an interactive game using OctoStudio to collect dripping water from taps, reinforcing the concept of water conservation. They will apply coding skills like using motion, broadcast, and sensing blocks while understanding the real-world relevance of SDG 6 – Clean Water and Sanitation. The activity promotes awareness that even small actions, like fixing leaks, can support a global cause. Through hands-on learning, students will combine creativity and problem-solving to build a meaningful digital solution.",
+                    "yt": "O9m8fmfMa5k",
+                    "dur": "00:06:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U04-A01",
+                    "nm": "Build a Water Saving Game 💧",
+                    "sub_types": "image,video",
+                    "unguided_text": "ನೀರು ತೊಟ್ಟಿಕ್ಕುವ ನಲ್ಲಿ ಆಟದ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U04-Q01",
+                "nm": "Can a tap save water? 🚰",
+                "qs": [
+                    {
+                        "q": "ರಚಿಸಲಾದ ಸಂವಾದಾತ್ಮಕ ಆಟದ ಮುಖ್ಯ ಗುರಿ ಏನು?",
+                        "opts": {
+                            "1": "ಸೋರುವ ನಲ್ಲಿಗಳಿಂದ ತೊಟ್ಟಿಕ್ಕುವ ನೀರನ್ನು ಲೋಟದಲ್ಲಿ ಸಂಗ್ರಹಿಸಲು",
+                            "2": "ವರ್ಚುವಲ್ ನಗರ ನಿರ್ಮಿಸಲು",
+                            "3": "ಟ್ರ್ಯಾಕ್‌ನಲ್ಲಿ ಕಾರು ರೇಸ್ ಮಾಡಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಚಟುವಟಿಕೆ ಯಾವ SDG ಗೆ ಸಂಬಂಧಿಸಿದೆ?",
+                        "opts": {
+                            "1": "SDG 13 - ಹವಾಮಾನ ಕ್ರಿಯೆ",
+                            "2": "SDG 6 - ಶುದ್ಧ ನೀರು ಮತ್ತು ನೈರ್ಮಲ್ಯ",
+                            "3": "SDG 2 - ಶೂನ್ಯ ಹಸಿವು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ನಲ್ಲಿ ಸ್ಪ್ರೈಟ್ ಸರಿಯಾಗಿ ಇಡಲು ಯಾವ ಟೂಲ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ರಿಸೈಜ್ ಟೂಲ್",
+                            "2": "ರೊಟೇಟ್ ಟೂಲ್",
+                            "3": "ಕ್ರಾಪ್ ಟೂಲ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನೀರು ಉಳಿಸುವ ಆಟವನ್ನು ಶಕ್ತಿ ಸಂರಕ್ಷಣೆ ಕಲಿಸಲು ಹೇಗೆ ವಿಸ್ತರಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ದೀಪ ಆರಿಸಿದಾಗ ಅಂಕ ಸಿಗುವ ವ್ಯವಸ್ಥೆ ಸೇರಿಸಿ",
+                            "2": "ವರ್ಚುವಲ್ ಮರಗಳನ್ನು ನೆಡುವ ವೈಶಿಷ್ಟ್ಯ ಸೇರಿಸಿ",
+                            "3": "ವಿವಿಧ ದೇಶಗಳ ಬಗ್ಗೆ ರಸಪ್ರಶ್ನೆ ರಚಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಜಾಗತಿಕ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಶೈಕ್ಷಣಿಕ ವಿಷಯ ಸೇರಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಏನು?",
+                        "opts": {
+                            "1": "ಆಡುವಾಗ ನೀರಿನ ಕೊರತೆ ಬಗ್ಗೆ ಪಾಪ್-ಅಪ್ ಮಾಹಿತಿ ಸೇರಿಸಿ",
+                            "2": "ಪರದೆಯ ಮೇಲೆ ನೃತ್ಯ ಮಾಡುವ ಹೊಸ ಪಾತ್ರ ರಚಿಸಿ",
+                            "3": "ಸೂಪರ್‌ಹೀರೋಗಳ ಬಗ್ಗೆ ಕಾಮಿಕ್ ಸ್ಟ್ರಿಪ್ ವಿನ್ಯಾಸ ಮಾಡಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U05",
+            "ord": 5,
+            "nm": "Sun Powers the Bulb ☀️",
+            "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction.\n\nBlocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U05-V01",
+                    "nm": "Can sunlight power your bulb? ☀️",
+                    "desc": "Students will create a simple animation showing how sunlight is converted into usable energy. They will animate the sun, clouds, and a solar panel where sunlight reaching the panel triggers a light or colour change effect. This activity helps students visualize the flow of energy from the sun to the panel, reinforcing clean energy concepts (SDG 7) and climate action (SDG 13).",
+                    "yt": "cX43A_PfPRc",
+                    "dur": "00:04:17"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U05-A01",
+                    "nm": "Code Your First Big Idea 💡",
+                    "sub_types": "image,video",
+                    "unguided_text": "OctoStudio “ಸೂರ್ಯನ ಬೆಳಕಿನಿಂದ ಸೌರ ಶಕ್ತಿ” (Sunlight to Solar Energy) ಅನಿಮೇಶನ್‌ನ ವೀಡಿಯೊ ಅಥವಾ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಅನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U05-Q01",
+                "nm": "Can sunlight power things? ☀️",
+                "qs": [
+                    {
+                        "q": "ಸ್ಪ್ರೈಟ್‌ನ ಮಾತನ್ನು ಪರದೆಯ ಮೇಲೆ ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೇ ಬ್ಲಾಕ್",
+                            "2": "ಮೂವ್ ಬ್ಲಾಕ್",
+                            "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೆಂಡ್ ಮತ್ತು ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್‌ಗಳಲ್ಲಿ ಒಂದೇ ಸಂದೇಶ ಬಳಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಸ್ಪ್ರೈಟ್ ವೇಗವಾಗಿ ಚಲಿಸಲು",
+                            "2": "ಸ್ಪ್ರೈಟ್‌ನ ಬಣ್ಣ ಬದಲಾಯಿಸಲು",
+                            "3": "ಸ್ವೀಕರಿಸುವ ಸ್ಪ್ರೈಟ್ ಸರಿಯಾದ ಕ್ರಿಯೆ ನಿರ್ವಹಿಸುವಂತೆ ಮಾಡಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸಂದೇಶ ಸ್ವೀಕರಿಸಿದ ನಂತರ ಸ್ಪ್ರೈಟ್ ಪರದೆಯ ಮೇಲೆ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಶೋ ಬ್ಲಾಕ್",
+                            "2": "ಗ್ಲೋ ಬ್ಲಾಕ್",
+                            "3": "ಹೈಡ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಚಾರ್ಜಿಂಗ್ ಪ್ರಕ್ರಿಯೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಏನು ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಹಿನ್ನೆಲೆ ಹೊಳೆಯುವ ಬಣ್ಣಕ್ಕೆ ಬದಲಾಯಿಸಿ",
+                            "2": "ದೃಶ್ಯಕ್ಕೆ ಹೆಚ್ಚಿನ ಸಂಭಾಷಣೆ ಸೇರಿಸಿ",
+                            "3": "ಚಾರ್ಜಿಂಗ್ ಅನುಕರಿಸಲು ರಿಪೀಟ್ ಬ್ಲಾಕ್‌ನೊಂದಿಗೆ ಗ್ಲೋ ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಸೂರ್ಯನ ಬೆಳಕಿನ ಚಲನೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಲು ಏನು ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಹುಡುಗಿಯ ಉಡುಪು ಬದಲಾಯಿಸಿ",
+                            "2": "ಹಿನ್ನೆಲೆ ಸಂಗೀತ ಬದಲಾಯಿಸಿ",
+                            "3": "ಮೋಡ ಸರಿಸಿ ಸೂರ್ಯ ಕಾಣಿಸಲು ಮೂವ್ ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U06",
+            "ord": 6,
+            "nm": "Sun Powers the Road ☀️",
+            "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13).\n\nBlocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U06-V01",
+                    "nm": "Can Sunlight Make a Car Move? 🚗",
+                    "desc": "Students will create a simple animation where a solar-powered car starts moving only when it receives energy from sunlight. Using OctoStudio, they will animate the sun, a solar panel attached to a car, and the car’s movement. This activity helps students understand how solar energy can be used in real-life applications like transport, while practising event-based coding and sequencing (SDG 7 & 13).",
+                    "yt": "veLmNcxVNKQ",
+                    "dur": "00:03:50"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U06-A01",
+                    "nm": "Animate a Solar Speedster 🚗",
+                    "sub_types": "image,video",
+                    "unguided_text": "Clean Air Hero ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U06-Q01",
+                "nm": "Did the Cloud Stop Your Car? ☁️",
+                "qs": [
+                    {
+                        "q": "ಅನಿಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಕಾರಿಗೆ ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಸೇರಿಸುವ ಉದ್ದೇಶವೇನು?",
+                        "opts": {
+                            "1": "ಸೋಲಾರ್ ಪ್ಯಾನೆಲ್ ಹೇಗೆ ನಿರ್ಮಿಸಲಾಗುತ್ತದೆ ಎಂದು ತೋರಿಸಲು",
+                            "2": "ಸ್ವಚ್ಛ ಶಕ್ತಿ ಕಾರನ್ನು ಓಡಿಸಬಹುದು ಎಂದು ತೋರಿಸಲು",
+                            "3": "ಕಾರು ಹೆಚ್ಚು ಆಧುನಿಕವಾಗಿ ಕಾಣಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'ವೆನ್ ಟಚಸ್' ಬ್ಲಾಕ್ ಅನಿಮೇಷನ್‌ನಲ್ಲಿ ಹೇಗೆ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಒಂದು ವಸ್ತು ಮತ್ತೊಂದನ್ನು ಮುಟ್ಟಿದಾಗ ಕ್ರಿಯೆ ಪ್ರಾರಂಭಿಸುತ್ತದೆ",
+                            "2": "ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸುತ್ತದೆ",
+                            "3": "ಪ್ರಾಜೆಕ್ಟ್ ತೆರೆದಾಗ ಅನಿಮೇಷನ್ ಪ್ರಾರಂಭಿಸುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೋಡ ಸೂರ್ಯನ ಬೆಳಕು ತಡೆದಾಗ ಸೂರ್ಯಕಿರಣಗಳನ್ನು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಹೈಡ್ ಬ್ಲಾಕ್",
+                            "2": "ಮೂವ್ ಬ್ಲಾಕ್",
+                            "3": "ಸೆಂಡ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೂರ್ಯ ಕಾಣಿಸಿಕೊಂಡಾಗ ಹೂವುಗಳು ಅರಳುವ ದೃಶ್ಯ ರಚಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಮುಖ್ಯವಾಗಿ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್",
+                            "2": "ಹೈಡ್ ಬ್ಲಾಕ್",
+                            "3": "ಟೆಕ್ಸ್ಟ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೂರ್ಯ ಇದ್ದಾಗ ತಿರುಗುವ ಗಾಳಿಯಂತ್ರ ಸೇರಿಸಲು ಅನಿಮೇಷನ್ ಪ್ರಕ್ರಿಯೆಯ ಯಾವ ಭಾಗ ಸಂಬಂಧಿಸಿದೆ?",
+                        "opts": {
+                            "1": "ಪೇಂಟ್ ಎಡಿಟರ್‌ನಲ್ಲಿ ಸೂರ್ಯಕಿರಣ ಚಿತ್ರಿಸುವುದು",
+                            "2": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸುವುದು",
+                            "3": "ವೆನ್ ರಿಸೀವ್ಡ್ ಬ್ಲಾಕ್ ಬಳಸಿ ಕ್ರಿಯೆ ಕೋಡ್ ಮಾಡುವುದು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U07",
+            "ord": 7,
+            "nm": "Three Bins Sorted 🗑️",
+            "desc": "Concepts\nWaste sorting, Environmental awareness, Recycling, Creative coding\n\nBlocks\nSet variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U07-V01",
+                    "nm": "Can three bins sort waste? 🗑️",
+                    "desc": "Students will drag items into the correct recycling bins; touching the right bin scores points and glows, while wrong bins subtract points with a “try again” sound. They will finish by restoring a clean park scene, reinforcing responsible consumption (SDG12) and ocean protection (SDG14).",
+                    "yt": "Qc2pFkeEuLo",
+                    "dur": "00:03:45"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U07-A01",
+                    "nm": "Build a Waste Sorting Game 🗑️",
+                    "sub_types": "image,video",
+                    "unguided_text": "OctoStudio ತ್ಯಾಜ್ಯ ವರ್ಗೀಕರಣ ಆಟದ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U07-Q01",
+                "nm": "Can you sort the trash? ♻️",
+                "qs": [
+                    {
+                        "q": "SDG 12 ಯಾವ ವಿಷಯದ ಬಗ್ಗೆ?",
+                        "opts": {
+                            "1": "ಜವಾಬ್ದಾರಿಯುತ ಬಳಕೆ ಮತ್ತು ಉತ್ಪಾದನೆ",
+                            "2": "ಹಸಿವು ಕಡಿಮೆ ಮಾಡುವುದು",
+                            "3": "ಗುಣಮಟ್ಟದ ಶಿಕ್ಷಣ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸುವುದು ಯಾಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ತ್ಯಾಜ್ಯ ಸಂಗ್ರಹ ಸಮಯ ಉಳಿಸಲು",
+                            "2": "ಪರಿಸರ ಹಾನಿ ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ಜಾಗ ಸ್ವಚ್ಛ ಇಡಲು",
+                            "3": "ಮೋಜಿನ ಚಟುವಟಿಕೆಯಾಗಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಆಟದಲ್ಲಿ ಸರಿಯಾಗಿ ವಿಂಗಡಿಸಿದ ನಂತರ ವಸ್ತು ಮರೆಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೆಟ್ ವೇರಿಯೇಬಲ್",
+                            "2": "ಹೈಡ್",
+                            "3": "ಚೇಂಜ್ ವೇರಿಯೇಬಲ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟ ವಿನ್ಯಾಸ ಮಾಡಲು ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಅಳವಡಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಕೇವಲ ಡೀಫಾಲ್ಟ್ ಸೆಟ್ಟಿಂಗ್ ಬಳಸಿ",
+                            "2": "ನಿಖರವಾಗಿ ನಿರ್ದೇಶನಗಳನ್ನು ಅನುಸರಿಸಿ",
+                            "3": "ಆಟಕ್ಕೆ ಅನನ್ಯ ಬಣ್ಣ, ಚಲನೆ ಮತ್ತು ಧ್ವನಿ ಆಯ್ಕೆ ಮಾಡಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟದಲ್ಲಿ ಬಳಕೆದಾರರ ತೊಡಗಿಸಿಕೊಳ್ಳುವಿಕೆ ಹೆಚ್ಚಿಸಲು ಸೃಜನಾತ್ಮಕ ವಿಧಾನ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಆಟ ಸರಳಗೊಳಿಸುವ ಮೂಲಕ",
+                            "2": "ಅನಿಮೇಷನ್ ಮತ್ತು ಫೀಡ್‌ಬ್ಯಾಕ್ ಧ್ವನಿಗಳಂತಹ ಸಂವಾದಾತ್ಮಕ ಅಂಶ ಸೇರಿಸಿ",
+                            "3": "ಎಲ್ಲ ಧ್ವನಿ ತೆಗೆದುಹಾಕಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U08",
+            "ord": 8,
+            "nm": "Hints Before You Sort 🧩",
+            "desc": "Concepts: Waste segregation (wet vs dry waste), environmental awareness, event-based programming, collision detection (touch), variables and scoring system, feedback mechanisms (sound, glow), sequencing and reset logic.\n\nBlocks/Functions: When Play, When Touches, When I Tap, Go To, Hide, Play Sound, Glow, Text Block, Set Variable, Change Variable.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U08-V01",
+                    "nm": "Can hints make sorting easier? 🧩",
+                    "desc": "Students will create a waste sorting game where items give simple hints (text or voice) before interaction. Using variables and if-else logic, correct sorting increases score while incorrect actions provide guided feedback. This reduces confusion while maintaining the same coding concepts.",
+                    "yt": "nfzrM5dc9dU",
+                    "dur": "00:04:36"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U08-A01",
+                    "nm": "Add Hints to Sorting Game 🧩",
+                    "sub_types": "image,video",
+                    "unguided_text": "ತ್ಯಾಜ್ಯ ವರ್ಗೀಕರಣ ಆಟದ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U08-Q01",
+                "nm": "What bin does it go in? 🗑️",
+                "qs": [
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಿಭಿನ್ನ ಬಿನ್‌ಗಳಲ್ಲಿ ವಿಂಗಡಿಸುವ ಮುಖ್ಯ ಕಾರಣ ಏನು?",
+                        "opts": {
+                            "1": "ಪರಿಸರ ಸಂರಕ್ಷಣೆಗೆ",
+                            "2": "ಹೆಚ್ಚು ಬಿನ್ ಬಳಸಲು",
+                            "3": "ಜನರನ್ನು ಗೊಂದಲಕ್ಕೆ ಕೆಡವಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟದಲ್ಲಿ 'ಗೋ ಟು' ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸ್ಪ್ರೈಟ್‌ನ ಬಣ್ಣ ಬದಲಾಯಿಸುತ್ತದೆ",
+                            "2": "ಧ್ವನಿ ಪರಿಣಾಮ ನುಡಿಸುತ್ತದೆ",
+                            "3": "ಸ್ಪ್ರೈಟ್ ನಿರ್ದಿಷ್ಟ ಸ್ಥಳಕ್ಕೆ ಕಳುಹಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಸ್ತು ಬಿನ್ ಮುಟ್ಟಿದಾಗ ಪತ್ತೆ ಮಾಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಹೈಡ್ ಬ್ಲಾಕ್",
+                            "2": "ಟೆಕ್ಸ್ಟ್ ಬ್ಲಾಕ್",
+                            "3": "ವೆನ್ ಟಚಸ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಕ್ಟೋಸ್ಟುಡಿಯೋದಲ್ಲಿ ತ್ಯಾಜ್ಯ ವಿಂಗಡಣೆ ಆಟಕ್ಕೆ ಸೃಜನಾತ್ಮಕತೆ ಹೇಗೆ ಸೇರಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಮೊದಲೇ ನಿರ್ಧರಿಸಿದ ಧ್ವನಿಗಳನ್ನು ಮಾತ್ರ ಬಳಸಿ",
+                            "2": "ಪೇಂಟ್ ಎಡಿಟರ್ ಬಳಸಿ ವಿನ್ಯಾಸ ಚಿತ್ರಿಸಿ ಸೇರಿಸಿ",
+                            "3": "ಎಲ್ಲ ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಅಳಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರ ವಸ್ತು ಟ್ಯಾಪ್ ಮಾಡಿದಾಗ ತ್ಯಾಜ್ಯ ವರ್ಗಗಳ ಬಗ್ಗೆ ಸುಳಿವು ನೀಡಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಗ್ಲೋ ಬ್ಲಾಕ್",
+                            "2": "ಚೇಂಜ್ ವೇರಿಯೇಬಲ್ ಬ್ಲಾಕ್",
+                            "3": "ವೆನ್ ಐ ಟ್ಯಾಪ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U09",
+            "ord": 9,
+            "nm": "Penguin Escapes Ice 🐧",
+            "desc": "Concepts: Climate change awareness, game logic, continuous movement (loops), collision detection, sensor-based input (tilt control), sequencing, delay and timing.\n\nBlocks/Functions: When Play, Tilt to Move, Move, Forever, Wait, When Touches, Stop, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U09-V01",
+                    "nm": "Can a penguin dodge ice? 🐧",
+                    "desc": "Students will create a simple game where a penguin moves across the screen while avoiding falling ice pieces. They will animate ice obstacles using looping and timing, and show danger when the penguin touches them. This activity helps students understand how melting ice due to climate change can affect animals (SDG 13) through a guided and interactive animation.",
+                    "yt": "Qpm74YrhSM8",
+                    "dur": "00:03:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U09-A01",
+                    "nm": "Build the Ice Escape Game 🐧",
+                    "sub_types": "image,video",
+                    "unguided_text": "OctoStudio ಹವಾಮಾನ ಬದಲಾವಣೆ ಆಟದ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U09-Q01",
+                "nm": "Can tilt move a penguin? 🐧",
+                "qs": [
+                    {
+                        "q": "ಹವಾಮಾನ ಬದಲಾವಣೆಯ ಪ್ರಮುಖ ಕಾರಣಗಳಲ್ಲಿ ಒಂದು ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಮಾಲಿನ್ಯ",
+                            "2": "ಸೈಕಲ್ ಸವಾರಿ",
+                            "3": "ಕಾಂಪೋಸ್ಟಿಂಗ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "SDG 13 ನ ಮುಖ್ಯ ಗಮನ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಶಿಕ್ಷಣ ಸುಧಾರಿಸುವುದು",
+                            "2": "ಹವಾಮಾನ ಬದಲಾವಣೆ ಬಗ್ಗೆ ಜಾಗೃತಿ ಮೂಡಿಸಿ ಕ್ರಿಯೆ ತೆಗೆದುಕೊಳ್ಳುವುದು",
+                            "3": "ಆರ್ಥಿಕ ಬೆಳವಣಿಗೆ ಉತ್ತೇಜಿಸುವುದು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪೆಂಗ್ವಿನ್ ಸ್ಪ್ರೈಟ್ ಸಾಧನದ ಟಿಲ್ಟ್ ಸೆನ್ಸರ್ ಬಳಸಿ ಚಲಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಟಿಲ್ಟ್ ಟು ಮೂವ್ ಬ್ಲಾಕ್",
+                            "2": "ವೇಟ್ ಬ್ಲಾಕ್",
+                            "3": "ಮೂವ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನೀರಿನ ಆಟದಲ್ಲಿ ದೋಣಿಯಂತಹ ಹೊಸ ಸ್ಪ್ರೈಟ್‌ಗೆ ಟಿಲ್ಟ್ ಟು ಮೂವ್ ಬ್ಲಾಕ್ ಸೃಜನಾತ್ಮಕವಾಗಿ ಹೇಗೆ ಬಳಸಬಹುದು?",
+                        "opts": {
+                            "1": "ದೋಣಿಯನ್ನು ನೀರಿನ ಮೇಲೆ ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಾಯಿಸಲು ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "2": "ಟಿಲ್ಟ್ ಮಾಡಿದಾಗ ದೋಣಿ ಬಣ್ಣ ಬದಲಾಯಿಸಲು ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "3": "ದೋಣಿ ಅಂಚು ತಲುಪಿದಾಗ ಧ್ವನಿ ನುಡಿಸಲು ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪೆಂಗ್ವಿನ್ ಐಸ್ ಘನ ಮುಟ್ಟಿದಾಗ ಬಳಕೆದಾರ ಅನುಭವ ಹೆಚ್ಚಿಸಲು ಯಾವ ಸೃಜನಾತ್ಮಕ ಅಂಶ ಸೇರಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಹಿನ್ನೆಲೆ ಬಣ್ಣ ಬದಲಾಯಿಸಿ",
+                            "2": "ಪೆಂಗ್ವಿನ್ ಗಾತ್ರ ಹೆಚ್ಚಿಸಿ",
+                            "3": "ಧ್ವನಿ ಪರಿಣಾಮ ಮತ್ತು ಪೆಂಗ್ವಿನ್ ನಡುಗುವ ಅನಿಮೇಷನ್ ಸೇರಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U10",
+            "ord": 10,
+            "nm": "Bear Beats the Melt 🏁",
+            "desc": "Concepts: Climate change awareness (melting ice), game design logic, obstacle movement, collision detection, reward collection, sensor-based input (tilt control), continuous loops, timing and delay.\n\nBlocks/Functions: When Play, Tilt to Move, Go To, Hide, Show, Forever, Wait, When Touches, Stop.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U10-V01",
+                    "nm": "Can a bear beat melting? 🏁",
+                    "desc": "A polar bear races across melting ice to reach safety. Students animate shrinking ice platforms and show danger when the bear touches water",
+                    "yt": "Nrdu7cRYveg",
+                    "dur": "00:04:25"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U10-A01",
+                    "nm": "Build the Melting Race Game 🏁",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಕರಗುವ ಓಟದ ಆಟದ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U10-Q01",
+                "nm": "Can icicles fall forever? 🧊",
+                "qs": [
+                    {
+                        "q": "ಆಟದಲ್ಲಿ ಐಸಿಕಲ್ ಹೇಗೆ ರಚಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಪೆಂಗ್ವಿನ್ ಸ್ಪ್ರೈಟ್ ಆಯ್ಕೆ ಮಾಡಿ",
+                            "2": "ಸ್ಪ್ರೈಟ್ ಸೇರಿಸಿ ಪೇಂಟ್ ಟೂಲ್ ಬಳಸಿ ಫಿಲ್ ಟೂಲ್‌ನಿಂದ ಬಣ್ಣ ತುಂಬಿ",
+                            "3": "ಗೋ ಟು ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಹೈಡ್ ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸ್ಪ್ರೈಟ್ ಮಾಯವಾಗುತ್ತದೆ",
+                            "2": "ಪ್ರಾಜೆಕ್ಟ್ ನಿಲ್ಲುತ್ತದೆ",
+                            "3": "ಸ್ಪ್ರೈಟ್ ಚಲಿಸುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪೆಂಗ್ವಿನ್ ಕ್ಯಾರೆಟ್ ಮುಟ್ಟಿದಾಗ ಘಟನೆ ಸಂಭವಿಸಬೇಕಿದ್ದರೆ ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಗೋ ಟು ಬ್ಲಾಕ್",
+                            "2": "ವೇಟ್ ಬ್ಲಾಕ್",
+                            "3": "ವೆನ್ ಟಚಸ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಐಸಿಕಲ್‌ಗಳು ನಿರಂತರವಾಗಿ ಚಲಿಸದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಬ್ಲಾಕ್‌ಗಳನ್ನು ಫಾರೆವರ್ ಬ್ಲಾಕ್‌ನೊಳಗೆ ಇಡಿ",
+                            "2": "ಗೋ ಟು ಬ್ಲಾಕ್ ಅಳಿಸಿ",
+                            "3": "ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಆಟ ಹೆಚ್ಚು ಮೋಜಿನ ಮತ್ತು ಸವಾಲಿನದಾಗಿ ಮಾಡಲು ಏನು ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಕೇವಲ ಹಿನ್ನೆಲೆ ಬದಲಾಯಿಸಿ",
+                            "2": "ಹೆಚ್ಚಿನ ಸ್ಪ್ರೈಟ್ ಸೇರಿಸಿ, ಮೋಷನ್ ಮತ್ತು ಇವೆಂಟ್ ಬ್ಲಾಕ್ ಸೃಜನಾತ್ಮಕವಾಗಿ ಬಳಸಿ, ದಿಕ್ಕು ಮತ್ತು ವೇಗ ಸರಿಹೊಂದಿಸಿ",
+                            "3": "ತಕ್ಷಣ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ತೆಗೆದುಕೊಳ್ಳಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

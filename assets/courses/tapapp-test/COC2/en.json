@@ -1,0 +1,889 @@
+{
+    "id": "COC2",
+    "nm": "✱ OctoStudio Apps",
+    "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+    "vrt": "coding",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "COC2-U01",
+            "ord": 1,
+            "nm": "Hero Clears the Air 🌿",
+            "desc": "Concepts: Animation sequencing, message passing (synchronization), scene transitions, cause-effect representation (pollution vs clean environment).\n\nBlocks: When Play, Say, Wait, Send, When Received, Hide, Show, Switch Backdrop",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U01-V01",
+                    "nm": "Can a hero clean the air? 🌿",
+                    "desc": "In this activity, students will create an animation where a “Clean Air Hero” takes action to reduce pollution in their surroundings. Using OctoStudio, they will design a scene where polluted air gets cleaned through actions like switching off smoke sources or activating clean elements like trees or wind. Students will understand the importance of clean air in fighting climate change while practising event-based coding, sequencing, and simple interactivity.",
+                    "yt": "OUl1KF7JPtM",
+                    "dur": "00:04:18"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U01-A01",
+                    "nm": "Animate a Clean Air Hero 🌿",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Clean Air Hero animation project",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U01-Q01",
+                "nm": "Can code clean the air? 🌫️",
+                "qs": [
+                    {
+                        "q": "Which block is used to change multiple scenes in one project in Octostudio?",
+                        "opts": {
+                            "1": "Say block",
+                            "2": "When Play block",
+                            "3": "Switch Backdrop block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of using the Send block in the animation creation process?",
+                        "opts": {
+                            "1": "To send a message allowing another sprite to take action",
+                            "2": "To switch backdrops",
+                            "3": "To hide sprites from the screen"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want the girl's dialogue to appear on the screen for a specific time, which blocks would you use?",
+                        "opts": {
+                            "1": "Send and Wait blocks",
+                            "2": "Say and Wait blocks",
+                            "3": "Switch Backdrop and Hide blocks"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively show the transition from a polluted to a clean environment using the tools mentioned in the script?",
+                        "opts": {
+                            "1": "Use a combination of Switch Backdrop, Say, and Send blocks to illustrate the change",
+                            "2": "Use the Paint Editor to draw clouds",
+                            "3": "Use only the Say block to describe the transition"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you want to add a new character that cleans the smoke faster. How would you creatively integrate this character using the existing blocks?",
+                        "opts": {
+                            "1": "Use the Send block to trigger the new character's action after smoke appears",
+                            "2": "Use the Say block to introduce the character",
+                            "3": "Use the Paint Editor to draw the character"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U02",
+            "ord": 2,
+            "nm": "Seed Grows a Hero 🌱",
+            "desc": "Concepts: Animation, conditionals, events \nBlocks: When tapped, Move, When touching, Send, Hide, Show, Wait",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U02-V01",
+                    "nm": "Can a seed become a tree? 🌱",
+                    "desc": "In this activity, students will build a Climate Hero animation in OctoStudio. They’ll design a scene where a kid, guided by an elder, plants a seed, waters it, and watches it grow into a tree using show/hide, say, and send-and-receive blocks. Understand how trees help reduce climate change while practising event-driven coding and sequencing.",
+                    "yt": "wDW1RLUuB9g",
+                    "dur": "00:04:44"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U02-A01",
+                    "nm": "Animate a Tree Planting Story 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the OctoStudio tree plantation animation",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U02-Q01",
+                "nm": "Can a sprite speak? 🗣️",
+                "qs": [
+                    {
+                        "q": "What is the main goal of this animation activity?",
+                        "opts": {
+                            "1": "To animate a character watering the cars",
+                            "2": "To animate a character talking about global warming",
+                            "3": "To animate a character planting a tree to help the environment"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block category is used to make the sprite speak in this activity?",
+                        "opts": {
+                            "1": "Words and Sounds",
+                            "2": "Motion",
+                            "3": "Control"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does the Say block do in this activity?",
+                        "opts": {
+                            "1": "It makes the sprite jump",
+                            "2": "It makes the sprite speak a message",
+                            "3": "It moves the sprite forward"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What message does the Old Man sprite say in the animation?",
+                        "opts": {
+                            "1": "\"Planting trees helps our Earth.\"",
+                            "2": "\"Water the plants daily.\"",
+                            "3": "\"Let’s save the planet!\""
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens when the Seed sprite receives the message “plant”?",
+                        "opts": {
+                            "1": "The seed disappears",
+                            "2": "The water sprite disappears",
+                            "3": "The seed grows into a plant and shows up on the screen"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U03",
+            "ord": 3,
+            "nm": "Share the Leftovers 🍱",
+            "desc": "Concepts: Event-based programming, message passing (broadcast & receive), sequencing of actions, social awareness through animation, sprite interaction, timing and synchronization.\n\nBlocks/Functions: When Play, Say, Wait, Send, When Received, Go To (motion), Text Block, Speed control.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U03-V01",
+                    "nm": "Can sharing stop food waste? 🍱",
+                    "desc": "In this activity, students will use OctoStudio to create a short animated conversation where a child shares their leftover food with someone. Students will understand the importance of not wasting food and how sharing leftover food can contribute to Sustainable Development Goal 2: Zero Hunger. They will create an interactive conversation using OctoStudio blocks like send message and recieve message.",
+                    "yt": "D9yqZG1liuo",
+                    "dur": "00:06:24"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U03-A01",
+                    "nm": "Animate a Food Sharing Scene 🍱",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the “Say No to Food Waste” OctoStudio animation",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U03-Q01",
+                "nm": "Does food waste matter? 🍱",
+                "qs": [
+                    {
+                        "q": "What is the main message of the animation activity?",
+                        "opts": {
+                            "1": "Save Water",
+                            "2": "Recycle More",
+                            "3": "Say No to Food Waste"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What Sustainable Development Goal (SDG) is linked to the activity ?",
+                        "opts": {
+                            "1": "SDG 3 - Good Health and Well-being",
+                            "2": "SDG 2 - Zero Hunger",
+                            "3": "SDG 1 - No Poverty"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to communicate between sprites in the animation?",
+                        "opts": {
+                            "1": "Say block",
+                            "2": "Send block",
+                            "3": "Wait block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How could you use creativity to enhance the animation about food waste?",
+                        "opts": {
+                            "1": "Use only black and white colors",
+                            "2": "Remove all dialogues from the animation",
+                            "3": "Add more characters to show a community sharing food"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively convey the 'Do not waste food' message in a different setting using animation?",
+                        "opts": {
+                            "1": "Focus only on the food items without showing any characters",
+                            "2": "Create an animation set in a restaurant where patrons donate leftover food",
+                            "3": "Make the animation silent without any text or sound"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U04",
+            "ord": 4,
+            "nm": "Every Drop Saved 💧",
+            "desc": "Concepts: Water conservation (SDG 6), event-based programming, continuous loops, collision detection, variables and scoring system, sprite interaction, sensor-based control (tilt), sequencing and timing.\n\nBlocks/Functions: When Play, When Tap, Tilt to Move, Send, When Received, Go To, Hide, Show, Forever, Wait, When Touches, Set Variable, Change Variable.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U04-V01",
+                    "nm": "Can you catch dripping water? 💧",
+                    "desc": "Students will learn how to create an interactive game using OctoStudio to collect dripping water from taps, reinforcing the concept of water conservation. They will apply coding skills like using motion, broadcast, and sensing blocks while understanding the real-world relevance of SDG 6 – Clean Water and Sanitation. The activity promotes awareness that even small actions, like fixing leaks, can support a global cause. Through hands-on learning, students will combine creativity and problem-solving to build a meaningful digital solution.",
+                    "yt": "O9m8fmfMa5k",
+                    "dur": "00:06:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U04-A01",
+                    "nm": "Build a Water Saving Game 💧",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the water dripping tap game program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U04-Q01",
+                "nm": "Can a tap save water? 🚰",
+                "qs": [
+                    {
+                        "q": "What is the main goal of the interactive game created ?",
+                        "opts": {
+                            "1": "To collect dripping water from leaking taps into a glass",
+                            "2": "To build a virtual city",
+                            "3": "To race cars on a track"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which Sustainable Development Goal (SDG) does the activity  connect to?",
+                        "opts": {
+                            "1": "SDG 13 - Climate Action",
+                            "2": "SDG 6 - Clean Water and Sanitation",
+                            "3": "SDG 2 - Zero Hunger"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What tool is used in OctoStudio to position the tap sprite correctly?",
+                        "opts": {
+                            "1": "Resize tool",
+                            "2": "Rotate tool",
+                            "3": "Crop tool"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How might you creatively extend the water-saving game to teach about energy conservation?",
+                        "opts": {
+                            "1": "Include a mechanism where turning off lights earns points",
+                            "2": "Add a feature to plant virtual trees",
+                            "3": "Create a quiz about different countries"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you want to enhance the game by adding educational content about global water scarcity. What creative approach could you take?",
+                        "opts": {
+                            "1": "Include pop-up facts about water scarcity while playing",
+                            "2": "Create a new character that dances on the screen",
+                            "3": "Design a comic strip about superheroes"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U05",
+            "ord": 5,
+            "nm": "Sun Powers the Bulb ☀️",
+            "desc": "Concepts: Renewable energy (solar energy), energy transformation, event-based programming, sequencing, synchronization, animation flow, visual effects (glow, colour change), sprite interaction.\n\nBlocks/Functions: When Play, Say, Wait, Send, When Received, Move, Hide, Show, Repeat, Glow, Change Colour, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U05-V01",
+                    "nm": "Can sunlight power your bulb? ☀️",
+                    "desc": "Students will create a simple animation showing how sunlight is converted into usable energy. They will animate the sun, clouds, and a solar panel where sunlight reaching the panel triggers a light or colour change effect. This activity helps students visualize the flow of energy from the sun to the panel, reinforcing clean energy concepts (SDG 7) and climate action (SDG 13).",
+                    "yt": "cX43A_PfPRc",
+                    "dur": "00:04:17"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U05-A01",
+                    "nm": "Code Your First Big Idea 💡",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the OctoStudio “Sunlight to Solar Energy” animation",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U05-Q01",
+                "nm": "Can sunlight power things? ☀️",
+                "qs": [
+                    {
+                        "q": "What block is used to display a sprite's speech on the screen?",
+                        "opts": {
+                            "1": "Say block",
+                            "2": "Move block",
+                            "3": "Send block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to use the same message in both Send and When Received blocks?",
+                        "opts": {
+                            "1": "To make the sprite move faster",
+                            "2": "To change the sprite's color",
+                            "3": "To ensure the correct action is triggered by the receiving sprite"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block would you use to make a sprite appear on the screen after receiving a message?",
+                        "opts": {
+                            "1": "Show block",
+                            "2": "Glow block",
+                            "3": "Hide block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively show the process of the solar panel charging in your animation?",
+                        "opts": {
+                            "1": "Change the backdrop to a brighter color",
+                            "2": "Add more dialogue to the scene",
+                            "3": "Use the Glow block with a Repeat block to simulate the charging effect"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How might you creatively represent the movement of sunlight in your animation?",
+                        "opts": {
+                            "1": "By changing the girl's costume",
+                            "2": "By changing the background music",
+                            "3": "By using a Move block to shift the cloud and reveal the sun"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U06",
+            "ord": 6,
+            "nm": "Sun Powers the Road ☀️",
+            "desc": "Concepts: Renewable energy (solar energy), energy conversion, event-based programming, collision detection, sequencing, cause-and-effect in animations, environmental awareness (SDG 7 & SDG 13).\n\nBlocks/Functions: When Play, Move, When Touches, Send, When Received, Hide, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U06-V01",
+                    "nm": "Can Sunlight Make a Car Move? 🚗",
+                    "desc": "Students will create a simple animation where a solar-powered car starts moving only when it receives energy from sunlight. Using OctoStudio, they will animate the sun, a solar panel attached to a car, and the car’s movement. This activity helps students understand how solar energy can be used in real-life applications like transport, while practising event-based coding and sequencing (SDG 7 & 13).",
+                    "yt": "veLmNcxVNKQ",
+                    "dur": "00:03:50"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U06-A01",
+                    "nm": "Animate a Solar Speedster 🚗",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the Clean Air Hero animation project",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U06-Q01",
+                "nm": "Did the Cloud Stop Your Car? ☁️",
+                "qs": [
+                    {
+                        "q": "What is the purpose of adding a solar panel to the car in the animation project?",
+                        "opts": {
+                            "1": "To show how solar panels are built.",
+                            "2": "To demonstrate how clean energy can power the car.",
+                            "3": "To make the car look more futuristic."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does the 'When Touches' block function in the animation?",
+                        "opts": {
+                            "1": "It triggers an action when one object touches another.",
+                            "2": "It changes the background when clicked.",
+                            "3": "It starts the animation when the project is opened."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to hide the sunrays when the cloud blocks the sunlight?",
+                        "opts": {
+                            "1": "Hide block",
+                            "2": "Move block",
+                            "3": "Send block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to create a scene where flowers bloom when the sun appears, which block would you primarily use to trigger the blooming action?",
+                        "opts": {
+                            "1": "When Received block",
+                            "2": "Hide block",
+                            "3": "Text block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you want to add a wind turbine that spins when the sun is out. Which part of the animation process would this relate to?",
+                        "opts": {
+                            "1": "Drawing sunrays with the Paint Editor.",
+                            "2": "Changing the backdrop.",
+                            "3": "Coding the action using the When Received block."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U07",
+            "ord": 7,
+            "nm": "Three Bins Sorted 🗑️",
+            "desc": "Concepts\nWaste sorting, Environmental awareness, Recycling, Creative coding\n\nBlocks\nSet variable, Change variable, When play, When touches, Show, Hide, Move, Wait, Play sound, If-Else, Text",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U07-V01",
+                    "nm": "Can three bins sort waste? 🗑️",
+                    "desc": "Students will drag items into the correct recycling bins; touching the right bin scores points and glows, while wrong bins subtract points with a “try again” sound. They will finish by restoring a clean park scene, reinforcing responsible consumption (SDG12) and ocean protection (SDG14).",
+                    "yt": "Qc2pFkeEuLo",
+                    "dur": "00:03:45"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U07-A01",
+                    "nm": "Build a Waste Sorting Game 🗑️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the OctoStudio waste sorting game",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U07-Q01",
+                "nm": "Can you sort the trash? ♻️",
+                "qs": [
+                    {
+                        "q": "What is SDG 12 about?",
+                        "opts": {
+                            "1": "Responsible consumption and production",
+                            "2": "Reducing hunger",
+                            "3": "Quality education"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to sort waste correctly?",
+                        "opts": {
+                            "1": "It saves time during waste collection.",
+                            "2": "It helps reduce environmental harm and keeps spaces clean.",
+                            "3": "It is a fun activity to do."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to hide an item after it is sorted correctly in the game?",
+                        "opts": {
+                            "1": "Set Variable",
+                            "2": "Hide",
+                            "3": "Change Variable"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can creativity be applied when designing the Waste Sorting Game?",
+                        "opts": {
+                            "1": "By using only default settings.",
+                            "2": "By following the instructions exactly as given.",
+                            "3": "By choosing unique colors, movements, and sounds for the game."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "In what way could you use creativity to improve user engagement in the Waste Sorting Game?",
+                        "opts": {
+                            "1": "By making the game simpler.",
+                            "2": "By adding interactive elements like animations and feedback sounds.",
+                            "3": "By removing all sounds."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U08",
+            "ord": 8,
+            "nm": "Hints Before You Sort 🧩",
+            "desc": "Concepts: Waste segregation (wet vs dry waste), environmental awareness, event-based programming, collision detection (touch), variables and scoring system, feedback mechanisms (sound, glow), sequencing and reset logic.\n\nBlocks/Functions: When Play, When Touches, When I Tap, Go To, Hide, Play Sound, Glow, Text Block, Set Variable, Change Variable.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U08-V01",
+                    "nm": "Can hints make sorting easier? 🧩",
+                    "desc": "Students will create a waste sorting game where items give simple hints (text or voice) before interaction. Using variables and if-else logic, correct sorting increases score while incorrect actions provide guided feedback. This reduces confusion while maintaining the same coding concepts.",
+                    "yt": "nfzrM5dc9dU",
+                    "dur": "00:04:36"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U08-A01",
+                    "nm": "Add Hints to Sorting Game 🧩",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the waste sorting game program!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U08-Q01",
+                "nm": "What bin does it go in? 🗑️",
+                "qs": [
+                    {
+                        "q": "What is the primary reason for sorting waste into different bins?",
+                        "opts": {
+                            "1": "To help the environment",
+                            "2": "To use more bins",
+                            "3": "To confuse people"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does the Go To block do in the waste-sorting game?",
+                        "opts": {
+                            "1": "It changes the color of the sprite",
+                            "2": "It plays a sound effect",
+                            "3": "It sends the sprite to a fixed spot"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to detect when a waste item touches a bin?",
+                        "opts": {
+                            "1": "Hide block",
+                            "2": "Text block",
+                            "3": "When Touches block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you add creativity to the waste-sorting game in OctoStudio?",
+                        "opts": {
+                            "1": "By using only predefined sounds",
+                            "2": "By using the Paint Editor to draw and add designs",
+                            "3": "By deleting all sprites"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to give users a hint about waste categories when they click on an item, which block would you use?",
+                        "opts": {
+                            "1": "Glow block",
+                            "2": "Change Variable block",
+                            "3": "When I Tap block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U09",
+            "ord": 9,
+            "nm": "Penguin Escapes Ice 🐧",
+            "desc": "Concepts: Climate change awareness, game logic, continuous movement (loops), collision detection, sensor-based input (tilt control), sequencing, delay and timing.\n\nBlocks/Functions: When Play, Tilt to Move, Move, Forever, Wait, When Touches, Stop, Text Block.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U09-V01",
+                    "nm": "Can a penguin dodge ice? 🐧",
+                    "desc": "Students will create a simple game where a penguin moves across the screen while avoiding falling ice pieces. They will animate ice obstacles using looping and timing, and show danger when the penguin touches them. This activity helps students understand how melting ice due to climate change can affect animals (SDG 13) through a guided and interactive animation.",
+                    "yt": "Qpm74YrhSM8",
+                    "dur": "00:03:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U09-A01",
+                    "nm": "Build the Ice Escape Game 🐧",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the OctoStudio climate change game",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U09-Q01",
+                "nm": "Can tilt move a penguin? 🐧",
+                "qs": [
+                    {
+                        "q": "What is one of the major causes of climate change?",
+                        "opts": {
+                            "1": "Pollution",
+                            "2": "Cycling",
+                            "3": "Composting"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the primary focus of SDG 13 ?",
+                        "opts": {
+                            "1": "Improving education",
+                            "2": "Raising awareness and taking action on climate change",
+                            "3": "Promoting economic growth"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which block is used to move the penguin sprite by utilizing the device’s tilt sensor?",
+                        "opts": {
+                            "1": "Tilt to Move block",
+                            "2": "Wait block",
+                            "3": "Move block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you creatively apply the Tilt to Move block to a new sprite, such as a boat, in a water-themed game?",
+                        "opts": {
+                            "1": "Use the block to simulate steering the boat left and right across the water.",
+                            "2": "Use the block to make the boat change color when tilted.",
+                            "3": "Use the block to play a sound when the boat reaches the edge of the screen."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What creative feature could you add to the game to enhance user experience when the penguin touches an ice cube?",
+                        "opts": {
+                            "1": "Change the background color",
+                            "2": "Increase the penguin's size",
+                            "3": "Play a sound effect and animate the penguin shivering"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "COC2-U10",
+            "ord": 10,
+            "nm": "Bear Beats the Melt 🏁",
+            "desc": "Concepts: Climate change awareness (melting ice), game design logic, obstacle movement, collision detection, reward collection, sensor-based input (tilt control), continuous loops, timing and delay.\n\nBlocks/Functions: When Play, Tilt to Move, Go To, Hide, Show, Forever, Wait, When Touches, Stop.",
+            "rwc": "Mobile, Tablet, Desktop, OctoStudio App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "COC2-U10-V01",
+                    "nm": "Can a bear beat melting? 🏁",
+                    "desc": "A polar bear races across melting ice to reach safety. Students animate shrinking ice platforms and show danger when the bear touches water",
+                    "yt": "Nrdu7cRYveg",
+                    "dur": "00:04:25"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "COC2-U10-A01",
+                    "nm": "Build the Melting Race Game 🏁",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Video / Screenshot of the melting race game!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "COC2-U10-Q01",
+                "nm": "Can icicles fall forever? 🧊",
+                "qs": [
+                    {
+                        "q": "How do you create an icicle in the game?",
+                        "opts": {
+                            "1": "Select the penguin sprite",
+                            "2": "Use the Paint tool in Add Sprite and color it with Fill tool",
+                            "3": "Use the Go to block"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What does the Hide block do?",
+                        "opts": {
+                            "1": "Makes the sprite disappear",
+                            "2": "Stops the project",
+                            "3": "Moves the sprite"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want an event to happen when the penguin touches the carrot. Which block should you use?",
+                        "opts": {
+                            "1": "Go to block",
+                            "2": "Wait block",
+                            "3": "When Touches block"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "The icicles are not moving continuously. What should you do?",
+                        "opts": {
+                            "1": "Place the blocks inside a Forever block",
+                            "2": "Delete the Go to block",
+                            "3": "Change the backdrop"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to make the game more fun and challenging. What can you do?",
+                        "opts": {
+                            "1": "Only change the background",
+                            "2": "Add more sprites, use Motion and Event blocks creatively, and adjust directions and speeds",
+                            "3": "Take a screenshot immediately"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

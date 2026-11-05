@@ -1,0 +1,889 @@
+{
+    "id": "CBSSL1",
+    "nm": "∆ Science Starters",
+    "desc": "In this activity, students will explore the concept of air resistance by observing how a crumpled paper and a flat paper fall differently. They will then create a simple parachute using everyday materials and test how air resistance slows down falling objects. Through this hands-on activity, students will connect scientific concepts with real-life applications like parachutes.",
+    "vrt": "science-lab",
+    "lvl": "1",
+    "units": [
+        {
+            "id": "CBSSL1-U01",
+            "ord": 1,
+            "nm": "Paper Falls with Grace 🪂",
+            "desc": "Students will understand the concept of air resistance, which is a force that opposes the motion of objects moving through air. They will learn that objects with a larger surface area experience more air resistance and fall more slowly, while objects with a smaller surface area fall faster. They will understand how air resistance is used in real life, such as in parachutes, which help in slow and safe landing.",
+            "rwc": "Pen, Scissors, Paper, Thread, Cup, Stick, Sketchpen, Plastic)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U01-V01",
+                    "nm": "Can paper fall without crashing? 🪂",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਹਵਾ ਦੇ ਵਿਰੋਧ ਦੇ ਸਿਧਾਂਤ ਦੀ ਪੜਚੋਲ ਕਰਨਗੇ ਜਦੋਂ ਉਹ ਵੇਖਣਗੇ ਕਿ ਕੱਬੜੀ ਕਾਗਜ਼ ਅਤੇ ਸਿੱਧੀ ਕਾਗਜ਼ ਕਿਸ ਤਰ੍ਹਾਂ ਵੱਖਰੇ ਢੰਗ ਨਾਲ ਡਿੱਗਦੇ ਹਨ। ਫਿਰ ਉਹ ਰੋਜ਼ਾਨਾ ਦੀਆਂ ਵਸਤੂਆਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਧਾਰਨ ਪੈਰਾਸੂਟ ਬਣਾਉਣਗੇ ਅਤੇ ਪਰਖਣਗੇ ਕਿ ਕਿਵੇਂ ਹਵਾ ਦਾ ਵਿਰੋਧ ਡਿੱਗ ਰਹੀਆਂ ਚੀਜ਼ਾਂ ਨੂੰ ਹੌਲੀ ਕਰ ਦਿੰਦਾ ਹੈ। ਇਸ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਵਿਗਿਆਨਕ ਸਿਧਾਂਤਾਂ ਨੂੰ ਪੈਰਾਸੂਟ ਵਰਗੀਆਂ ਅਸਲ-ਜੀਵਨ ਦੀਆਂ ਅਨੁਪ੍ਰਯੋਗਤਾਵਾਂ ਨਾਲ ਜੋੜਣਗੇ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U01-A01",
+                    "nm": "Build and Test a Parachute 🪂",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਪੈਰਾਸ਼ੂਟ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਪਲਾਸਟਿਕ ਬੈਗ, ਧਾਗਾ ਅਤੇ ਬੋਤਲ ਦੀ ਟੋਪੀ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U01-Q01",
+                "nm": "Why does a parachute float? 🪂",
+                "qs": [
+                    {
+                        "q": "ਕੁਚਲਿਆ ਕਾਗਜ਼ ਸਮਤਲ ਕਾਗਜ਼ ਨਾਲੋਂ ਤੇਜ਼ ਕਿਉਂ ਡਿੱਗਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਵਧੇਰੇ ਭਾਰ",
+                            "2": "ਘੱਟ ਹਵਾ ਪ੍ਰਤੀਰੋਧ",
+                            "3": "ਵਧੇਰੇ ਉਚਾਈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਪੈਰਾਸ਼ੂਟ ਸੁਰੱਖਿਅਤ ਲੈਂਡਿੰਗ ਵਿੱਚ ਕਿਵੇਂ ਮਦਦ ਕਰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਸਤ੍ਹਾ ਦਾ ਖੇਤਰ ਘਟਾਉਂਦਾ ਹੈ",
+                            "2": "ਇਹ ਹਵਾ ਪ੍ਰਤੀਰੋਧ ਵਧਾਉਂਦਾ ਹੈ",
+                            "3": "ਇਹ ਉਤਰਾਈ ਦੀ ਗਤੀ ਵਧਾਉਂਦਾ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਪੈਰਾਸ਼ੂਟ ਦੇ ਹੇਠਾਂ ਭਾਰ ਲਗਾਉਣ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਉਤਰਾਈ ਦੌਰਾਨ ਪੈਰਾਸ਼ੂਟ ਨੂੰ ਸਥਿਰ ਕਰਨਾ",
+                            "2": "ਹਵਾ ਪ੍ਰਤੀਰੋਧ ਘਟਾਉਣਾ",
+                            "3": "ਇਸਨੂੰ ਭਾਰਾ ਬਣਾਉਣਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਹਾਡਾ ਪੈਰਾਸ਼ੂਟ ਬਹੁਤ ਤੇਜ਼ ਡਿੱਗਦਾ ਹੈ ਤਾਂ ਇਸਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਸੁਧਾਰਨ ਲਈ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪੈਰਾਸ਼ੂਟ ਦੀ ਸਤ੍ਹਾ ਦਾ ਖੇਤਰ ਵਧਾਓ",
+                            "2": "ਧਾਗੇ ਛੋਟੇ ਕਰੋ",
+                            "3": "ਭਾਰਾ ਵਜ਼ਨ ਵਰਤੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਹਾਡਾ ਪੈਰਾਸ਼ੂਟ ਸਹੀ ਤਰ੍ਹਾਂ ਨਹੀਂ ਖੁੱਲ੍ਹਦਾ ਤਾਂ ਕਿਹੜੀ ਤਬਦੀਲੀ ਮਦਦ ਕਰ ਸਕਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਪੈਰਾਸ਼ੂਟ ਲਈ ਹਲਕਾ ਮਟੀਰੀਅਲ ਵਰਤੋ",
+                            "2": "ਹੇਠਾਂ ਵਜ਼ਨ ਵਧਾਓ",
+                            "3": "ਯਕੀਨੀ ਕਰੋ ਕਿ ਧਾਗੇ ਉਲਝੇ ਨਾ ਹੋਣ ਅਤੇ ਬਰਾਬਰ ਵਿੱਥ ਤੇ ਹੋਣ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U02",
+            "ord": 2,
+            "nm": "Blades Catch the Wind 🌀",
+            "desc": "Students will understand how air affects the movement of objects.\nStudents will understand that air resistance is a force that acts against moving objects. When the paper helicopter falls, air pushes against its blades, causing it to spin.",
+            "rwc": "Pencil, Scissors, Paper, Ruler",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U02-V01",
+                    "nm": "Can paper blades spin fast? 🌀",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਆਮ ਸਮੱਗਰੀ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਧਾਰਨ ਕਾਗਜ਼ ਦਾ ਹੈਲਿਕਾਪਟਰ ਬਣਾਉਣਗੇ ਅਤੇ ਦੇਖਣਗੇ ਕਿ ਇਹ ਕਿਵੇਂ ਡਿੱਗਦੇ ਸਮੇਂ ਘੁੰਮਦਾ ਹੈ। ਕਾਗਜ਼ ਨੂੰ ਕੱਟਣ ਅਤੇ ਮੋੜਨ ਦੇ ਰਾਹੀਂ, ਉਹ ਬਲੇਡ ਡਿਜ਼ਾਈਨ ਕਰਨਗੇ ਜੋ ਹਵਾ ਨਾਲ ਅੰਤਰਕਿਰਿਆ ਕਰਦੇ ਹਨ, ਜਿਸ ਨਾਲ ਉਹ ਸਮਝਣਗੇ ਕਿ ਹਵਾ ਮੋਸ਼ਨ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰ ਸਕਦੀ ਹੈ। ਵਿਦਿਆਰਥੀ ਇਸ ਹੈਂਡਜ਼-ਆਨ ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਹੈਲਿਕਾਪਟਰ ਅਤੇ ਡਿੱਗਦੇ ਪਦਾਰਥਾਂ ਵਰਗੇ ਅਸਲ ਜੀਵਨ ਸੰਕਲਪਾਂ ਨਾਲ ਜੋੜਣਗੇ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U02-A01",
+                    "nm": "Build a Paper Helicopter 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਕਾਗਜ਼ੀ ਹੈਲੀਕਾਪਟਰ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਉੱਪਰੀ ਤਹਿਆਂ ਅਤੇ ਹੇਠਲੀਆਂ ਤਹਿਆਂ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U02-Q01",
+                "nm": "Why does paper spin down? 🌀",
+                "qs": [
+                    {
+                        "q": "ਕਾਗਜ਼ੀ ਹੈਲੀਕਾਪਟਰ ਬਣਾਉਣ ਲਈ ਕਿਹੜੇ ਮਟੀਰੀਅਲ ਦੀ ਲੋੜ ਹੈ?",
+                        "opts": {
+                            "1": "ਕਾਗਜ਼, ਕਲਮ ਅਤੇ ਰੰਗ",
+                            "2": "ਕਾਗਜ਼, ਰੰਗ ਅਤੇ ਗੂੰਦ",
+                            "3": "ਕਾਗਜ਼, ਪੈਨਸਿਲ, ਕੈਂਚੀ ਅਤੇ ਸਕੇਲ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਾਗਜ਼ੀ ਹੈਲੀਕਾਪਟਰ ਡਿੱਗਣ ਤੇ ਕਿਉਂ ਘੁੰਮਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਹੈਲੀਕਾਪਟਰ ਦੀ ਸ਼ਕਲ",
+                            "2": "ਹਵਾ ਇਸਦੇ ਬਲੇਡਾਂ ਨੂੰ ਧੱਕਦੀ ਹੈ",
+                            "3": "ਕਾਗਜ਼ ਦਾ ਭਾਰ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਾਗਜ਼ ਤੇ ਲਾਈਨਾਂ ਖਿੱਚਣ ਤੋਂ ਬਾਅਦ ਕਾਗਜ਼ੀ ਹੈਲੀਕਾਪਟਰ ਬਣਾਉਣ ਦਾ ਅਗਲਾ ਕਦਮ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਹਰ 3 ਸੈਂਟੀਮੀਟਰ ਤੇ ਬਿੰਦੀਆਂ ਲਗਾਉਣਾ",
+                            "2": "ਆਇਤਾਕਾਰ ਕੱਟਣਾ",
+                            "3": "ਕਾਗਜ਼ ਮੋੜਨਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਕਾਗਜ਼ੀ ਹੈਲੀਕਾਪਟਰ ਸਹੀ ਤਰ੍ਹਾਂ ਨਹੀਂ ਘੁੰਮਦਾ ਤਾਂ ਸੰਭਾਵਿਤ ਕਾਰਨ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਭਾਰਾ ਕਾਗਜ਼ ਵਰਤਣਾ",
+                            "2": "ਬਲੇਡਾਂ ਦੀ ਗਲਤ ਫੋਲਡਿੰਗ",
+                            "3": "ਘੱਟ ਉਚਾਈ ਤੋਂ ਸੁੱਟਣਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਨੇ ਗਲਤੀ ਨਾਲ ਆਇਤਾਕਾਰ ਨੂੰ ਤਿੰਨ ਦੀ ਬਜਾਏ ਚਾਰ ਹਿੱਸਿਆਂ ਵਿੱਚ ਕੱਟ ਦਿੱਤਾ। ਹੈਲੀਕਾਪਟਰ ਠੀਕ ਕਰਨ ਲਈ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਟੇਪ ਨਾਲ ਟੁਕੜੇ ਜੋੜੋ",
+                            "2": "ਨਵੇਂ ਕਾਗਜ਼ ਨਾਲ ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ",
+                            "3": "ਟੁਕੜੇ ਗੂੰਦ ਨਾਲ ਜੋੜੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U03",
+            "ord": 3,
+            "nm": "Spin Never Stops 🌀",
+            "desc": "Students will understand that a force is needed to start motion. Once the spinner starts moving, it continues due to inertia, which means objects in motion tend to stay in motion.\nThey will also learn that balance is important for smooth rotation, and friction can slow down movement. Reducing friction (using a central pivot like a toothpick) helps the spinner move more freely and for a longer time.",
+            "rwc": "Colors, Scissors, Glue, Cardboard, Paints (Optional)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U03-V01",
+                    "nm": "Can a coin spin forever? 🌀",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਕਾਰਡਬੋਰਡ, ਟੁੱਥਪਿਕ ਅਤੇ ਛੋਟੇ ਗੋਲ ਕੱਟਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਧਾਰਨ ਫਿਜਿਟ ਸਪਿੰਨਰ ਬਣਾਉਣਗੇ। ਉਹ ਪਤਾ ਲਗਾਉਣਗੇ ਕਿ ਕਿਸ ਤਰ੍ਹਾਂ ਇੱਕ ਛੋਟਾ ਧੱਕਾ ਕਿਸੇ ਵਸਤੂ ਨੂੰ ਚਲਣ ਵਿੱਚ ਲਿਆ ਸਕਦਾ ਹੈ ਅਤੇ ਦੇਖਣਗੇ ਕਿ ਕਿਵੇਂ ਡਿਜ਼ਾਈਨ ਦੇ ਤੱਤ ਜਿਵੇਂ ਕਿ ਸੰਤੁਲਨ ਅਤੇ ਘਟਿਆ ਰਗੜ ਸਪਿੰਨਰ ਨੂੰ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਸਮੂਥਲੀ ਘੁੰਮਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ। ਇਸ ਹੈਂਡਸ-ਆਨ ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਹਰਰੋਜ਼ ਦੇ ਖਿਡੌਣਿਆਂ ਨੂੰ ਵਿਗਿਆਨਕ ਧਾਰਨਾਵਾਂ ਨਾਲ ਜੋੜਣਗੇ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U03-A01",
+                    "nm": "Build a Cardboard Fidget Spinner 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਸਪਿਨਰ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਗੱਤਾ, ਗੋਲੇ, ਟੂਥਪਿੱਕ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U03-Q01",
+                "nm": "What keeps a spinner spinning? 🌀",
+                "qs": [
+                    {
+                        "q": "ਸਕ੍ਰਿਪਟ ਵਿੱਚ ਫਿਜੇਟ ਸਪਿੰਨਰ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਮੁੱਖ ਮਟੀਰੀਅਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੱਤਾ",
+                            "2": "ਧਾਤ",
+                            "3": "ਪਲਾਸਟਿਕ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਫਿਜੇਟ ਸਪਿੰਨਰ ਬਣਾਉਣ ਵਿੱਚ ਛੋਟੇ ਗੋਲਿਆਂ ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਫਿਜੇਟ ਸਪਿੰਨਰ ਫੜਨ ਲਈ ਹੈਂਡਲ ਦਾ ਕੰਮ ਕਰਦੇ ਹਨ।",
+                            "2": "ਇਹ ਨਿਰਵਿਘਨ ਘੁੰਮਾਉਣ ਲਈ ਸਪਿੰਨਰ ਨੂੰ ਸੰਤੁਲਿਤ ਕਰਦੇ ਹਨ।",
+                            "3": "ਇਹ ਫਿਜੇਟ ਸਪਿੰਨਰ ਨੂੰ ਸਜਾਉਣ ਲਈ ਵਰਤੇ ਜਾਂਦੇ ਹਨ।"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਫਿਜੇਟ ਸਪਿੰਨਰ ਦੇ ਕੇਂਦਰੀ ਮੋਰੀ ਵਿੱਚੋਂ ਟੂਥਪਿੱਕ ਲੰਘਾਉਣ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਘਰਸ਼ਣ ਘਟਾਉਣਾ ਅਤੇ ਨਿਰਵਿਘਨ ਘੁੰਮਾਉਣ ਦੇਣਾ।",
+                            "2": "ਫਿਜੇਟ ਸਪਿੰਨਰ ਨੂੰ ਮੋਟਰ ਨਾਲ ਜੋੜਨਾ।",
+                            "3": "ਸਪਿੰਨਰ ਦਾ ਭਾਰ ਵਧਾਉਣਾ।"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਹਾਡਾ ਫਿਜੇਟ ਸਪਿੰਨਰ ਨਿਰਵਿਘਨ ਨਹੀਂ ਘੁੰਮਦਾ ਤਾਂ ਸੰਭਾਵਿਤ ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੋਲੇ ਜਾਂ ਟੂਥਪਿੱਕ ਕੇਂਦਰੀ ਟੁਕੜੇ ਨਾਲ ਚਿਪਕੇ ਹੋ ਸਕਦੇ ਹਨ।",
+                            "2": "ਗੱਤਾ ਬਹੁਤ ਮੋਟਾ ਅਤੇ ਭਾਰਾ ਹੋ ਸਕਦਾ ਹੈ।",
+                            "3": "ਟੂਥਪਿੱਕ ਬਹੁਤ ਛੋਟਾ ਹੈ।"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਹਾਡਾ ਫਿਜੇਟ ਸਪਿੰਨਰ ਜਲਦੀ ਰੁਕ ਜਾਂਦਾ ਹੈ ਤਾਂ ਕਿਹੜੀ ਤਬਦੀਲੀ ਮਦਦ ਕਰ ਸਕਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਭਾਰ ਵਧਾਉਣ ਲਈ ਹੋਰ ਸਿੱਕੇ ਜੋੜੋ।",
+                            "2": "ਸਪਿੰਨਰ ਟ੍ਰੇਸ ਕਰਨ ਲਈ ਵੱਡਾ ਸਿੱਕਾ ਵਰਤੋ।",
+                            "3": "ਯਕੀਨੀ ਕਰੋ ਕਿ ਟੂਥਪਿੱਕ ਅਤੇ ਗੋਲੇ ਚਿਪਕੇ ਨਾ ਹੋਣ।"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U04",
+            "ord": 4,
+            "nm": "Balloon Becomes Rocket 🚀",
+            "desc": "The concept of potential energy (air inside the balloon) and kinetic energy (the movement of the rocket).\nNewton’s Third Law of Motion — that forces always occur in pairs: for every action, there is an equal and opposite reaction.\nHow air pressure inside a balloon can act as fuel to move objects.\nThe principle behind how rockets use gases escaping downward to propel themselves upward.\nBasic principles of force and motion in physics.",
+            "rwc": "Scissors, Tape, String, Balloon, Straw",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U04-V01",
+                    "nm": "Can air make balloons fly? 🚀",
+                    "desc": "ਇਸ ਗਤੀਵਿਧੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਖੁਦ ਦੇ ਗੁਬਬਾਰੇ ਰਾਕੇਟ ਬਣਾਉਣਗੇ ਤਾਂ ਜੋ ਉਹ ਨਿਊਟਨ ਦੇ ਗਤੀ ਦੇ ਤੀਸਰੇ ਨਿਯਮ ਦੇ ਵਿਗਿਆਨ ਨੂੰ ਸਮਝ ਸਕਣ। ਗੁਬਬਾਰੇ ਵਿੱਚ ਹਵਾ ਭਰ ਕੇ ਅਤੇ ਇਸਨੂੰ ਇੰਧਨ ਵਜੋਂ ਵਰਤ ਕੇ, ਵਿਦਿਆਰਥੀ ਸਮਝਣਗੇ ਕਿ ਕਿਵੇਂ ਬਾਹਰ ਨਿਕਲਦੀ ਹਵਾ ਇੱਕ ਬਲ ਪੈਦਾ ਕਰਦੀ ਹੈ ਜੋ ਗੁਬਬਾਰੇ ਨੂੰ ਅੱਗੇ ਵਧਾਉਂਦੀ ਹੈ, ਬਿਲਕੁਲ ਜਿਵੇਂ ਰਾਕੇਟ ਕੰਮ ਕਰਦਾ ਹੈ। ਇਹ ਮਜ਼ੇਦਾਰ ਹੱਥੋਂ-ਹੱਥ ਗਤੀਵਿਧੀ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਕ੍ਰਿਆ ਅਤੇ ਪ੍ਰਤੀਕ੍ਰਿਆ ਦੇ ਵਿਚਕਾਰ ਸੰਬੰਧ ਨੂੰ ਇੱਕ ਸਾਦੀ ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਤਰੀਕੇ ਨਾਲ ਸਿੱਖਣ ਦਾ ਮੌਕਾ ਦਿੰਦੀ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U04-A01",
+                    "nm": "Launch a Balloon Rocket Race 🚀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਗੁਬਾਰਾ ਰਾਕੇਟ ਸੈੱਟਅਪ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਗੁਬਾਰਾ, ਸਟ੍ਰਾਅ, ਧਾਗਾ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U04-Q01",
+                "nm": "What pushes the balloon rocket? 🚀",
+                "qs": [
+                    {
+                        "q": "ਗੁਬਾਰੇ ਨੂੰ ਰੱਸੇ ਨਾਲ ਚਲਾਉਣ ਲਈ ਤੁਸੀਂ ਕੀ ਚੀਜ਼ ਜੁੜਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਸਟ੍ਰਾ",
+                            "2": "ਟੇਪ",
+                            "3": "ਕਾਗਜ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਗੁਬਾਰੇ ਰਾਕੇਟ ਲਈ ਸਾਨੂੰ ਲੰਮੀ ਰੱਸੀ ਦੀ ਜ਼ਰੂਰਤ ਕਿਉਂ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਸਨੂੰ ਸੁਥਰਾ ਦਿਖਾਉਣ ਲਈ",
+                            "2": "ਤਾਂ ਜੋ ਗੁਬਾਰਾ ਵਧੇਰੇ ਦੂਰੀ ਤੱਕ ਜਾ ਸਕੇ",
+                            "3": "ਕਈ ਗੁਬਾਰੇ ਬੰਨ੍ਹਣ ਲਈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜਦੋਂ ਗੁਬਾਰਾ ਛੱਡਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਇਹ ਅੱਗੇ ਕਿਉਂ ਵੱਧਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੁਬਾਰੇ ਅੰਦਰਲੀਆਂ ਹਵਾ ਗਾਇਬ ਹੋ ਜਾਂਦੀ ਹੈ",
+                            "2": "ਰੱਸੀ ਗੁਬਾਰੇ ਨੂੰ ਖਿੱਚਦੀ ਹੈ",
+                            "3": "ਹੇਠਾਂ ਨਿਕਲ ਰਹੀ ਹਵਾ ਗੁਬਾਰੇ ਨੂੰ ਅੱਗੇ ਵੱਧਾਉਂਦੀ ਹੈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਿਹੜਾ ਕਨੂੰਨ ਗੁਬਾਰਾ ਰਾਕੇਟ ਦੀ ਗਤੀ ਨੂੰ ਵਿਆਖਿਆ ਕਰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਨਿਊਟਨ ਦਾ ਤੀਜਾ ਕਨੂੰਨ",
+                            "2": "ਨਿਊਟਨ ਦਾ ਪਹਿਲਾ ਕਨੂੰਨ",
+                            "3": "ਨਿਊਟਨ ਦਾ ਦੂਜਾ ਕਨੂੰਨ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜਦੋਂ ਤੁਸੀਂ ਰੱਸੀ 'ਤੇ ਗੁਬਾਰਾ ਛੱਡਦੇ ਹੋ ਤਾਂ ਕੀ ਹੁੰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੁਬਾਰਾ ਜਗ੍ਹਾ 'ਤੇ ਰਹਿੰਦਾ ਹੈ",
+                            "2": "ਗੁਬਾਰਾ ਪਿੱਛੇ ਵੱਧਦਾ ਹੈ",
+                            "3": "ਗੁਬਾਰਾ ਰੱਸੀ ਦੇ ਨਾਲ ਅੱਗੇ ਵੱਧਦਾ ਹੈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U05",
+            "ord": 5,
+            "nm": "Air Builds the Car 🎈",
+            "desc": "Students will be able to observe and explain how forces create motion.\n\nStudents will understand Newton’s Third Law of Motion, which states that for every action, there is an equal and opposite reaction. When air is pushed out of the balloon (action), the car moves forward (reaction).\n\nThey will also learn that force can create motion, and the direction of force affects how objects move.",
+            "rwc": "Scissors, Cardboard, Tape, Balloon, Bottle, Straw",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U05-V01",
+                    "nm": "Can air push a car? 🎈",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਧਾਰਨ ਸਮੱਗਰੀ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਗੁਬਾਰੇ-ਚਲਿਤ ਕਾਰ ਬਣਾਉਣਗੇ ਅਤੇ ਦੇਖਣਗੇ ਕਿ ਗੁਬਾਰੇ ਵਿੱਚੋਂ ਹਵਾ ਨਿਕਲਣ 'ਤੇ ਇਹ ਕਿਵੇਂ ਹਿਲਦੀ ਹੈ। ਇਸ ਹੈਂਡਸ-ਆਨ ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਇਹ ਪੜਚੋਲ ਕਰਨਗੇ ਕਿ ਕਿਵੇਂ ਬਲ ਵਿਰੁੱਧ ਦਿਸ਼ਾਵਾਂ ਵਿੱਚ ਕਾਰਵਾਈ ਕਰਦੇ ਹਨ ਅਤੇ ਕਿਵੇਂ ਹਵਾ ਦੇ ਦਬਾਅ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਗਤੀ ਬਣਦੀ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U05-A01",
+                    "nm": "Build a Balloon Powered Car 🎈",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਗੁਬਾਰਾ ਕਾਰ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਗੱਤਾ, ਸਟ੍ਰਾਅ ਅਤੇ ਗੁਬਾਰਾ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U05-Q01",
+                "nm": "What pushes the balloon car? 🚗",
+                "qs": [
+                    {
+                        "q": "ਕਿਹੜਾ ਨਿਯਮ ਦੱਸਦਾ ਹੈ ਕਿ ਡ੍ਰਿਬਲ ਕਰਨ ਤੇ ਗੇਂਦ ਵਾਪਸ ਕਿਉਂ ਉਛਲਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੁਰੂਤਾਕਰਸ਼ਣ ਦਾ ਨਿਯਮ",
+                            "2": "ਨਿਊਟਨ ਦਾ ਤੀਜਾ ਗਤੀ ਨਿਯਮ",
+                            "3": "ਜੜਤਾ ਦਾ ਨਿਯਮ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜਦੋਂ ਗੇਂਦ ਨੂੰ ਜ਼ਮੀਨ ਵੱਲ ਧੱਕਿਆ ਜਾਂਦਾ ਹੈ ਤਾਂ ਜ਼ਮੀਨ ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੁੰਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਬਲ ਨੂੰ ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੋਖ ਲੈਂਦੀ ਹੈ",
+                            "2": "ਇਹ ਬਰਾਬਰ ਬਲ ਨਾਲ ਵਾਪਸ ਧੱਕਦੀ ਹੈ",
+                            "3": "ਇਹ ਲਗਾਏ ਗਏ ਬਲ ਨੂੰ ਗੁਣਾ ਕਰਦੀ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਬਲੂਨ ਕਾਰ ਦੇ ਪਹੀਏ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਮਟੀਰੀਅਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਬੋਤਲ ਦੇ ਢੱਕਣ",
+                            "2": "ਸਟ੍ਰਾਅ",
+                            "3": "ਲੱਕੜੀ ਦੀਆਂ ਡੰਡੀਆਂ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਬਲੂਨ ਕਾਰ ਅੱਗੇ ਨਹੀਂ ਜਾਂਦੀ ਤਾਂ ਪਹਿਲਾਂ ਕਿਹੜਾ ਕਦਮ ਜਾਂਚਣਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਯਕੀਨੀ ਕਰੋ ਕਿ ਸਟ੍ਰਾਅ ਸਮਾਨਾਂਤਰ ਚਿਪਕੇ ਹਨ",
+                            "2": "ਯਕੀਨੀ ਕਰੋ ਕਿ ਬਲੂਨ ਤੋਂ ਹਵਾ ਨਹੀਂ ਨਿਕਲ ਰਹੀ",
+                            "3": "ਜਾਂਚੋ ਕਿ ਗੱਤਾ ਸਹੀ ਆਇਤਾਕਾਰ ਕੱਟਿਆ ਗਿਆ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਆਸਾਨੀ ਨਾਲ ਮਿਲਣ ਵਾਲੀ ਚੀਜ਼ ਨਾਲ ਨਿਊਟਨ ਦੇ ਤੀਜੇ ਨਿਯਮ ਦੇ ਸਿਧਾਂਤਾਂ ਦੀ ਜਾਂਚ ਕਿਵੇਂ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਲੱਟੂ ਘੁੰਮਾਓ",
+                            "2": "ਗੇਂਦ ਉਛਾਲੋ",
+                            "3": "ਟ੍ਰੈਂਪੋਲਿਨ ਤੇ ਛਾਲ ਮਾਰੋ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U06",
+            "ord": 6,
+            "nm": "Twist Powers the Boat 🌊",
+            "desc": "Students will learn how energy is stored and transferred. In this case, potential energy is stored when the rubber band is twisted. Upon release, this stored energy converts into kinetic energy, which powers the boat’s movement. The project also introduces basic principles of force and motion, as well as the concept of mechanical work done by a simple machine (the rubber band acting like a motor).",
+            "rwc": "Scissors, Paper, Cardboard, Tape, Bottle, Rubber Band, Paddle)",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U06-V01",
+                    "nm": "Can a twist power boats? 🌊",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਰਿਬਰ ਬੈਂਡ ਦੀ ਮਦਦ ਨਾਲ ਚਲਣ ਵਾਲੀ ਛੋਟੀ ਬੋਟ ਬਣਾਉਣਗੇ। ਸੰਭਾਵਿਤ ਅਤੇ ਗਤੀਜ ਉਰਜਾ ਦੇ ਸੰਕਲਪ ਨੂੰ ਸਮਝ ਕੇ, ਉਹ ਸਿੱਖਣਗੇ ਕਿ ਰਿਬਰ ਬੈਂਡ ਵਿੱਚ ਕਿਵੇਂ ਉਰਜਾ ਸਟੋਰ ਕਰਨੀ ਹੈ ਅਤੇ ਇਸ ਨੂੰ ਪਾਣੀ ਵਿੱਚ ਬੋਟ ਨੂੰ ਅੱਗੇ ਵਧਾਉਣ ਲਈ ਕਿਵੇਂ ਜਾਰੀ ਕਰਨਾ ਹੈ। ਇਹ ਹੈਂਡਸ-ਆਨ ਪ੍ਰੋਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਭੌਤਿਕ ਵਿਗਿਆਨ ਅਤੇ ਇੰਜੀਨੀਅਰਿੰਗ ਦੇ ਮੁੱਢਲੀਆਂ ਸਿਧਾਂਤਾਂ ਦੀ ਪੜਚੋਲ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜਦੋਂਕਿ ਉਹ ਇੱਕ ਸਧਾਰਨ ਪਰ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਡਿਜ਼ਾਈਨ ਨਾਲ ਮਜ਼ੇ ਕਰਦੇ ਹਨ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U06-A01",
+                    "nm": "Build a Rubber Band Boat 🌊",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਰਬੜਬੈਂਡ ਕਿਸ਼ਤੀ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਬੋਤਲ, ਰਬੜਬੈਂਡ ਅਤੇ ਸਟਿੱਕਾਂ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U06-Q01",
+                "nm": "What hides inside a rubber band? ⚡",
+                "qs": [
+                    {
+                        "q": "ਰਬੜ ਬੈਂਡ ਮਰੋੜਨ ਤੇ ਕਿਹੜੀ ਊਰਜਾ ਸੰਭਾਲੀ ਜਾਂਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਤਾਪ ਊਰਜਾ",
+                            "2": "ਲਚਕਦਾਰ ਸੰਭਾਵੀ ਊਰਜਾ",
+                            "3": "ਗਤੀ ਊਰਜਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਰਬੜ ਬੈਂਡ ਵਿੱਚ ਸੰਭਾਲੀ ਸੰਭਾਵੀ ਊਰਜਾ ਛੱਡਣ ਤੇ ਕੀ ਹੁੰਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਗਤੀ ਊਰਜਾ ਵਿੱਚ ਬਦਲ ਜਾਂਦੀ ਹੈ",
+                            "2": "ਇਹ ਤਾਪ ਊਰਜਾ ਵਿੱਚ ਬਦਲ ਜਾਂਦੀ ਹੈ",
+                            "3": "ਇਹ ਸੰਭਾਵੀ ਊਰਜਾ ਹੀ ਰਹਿੰਦੀ ਹੈ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਿਸ਼ਤੀ ਦੇ ਪ੍ਰਯੋਗ ਵਿੱਚ ਪਲਾਸਟਿਕ ਦੀ ਬੋਤਲ ਨਾਲ ਲੱਕੜੀ ਦੀਆਂ ਡੰਡੀਆਂ ਜੋੜਨ ਲਈ ਕਿਹੜਾ ਮਟੀਰੀਅਲ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਰਬੜ ਬੈਂਡ",
+                            "2": "ਟੇਪ",
+                            "3": "ਗੂੰਦ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਕਿਸ਼ਤੀ ਵਾਲੇ ਸਿਧਾਂਤ ਨਾਲ ਬਲੂਨ ਕਾਰ ਬਣਾਈ। ਕਾਰ ਤੇਜ਼ ਕਿਵੇਂ ਕਰੋਗੇ?",
+                        "opts": {
+                            "1": "ਕਾਰ ਦੇ ਢਾਂਚੇ ਲਈ ਹਲਕਾ ਗੱਤਾ ਵਰਤੋ",
+                            "2": "ਪਹੀਏ ਵੱਡੇ ਅਤੇ ਭਾਰੇ ਬਣਾਓ",
+                            "3": "ਬਿਨਾਂ ਜੋੜੇ ਅਧਾਰ ਤੇ ਵਾਧੂ ਬਲੂਨ ਲਗਾਓ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਲੱਕੜੀ ਦੀ ਡੰਡੀ ਛੱਡਣ ਤੋਂ ਬਾਅਦ ਤੁਹਾਡੀ ਕਿਸ਼ਤੀ ਨਹੀਂ ਹਿੱਲਦੀ। ਸਮੱਸਿਆ ਕੀ ਹੋ ਸਕਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਾਣੀ ਕਿਸ਼ਤੀ ਲਈ ਬਹੁਤ ਘੱਟ ਹੈ",
+                            "2": "ਰਬੜ ਬੈਂਡ ਕਾਫ਼ੀ ਮਰੋੜਿਆ ਨਹੀਂ",
+                            "3": "ਰਬੜ ਬੈਂਡ ਬਹੁਤ ਤੰਗ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U07",
+            "ord": 7,
+            "nm": "Band Turns the Wheels 🔄",
+            "desc": "The concept of potential energy (energy stored in an object, like a twisted rubber band).\nThe concept of kinetic energy (energy in motion, like the movement of the car).\nHow friction helps wheels grip the surface for better movement.\nBasic mechanical design principles and how simple materials can create functional systems.\nThe relationship between energy storage and release in physical objects.",
+            "rwc": "Scissors, Glue, Tape, Straw, Pencil",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U07-V01",
+                    "nm": "Can rubber bands move cars? 🔄",
+                    "desc": "ਇਸ ਗਤੀਵਿਧੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਰਬੜ ਬੈਂਡ ਕਾਰ ਬਣਾਉਣਗੇ ਤਾਂ ਜੋ ਉਹ ਸਮਝ ਸਕਣ ਕਿ ਊਰਜਾ ਕਿਵੇਂ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਬਦਲੀ ਜਾਂਦੀ ਹੈ। ਆਈਸ ਕ੍ਰੀਮ ਸਟਿਕਾਂ, ਸਟਰੌ ਅਤੇ ਰਬੜ ਬੈਂਡ ਵਰਗੀਆਂ ਸਧਾਰਣ ਸਮੱਗਰੀਆਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਐਸੀ ਕਾਰ ਬਣਾਉਣਗੇ ਜੋ ਸੰਭਾਵਿਤ ਊਰਜਾ (ਜੋ ਰਬੜ ਬੈਂਡ ਦੇ ਮੁੜੇ ਹੋਏ ਹਿੱਸੇ ਵਿੱਚ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ) ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਚਲਦੀ ਹੈ ਅਤੇ ਇਸਨੂੰ ਗਤਿਜ਼ ਊਰਜਾ (ਗਤੀ) ਵਿੱਚ ਬਦਲਦੀ ਹੈ। ਇਹ ਗਤੀਵਿਧੀ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਊਰਜਾ, ਗਤੀ ਅਤੇ ਘਰਸ਼ਣ ਦੇ ਮੁੱਖ ਸਿਧਾਂਤਾਂ ਨੂੰ ਮਜ਼ੇਦਾਰ ਅਤੇ ਇੰਟਰਐਕਟਿਵ ਤਰੀਕੇ ਨਾਲ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦੀ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U07-A01",
+                    "nm": "Build a Rubber Band Car 🔄",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਰਬੜਬੈਂਡ ਕਾਰ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਗੱਤਾ, ਰਬੜਬੈਂਡ, ਪਹੀਏ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U07-Q01",
+                "nm": "Can rubber bands store energy? 🔋",
+                "qs": [
+                    {
+                        "q": "\"ਜਦੋਂ ਤੁਸੀਂ ਇੱਕ ਰਬੜ ਬੈਂਡ ਨੂੰ ਖਿੱਚਦੇ ਹੋ, ਤਾਂ ਇਸ ਵਿੱਚ ਕਿਸ ਤਰ੍ਹਾਂ ਦੀ ਊਰਜਾ ਸੰਭਾਲੀ ਜਾਂਦੀ ਹੈ?\"",
+                        "opts": {
+                            "1": "ਗਤਿਊਰਜਾ",
+                            "2": "ਸੰਭਾਵਿਤ ਊਰਜਾ",
+                            "3": "ਤਾਪ ਊਰਜਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "\"ਜਦੋਂ ਰਬੜ ਬੈਂਡ ਛੱਡ ਦਿੱਤਾ ਜਾਂਦਾ ਹੈ, ਤਾਂ ਇਸ ਦੀ ਸੰਭਾਵਿਤ ਊਰਜਾ ਕਿਸ ਵਿੱਚ ਬਦਲ ਜਾਂਦੀ ਹੈ?\"",
+                        "opts": {
+                            "1": "ਰੌਸ਼ਨੀ ਦੀ ਊਰਜਾ",
+                            "2": "ਰਸਾਇਣਿਕ ਊਰਜਾ",
+                            "3": "ਗਤਿਊਰਜਾ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "\"ਰਬੜ ਬੈਂਡ ਕਾਰ ਅੱਗੇ ਕਿਉਂ ਚਲਦੀ ਹੈ?\"",
+                        "opts": {
+                            "1": "ਚੁੰਬਕੀ ਤਾਕਤ ਕਾਰਨ",
+                            "2": "ਕਿਉਂਕਿ ਸੰਭਾਵਿਤ ਊਰਜਾ ਗਤਿਊਰਜਾ ਵਿੱਚ ਬਦਲ ਜਾਂਦੀ ਹੈ",
+                            "3": "ਸਿਰਫ ਘਰਸ਼ਣ ਕਾਰਨ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "\"ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਰਬੜ ਬੈਂਡ ਕਾਰ ਤੇਜ਼ ਚੱਲੇ, ਤਾਂ ਤੁਸੀਂ ਕੀ ਕਰੋਗੇ?\"",
+                        "opts": {
+                            "1": "ਛੋਟਾ ਰਬੜ ਬੈਂਡ ਵਰਤੋਂ",
+                            "2": "- ਪਹੀਿਆਂ ਦੀ ਗਿਣਤੀ ਘਟਾਓ",
+                            "3": "ਰਬੜ ਬੈਂਡ ਨੂੰ ਹੋਰ ਖਿੱਚੋ ਜਾਂ ਮੋੜੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "\"ਜੇ ਤੁਸੀਂ ਖਿੱਚੇ ਹੋਏ ਰਬੜ ਬੈਂਡ ਵਿੱਚ ਸੰਭਾਲੀ ਸੰਭਾਵਿਤ ਊਰਜਾ ਨੂੰ ਗਤਿਊਰਜਾ ਵਿੱਚ ਬਦਲਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕੀ ਕਰੋਗੇ?\"",
+                        "opts": {
+                            "1": "ਕੁਝ ਵੀ ਨਾ ਕਰੋ",
+                            "2": "ਊਰਜਾ ਬਦਲਣ ਲਈ ਦੂਜਾ ਰਬੜ ਬੈਂਡ ਵਰਤੋਂ",
+                            "3": "ਰਬੜ ਬੈਂਡ ਨੂੰ ਛੱਡ ਦਿਓ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U08",
+            "ord": 8,
+            "nm": "Claws Grip Everything 🦾",
+            "desc": "Students will be able to observe and explain how applying force can change the shape and movement of an object.\n\nThey will understand that pressure and force help create a gripping action. When the cup is pressed, the flaps close inward, allowing the claw to grab objects. When released, the flaps open again.\n\nStudents will also learn that design and structure play an important role in how effectively a machine works.",
+            "rwc": "Paper, Cup, Scissors, Straw, Tape, Paint, Crayons",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U08-V01",
+                    "nm": "Can paper cups grip things? 🦾",
+                    "desc": "ਵਿਦਿਆਰਥੀ ਕਾਗਜ਼ ਦੇ ਕੱਪ ਅਤੇ ਸਟ੍ਰਾ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਧਾਰਨ ਕਲਾਅ ਵਰਗਾ ਗ੍ਰੈਬਰ ਬਣਾਉਂਦੇ ਹਨ। ਉਹ ਸਟ੍ਰਾ ਨੂੰ ਖਿੱਚਣਗੇ ਤਾਂ ਜੋ ਹਿਲਚਲ ਤੇ ਕਾਬੂ ਪਾ ਸਕਣ ਅਤੇ ਛੋਟੇ ਚੀਜ਼ਾਂ ਨੂੰ ਫੜ ਸਕਣ, ਜਿਸ ਨਾਲ ਇੱਕ ਅਸਲੀ ਕਲਾਅ ਮਸ਼ੀਨ ਦੀ ਨਕਲ ਬਣਦੀ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U08-A01",
+                    "nm": "Build a Paper Cup Claw 🦾",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਕਲਾਅ ਮਸ਼ੀਨ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਕਾਗਜ਼ੀ ਕੱਪ, ਪੰਜੇ ਅਤੇ ਧਾਗਾ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U08-Q01",
+                "nm": "Can you build a claw? 🦾",
+                "qs": [
+                    {
+                        "q": "ਉਹ ਖੇਡ ਮਸ਼ੀਨ ਦਾ ਨਾਮ ਕੀ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਖਿਡੌਣੇ ਚੁੱਕਣ ਲਈ ਪੰਜਾ ਵਰਤਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਪਿਨਬਾਲ ਮਸ਼ੀਨ",
+                            "2": "ਸਲਾਟ ਮਸ਼ੀਨ",
+                            "3": "ਪੰਜਾ ਮਸ਼ੀਨ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਘਰ ਵਿੱਚ ਬਣੀ ਪੰਜਾ ਮਸ਼ੀਨ ਵਿੱਚ ਸਟ੍ਰਾਅ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਮਸ਼ੀਨ ਸਜਾਉਣ ਲਈ",
+                            "2": "ਕਾਗਜ਼ੀ ਕੱਪ ਕੱਟਣ ਲਈ",
+                            "3": "ਪੰਜੇ ਨੂੰ ਜੋੜਨ ਅਤੇ ਹਿਲਾਉਣ ਲਈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਪੰਜਾ ਮਸ਼ੀਨ ਲਈ ਕਾਗਜ਼ੀ ਕੱਪਾਂ ਤੇ ਫਲੈਪ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਸੰਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਕੈਂਚੀ",
+                            "2": "ਗੂੰਦ",
+                            "3": "ਪੇਂਟਬ੍ਰਸ਼"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਕਾਗਜ਼ੀ ਕੱਪ ਦੇ ਫਲੈਪ ਪੰਜੇ ਵਰਗੀ ਬਣਤਰ ਨਹੀਂ ਬਣਾ ਰਹੇ ਤਾਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਫਲੈਪਾਂ ਨੂੰ ਥੋੜ੍ਹਾ ਮੋੜੋ",
+                            "2": "ਵਧੇਰੇ ਟੇਪ ਲਗਾਓ",
+                            "3": "ਹੋਰ ਫਲੈਪ ਕੱਟੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਸਟ੍ਰਾਅ ਕਾਗਜ਼ੀ ਕੱਪ ਦੇ ਮੋਰੀ ਵਿੱਚੋਂ ਨਹੀਂ ਲੰਘਦਾ ਤਾਂ ਸੰਭਾਵਿਤ ਹੱਲ ਕੀ ਹੋ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਵੱਖਰਾ ਸਟ੍ਰਾਅ ਵਰਤੋ",
+                            "2": "ਸਟ੍ਰਾਅ ਪੂਰੀ ਤਰ੍ਹਾਂ ਹਟਾਓ",
+                            "3": "ਮੋਰੀ ਧਿਆਨ ਨਾਲ ਵੱਡੀ ਕਰੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U09",
+            "ord": 9,
+            "nm": "Fingers Pick the Fruit 🍎",
+            "desc": "Students will learn that many machines are inspired by nature—this concept is called biomimicry.\n\nThey will understand that when a force is applied by pulling a rope (tension), it creates movement in connected parts. In this model, pulling the threads causes the plastic “fingers” to close, allowing the arm to grip objects.\n\nThey will also explore how structures designed with multiple moving parts can work together like muscles in our body or claws in animals to perform tasks efficiently.",
+            "rwc": "Bottle, Glue, Scissors, Thread, Rope",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U09-V01",
+                    "nm": "Can a bottle pick fruit? 🍎",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਇੱਕ ਪਲਾਸਟਿਕ ਦੀ ਬੋਤਲ ਅਤੇ ਧਾਗੇ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਸਧਾਰਨ ਮਕੈਨਿਕਲ ਬਾਂਹ (ਫਲ ਚੁੱਕਣ ਵਾਲਾ) ਬਣਾਉਣਗੇ। ਕਾਮਿਲੀਅਨ ਅਤੇ ਕੇਕੜੇ ਵਰਗੇ ਜਾਨਵਰ ਜਿਵੇਂ ਚੀਜ਼ਾਂ ਨੂੰ ਫੜਦੇ ਹਨ, ਇਸ ਤੋਂ ਪ੍ਰੇਰਿਤ ਹੋ ਕੇ, ਵਿਦਿਆਰਥੀ ਇਹ ਪਤਾ ਲਗਾਉਣਗੇ ਕਿ ਕਿਵੇਂ ਖਿੱਚਣ ਵਾਲੇ ਮਕੈਨਿਜ਼ਮ ਹਿਲਚਲ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰ ਸਕਦੇ ਹਨ। ਇਹ ਹੈਂਡਜ਼-ਆਨ ਪ੍ਰੋਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਇਹ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ ਕਿ ਕਿਵੇਂ ਕੁਦਰਤ ਤਕਨਾਲੋਜੀ ਨੂੰ ਪ੍ਰੇਰਿਤ ਕਰਦੀ ਹੈ ਅਤੇ ਸਧਾਰਨ ਮਸ਼ੀਨਾਂ ਨੂੰ ਵਰਤੋਂਯੋਗ ਕੰਮ ਜਿਵੇਂ ਕਿ ਫਲ ਚੁੱਕਣ ਲਈ ਕਿਵੇਂ ਡਿਜ਼ਾਇਨ ਕੀਤਾ ਜਾ ਸਕਦਾ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U09-A01",
+                    "nm": "Build a Mechanical Fruit Picker 🍎",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਫਲ ਚੁੱਕਣ ਵਾਲੇ ਯੰਤਰ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਬੋਤਲ, ਧਾਗਾ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U09-Q01",
+                "nm": "Can a bottle be an arm? 💪",
+                "qs": [
+                    {
+                        "q": "ਅਸੀਂ ਕੁਦਰਤ ਤੋਂ ਪ੍ਰੇਰਿਤ ਹੋ ਕੇ ਕੀ ਬਣਾ ਰਹੇ ਹਾਂ?",
+                        "opts": {
+                            "1": "ਇੱਕ ਮਕੈਨੀਕਲ ਬਾਂਹ",
+                            "2": "ਇੱਕ ਉੱਡਣ ਵਾਲੀ ਕਾਰ",
+                            "3": "ਇੱਕ ਰੋਬੋਟ ਕੁੱਤਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਮਕੈਨੀਕਲ ਬਾਂਹ ਕੁਦਰਤ ਦੇ ਕਿਹੜੇ ਤੱਤ ਤੋਂ ਪ੍ਰੇਰਿਤ ਹੈ?",
+                        "opts": {
+                            "1": "ਗਿਰਗਿਟ ਦੀ ਜੀਭ",
+                            "2": "ਹਾਥੀ ਦੀ ਸੁੰਡ",
+                            "3": "ਮੱਕੜੀ ਦਾ ਜਾਲ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਮਕੈਨੀਕਲ ਬਾਂਹ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਚੀਜ਼ਾਂ ਡੇਗਣਾ",
+                            "2": "ਚੀਜ਼ਾਂ ਫੜਨਾ",
+                            "3": "ਬਿਜਲੀ ਪੈਦਾ ਕਰਨਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਉਂਗਲਾਂ ਵਾਂਗ ਕੰਮ ਕਰਵਾਉਣ ਲਈ ਬੋਤਲ ਦੇ ਅਧਾਰ ਨੂੰ ਕਿੰਨੇ ਹਿੱਸਿਆਂ ਵਿੱਚ ਕੱਟੋਗੇ?",
+                        "opts": {
+                            "1": "4 ਹਿੱਸੇ",
+                            "2": "5 ਹਿੱਸੇ",
+                            "3": "8 ਹਿੱਸੇ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਖਿੱਚਣ ਤੇ ਪਲਾਸਟਿਕ ਉਂਗਲਾਂ ਖੋਲ੍ਹਣ ਲਈ ਕਿਹੜਾ ਮਟੀਰੀਅਲ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪੇਪਰ ਕਲਿੱਪ",
+                            "2": "ਗੱਤਾ",
+                            "3": "ਧਾਗੇ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U10",
+            "ord": 10,
+            "nm": "Scale Finds the Balance ⚖️",
+            "desc": "Students will learn that a balance weighing scale is a simple machine used to compare the weight of two objects.\n\nThey will understand the concept of equilibrium, where both sides of the scale are equal and balanced. When one side is heavier, it goes down, and the lighter side goes up—just like a see-saw.\n\nThey will also learn that balance depends on equal forces acting on both sides, helping us measure and compare weights accurately.",
+            "rwc": "Cardboard, Paper, Glue, Wooden Sticks, Thread, Scissors",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U10-V01",
+                    "nm": "Can cups balance any weight? ⚖️",
+                    "desc": "---\n\nਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਪੇਪਰ ਕੱਪ, ਕਾਰਡਬੋਰਡ ਅਤੇ ਧਾਗੇ ਵਰਗੀਆਂ ਸਧਾਰਨ ਸਮੱਗਰੀ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਤ੍ਰਾਸ ਦਾ ਕੰਮ ਕਰਨ ਵਾਲਾ ਮਾਡਲ ਬਣਾਉਣਗੇ। ਕਹਾਣੀ ਕਥਾ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਰਾਹੀਂ, ਉਹ ਸਿੱਖਦੇ ਹਨ ਕਿ ਇੱਕ ਤ੍ਰਾਸ ਕਿਵੇਂ ਸੀ-ਸਾ ਦੀ ਤਰ੍ਹਾਂ ਸੰਤੁਲਨ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਭਾਰਾਂ ਦੀ ਤੁਲਨਾ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ। ਇਹ ਹੈਂਡਸ-ਆਨ ਪ੍ਰੋਜੈਕਟ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਸਧਾਰਨ ਮਸ਼ੀਨਾਂ ਅਤੇ ਸੰਤੁਲਨ ਜਾਂ ਸਮਤੋਲਤਾ ਦੀ ਸੰਕਲਪਨਾ ਨਾਲ ਜਾਣੂ ਕਰਵਾਉਂਦਾ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U10-A01",
+                    "nm": "Build a Balance Weighing Scale ⚖️",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦੀ ਇੱਕ ਸਾਫ਼ ਤਸਵੀਰ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਤੁਲਾ ਦੇ ਸਾਰੇ ਹਿੱਸੇ (ਬੀਮ ਅਤੇ ਕੱਪ) ਸਾਫ਼ ਦਿਖਾਈ ਦੇਣ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U10-Q01",
+                "nm": "Can you balance anything? ⚖️",
+                "qs": [
+                    {
+                        "q": "ਤੁਲੇ ਵਾਲੇ ਵਜ਼ਨ ਪੈਮਾਨੇ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਤਾਪਮਾਨ ਮਾਪਣਾ",
+                            "2": "ਵਸਤੂਆਂ ਦੀ ਪੁੰਜ ਜਾਂ ਭਾਰ ਦੀ ਤੁਲਨਾ ਕਰਨਾ",
+                            "3": "ਵਸਤੂਆਂ ਦੀ ਉਚਾਈ ਮਾਪਣਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਅਨਿਆ ਨੇ ਗੱਤੇ ਦੀ ਵਰਤੋਂ ਕਿਸ ਲਈ ਕੀਤੀ?",
+                        "opts": {
+                            "1": "ਵਸਤੂਆਂ ਨੂੰ ਨੁਕਸਾਨ ਤੋਂ ਬਚਾਉਣ ਲਈ",
+                            "2": "ਵਸਤੂਆਂ ਦੀ ਉਚਾਈ ਮਾਪਣ ਲਈ",
+                            "3": "ਤੁਲੇ ਲਈ ਸ਼ਹਿਤੀਰ ਬਣਾਉਣ ਲਈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀਆਂ ਵਸਤੂਆਂ ਵਜ਼ਨ ਰੱਖਣ ਲਈ ਵਰਤੀਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ?",
+                        "opts": {
+                            "1": "ਕਾਗਜ਼",
+                            "2": "ਡੰਡੀਆਂ",
+                            "3": "ਕਾਗਜ਼ੀ ਕੱਪ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਸ਼ਹਿਤੀਰ ਤੁਲਾ ਸਜਾਉਣ ਲਈ ਕਿਹੜੀ ਕੁਸ਼ਲਤਾ ਮਦਦ ਕਰਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਰਚਨਾਤਮਕ ਸੋਚ",
+                            "2": "ਮਾਪਣਾ ਅਤੇ ਤੋਲਣਾ",
+                            "3": "ਸਮੱਸਿਆ ਹੱਲ ਕਰਨਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਲੇ ਦਾ ਇੱਕ ਪਾਸਾ ਦੂਜੇ ਨਾਲੋਂ ਭਾਰਾ ਹੋਵੇ ਤਾਂ ਤੁਸੀਂ ਤੁਲਾ ਕਿਵੇਂ ਸੰਤੁਲਿਤ ਕਰੋਗੇ?",
+                        "opts": {
+                            "1": "ਦੋਵੇਂ ਪਾਸੇ ਬਰਾਬਰ ਵਜ਼ਨ ਰੱਖ ਕੇ",
+                            "2": "ਹਲਕੇ ਪਾਸੇ ਥੋੜ੍ਹਾ ਵਜ਼ਨ ਜੋੜ ਕੇ",
+                            "3": "ਵਸਤੂਆਂ ਦੀ ਸਥਿਤੀ ਬਦਲ ਕੇ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

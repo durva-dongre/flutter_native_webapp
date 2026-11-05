@@ -1,0 +1,889 @@
+{
+    "id": "CSJC1",
+    "nm": "♫ Scratch Jr Fun",
+    "desc": "In this activity, students learn how to download and open the Scratch Junior app on their devices. They explore the home screen, understand the stage, add sprites, create a simple animated project, and experiment with basic blocks like motion and trigger blocks. Students also learn to customize their project with titles, colors, and backgrounds to create their first animation.",
+    "vrt": "coding",
+    "lvl": "1",
+    "units": [
+        {
+            "id": "CSJC1-U01",
+            "ord": 1,
+            "nm": "First Code Awakens 🐱",
+            "desc": "App installation and navigation (Google Play Store / App Store).\n\nScratch Junior interface: Home icon, My Projects page, stage, programming area.\n\nSprite management: adding and removing characters.\n\nBlock categories: trigger blocks, motion blocks, end blocks.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U01-V01",
+                    "nm": "Can your phone build games? 📱",
+                    "desc": "ਇਸ ਗਤੀਵਿਧੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਡਿਵਾਈਸਾਂ 'ਤੇ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ (Scratch Junior) ਐਪ ਡਾਊਨਲੋਡ ਕਰਨਾ ਅਤੇ ਖੋਲ੍ਹਣਾ ਸਿੱਖਣਗੇ। ਉਹ ਹੋਮ ਸਕ੍ਰੀਨ ਦੀ ਜਾਂਚ ਕਰਨਗੇ, ਸਟੇਜ ਨੂੰ ਸਮਝਣਗੇ, ਸਪ੍ਰਾਈਟਸ ਸ਼ਾਮਲ ਕਰਨਗੇ, ਇੱਕ ਸਧਾਰਣ ਐਨੀਮੇਟਡ ਪ੍ਰੋਜੈਕਟ ਬਣਾਉਣਗੇ ਅਤੇ ਮੋਸ਼ਨ ਅਤੇ ਟ੍ਰਿਗਰ ਬਲਾਕਾਂ ਵਰਗੇ ਮੁੱਢਲੇ ਬਲਾਕਾਂ ਨਾਲ ਤਜਰਬਾ ਕਰਨਗੇ। ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਸਿਰਲੇਖ, ਰੰਗ ਅਤੇ ਪਿਛੋਕੜ ਨਾਲ ਕਸਟਮਾਈਜ਼ ਕਰਨਾ ਵੀ ਸਿੱਖਣਗੇ, ਤਾਂ ਜੋ ਉਹ ਆਪਣੀ ਪਹਿਲੀ ਐਨੀਮੇਸ਼ਨ ਤਿਆਰ ਕਰ ਸਕਣ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U01-A01",
+                    "nm": "Build Your First Animation 🐱",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਹਰੇ ਬਗੀਚੇ ਵਿੱਚ ਤਿਤਲੀ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U01-Q01",
+                "nm": "Can you code it? 🎮",
+                "qs": [
+                    {
+                        "q": "ਤੁਸੀਂ ਐਂਡਰਾਇਡ ਫੋਨ 'ਤੇ ਸਕਰੈਚ ਜੂਨੀਅਰ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਕਿਹੜੀ ਦੁਕਾਨ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਗੂਗਲ ਪਲੇ ਸਟੋਰ",
+                            "2": "ਐਪ ਸਟੋਰ",
+                            "3": "ਸਕਰੈਚ ਵੈਬਸਾਈਟ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਿਹੜਾ ਆਈਕਨ ਤੁਹਾਨੂੰ ਆਪਣੇ ਪ੍ਰਾਜੈਕਟ ਵਿੱਚ ਟੈਕਸਟ ਸ਼ਾਮਲ ਕਰਨ ਦੀ ਆਗਿਆ ਦਿੰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਰੀਸੈੱਟ ਆਈਕਨ",
+                            "2": "ਏਬੀਸੀ ਆਈਕਨ",
+                            "3": "ਹਰਾ ਝੰਡਾ ਆਈਕਨ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਨਵਾਂ ਪ੍ਰਾਜੈਕਟ ਸ਼ੁਰੂ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਘਰ ਦੇ ਆਈਕਨ ਤੋਂ ਬਾਅਦ ਤੁਹਾਨੂੰ ਕਿਹੜੇ ਆਈਕਨ 'ਤੇ ਟੈਪ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਲੱਸ (+) ਨਿਸ਼ਾਨ",
+                            "2": "ਪ੍ਰਸ਼ਨ ਚਿੰਨ੍ਹ (?)",
+                            "3": "ਹਰਾ ਝੰਡਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਤੁਸੀਂ ਪਹਿਲੀ ਵਾਰ ਸਕਰੈਚ ਜੂਨੀਅਰ ਖੋਲ੍ਹਦੇ ਹੋ ਅਤੇ ਮੂਲ ਬਿੱਲੀ ਵਾਲਾ ਸਪ੍ਰਾਈਟ ਵੇਖਦੇ ਹੋ। ਤਸੀਂ ਆਪਣੇ ਪ੍ਰਾਜੈਕਟ ਨੂੰ ਹੋਰ ਕ੍ਰਿਏਟਿਵ ਕਿਵੇਂ ਬਣਾ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਜਿਵੇਂ ਦਿੱਤਾ ਗਿਆ ਹੈ ਬਿਲਕੁਲ ਵਧੀਆ ਰੱਖੋ",
+                            "2": "ਨਵੇਂ ਸਪ੍ਰਾਈਟ ਅਤੇ ਬੈਕਗ੍ਰਾਊਂਡ ਸ਼ਾਮਲ ਕਰੋ",
+                            "3": "ਸਭ ਸਪ੍ਰਾਈਟ ਮਿਟਾ ਦੇਵੋ ਅਤੇ ਖਾਲੀ ਛੱਡ ਦਿਓ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਆਪਣੇ ਪਹਿਲੇ ਪ੍ਰਾਜੈਕਟ ਨੂੰ ਵਿਲੱਖਣ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਸਭ ਤੋਂ ਵਧੀਆ ਢੰਗ ਕੀ ਹੋਵੇਗਾ?",
+                        "opts": {
+                            "1": "ਕੇਵਲ ਮੂਲ ਸਪ੍ਰਾਈਟ ਅਤੇ ਬੈਕਗ੍ਰਾਊਂਡ ਦੀ ਵਰਤੋਂ ਕਰੋ",
+                            "2": "ਸਭ ਕੁਝ ਆਪਣੇ ਦੋਸਤ ਦੇ ਪ੍ਰਾਜੈਕਟ ਵਾਂਗ ਬਣਾਓ",
+                            "3": "ਵੱਖ-ਵੱਖ ਸਪ੍ਰਾਈਟ, ਬੈਕਗ੍ਰਾਊਂਡ ਅਤੇ ਮੂਵਮੈਂਟ ਨੂੰ ਜੋੜ ਕੇ ਕਹਾਣੀ ਦੱਸੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U02",
+            "ord": 2,
+            "nm": "Butterfly Feeds the Garden 🌸",
+            "desc": "Students will be able to add backgrounds and sprites, duplicate and modify sprites as well as their colors using the Paint Editor , and using the ABC tool to add titles.\n\nStudents will be able to apply coding concepts by using the Start on Green Flag block to start the animation, Motion (blue) blocks to move the butterfly, turn blocks to show direction change, and the Repeat Forever block to create continuous movement.\n\nIn addition, they will understand that butterflies drink nectar from flowers, which provides them with energy and nutrition, and plays an important role in nature.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U02-V01",
+                    "nm": "Can butterflies drink flowers? 🦋",
+                    "desc": "---\n\nਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ ਵਿੱਚ ਇੱਕ ਐਨੀਮੇਸ਼ਨ ਬਣਾਉਣਗੇ ਜਿਸ ਵਿੱਚ ਤਿਤਲੀ ਫੁੱਲਾਂ 'ਤੇ ਉੱਡਦੀ ਅਤੇ ਰਸ ਪੀਂਦੀ ਦਿਖਾਈ ਦੇਵੇਗੀ। ਉਹ ਪੇਂਟ ਐਡੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਫੁੱਲ ਜੋੜ ਕੇ ਅਤੇ ਨਕਲ ਕਰਕੇ ਦ੍ਰਿਸ਼ ਨੂੰ ਡਿਜ਼ਾਈਨ ਕਰਨਗੇ ਅਤੇ ਟ੍ਰਿਗਰ, ਮੋਸ਼ਨ ਅਤੇ ਰੀਪੀਟ ਫ਼ਾਰੇਵਰ ਬਲੌਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਤਿਤਲੀ ਦੀ ਹਿਲਚਲ ਨੂੰ ਐਨੀਮੇਟ ਕਰਨਗੇ। ਵਿਦਿਆਰਥੀ ਆਪਣੇ ਹੈਂਡਸ-ਆਨ ਪ੍ਰਾਜੈਕਟ ਵਿੱਚ ਇੱਕ ਸਿਰਲੇਖ ਵੀ ਸ਼ਾਮਲ ਕਰਨਗੇ, ਜਿਸ ਨਾਲ ਇਹ ਵਿਜ਼ੂਅਲੀ ਤੌਰ 'ਤੇ ਪੂਰਾ ਅਤੇ ਅਰਥਪੂਰਣ ਬਣ ਜਾਵੇਗਾ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U02-A01",
+                    "nm": "Animate a Hungry Butterfly 🌸",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਬਗੀਚੇ ਵਿੱਚ ਤਿਤਲੀ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U02-Q01",
+                "nm": "Why do butterflies fly? 🦋",
+                "qs": [
+                    {
+                        "q": "ਤਿਤਲੀਆਂ ਫੁੱਲਾਂ ਤੋਂ ਕੀ ਪੀਂਦੀਆਂ ਹਨ?",
+                        "opts": {
+                            "1": "ਪਾਣੀ",
+                            "2": "ਨੈਕਟਰ",
+                            "3": "ਜੂਸ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਐਨੀਮੇਸ਼ਨ ਸਕ੍ਰਿਪਟ ਵਿੱਚ 'repeat forever' ਬਲਾਕ ਵਰਤਣ ਦਾ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਤਿਤਲੀ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਉੱਡਣ ਲਈ",
+                            "2": "ਤਿਤਲੀ ਦੀ ਪੀਣ ਦੀ ਗਤੀ ਨੂੰ ਲਗਾਤਾਰ ਦੁਹਰਾਉਣ ਲਈ",
+                            "3": "ਪਿਛੋਕੜ ਦਾ ਰੰਗ ਬਦਲਣ ਲਈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਐਨੀਮੇਸ਼ਨ ਵਿੱਚ ਟੈਕਸਟ ਸੁਨੇਹਾ ਜੋੜਨ ਲਈ ਕਿਹੜਾ ਸੰਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਫਿੱਲ ਟੂਲ",
+                            "2": "ਡੁਪਲੀਕੇਟ ਟੂਲ",
+                            "3": "ABC ਟੂਲ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਤਿਤਲੀ ਨੂੰ ਸਿੱਧੀ ਲਾਈਨ ਵਿੱਚ ਜਾਣ ਦੀ ਬਜਾਏ ਝੁਕ ਕੇ ਨੈਕਟਰ ਪੀਂਦੀ ਦਿਖਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕਿਹੜਾ ਵਾਧੂ ਬਲਾਕ ਵਰਤ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "Turn right ਅਤੇ turn left ਬਲਾਕ",
+                            "2": "Move right ਅਤੇ left ਬਲਾਕ",
+                            "3": "Reset ਬਲਾਕ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਤੁਸੀਂ ਐਨੀਮੇਸ਼ਨ ਨੂੰ ਦਰਸ਼ਕਾਂ ਲਈ ਹੋਰ ਇੰਟਰੈਕਟਿਵ ਕਿਵੇਂ ਬਣਾ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਹੋਰ ਫੁੱਲ ਜੋੜੋ",
+                            "2": "ਵੱਖਰਾ ਪਿਛੋਕੜ ਵਰਤੋ",
+                            "3": "ਜਦੋਂ ਤਿਤਲੀ ਨੈਕਟਰ ਪੀਂਦੀ ਹੈ ਤਾਂ ਧੁਨੀ ਪ੍ਰਭਾਵ ਜੋੜੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U03",
+            "ord": 3,
+            "nm": "Worlds at Risk 🐘",
+            "desc": "Students will learn to add backgrounds and sprites, use the Paint Editor to modify sprites, and use the ABC tool to add titles. They will also learn to add new pages to create a multi-scene project.\n\nIn coding, students will learn to use the Start on Green Flag block to begin the animation, Motion (blue) blocks to move sprites, and the Go to Page block to transition from one scene to the next.\n\nIn addition, students will understand that some animals are endangered, meaning their numbers are decreasing. They will learn that different animals live in different habitats (Arctic, Savanna, Desert), and that loss of habitat affects animal survival.Ina ddition, students learn that some animals are endangered, meaning their numbers are decreasing, different animals live in different habitats (Arctic, Savanna, Desert) and loss of habitat affects animal survival.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U03-V01",
+                    "nm": "Can three animals share a home? 🐘",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਤਿੰਨ ਸੰਕਟਾਗ੍ਰਸਤ ਜਾਨਵਰਾਂ — ਇਕ ਧਰੂਵੀ ਭਾਲੂ, ਇਕ ਅਫਰੀਕੀ ਹਾਥੀ, ਅਤੇ ਇਕ ਬੈਕਟਰੀਅਨ ਊਂਟ — ਨੂੰ ਆਪਣੇ ਕੁਦਰਤੀ ਵਾਤਾਵਰਣ ਵਿੱਚ ਦਰਸਾਉਂਦੀ ਇੱਕ ਬਹੁ-ਪੰਨੇ ਐਨੀਮੇਸ਼ਨ ਸਕਰੈਚ ਜੂਨੀਅਰ ਵਿੱਚ ਬਣਾਉਣਗੇ। ਉਹ ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਹਰ ਦ੍ਰਿਸ਼ ਨੂੰ ਡਿਜ਼ਾਇਨ ਕਰਨਗੇ, ਪੈਂਟ ਐਡੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਸਪ੍ਰਾਈਟਸ ਨੂੰ ਸੋਧਣਗੇ, ਅਤੇ ਨੀਲੇ ਮੋਸ਼ਨ ਬਲਾਕ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਜਾਨਵਰਾਂ ਨੂੰ ਸਕਰੀਨ 'ਤੇ ਹਿਲਾਉਣ ਲਈ ਐਨੀਮੇਟ ਕਰਨਗੇ। ਵਿਦਿਆਰਥੀ ਹੇਬਟੈਟਸ ਦੇ ਵਿਚਕਾਰ ਇੱਕ ਸਮਰੂਥ ਪਰਿਵਰਤਨ ਪੈਦਾ ਕਰਨ ਲਈ ਗੋ ਟੂ ਪੇਜ ਐਂਡ ਬਲਾਕ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਕਈ ਪੰਨਿਆਂ ਨੂੰ ਜੋੜਨਗੇ, ਜਦਕਿ ਇਸ ਨੂੰ ਸਮਝਦੇ ਹੋਏ ਕਿ ਮਨੁੱਖੀ ਕਿਰਿਆਵਾਂ ਕਿਵੇਂ ਇਹਨਾਂ ਜਾਨਵਰਾਂ ਦੇ ਘਰਾਂ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰ ਰਹੀਆਂ ਹਨ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U03-A01",
+                    "nm": "Code Endangered Animal Scenes 🐘",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਰੇਗਿਸਤਾਨ ਵਰਗੇ ਬੈਕਗ੍ਰਾਊਂਡ ਨਾਲ ਸਟੇਜ 'ਤੇ ਊਠ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U03-Q01",
+                "nm": "Can animals survive change? 🐘",
+                "qs": [
+                    {
+                        "q": "Scratch Junior ਵਿੱਚ ਨਵਾਂ ਪ੍ਰੋਜੈਕਟ ਸ਼ੁਰੂ ਕਰਨ ਦਾ ਪਹਿਲਾ ਕਦਮ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਹੋਮ ਆਈਕਨ ਤੇ ਕਲਿੱਕ ਕਰੋ ਫਿਰ ਪਲੱਸ ਤੇ ਕਲਿੱਕ ਕਰੋ",
+                            "2": "ਸੇਵ ਆਈਕਨ ਤੇ ਕਲਿੱਕ ਕਰੋ ਫਿਰ ਪਲੱਸ ਤੇ ਕਲਿੱਕ ਕਰੋ",
+                            "3": "ਸੈਟਿੰਗ ਆਈਕਨ ਤੇ ਕਲਿੱਕ ਕਰੋ ਫਿਰ ਪਲੱਸ ਤੇ ਕਲਿੱਕ ਕਰੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਅਫ਼ਰੀਕੀ ਹਾਥੀਆਂ, ਬੈਕਟ੍ਰੀਅਨ ਊਠਾਂ ਅਤੇ ਧਰੁਵੀ ਰਿੱਛਾਂ ਦੀ ਗਿਣਤੀ ਘਟਣ ਦਾ ਮੁੱਖ ਕਾਰਨ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਭੋਜਨ ਦੀ ਕਮੀ",
+                            "2": "ਉਨ੍ਹਾਂ ਦੇ ਘਰਾਂ ਦਾ ਨਾਸ਼",
+                            "3": "ਹੋਰ ਜਾਨਵਰਾਂ ਦਾ ਹਮਲਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਪੇਂਟ ਐਡੀਟਰ ਵਿੱਚ ਅਫ਼ਰੀਕੀ ਹਾਥੀ ਦਾ ਰੰਗ ਬਦਲਣ ਲਈ ਕਿਹੜਾ ਸੰਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਫਿੱਲ ਟੂਲ",
+                            "2": "ਲਾਈਨ ਟੂਲ",
+                            "3": "ਪੇਂਟ ਟੂਲ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਵਰਖਾ ਜੰਗਲ ਦੇ ਜਾਨਵਰ ਲਈ ਅਜਿਹੀ ਹੀ ਐਨੀਮੇਸ਼ਨ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕਿਹੜਾ ਰਚਨਾਤਮਕ ਤੱਤ ਜੋੜ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਕਈ ਆਰਕਟਿਕ ਪਿਛੋਕੜ ਜੋੜੋ",
+                            "2": "ਮਾਰੂਥਲ ਦਾ ਪਿਛੋਕੜ ਸ਼ਾਮਲ ਕਰੋ",
+                            "3": "ਪੇਂਟ ਐਡੀਟਰ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਵਰਖਾ ਜੰਗਲ ਦੇ ਰੰਗ ਅਤੇ ਵੇਰਵੇ ਜੋੜੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Junior ਵਿੱਚ ਜੰਗਲ ਕਟਾਈ ਦੇ ਪ੍ਰਭਾਵ ਨੂੰ ਕਿਵੇਂ ਦਿਖਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਇੱਕ ਦ੍ਰਿਸ਼ ਬਣਾਉਣਾ ਜਿੱਥੇ ਜਾਨਵਰ ਦਰੱਖਤ ਅਲੋਪ ਹੋਣ ਤੇ ਚਲੇ ਜਾਂਦੇ ਹਨ",
+                            "2": "ਪਿਛੋਕੜ ਵਿੱਚ ਹੋਰ ਦਰੱਖਤ ਜੋੜਨਾ",
+                            "3": "ਬਿਨਾਂ ਬਦਲਾਅ ਦੇ ਸਵਾਨਾ ਪਿਛੋਕੜ ਵਰਤਣਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U04",
+            "ord": 4,
+            "nm": "Bear Finds the Igloo 🐻",
+            "desc": "ScratchJr interface (sprites, background, blocks)\nMotion blocks (move, hop, turn)\nEvents block (start on green flag)\nLooks block (resize characters)\nGrid system for position and movement\nBasic sequencing and debugging",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U04-V01",
+                    "nm": "Can a bear find igloo? 🐻",
+                    "desc": "---\n\nਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ ਵਿੱਚ ਮੋਸ਼ਨ ਬਲਾਕਾਂ ਦੀ ਪੜਚੋਲ ਕਰਦੇ ਹਨ ਤਾਂ ਜੋ ਕਿਰਦਾਰਾਂ ਨੂੰ ਸਕ੍ਰੀਨ 'ਤੇ ਹਿਲਾਇਆ ਜਾ ਸਕੇ। ਉਹ ਗਰਿੱਡ ਸਿਸਟਮ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਦਿਸ਼ਾ, ਕਦਮ, ਅਤੇ ਸਥਿਤੀ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨਾ ਸਿੱਖਦੇ ਹਨ। ਇੱਕ ਮਜ਼ੇਦਾਰ ਚੁਣੌਤੀ ਰਾਹੀਂ, ਉਹ ਇਕ ਧ੍ਰੁਵੀ ਭਾਲੂ ਨੂੰ ਉਸਦੇ ਇਗਲੂ ਵੱਲ ਸਹੀ ਤਰੀਕੇ ਨਾਲ ਲੈ ਜਾਂਦੇ ਹਨ ਜਦਕਿ ਉਹ ਤਰਕ, ਕ੍ਰਮਬੱਧਤਾ, ਅਤੇ ਵਿਜੁਅਲਾਈਜ਼ੇਸ਼ਨ ਦੱਖਲਤਾਂ ਨੂੰ ਲਾਗੂ ਕਰਦੇ ਹਨ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U04-A01",
+                    "nm": "Guide Bear to Igloo 🐻",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਚਿੱਟੇ ਬਰਫ਼ੀਲੇ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਧਰੁਵੀ ਰਿੱਛ ਅਤੇ ਇਗਲੂ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U04-Q01",
+                "nm": "What does the grid do? 🔲",
+                "qs": [
+                    {
+                        "q": "ਅੱਜ ਦੇ ਕੋਡਿੰਗ ਸਾਹਸ ਦਾ ਮੁੱਖ ਫੋਕਸ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਸਕ੍ਰੀਨ ਤੇ ਪਾਤਰਾਂ ਨੂੰ ਹਿਲਾਉਣ ਲਈ ਮੋਸ਼ਨ ਬਲਾਕ ਸਿੱਖਣਾ।",
+                            "2": "ਕਈ ਦ੍ਰਿਸ਼ਾਂ ਵਾਲੀਆਂ ਗੁੰਝਲਦਾਰ ਐਨੀਮੇਸ਼ਨਾਂ ਬਣਾਉਣਾ।",
+                            "3": "ਨਵੇਂ ਪਾਤਰ ਖਰੋਂਚ ਤੋਂ ਬਣਾਉਣਾ।"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Jr ਵਿੱਚ ਕੋਡਿੰਗ ਕਰਦੇ ਸਮੇਂ 'ਗਰਿੱਡ' ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਉਪਭੋਗਤਾਵਾਂ ਨੂੰ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਹੋਰ ਪਾਤਰ ਜੋੜਨ ਦਿੰਦਾ ਹੈ।",
+                            "2": "ਇਹ ਪਾਤਰ ਦੀ ਸਹੀ ਸਥਿਤੀ ਅਤੇ ਕਦਮਾਂ ਦੀ ਗਣਨਾ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
+                            "3": "ਇਹ ਪਾਤਰਾਂ ਦਾ ਰੰਗ ਬਦਲਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਹਰੇ ਝੰਡੇ ਤੇ ਕਲਿੱਕ ਕਰਨ ਤੇ ਕੋਡ ਆਟੋਮੈਟਿਕ ਚੱਲੇ ਇਹ ਕਿਵੇਂ ਯਕੀਨੀ ਕਰਨਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਟ੍ਰਿਗਰ ਬਲਾਕ ਸੈਕਸ਼ਨ ਤੋਂ ਪੀਲਾ start on green ਬਲਾਕ ਜੋੜ ਕੇ।",
+                            "2": "ਹੋਰ ਮੋਸ਼ਨ ਬਲਾਕ ਜੋੜ ਕੇ।",
+                            "3": "ਪਾਤਰਾਂ ਦਾ ਆਕਾਰ ਵਧਾ ਕੇ।"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਤੁਸੀਂ ਇੱਕ ਅਜਿਹਾ ਪਾਤਰ ਜੋੜਨਾ ਚਾਹੁੰਦੇ ਹੋ ਜੋ ਟੈਪ ਕਰਨ ਤੇ ਰੁਕਾਵਟਾਂ ਉੱਤੇ ਛਾਲ ਮਾਰੇ। ਕਿਹੜਾ ਕੋਡ ਵਰਤੋਗੇ?",
+                        "opts": {
+                            "1": "Start on tap, jump block ਅਤੇ end block",
+                            "2": "ਪਾਤਰ ਜੋੜੋ ਅਤੇ ਪਹਿਲਾਂ ਵਾਲਾ ਕੋਡ ਕਾਪੀ ਕਰੋ",
+                            "3": "Start on green flag, move right, end block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਇੱਕ ਕਹਾਣੀ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ ਜਿੱਥੇ ਪਾਤਰ ਵੱਖ-ਵੱਖ ਵਾਤਾਵਰਣਾਂ ਵਿੱਚੋਂ ਲੰਘਦਾ ਹੈ। ਇਹ ਕਿਵੇਂ ਕਰੋਗੇ?",
+                        "opts": {
+                            "1": "ਸਫ਼ਰ ਦਿਖਾਉਣ ਲਈ ਪਾਤਰ ਦੀ ਗਤੀ ਵਧਾਓ।",
+                            "2": "ਵੱਖ ਦਿਖਣ ਵਾਲੇ ਪਾਤਰਾਂ ਦੇ ਹੋਰ ਸਪ੍ਰਾਈਟ ਜੋੜੋ।",
+                            "3": "ਵੱਖ-ਵੱਖ ਪਿਛੋਕੜਾਂ ਵਾਲੇ ਪੰਨੇ ਜੋੜੋ ਅਤੇ go to page ਬਲਾਕ ਵਰਤੋ।"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U05",
+            "ord": 5,
+            "nm": "Dance Floor Goes Live 💃",
+            "desc": "Coordination and timing in animations\nHow wait blocks control when an action begins\nHow repeat blocks help actions occur multiple times\nHow sound blocks can be combined with motion blocks\nThat multiple scripts can start together using the green flag\nHow changing wait values creates different rhythms and beats\nHow camera feature in paint editor works",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U05-V01",
+                    "nm": "Can two characters sync dance? 💃",
+                    "desc": "ਇਸ **ਐਕਟਿਵਿਟੀ** ਵਿੱਚ, ਵਿਦਿਆਰਥੀ **ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ** ਵਿੱਚ ਦੋ ਕਿਰਦਾਰਾਂ ਨੂੰ ਸੰਗੀਤ ਦੇ ਨਾਲ ਸਿੰਕ ਵਿੱਚ ਨੱਚਣ ਲਈ ਪ੍ਰੋਗ੍ਰਾਮ ਕਰਕੇ ਇੱਕ ਤਾਲਮੇਲ ਵਾਲੀ ਡਾਂਸ ਐਨੀਮੇਸ਼ਨ ਬਣਾਉਣਗੇ। ਵਿਦਿਆਰਥੀ ਇੱਕ ਡਾਂਸ ਫਲੋਰ ਡਿਜ਼ਾਈਨ ਕਰਨਗੇ, ਕਿਰਦਾਰ ਸ਼ਾਮਲ ਕਰਨਗੇ, ਸੰਗੀਤ ਰਿਕਾਰਡ ਕਰਨਗੇ ਅਤੇ ਕਿਰਦਾਰਾਂ ਦੀ ਨੱਚਣ ਦੀ ਸਮਾਂ ਅਤੇ ਢੰਗ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਨ ਲਈ **ਵੇਟ ਬਲੌਕ** ਅਤੇ **ਰੀਪੀਟ ਬਲੌਕ** ਦੀ ਵਰਤੋਂ ਕਰਨਗੇ, ਜਿਸ ਨਾਲ ਉਹਨਾਂ ਨੂੰ ਐਨੀਮੇਸ਼ਨ ਵਿੱਚ ਤਾਲਮੇਲ ਅਤੇ ਕ੍ਰਮਬੱਧਤਾ ਨੂੰ ਸਮਝਣ ਵਿੱਚ ਮਦਦ ਮਿਲੇਗੀ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U05-A01",
+                    "nm": "Sync Two Dancers Together 💃",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਸਟੇਜ ਜਾਂ ਡਾਂਸ ਫਲੋਰ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ ਨਾਲ ਘੱਟੋ-ਘੱਟ 2 ਵਿਅਕਤੀ ਜਾਂ ਕਿਰਦਾਰ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U05-Q01",
+                "nm": "Can you sync the dance? 💃",
+                "qs": [
+                    {
+                        "q": "ਇਸ ਗਤੀਵਿਧੀ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਨਵੀਂ ਪ੍ਰੋਗਰਾਮਿੰਗ ਭਾਸ਼ਾ ਸਿੱਖਣਾ",
+                            "2": "Scratch Junior ਤੇ ਇੱਕ ਸਮਨਵਿਤ ਡਾਂਸ ਦ੍ਰਿਸ਼ ਬਣਾਉਣਾ",
+                            "3": "ਸੰਗੀਤ ਪਲੇਅਰ ਬਣਾਉਣਾ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Junior ਪ੍ਰੋਜੈਕਟ ਵਿੱਚ Wait ਬਲਾਕ ਦੀ ਕੀ ਭੂਮਿਕਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਿਛੋਕੜ ਬਦਲਣ ਲਈ",
+                            "2": "ਪਾਤਰਾਂ ਦਾ ਆਕਾਰ ਵਧਾਉਣ ਲਈ",
+                            "3": "ਇੱਕ ਨਿਰਧਾਰਿਤ ਸਮੇਂ ਲਈ ਕਿਰਿਆਵਾਂ ਵਿੱਚ ਦੇਰੀ ਕਰਨ ਲਈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Junior ਵਿੱਚ ਦੋ ਪਾਤਰਾਂ ਨੂੰ ਵੱਖ-ਵੱਖ ਸਮੇਂ ਤੇ ਡਾਂਸ ਕਿਵੇਂ ਕਰਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਿਛੋਕੜ ਬਦਲ ਕੇ",
+                            "2": "ਹਰ ਪਾਤਰ ਲਈ ਵੱਖ ਸੰਗੀਤ ਰਿਕਾਰਡ ਕਰਕੇ",
+                            "3": "ਹਰ ਪਾਤਰ ਲਈ ਵੱਖ Wait block ਸਮਾਂ ਸੈੱਟ ਕਰਕੇ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਡਾਂਸ ਮੂਵਜ਼ ਨੂੰ ਹੋਰ ਰਚਨਾਤਮਕ ਬਣਾਉਣਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕੀ ਜੋੜ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਵਿਲੱਖਣ ਡਾਂਸ ਕ੍ਰਮ ਬਣਾਉਣ ਲਈ ਵੱਖ motion ਅਤੇ wait ਬਲਾਕ ਜੋੜੋ",
+                            "2": "ਦਿਲਚਸਪ ਪ੍ਰਭਾਵ ਲਈ ਪਾਤਰਾਂ ਦਾ ਆਕਾਰ ਵਧਾਓ ਅਤੇ ਘਟਾਓ",
+                            "3": "ਨਵਾਂ ਰੂਪ ਦੇਣ ਲਈ ਪਿਛੋਕੜ ਦਾ ਰੰਗ ਬਦਲੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਡਾਂਸ ਦ੍ਰਿਸ਼ ਨੂੰ ਰਚਨਾਤਮਕ ਤੌਰ ਤੇ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਇੱਕ ਸਾਦੀ ਗੱਲ ਕੀ ਕਰ ਸਕਦੇ ਹੋ?",
+                        "opts": {
+                            "1": "ਇੱਕ ਤੀਜਾ ਪਾਤਰ ਜੋੜੋ ਜੋ ਵਿਲੱਖਣ ਤਰੀਕੇ ਨਾਲ ਸੰਗੀਤ ਨਾਲ ਇੰਟਰੈਕਟ ਕਰੇ",
+                            "2": "ਪਿਛੋਕੜ ਦਾ ਸੰਗੀਤ ਹਟਾਓ ਅਤੇ ਪੌਪ ਧੁਨੀ ਲਗਾਓ",
+                            "3": "ਸਿਰਫ਼ ਇੱਕ ਪਾਤਰ ਨਾਲ ਡਾਂਸ ਕਰਾਓ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U06",
+            "ord": 6,
+            "nm": "Water Runs Dry 💧",
+            "desc": "Add backgrounds and multiple sprites, and use the Say block to add dialogues.\nAapply coding concepts by using the Start on Green Flag block to begin the animation, Send Message and Start on Message blocks to create communication between sprites, and the End block to control the flow of scripts.\nUnderstand that water is a limited resource, and careless usage can lead to water shortages. They will learn that saving water is important for everyday life.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U06-V01",
+                    "nm": "Can sprites talk about water? 💧",
+                    "desc": "ਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ ਵਿੱਚ ਗੱਲਬਾਤ ਆਧਾਰਿਤ ਐਨੀਮੇਸ਼ਨ ਬਣਾਉਣਗੇ ਜਿਸ ਵਿੱਚ ਦੋ ਕਿਰਦਾਰ ਪਾਣੀ ਦੀ ਕਮੀ ਦੇ ਸਮੱਸਿਆ ਦੀ ਚਰਚਾ ਕਰਦੇ ਹਨ। ਸੁਨੇਹਾ ਬਲੌਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ, ਵਿਦਿਆਰਥੀ ਕਿਰਦਾਰਾਂ ਦੇ ਦਰਮਿਆਨ ਗੱਲਬਾਤ ਦੀ ਇੱਕ ਲੜੀ ਨੂੰ ਪ੍ਰੋਗਰਾਮ ਕਰਨਗੇ ਤਾਂ ਜੋ ਦਿਖਾਇਆ ਜਾ ਸਕੇ ਕਿ ਕਿਵੇਂ ਪਾਣੀ ਦੀ ਬਰਬਾਦੀ ਕਮੀ ਵਲ ਲੈ ਜਾਂਦੀ ਹੈ ਅਤੇ ਪਾਣੀ ਬਚਾਉਣਾ ਕਿਉਂ ਮਹੱਤਵਪੂਰਨ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U06-A01",
+                    "nm": "Code a Water Conversation 💧",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਸੜਕ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ 'ਤੇ ਘੱਟੋ-ਘੱਟ 2 ਕਿਰਦਾਰ ਖੜੇ ਹੋਣ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U06-Q01",
+                "nm": "Where did the water go? 💧",
+                "qs": [
+                    {
+                        "q": "ਰਾਹੁਲ ਅਤੇ ਪ੍ਰਿਯਾ ਦੇ ਘਰਾਂ ਵਿੱਚ ਪਾਣੀ ਦੀ ਕਮੀ ਦਾ ਮੁੱਖ ਕਾਰਨ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਾਣੀ ਬਰਬਾਦ ਕੀਤਾ ਗਿਆ ਅਤੇ ਧਿਆਨ ਨਾਲ ਨਹੀਂ ਵਰਤਿਆ ਗਿਆ।",
+                            "2": "ਪਾਣੀ ਸਪਲਾਈ ਵਿੱਚ ਤਕਨੀਕੀ ਨੁਕਸ ਸੀ।",
+                            "3": "ਮੌਸਮ ਬਹੁਤ ਗਰਮ ਸੀ।"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Junior ਤੇ ਇਹ ਐਨੀਮੇਸ਼ਨ ਬਣਾਉਣ ਦਾ ਮੁੱਖ ਉਦੇਸ਼ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਡਾਇਲੌਗ ਲਿਖਣ ਦੀ ਕੁਸ਼ਲਤਾ ਅਭਿਆਸ ਕਰਨਾ।",
+                            "2": "Scratch ਵਿੱਚ ਵੱਖ-ਵੱਖ ਰੰਗ ਵਰਤਣਾ ਸਿੱਖਣਾ।",
+                            "3": "ਪਾਣੀ ਬਚਾਉਣ ਦੀ ਮਹੱਤਤਾ ਸਮਝਣਾ।"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਐਨੀਮੇਸ਼ਨ ਵਿੱਚ ਮੁੰਡੇ ਦਾ ਕੋਡ ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕਿਹੜਾ ਬਲਾਕ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "Start on red message block.",
+                            "2": "Start on green flag block.",
+                            "3": "Start on orange message block."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਪਾਣੀ ਬਚਾਉਣ ਦਾ ਹੱਲ ਦੇਣ ਵਾਲਾ ਨਵਾਂ ਪਾਤਰ ਜੋੜਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ say ਬਲਾਕ ਵਿੱਚ ਕੀ ਲਿਖੋਗੇ?",
+                        "opts": {
+                            "1": "\"ਚਲੋ ਪੌਦਿਆਂ ਲਈ ਮੀਂਹ ਦਾ ਪਾਣੀ ਇਕੱਠਾ ਕਰੀਏ।\"",
+                            "2": "\"ਸਾਨੂੰ ਸਾਰੀਆਂ ਟੂਟੀਆਂ ਖੁੱਲ੍ਹੀਆਂ ਰੱਖਣੀਆਂ ਚਾਹੀਦੀਆਂ ਹਨ।\"",
+                            "3": "\"ਚਲੋ ਵਧੇਰੇ ਪਾਣੀ ਵਾਲੀ ਨਵੀਂ ਜਗ੍ਹਾ ਚੱਲੀਏ।\""
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਕਲਪਨਾ ਕਰੋ ਕਿ ਤੁਸੀਂ ਇੱਕ ਦ੍ਰਿਸ਼ ਜੋੜਨਾ ਚਾਹੁੰਦੇ ਹੋ ਜਿੱਥੇ ਪਾਤਰ ਟੁੱਟੀ ਟੂਟੀ ਠੀਕ ਕਰਨਾ ਦਿਖਾਵੇ। say ਬਲਾਕ ਵਿੱਚ ਕੀ ਲਿਖੋਗੇ?",
+                        "opts": {
+                            "1": "\"ਸਾਨੂੰ ਪਲੰਬਰ ਦੀ ਉਡੀਕ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।\"",
+                            "2": "\"ਇਹ ਹੈ ਕਿਵੇਂ ਟੂਟੀ ਠੀਕ ਕਰਕੇ ਪਾਣੀ ਬਚਾਇਆ ਜਾ ਸਕਦਾ ਹੈ।\"",
+                            "3": "\"ਸਾਨੂੰ ਤੁਰੰਤ ਨਵੀਂ ਟੂਟੀ ਖਰੀਦਣੀ ਚਾਹੀਦੀ ਹੈ।\""
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U07",
+            "ord": 7,
+            "nm": "Jungle Cleans Up 🐰",
+            "desc": "ScratchJr interface (sprites, backgrounds, paint editor), Message blocks (send message, start on message)\nMotion blocks (move, hop), Looks blocks (resize, dialogue/say block), Events block (green flag start),Grid usage for movement planning and basic animation sequencing",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U07-V01",
+                    "nm": "Can a rabbit teach recycling? 🐰",
+                    "desc": "---\n\nਇਸ ਐਕਟਿਵਿਟੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ ਸੰਦਰਭ ਬਲਾਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹੋਏ ਇੱਕ ਇੰਟਰਐਕਟਿਵ ਕਹਾਣੀ ਬਣਾਉਂਦੇ ਹਨ ਜਿੱਥੇ ਪਾਤਰ ਇੱਕ ਦੂਜੇ ਨਾਲ ਸੰਚਾਰ ਕਰਦੇ ਹਨ। ਜੰਗਲ-ਅਧਾਰਿਤ ਕਹਾਣੀ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਸਹੀ ਕਚਰਾ ਨਿਪਟਾਰਾ ਅਤੇ ਇਸਦਾ ਵਾਤਾਵਰਣ 'ਤੇ ਪੈਣ ਵਾਲੇ ਪ੍ਰਭਾਵ ਬਾਰੇ ਸਿੱਖਦੇ ਹਨ ਜਦਕਿ ਕੋਡਿੰਗ ਬਲਾਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਕਿਰਿਆਵਾਂ ਦੀ ਲੜੀ ਬਣਾਉਂਦੇ ਹਨ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U07-A01",
+                    "nm": "Make Characters Pass Messages 🐰",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਰੁੱਖਾਂ, ਘਾਹ ਅਤੇ ਹਰਿਆਲੀ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ 2 ਕਿਰਦਾਰ - ਇੱਕ ਲੜਕੀ ਅਤੇ ਖਰਗੋਸ਼ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U07-Q01",
+                "nm": "Can blocks send messages? 📨",
+                "qs": [
+                    {
+                        "q": "ਇਸ ਗਤੀਵਿਧੀ ਵਿੱਚ ਕਿਹੜੀਆਂ ਦੋ ਮਹੱਤਵਪੂਰਨ ਚੀਜ਼ਾਂ ਸਿਖਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ?",
+                        "opts": {
+                            "1": "ਮੈਸੇਜ ਬਲਾਕ ਵਰਤਣਾ ਅਤੇ ਸਹੀ ਕੂੜੇ ਦਾ ਨਿਪਟਾਰਾ",
+                            "2": "ਪਾਤਰ ਬਣਾਉਣਾ ਅਤੇ ਇਵੈਂਟ ਕੋਡ ਕਰਨਾ",
+                            "3": "ਸੰਗੀਤ ਚਲਾਉਣਾ ਅਤੇ ਪਿਛੋਕੜ ਬਣਾਉਣਾ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Junior ਵਿੱਚ ਮੈਸੇਜ ਬਲਾਕ ਸਿੱਖਣਾ ਕਿਉਂ ਜ਼ਰੂਰੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਾਤਰਾਂ ਨੂੰ ਇੱਕ ਦੂਜੇ ਨਾਲ ਇੰਟਰੈਕਟ ਕਰਾਉਣ ਲਈ",
+                            "2": "ਨਵੇਂ ਪਾਤਰ ਬਣਾਉਣ ਲਈ",
+                            "3": "ਰੰਗੀਨ ਪਿਛੋਕੜ ਬਣਾਉਣ ਲਈ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ Scratch Junior ਵਿੱਚ ਲਾਲੀਪੌਪ ਉਪਲਬਧ ਨਹੀਂ ਹੈ ਤਾਂ ਇਸਨੂੰ ਕਿਵੇਂ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਬਾਲ ਸਪ੍ਰਾਈਟ ਨੂੰ ਲਾਲੀਪੌਪ ਵਰਗਾ ਦਿਖਣ ਲਈ ਸੰਪਾਦਿਤ ਕਰਕੇ",
+                            "2": "ਬਾਲ ਸਪ੍ਰਾਈਟ ਵਰਤ ਕੇ",
+                            "3": "ਤਸਵੀਰ ਆਯਾਤ ਕਰਕੇ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਤੁਸੀਂ ਆਪਣੇ ਦੋਸਤਾਂ ਵਿੱਚ ਵਾਤਾਵਰਣ ਜਾਗਰੂਕਤਾ ਵਧਾਉਣ ਲਈ Scratch Junior ਕਿਵੇਂ ਵਰਤੋਗੇ?",
+                        "opts": {
+                            "1": "ਇੱਕ ਇੰਟਰੈਕਟਿਵ ਕਹਾਣੀ ਬਣਾਓ ਜਿੱਥੇ ਪਾਤਰ ਪਾਰਕ ਸਾਫ਼ ਕਰਦੇ ਹਨ",
+                            "2": "ਪਿਕਨਿਕ ਦਿਨ ਦਿਖਾਉਂਦੀ ਐਨੀਮੇਸ਼ਨ ਬਣਾਓ",
+                            "3": "ਵੱਖ-ਵੱਖ ਪੱਧਰਾਂ ਵਾਲੀ ਜੰਗਲ ਗੇਮ ਬਣਾਓ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ Scratch Junior ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਆਪਣੇ ਇਲਾਕੇ ਵਿੱਚ ਰੀਸਾਈਕਲਿੰਗ ਨੂੰ ਉਤਸ਼ਾਹਿਤ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ, ਤਾਂ ਕੀ ਬਣਾਓਗੇ?",
+                        "opts": {
+                            "1": "ਡਾਂਸ ਪਾਰਟੀ ਐਨੀਮੇਸ਼ਨ",
+                            "2": "ਰੀਸਾਈਕਲ ਕੀਤੀ ਵਸਤੂ ਦੀ ਯਾਤਰਾ ਦਿਖਾਉਂਦਾ ਪ੍ਰੋਜੈਕਟ",
+                            "3": "ਐਨੀਮੇਟਿਡ ਪਾਤਰਾਂ ਨਾਲ ਕੁਕਿੰਗ ਸ਼ੋਅ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U08",
+            "ord": 8,
+            "nm": "Two Scripts Move Together 🏔️",
+            "desc": "Motion blocks like move right, hop, turn, up, down.\nRun two scripts simultaneously on a single sprite.\nHow different combinations of blocks create new types of animation.\nRepeat Forever block to create looping movements.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U08-V01",
+                    "nm": "Can two codes move together? 🏃",
+                    "desc": "ਇਸ ਗਤੀਵਿਧੀ ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਿੱਖਣਗੇ ਕਿ ਕਿਵੇਂ Scratch Jr. ਵਿੱਚ ਦੋ ਸਕ੍ਰਿਪਟਾਂ ਨੂੰ ਜੋੜ ਕੇ ਨਵੇਂ ਕਿਰਦਾਰਾਂ ਦੀਆਂ ਹਿਲਚਲਾਂ ਬਣਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਉਹ move right, hop, ਅਤੇ turn ਵਰਗੇ ਬੁਨਿਆਦੀ ਮੋਸ਼ਨ ਬਲਾਕਾਂ ਦੇ ਆਪਣੇ ਗਿਆਨ ਨੂੰ ਵਰਤਣਗੇ ਤਾਂ ਜੋ ਵਧੇਰੇ ਜਟਿਲ ਹਿਲਚਲਾਂ ਜਿਵੇਂ ਕਿ ਗੇਂਦ ਦਾ ਅੱਗੇ ਵੱਲ ਲੁੜਕਣਾ ਜਾਂ ਬਰਫ਼ ਉੱਤੇ ਪਿੰਗੁਇਨ ਦਾ ਛਾਲਾਂ ਮਾਰਦਿਆਂ ਅੱਗੇ ਵਧਣਾ ਤਿਆਰ ਕਰ ਸਕਣ। ਵਿਦਿਆਰਥੀ ਇਹ ਵੀ ਪਤਾ ਲਗਾਉਣਗੇ ਕਿ repeat forever ਬਲਾਕ ਕਿਵੇਂ ਲਗਾਤਾਰ ਅਤੇ ਦੁਹਰਾਈਆਂ ਜਾਣ ਵਾਲੀਆਂ ਹਿਲਚਲਾਂ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ, ਜਿਸ ਨਾਲ ਉਹਨਾਂ ਦੇ ਕਿਰਦਾਰ ਗਤੀਸ਼ੀਲ ਕਿਰਿਆਵਾਂ ਕਰ ਸਕਦੇ ਹਨ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U08-A01",
+                    "nm": "Combine Scripts for New Moves 🏃",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਘਾਹ 'ਤੇ ਇੱਕ ਗੇਂਦ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U08-Q01",
+                "nm": "Can sprites move together? 🔀",
+                "qs": [
+                    {
+                        "q": "Scratch Jr. ਵਿੱਚ ਕਿਸੇ ਸਪ੍ਰਾਈਟ ਲਈ ਇੱਕ Start on Green Flag ਬਲਾਕ ਨਾਲ ਦੋ ਮੋਸ਼ਨ ਬਲਾਕ ਜੋੜਨ ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਸਪ੍ਰਾਈਟ ਸਿਰਫ਼ ਇੱਕ ਕਿਰਿਆ ਕਰਦਾ ਹੈ",
+                            "2": "ਸਪ੍ਰਾਈਟ ਦੋਵੇਂ ਕਿਰਿਆਵਾਂ ਇੱਕ ਤੋਂ ਬਾਅਦ ਇੱਕ ਕਰਦਾ ਹੈ",
+                            "3": "ਸਪ੍ਰਾਈਟ ਬੇਤਰਤੀਬ ਦਿਸ਼ਾਵਾਂ ਵਿੱਚ ਹਿਲਦਾ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਸਪ੍ਰਾਈਟ ਨੂੰ ਇੱਕੋ ਸਮੇਂ ਹਿਲਾਉਣ ਅਤੇ ਮੋੜਨ ਲਈ ਕੀ ਕਰਨਾ ਹੋਵੇਗਾ?",
+                        "opts": {
+                            "1": "ਵੱਖ-ਵੱਖ ਹਰਕਤਾਂ ਵਾਲੇ ਦੋ Start on Green Flag ਬਲਾਕ ਜੋੜੋ",
+                            "2": "ਕੋਡ ਵਿੱਚ Repeat Forever end block ਜੋੜੋ",
+                            "3": "ਕੋਈ ਵੀ Move ਬਲਾਕ ਜੋੜੋ ਫਿਰ Repeat Forever end block"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇ ਤੁਸੀਂ ਹਰਕਤ ਨੂੰ ਹਮੇਸ਼ਾ ਜਾਰੀ ਰੱਖਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ ਕੀ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਕੁਝ ਹੋਰ ਮੋਸ਼ਨ ਬਲਾਕ ਜੋੜੋ",
+                            "2": "ਕੋਡ ਦੀ ਸ਼ੁਰੂਆਤ ਵਿੱਚ Start Forever block ਜੋੜੋ",
+                            "3": "ਕੋਡ ਦੇ ਅੰਤ ਵਿੱਚ repeat forever block ਜੋੜੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Scratch Jr ਵਿੱਚ ਇੱਕ ਪਾਤਰ ਲਈ ਦੋ ਸਕ੍ਰਿਪਟਾਂ ਮਿਲਾਉਣ ਨਾਲ ਕੀ ਫ਼ਾਇਦਾ ਹੁੰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਇਹ ਘੱਟ ਬਲਾਕਾਂ ਨਾਲ ਗੁੰਝਲਦਾਰ ਹਰਕਤਾਂ ਬਣਾਉਣ ਦਿੰਦਾ ਹੈ",
+                            "2": "ਇਹ ਪਾਤਰ ਲਈ ਨਵੀਆਂ ਹਰਕਤਾਂ ਪ੍ਰਯੋਗ ਕਰਨ ਅਤੇ ਬਣਾਉਣ ਦਿੰਦਾ ਹੈ",
+                            "3": "ਇਹ ਪ੍ਰੋਜੈਕਟ ਜਲਦੀ ਖਤਮ ਕਰਨ ਦਾ ਤਰੀਕਾ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਪਾਤਰ ਪਿੱਛੇ ਵੱਲ ਛਾਲ ਮਾਰੇ। Start on Green Flag + Hop ਸਕ੍ਰਿਪਟ ਜੋੜੀ ਹੈ। ਕਿਹੜੀ ਹੋਰ ਸਕ੍ਰਿਪਟ ਜੋੜਨੀ ਪਵੇਗੀ?",
+                        "opts": {
+                            "1": "Start on Green Flag + Move Right",
+                            "2": "Start on Green Flag + Turn Right",
+                            "3": "Start on Green Flag + Move Left"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U09",
+            "ord": 9,
+            "nm": "Crab Jumps the Bag 🦀",
+            "desc": "Message blocks - to update score or trigger events.\n\nRole of Start on Tap, Start on Bump, and End Block in gaming\n\nAnimate continuous movement using Repeat Forever.\n\nRun two scripts on the same character for special movement effects.\n\n\nPage navigation blocks to build multi-page Scratch Jr games.\n\nBasic environmental awareness: impact of plastic on sea animals.",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U09-V01",
+                    "nm": "Can a crab dodge plastic? 🦀",
+                    "desc": "ਇਸ \"ਗਤੀਵਿਧੀ\" ਵਿੱਚ, ਵਿਦਿਆਰਥੀ ਸਕ੍ਰੈਚ ਜੂਨੀਅਰ 'ਤੇ ਇੱਕ ਐਨੀਮੇਟਿਡ ਖੇਡ ਬਣਾਉਣਗੇ ਜਿਸ ਵਿੱਚ ਇੱਕ ਕ੍ਰੈਬ ਨੇ ਉੱਡਦੇ ਪਲਾਸਟਿਕ ਬੈਗ ਤੋਂ ਕੁੱਦ ਕੇ ਸੁਰੱਖਿਅਤ ਤਰੀਕੇ ਨਾਲ ਪਾਣੀ ਤੱਕ ਪਹੁੰਚਣਾ ਹੁੰਦਾ ਹੈ। ਵਿਦਿਆਰਥੀ ਸਮੁੰਦਰ-ਤਟ ਦਾ ਪਿਛੋਕੜ ਤਿਆਰ ਕਰਨਗੇ, ਪਲਾਸਟਿਕ ਬੈਗ ਨੂੰ ਡਰਾਇੰਗ ਕਰਨਗੇ, ਇਸਦੀ ਗਤੀਵਿਧੀ ਨੂੰ ਐਨੀਮੇਟ ਕਰਨਗੇ, ਅਤੇ ਕ੍ਰੈਬ ਨੂੰ ਕੁੱਦਣ ਅਤੇ ਇੱਕੋ ਸਮੇਂ ਅੱਗੇ ਵਧਣ ਲਈ ਕੋਡ ਕਰਨਗੇ। ਉਹ ਸੰਦੇਸ਼ ਬਲਾਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਸਕੋਰਿੰਗ ਸਿਸਟਮ ਵੀ ਜੋੜਣਗੇ ਅਤੇ ਜਿੱਤਣ ਅਤੇ ਖੇਡ ਖਤਮ ਹੋਣ ਵਾਲੇ ਪੰਨੇ ਬਣਾਉਣਗੇ। ਇਸ ਰਾਹੀਂ, ਵਿਦਿਆਰਥੀ ਸਿੱਖਣਗੇ ਕਿ ਪ੍ਰਦੂਸ਼ਣ ਸਮੁੰਦਰੀ ਜਾਨਵਰਾਂ ਨੂੰ ਕਿਵੇਂ ਨੁਕਸਾਨ ਪਹੁੰਚਾਉਂਦੀ ਹੈ ਅਤੇ ਕੋਡਿੰਗ ਬਲਾਕਾਂ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਇੱਕ ਇੰਟਰਐਕਟਿਵ ਖੇਡ ਕਿਵੇਂ ਡਿਜ਼ਾਇਨ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U09-A01",
+                    "nm": "Build the Crab Jump Game 🦀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਸਮੁੰਦਰੀ ਕਿਨਾਰੇ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ 'ਤੇ ਕੇਕੜਾ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U09-Q01",
+                "nm": "Can a crab save the sea? 🦀",
+                "qs": [
+                    {
+                        "q": "Scratch Junior ਗੇਮ ਵਿੱਚ ਬੀਚ ਦਾ ਪਿਛੋਕੜ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਸੰਦ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਟੈਕਸਟ ਟੂਲ",
+                            "2": "ਪੇਂਟ ਟੂਲ",
+                            "3": "ਸ਼ੇਪ ਟੂਲ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਸਕ੍ਰਿਪਟ ਕੇਕੜੇ ਦੀ ਹਰਕਤ ਲਈ ਦੋ ਵੱਖ ਕੋਡ ਕਿਉਂ ਸੁਝਾਉਂਦੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਹਰੇ ਝੰਡੇ ਤੋਂ ਬਚਣ ਲਈ",
+                            "2": "ਕੋਡ ਸਰਲ ਕਰਨ ਲਈ",
+                            "3": "ਇੱਕੋ ਸਮੇਂ ਦੀਆਂ ਕਿਰਿਆਵਾਂ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਗੇਮ ਦੌਰਾਨ ਕੇਕੜਾ ਪੌਲੀਬੈਗ ਨੂੰ ਛੂਹਣ ਤੇ ਕੀ ਹੁੰਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਗੇਮ ਮੁੜ ਸ਼ੁਰੂ ਹੁੰਦੀ ਹੈ",
+                            "2": "ਕੇਕੜਾ ਫਸ ਜਾਂਦਾ ਹੈ ਅਤੇ ਥੈਲੀ ਰੁਕ ਜਾਂਦੀ ਹੈ",
+                            "3": "ਕੇਕੜਾ ਉੱਚਾ ਛਾਲ ਮਾਰਦਾ ਹੈ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਨਵੀਂ ਵਿਸ਼ੇਸ਼ਤਾ ਜੋੜ ਕੇ ਗੇਮ ਨੂੰ ਰਚਨਾਤਮਕ ਤੌਰ ਤੇ ਕਿਵੇਂ ਬਿਹਤਰ ਬਣਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪਿਛੋਕੜ ਨੂੰ ਸ਼ਹਿਰੀ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਬਦਲੋ",
+                            "2": "ਗੇਮ ਵਿੱਚ ਹੋਰ ਕੇਕੜੇ ਜੋੜੋ",
+                            "3": "ਕੇਕੜੇ ਦੇ ਛਾਲ ਮਾਰਨ ਤੇ ਧੁਨੀ ਪ੍ਰਭਾਵ ਜੋੜੋ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਗੇਮ ਨੂੰ ਹੋਰ ਚੁਣੌਤੀਪੂਰਨ ਬਣਾਉਣ ਲਈ ਕਿਹੜਾ ਰਚਨਾਤਮਕ ਹੱਲ ਵਰਤਿਆ ਜਾ ਸਕਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਪੌਲੀਬੈਗ ਦਾ ਆਕਾਰ ਵਧਾਓ",
+                            "2": "ਕੇਕੜੇ ਦਾ ਆਕਾਰ ਘਟਾਓ",
+                            "3": "ਚੱਟਾਨਾਂ ਵਰਗੀਆਂ ਰੁਕਾਵਟਾਂ ਜੋੜੋ ਜਿਨ੍ਹਾਂ ਉੱਤੋਂ ਕੇਕੜੇ ਨੂੰ ਛਾਲ ਮਾਰਨੀ ਪਵੇ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSJC1-U10",
+            "ord": 10,
+            "nm": "Lizard Runs the Desert 🦎",
+            "desc": "Trigger Blocks: Start on Green Flag, Start on Tap\n\nMotion Blocks: Move Right, Move Left, Repeat Forever\n\nLook Blocks: Grow/Shrink, Change Colors\n\nSound Blocks: Pop sound\n\nPaint Editor: Create and modify sprites and backgrounds\n\nGame Design: How to set up a playable game with obstacles and interactions",
+            "rwc": "Notebook, Pencil, Eraser, Smartphone, Scratch Jr App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSJC1-U10-V01",
+                    "nm": "Can a lizard outrun cactus? 🦎",
+                    "desc": "ਇਸ ਕਿਰਿਆ ਵਿੱਚ, ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ Scratch Jr. ਵਿੱਚ ਰੇਗਿਸਤਾਨ ਗੇਮ ਬਣਾਉਣ ਦੇ ਕਦਮ-ਦਰ-ਕਦਮ ਹਦਾਇਤ ਦਿੱਤੀਆਂ ਜਾਣਗੀਆਂ। ਉਹ ਸਿੱਖਣਗੇ ਕਿ ਰੇਗਿਸਤਾਨ ਦਾ ਬੈਕਗ੍ਰਾਊਂਡ ਕਿਵੇਂ ਬਦਲਣਾ ਹੈ, ਕੈਕਟਸ ਅਤੇ ਛਿਪਕਲੀ ਵਰਗੇ ਸਪ੍ਰਾਈਟ ਬਣਾਉਣ ਅਤੇ ਉਹਨਾਂ ਦਾ ਆਕਾਰ ਬਦਲਣਾ, ਸਪ੍ਰਾਈਟ ਦੇ ਰੰਗ ਬਦਲਣਾ, ਅਤੇ ਫਿਰ Motion, Trigger ਅਤੇ Sound ਬਲੌਕਸ ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਉਹਨਾਂ ਨੂੰ ਕੋਡ ਕਰਨਾ। ਅੰਤ ਤੱਕ, ਉਹਨਾਂ ਕੋਲ ਇੱਕ ਪੂਰੀ ਤਰ੍ਹਾਂ ਕਾਰਗਰ ਗੇਮ ਹੋਵੇਗੀ ਜਿਸ ਵਿੱਚ ਛਿਪਕਲੀ ਨੂੰ ਕੈਕਟਸ ਤੋਂ ਬਚਾਉਣ ਲਈ ਟੈਪ ਕਰਨਾ ਹੋਵੇਗਾ ਤਾਂ ਕਿ ਉਹ ਕੈਕਟਸ ਨੂੰ ਛੁਏ ਬਿਨਾਂ ਅੱਗੇ ਕੂਦ ਸਕੇ।",
+                    "yt": "",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSJC1-U10-A01",
+                    "nm": "Build the Desert Lizard Game 🦎",
+                    "sub_types": "image,video",
+                    "unguided_text": "ਆਪਣੀ ਗਤੀਵਿਧੀ ਦਾ ਇੱਕ ਸਾਫ਼ ਸਕਰੀਨਸ਼ਾਟ ਜਾਂ ਵੀਡੀਓ ਸਾਂਝਾ ਕਰੋ ਜਿਸ ਵਿੱਚ ਰੇਗਿਸਤਾਨ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਛਿਪਕਲੀ ਅਤੇ ਪ੍ਰੋਗਰਾਮਿੰਗ ਖੇਤਰ ਵਿੱਚ ਕੋਡ ਸਾਫ਼ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੋਵੇ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSJC1-U10-Q01",
+                "nm": "Can Lizzy dodge it? 🦎",
+                "qs": [
+                    {
+                        "q": "ਲਿਜ਼ੀ ਦੀ ਲਿਜ਼ਾਰਡ ਨੂੰ ਰੇਗਿਸਤਾਨ ਖੇਡ ਵਿੱਚ ਕਿਸ ਤੋਂ ਬਚਾਉਣਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਬਾਘ",
+                            "2": "ਕੈਕਟਸ",
+                            "3": "ਚਟਾਨਾਂ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਅਸੀਂ ਖੇਡ ਵਿੱਚ ਲਿਜ਼ੀ ਦੀ ਲਿਜ਼ਾਰਡ 'ਤੇ ਕਿਉਂ ਟੈਪ ਕਰਦੇ ਹਾਂ?",
+                        "opts": {
+                            "1": "ਉਸ ਦੀ ਮਦਦ ਕਰਨ ਲਈ ਕਿ ਉਹ ਕੈਕਟਸ ਨੂੰ ਬਿਨਾਂ ਵੱਜੇ ਅੱਗੇ ਵੱਧ ਸਕੇ",
+                            "2": "ਉਸ ਨੂੰ ਸੌਣ ਲਈ",
+                            "3": "ਉਸ ਦਾ ਰੰਗ ਬਦਲਣ ਲਈ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਜੇਕਰ ਲਿਜ਼ੀ ਹੌਲੀ ਹੌਲੀ ਛਲਾਂਗ ਲਗਾਉਂਦੀ ਹੈ ਅਤੇ ਕੈਕਟਸ ਨਾਲ ਵੱਜਦੀ ਹੈ, ਤਾਂ ਖੇਡ ਵਿੱਚ ਸਾਨੂੰ ਕੀ ਬਦਲਣਾ ਚਾਹੀਦਾ ਹੈ?",
+                        "opts": {
+                            "1": "ਕੈਕਟਸ ਨੂੰ ਵੱਡਾ ਕਰੋ",
+                            "2": "ਛਲਾਂਗ ਦੀ ਗਿਣਤੀ ਵਧਾ ਕੇ ਉਸ ਨੂੰ ਵੱਡਾ ਕਰੋ",
+                            "3": "ਲਿਜ਼ੀ ਦਾ ਰੰਗ ਬਦਲੋ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਪ੍ਰਿਆ ਆਪਣੀ ਲਿਜ਼ਾਰਡ ਨੂੰ ਉਸ ਦੇ ਰੇਗਿਸਤਾਨ ਖੇਡ ਵਿੱਚ ਹਿਲਦੀਆਂ ਕੈਕਟਸਾਂ ਤੇ ਛਲਾਂਗ ਲਗਾਉਣਾ ਚਾਹੁੰਦੀ ਹੈ। ਇਸ ਮਨੋਰੰਜਕ ਚੁਣੌਤੀ ਨੂੰ ਬਣਾਉਣ ਲਈ ਉਸ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕਾ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਲਿਜ਼ਾਰਡ 'ਤੇ ਦੋ ਸਕ੍ਰਿਪਟ ਵਰਤੋਂ, ਇੱਕ ਛਲਾਂਗ ਲਈ ਅਤੇ ਇੱਕ ਅੱਗੇ ਵਧਣ ਲਈ, ਅਤੇ ਦੋਵੇਂ ਨੂੰ ਇੱਕੋ ਸ਼ੁਰੂਆਤੀ ਬਲਾਕ ਨਾਲ ਚਲਾਓ।",
+                            "2": "ਕੈਕਟਸ ਨੂੰ ਗਾਇਬ ਕਰਨ ਲਈ \"ਸ਼੍ਰਿੰਕ\" ਬਲਾਕ ਵਰਤੋ",
+                            "3": "ਸੰਗੀਤ ਜੋੜਨ ਲਈ \"ਸਾਊਂਡ\" ਬਲਾਕ ਵਰਤੋ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ਅਰਜੁਨ ਚਾਹੁੰਦਾ ਹੈ ਕਿ ਉਸ ਦੀ ਖੇਡ ਦਿਨ ਦੇ ਸਮੇਂ ਵਾਂਗ ਲੱਗੇ। ਉਸ ਦੀ ਰੇਗਿਸਤਾਨ ਖੇਡ ਨੂੰ ਉਜਲਾ ਅਤੇ ਧੁੱਪਦਾਰ ਬਣਾਉਣ ਲਈ ਉਸ ਲਈ ਸਭ ਤੋਂ ਵਧੀਆ ਫੈਸਲਾ ਕੀ ਹੈ?",
+                        "opts": {
+                            "1": "ਹੋਰ ਕੈਕਟਸ ਜੋੜੋ",
+                            "2": "ਅਸਮਾਨ ਦਾ ਰੰਗ ਨੀਲਾ ਅਤੇ ਰੇਤ ਦਾ ਰੰਗ ਪੀਲਾ ਕਰੋ",
+                            "3": "ਲਿਜ਼ਾਰਡ ਨੂੰ ਵੱਡਾ ਬਣਾਓ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

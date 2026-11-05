@@ -1,0 +1,889 @@
+{
+    "id": "CBSSL1",
+    "nm": "∆ Science Starters",
+    "desc": "In this activity, students will explore the concept of air resistance by observing how a crumpled paper and a flat paper fall differently. They will then create a simple parachute using everyday materials and test how air resistance slows down falling objects. Through this hands-on activity, students will connect scientific concepts with real-life applications like parachutes.",
+    "vrt": "science-lab",
+    "lvl": "1",
+    "units": [
+        {
+            "id": "CBSSL1-U01",
+            "ord": 1,
+            "nm": "Paper Falls with Grace 🪂",
+            "desc": "Students will understand the concept of air resistance, which is a force that opposes the motion of objects moving through air. They will learn that objects with a larger surface area experience more air resistance and fall more slowly, while objects with a smaller surface area fall faster. They will understand how air resistance is used in real life, such as in parachutes, which help in slow and safe landing.",
+            "rwc": "Pen, Scissors, Paper, Thread, Cup, Stick, Sketchpen, Plastic)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U01-V01",
+                    "nm": "Can paper fall without crashing? 🪂",
+                    "desc": "In this activity, students will explore the concept of air resistance by observing how a crumpled paper and a flat paper fall differently. They will then create a simple parachute using everyday materials and test how air resistance slows down falling objects. Through this hands-on activity, students will connect scientific concepts with real-life applications like parachutes.",
+                    "yt": "4qesDAklFrY",
+                    "dur": "00:03:19"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U01-A01",
+                    "nm": "Build and Test a Parachute 🪂",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಪ್ಯಾರಾಚೂಟ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U01-Q01",
+                "nm": "Why does a parachute float? 🪂",
+                "qs": [
+                    {
+                        "q": "ಮಡಿಸಿದ ಕಾಗದ ಚಪ್ಪಟೆ ಕಾಗದಕ್ಕಿಂತ ವೇಗವಾಗಿ ಬೀಳಲು ಕಾರಣ ಏನು?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ತೂಕ",
+                            "2": "ಕಡಿಮೆ ಗಾಳಿ ಪ್ರತಿರೋಧ",
+                            "3": "ಹೆಚ್ಚು ಎತ್ತರ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ಯಾರಾಚೂಟ್ ಸುರಕ್ಷಿತ ಇಳಿಯಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಅದು ಮೇಲ್ಮೈ ವಿಸ್ತೀರ್ಣ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+                            "2": "ಅದು ಗಾಳಿ ಪ್ರತಿರೋಧ ಹೆಚ್ಚಿಸುತ್ತದೆ",
+                            "3": "ಅದು ಇಳಿಯುವ ವೇಗ ಹೆಚ್ಚಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ಯಾರಾಚೂಟ್‌ನ ತಳಕ್ಕೆ ತೂಕ ಜೋಡಿಸುವ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಇಳಿಯುವ ಸಮಯದಲ್ಲಿ ಪ್ಯಾರಾಚೂಟ್ ಸ್ಥಿರಗೊಳಿಸಲು",
+                            "2": "ಗಾಳಿ ಪ್ರತಿರೋಧ ಕಡಿಮೆ ಮಾಡಲು",
+                            "3": "ಅದನ್ನು ಭಾರ ಮಾಡಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಪ್ಯಾರಾಚೂಟ್ ತುಂಬಾ ವೇಗವಾಗಿ ಬೀಳುತ್ತಿದ್ದರೆ ಅದರ ಕಾರ್ಯಕ್ಷಮತೆ ಸುಧಾರಿಸಲು ನೀವು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಪ್ಯಾರಾಚೂಟ್‌ನ ಮೇಲ್ಮೈ ವಿಸ್ತೀರ್ಣ ಹೆಚ್ಚಿಸಿ",
+                            "2": "ದಾರಗಳನ್ನು ಚಿಕ್ಕದಾಗಿ ಮಾಡಿ",
+                            "3": "ಹೆಚ್ಚು ಭಾರದ ತೂಕ ಬಳಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಪ್ಯಾರಾಚೂಟ್ ಸರಿಯಾಗಿ ತೆರೆಯದಿದ್ದರೆ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಲು ಯಾವ ಮಾರ್ಪಾಡು ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಪ್ಯಾರಾಚೂಟ್‌ಗೆ ಹಗುರ ವಸ್ತು ಬಳಸಿ",
+                            "2": "ತಳದ ತೂಕ ಹೆಚ್ಚಿಸಿ",
+                            "3": "ದಾರಗಳು ಸಿಕ್ಕಿಹಾಕಿಕೊಂಡಿಲ್ಲ ಮತ್ತು ಸಮನಾಗಿ ಅಂತರ ಇದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U02",
+            "ord": 2,
+            "nm": "Blades Catch the Wind 🌀",
+            "desc": "Students will understand how air affects the movement of objects.\nStudents will understand that air resistance is a force that acts against moving objects. When the paper helicopter falls, air pushes against its blades, causing it to spin.",
+            "rwc": "Pencil, Scissors, Paper, Ruler",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U02-V01",
+                    "nm": "Can paper blades spin fast? 🌀",
+                    "desc": "In this activity, students will create a simple paper helicopter using basic materials and observe how it spins while falling. Through cutting and folding paper, they will design blades that interact with air, helping them understand how air can influence motion. Students will connect this hands-on activity with real-life concepts like helicopters and falling objects.",
+                    "yt": "WIhehSept00",
+                    "dur": "00:03:21"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U02-A01",
+                    "nm": "Build a Paper Helicopter 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಪ್ಯಾರಾಚೂಟ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U02-Q01",
+                "nm": "Why does paper spin down? 🌀",
+                "qs": [
+                    {
+                        "q": "ಕಾಗದದ ಹೆಲಿಕಾಪ್ಟರ್ ರಚಿಸಲು ಯಾವ ವಸ್ತುಗಳು ಬೇಕು?",
+                        "opts": {
+                            "1": "ಕಾಗದ, ಪೆನ್ ಮತ್ತು ಬಣ್ಣಗಳು",
+                            "2": "ಕಾಗದ, ಬಣ್ಣಗಳು ಮತ್ತು ಅಂಟು",
+                            "3": "ಕಾಗದ, ಪೆನ್ಸಿಲ್, ಕತ್ತರಿ ಮತ್ತು ಸ್ಕೇಲ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಗದದ ಹೆಲಿಕಾಪ್ಟರ್ ಬೀಳುವಾಗ ತಿರುಗುವ ಕಾರಣ ಏನು?",
+                        "opts": {
+                            "1": "ಹೆಲಿಕಾಪ್ಟರ್‌ನ ಆಕಾರ",
+                            "2": "ಗಾಳಿ ಅದರ ರೆಕ್ಕೆಗಳ ವಿರುದ್ಧ ತಳ್ಳುತ್ತದೆ",
+                            "3": "ಕಾಗದದ ತೂಕ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಗದದ ಮೇಲೆ ರೇಖೆಗಳನ್ನು ಎಳೆದ ನಂತರ ಕಾಗದದ ಹೆಲಿಕಾಪ್ಟರ್ ತಯಾರಿಸುವ ಮುಂದಿನ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಪ್ರತಿ 3 ಸೆಂ.ಮೀ.ಗೆ ಚುಕ್ಕೆಗಳನ್ನು ಗುರುತಿಸಿ",
+                            "2": "ಆಯತಾಕಾರ ಕತ್ತರಿಸಿ",
+                            "3": "ಕಾಗದ ಮಡಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಗದದ ಹೆಲಿಕಾಪ್ಟರ್ ಸರಿಯಾಗಿ ತಿರುಗದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಕಾರಣ ಏನಾಗಬಹುದು?",
+                        "opts": {
+                            "1": "ಭಾರ ಕಾಗದ ಬಳಸಿದ್ದು",
+                            "2": "ರೆಕ್ಕೆಗಳನ್ನು ತಪ್ಪಾಗಿ ಮಡಿಸಿದ್ದು",
+                            "3": "ಕಡಿಮೆ ಎತ್ತರದಿಂದ ಎಸೆದದ್ದು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ತಪ್ಪಾಗಿ ಆಯತಾಕಾರವನ್ನು ಮೂರು ಭಾಗಗಳ ಬದಲು ನಾಲ್ಕು ಭಾಗಗಳಾಗಿ ಕತ್ತರಿಸಿದ. ಹೆಲಿಕಾಪ್ಟರ್ ಸರಿಪಡಿಸಲು ಅವರು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಸೆಲ್ಲೋಟೇಪ್‌ನಿಂದ ತುಣುಕುಗಳನ್ನು ಮತ್ತೆ ಜೋಡಿಸಿ",
+                            "2": "ಹೊಸ ಕಾಗದದಿಂದ ಮೊದಲಿನಿಂದ ಪ್ರಾರಂಭಿಸಿ",
+                            "3": "ತುಣುಕುಗಳನ್ನು ಅಂಟಿನಿಂದ ಜೋಡಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U03",
+            "ord": 3,
+            "nm": "Spin Never Stops 🌀",
+            "desc": "Students will understand that a force is needed to start motion. Once the spinner starts moving, it continues due to inertia, which means objects in motion tend to stay in motion.\nThey will also learn that balance is important for smooth rotation, and friction can slow down movement. Reducing friction (using a central pivot like a toothpick) helps the spinner move more freely and for a longer time.",
+            "rwc": "Colors, Scissors, Glue, Cardboard, Paints (Optional)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U03-V01",
+                    "nm": "Can a coin spin forever? 🌀",
+                    "desc": "In this activity, students will create a simple fidget spinner using cardboard, a toothpick, and small circular cutouts. They will explore how a small push can set an object into motion and observe how design elements like balance and reduced friction help the spinner rotate smoothly for a longer time. Through this hands-on activity, students will connect everyday toys with scientific concepts.",
+                    "yt": "HRHji4LofV4",
+                    "dur": "00:03:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U03-A01",
+                    "nm": "Build a Cardboard Fidget Spinner 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಸ್ಪಿನ್ನರ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U03-Q01",
+                "nm": "What keeps a spinner spinning? 🌀",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ತಯಾರಿಸಲು ಬಳಸಿದ ಮೂಲ ವಸ್ತು ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್",
+                            "2": "ಲೋಹ",
+                            "3": "ಪ್ಲಾಸ್ಟಿಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ನಿರ್ಮಾಣದಲ್ಲಿ ಸಣ್ಣ ವೃತ್ತಗಳ ಪಾತ್ರ ಏನು?",
+                        "opts": {
+                            "1": "ಅವು ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಹಿಡಿಯಲು ಹ್ಯಾಂಡಲ್‌ಗಳಾಗಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತವೆ.",
+                            "2": "ಸುಗಮ ತಿರುಗುವಿಕೆಗಾಗಿ ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಸಮತೋಲನ ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ.",
+                            "3": "ಅವು ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಅಲಂಕರಿಸಲು ಬಳಸಲಾಗುತ್ತದೆ."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್‌ನ ಕೇಂದ್ರ ರಂಧ್ರದ ಮೂಲಕ ಟೂತ್‌ಪಿಕ್ ಸೇರಿಸುವ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಘರ್ಷಣೆ ಕಡಿಮೆ ಮಾಡಿ ಸುಗಮ ತಿರುಗುವಿಕೆ ಅನುಮತಿಸಲು.",
+                            "2": "ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಅನ್ನು ಮೋಟಾರ್‌ಗೆ ಜೋಡಿಸಲು.",
+                            "3": "ಸ್ಪಿನ್ನರ್‌ನ ತೂಕ ಹೆಚ್ಚಿಸಲು."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಸುಗಮವಾಗಿ ತಿರುಗದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆ ಏನಾಗಬಹುದು?",
+                        "opts": {
+                            "1": "ವೃತ್ತಗಳು ಅಥವಾ ಟೂತ್‌ಪಿಕ್ ಅನ್ನು ಕೇಂದ್ರ ತುಣುಕಿಗೆ ಅಂಟಿಸಿ ಘರ್ಷಣೆ ಹೆಚ್ಚಿಸಿರಬಹುದು.",
+                            "2": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ತುಂಬಾ ದಪ್ಪ ಮತ್ತು ಭಾರ ಇರಬಹುದು.",
+                            "3": "ಟೂತ್‌ಪಿಕ್ ತುಂಬಾ ಚಿಕ್ಕದಾಗಿದೆ."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಫಿಡ್ಜೆಟ್ ಸ್ಪಿನ್ನರ್ ಬೇಗ ನಿಂತುಹೋದರೆ ಅದರ ಕಾರ್ಯಕ್ಷಮತೆ ಸುಧಾರಿಸಲು ಯಾವ ಹೊಂದಾಣಿಕೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ತೂಕ ಹೆಚ್ಚಿಸಲು ಹೆಚ್ಚು ನಾಣ್ಯಗಳನ್ನು ಸೇರಿಸಿ.",
+                            "2": "ಸ್ಪಿನ್ನರ್ ಗುರುತಿಸಲು ದೊಡ್ಡ ನಾಣ್ಯ ಬಳಸಿ.",
+                            "3": "ಘರ್ಷಣೆ ಕಡಿಮೆ ಮಾಡಲು ಟೂತ್‌ಪಿಕ್ ಮತ್ತು ವೃತ್ತಗಳನ್ನು ಅಂಟಿಸದೆ ಖಚಿತಪಡಿಸಿ."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U04",
+            "ord": 4,
+            "nm": "Balloon Becomes Rocket 🚀",
+            "desc": "The concept of potential energy (air inside the balloon) and kinetic energy (the movement of the rocket).\nNewton’s Third Law of Motion — that forces always occur in pairs: for every action, there is an equal and opposite reaction.\nHow air pressure inside a balloon can act as fuel to move objects.\nThe principle behind how rockets use gases escaping downward to propel themselves upward.\nBasic principles of force and motion in physics.",
+            "rwc": "Scissors, Tape, String, Balloon, Straw",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U04-V01",
+                    "nm": "Can air make balloons fly? 🚀",
+                    "desc": "In this activity, students will create their own balloon rocket to explore the science of Newton's Third Law of Motion. By blowing air into a balloon and using it as fuel, students will understand how the escaping air creates a force that moves the balloon forward, similar to how a rocket works. This fun hands-on activity allows students to learn about the relationship between action and reaction in a simple and interactive way.",
+                    "yt": "Ssy9duF4HmI",
+                    "dur": "00:02:33"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U04-A01",
+                    "nm": "Launch a Balloon Rocket Race 🚀",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಬಲೂನ್ ಕಾರು ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U04-Q01",
+                "nm": "What pushes the balloon rocket? 🚀",
+                "qs": [
+                    {
+                        "q": "ರಾಕೆಟ್ ದಾರದ ಉದ್ದಕ್ಕೂ ಚಲಿಸಲು ಬಲೂನ್‌ಗೆ ಏನು ಜೋಡಿಸುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಸ್ಟ್ರಾ",
+                            "2": "ಟೇಪ್",
+                            "3": "ಕಾಗದ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಲೂನ್ ರಾಕೆಟ್‌ಗೆ ಉದ್ದನೆಯ ದಾರ ಏಕೆ ಬೇಕು?",
+                        "opts": {
+                            "1": "ಅಚ್ಚುಕಟ್ಟಾಗಿ ಕಾಣಿಸಲು",
+                            "2": "ಬಲೂನ್ ಹೆಚ್ಚು ದೂರ ಚಲಿಸಲು",
+                            "3": "ಹಲವು ಬಲೂನ್‌ಗಳನ್ನು ಕಟ್ಟಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಿಟ್ಟಾಗ ಬಲೂನ್ ಮುಂದಕ್ಕೆ ಏಕೆ ಚಲಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಬಲೂನ್‌ನೊಳಗಿನ ಗಾಳಿ ಮಾಯವಾಗುತ್ತದೆ",
+                            "2": "ದಾರ ಬಲೂನ್ ಅನ್ನು ಎಳೆಯುತ್ತದೆ",
+                            "3": "ಹಿಂದಕ್ಕೆ ತಪ್ಪಿಸಿಕೊಳ್ಳುವ ಗಾಳಿ ಬಲೂನ್ ಅನ್ನು ಮುಂದಕ್ಕೆ ತಳ್ಳುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಲೂನ್ ರಾಕೆಟ್‌ನ ಚಲನೆ ವಿವರಿಸುವ ನಿಯಮ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ನ್ಯೂಟನ್‌ನ ಮೂರನೇ ನಿಯಮ",
+                            "2": "ನ್ಯೂಟನ್‌ನ ಮೊದಲ ನಿಯಮ",
+                            "3": "ನ್ಯೂಟನ್‌ನ ಎರಡನೇ ನಿಯಮ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ದಾರದ ಮೇಲಿರುವ ಬಲೂನ್ ಬಿಟ್ಟಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಬಲೂನ್ ಒಂದೇ ಜಾಗದಲ್ಲಿ ನಿಲ್ಲುತ್ತದೆ",
+                            "2": "ಬಲೂನ್ ಹಿಂದಕ್ಕೆ ಚಲಿಸುತ್ತದೆ",
+                            "3": "ಬಲೂನ್ ದಾರದ ಉದ್ದಕ್ಕೂ ಮುಂದಕ್ಕೆ ಚಲಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U05",
+            "ord": 5,
+            "nm": "Air Builds the Car 🎈",
+            "desc": "Students will be able to observe and explain how forces create motion.\n\nStudents will understand Newton’s Third Law of Motion, which states that for every action, there is an equal and opposite reaction. When air is pushed out of the balloon (action), the car moves forward (reaction).\n\nThey will also learn that force can create motion, and the direction of force affects how objects move.",
+            "rwc": "Scissors, Cardboard, Tape, Balloon, Bottle, Straw",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U05-V01",
+                    "nm": "Can air push a car? 🎈",
+                    "desc": "In this activity, students will build a balloon-powered car using simple materials and observe how it moves when air is released from the balloon. Through this hands-on experiment, students will explore how forces act in opposite directions and understand how motion is created using air pressure.",
+                    "yt": "HzDPR6DI97A",
+                    "dur": "00:05:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U05-A01",
+                    "nm": "Build a Balloon Powered Car 🎈",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಬಲೂನ್ ಕಾರು ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U05-Q01",
+                "nm": "What pushes the balloon car? 🚗",
+                "qs": [
+                    {
+                        "q": "ಚೆಂಡನ್ನು ಡ್ರಿಬಲ್ ಮಾಡಿದಾಗ ಅದು ಹಿಂದಕ್ಕೆ ಬರಲು ಯಾವ ನಿಯಮ ವಿವರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಗುರುತ್ವ ನಿಯಮ",
+                            "2": "ನ್ಯೂಟನ್‌ನ ಚಲನೆಯ ಮೂರನೇ ನಿಯಮ",
+                            "3": "ಜಡತ್ವ ನಿಯಮ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಚೆಂಡನ್ನು ನೆಲದ ಕಡೆ ತಳ್ಳಿದಾಗ ನೆಲದ ಪಾತ್ರ ಏನು?",
+                        "opts": {
+                            "1": "ಅದು ಬಲವನ್ನು ಸಂಪೂರ್ಣವಾಗಿ ಹೀರಿಕೊಳ್ಳುತ್ತದೆ",
+                            "2": "ಅದು ಸಮಾನ ಬಲದಿಂದ ಹಿಂದಕ್ಕೆ ತಳ್ಳುತ್ತದೆ",
+                            "3": "ಅದು ಅನ್ವಯಿಸಿದ ಬಲವನ್ನು ಗುಣಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಲೂನ್ ಕಾರಿನ ಚಕ್ರಗಳನ್ನು ತಯಾರಿಸಲು ಯಾವ ವಸ್ತು ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಬಾಟಲ್ ಕ್ಯಾಪ್‌ಗಳು",
+                            "2": "ಸ್ಟ್ರಾಗಳು",
+                            "3": "ಮರದ ಕಡ್ಡಿಗಳು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಲೂನ್ ಕಾರ್ ಮುಂದಕ್ಕೆ ಚಲಿಸದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಸಮಸ್ಯೆಗಳಿಗಾಗಿ ಮೊದಲು ಯಾವ ಹಂತ ಪರಿಶೀಲಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಸ್ಟ್ರಾಗಳನ್ನು ಪರಸ್ಪರ ಸಮಾನಾಂತರವಾಗಿ ಅಂಟಿಸಲಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "ಬಲೂನ್‌ನಿಂದ ಗಾಳಿ ತಪ್ಪಿಸಿಕೊಳ್ಳದಂತೆ ಖಚಿತಪಡಿಸಿ",
+                            "3": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಪರಿಪೂರ್ಣ ಆಯತಾಕಾರದಲ್ಲಿ ಕತ್ತರಿಸಲಾಗಿದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸುಲಭವಾಗಿ ಲಭ್ಯವಿರುವ ವಸ್ತು ಬಳಸಿ ನ್ಯೂಟನ್‌ನ ಮೂರನೇ ನಿಯಮದ ತತ್ವಗಳನ್ನು ಹೇಗೆ ಪರೀಕ್ಷಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಲಾಟಿಮ್ ತಿರುಗಿಸಿ",
+                            "2": "ಚೆಂಡು ಎಸೆದು ಹಿಡಿಯಿರಿ",
+                            "3": "ಟ್ರ್ಯಾಂಪೋಲಿನ್ ಮೇಲೆ ಜಿಗಿಯಿರಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U06",
+            "ord": 6,
+            "nm": "Twist Powers the Boat 🌊",
+            "desc": "Students will learn how energy is stored and transferred. In this case, potential energy is stored when the rubber band is twisted. Upon release, this stored energy converts into kinetic energy, which powers the boat’s movement. The project also introduces basic principles of force and motion, as well as the concept of mechanical work done by a simple machine (the rubber band acting like a motor).",
+            "rwc": "Scissors, Paper, Cardboard, Tape, Bottle, Rubber Band, Paddle)",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U06-V01",
+                    "nm": "Can a twist power boats? 🌊",
+                    "desc": "In this activity, students will create a mini boat powered by a rubber band. By understanding the concept of potential and kinetic energy, they will learn how to store energy in the rubber band and release it to propel the boat forward in water. This hands-on project helps students explore basic principles of physics and engineering while having fun with a simple yet effective design.",
+                    "yt": "yoTMxjG2cAk",
+                    "dur": "00:03:12"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U06-A01",
+                    "nm": "Build a Rubber Band Boat 🌊",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ರಬ್ಬರ್‌ಬ್ಯಾಂಡ್ ಕಾರು ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U06-Q01",
+                "nm": "What hides inside a rubber band? ⚡",
+                "qs": [
+                    {
+                        "q": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ತಿರುಗಿಸಿದಾಗ ಯಾವ ರೀತಿಯ ಶಕ್ತಿ ಸಂಗ್ರಹಿಸಲ್ಪಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಉಷ್ಣ ಶಕ್ತಿ",
+                            "2": "ಸ್ಥಿತಿಸ್ಥಾಪಕ ಸಂಭಾವ್ಯ ಶಕ್ತಿ",
+                            "3": "ಚಲನ ಶಕ್ತಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಬಿಟ್ಟಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಅದು ಚಲನ ಶಕ್ತಿಯಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ",
+                            "2": "ಅದು ಉಷ್ಣ ಶಕ್ತಿಯಾಗಿ ಪರಿವರ್ತಿಸುತ್ತದೆ",
+                            "3": "ಅದು ಸಂಭಾವ್ಯ ಶಕ್ತಿಯಾಗಿ ಉಳಿಯುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ದೋಣಿ ಪ್ರಯೋಗದಲ್ಲಿ ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್‌ಗೆ ಮರದ ಕಡ್ಡಿಗಳನ್ನು ಜೋಡಿಸಲು ಯಾವ ವಸ್ತು ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ರಬ್ಬರ್‌ಬ್ಯಾಂಡ್",
+                            "2": "ಟೇಪ್",
+                            "3": "ಅಂಟು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ದೋಣಿಯಂತೆಯೇ ಅದೇ ತತ್ವ ಬಳಸಿ ಬಲೂನ್ ಚಾಲಿತ ಕಾರ್ ವಿನ್ಯಾಸ ಮಾಡಿದರೆ ಅದನ್ನು ವೇಗವಾಗಿ ಚಲಿಸುವಂತೆ ಮಾಡಲು ಏನು ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ದೇಹಕ್ಕೆ ಹಗುರ ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಬೇಸ್ ಬಳಸಿ",
+                            "2": "ಚಕ್ರಗಳನ್ನು ದೊಡ್ಡದು ಮತ್ತು ಭಾರ ಮಾಡಿ",
+                            "3": "ಜೋಡಿಸದೆ ಬೇಸ್‌ಗೆ ಹೆಚ್ಚುವರಿ ಬಲೂನ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮರದ ಕಡ್ಡಿ ಬಿಟ್ಟ ನಂತರ ದೋಣಿ ಚಲಿಸದಿದ್ದರೆ ಸಮಸ್ಯೆ ಏನಾಗಿರಬಹುದು?",
+                        "opts": {
+                            "1": "ದೋಣಿ ಚಲಿಸಲು ನೀರು ತುಂಬಾ ಆಳ ಕಡಿಮೆ",
+                            "2": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಸಂಗ್ರಹಿಸಲು ಸಾಕಷ್ಟು ತಿರುಗಿಸಲ್ಪಟ್ಟಿಲ್ಲ",
+                            "3": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ತುಂಬಾ ಬಿಗಿಯಾಗಿದ್ದು ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಪರಿವರ್ತಿಸಲಾಗುತ್ತಿಲ್ಲ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U07",
+            "ord": 7,
+            "nm": "Band Turns the Wheels 🔄",
+            "desc": "The concept of potential energy (energy stored in an object, like a twisted rubber band).\nThe concept of kinetic energy (energy in motion, like the movement of the car).\nHow friction helps wheels grip the surface for better movement.\nBasic mechanical design principles and how simple materials can create functional systems.\nThe relationship between energy storage and release in physical objects.",
+            "rwc": "Scissors, Glue, Tape, Straw, Pencil",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U07-V01",
+                    "nm": "Can rubber bands move cars? 🔄",
+                    "desc": "In this activity, students will create a rubber band car to explore how energy is stored and converted. Using simple materials like ice-cream sticks, straws, and rubber bands, students will build a car that moves using potential energy (stored in the twisted rubber band) and converts it into kinetic energy (motion). The activity helps students understand basic principles of energy, motion, and friction in a fun and interactive way.",
+                    "yt": "To_9pyI4JH4",
+                    "dur": "00:03:52"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U07-A01",
+                    "nm": "Build a Rubber Band Car 🔄",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ರಬ್ಬರ್‌ಬ್ಯಾಂಡ್ ಕಾರು ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U07-Q01",
+                "nm": "Can rubber bands store energy? 🔋",
+                "qs": [
+                    {
+                        "q": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಎಳೆದಾಗ ಅದರಲ್ಲಿ ಯಾವ ರೀತಿಯ ಶಕ್ತಿ ಸಂಗ್ರಹಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಚಲನ ಶಕ್ತಿ",
+                            "2": "ಸ್ಥಿತಿಸ್ಥಾಪಕ ಸಂಭಾವ್ಯ ಶಕ್ತಿ",
+                            "3": "ಶಾಖ ಶಕ್ತಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಬಿಟ್ಟಾಗ ಅದರ ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಯಾವುದಾಗಿ ಬದಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಬೆಳಕಿನ ಶಕ್ತಿ",
+                            "2": "ರಾಸಾಯನಿಕ ಶಕ್ತಿ",
+                            "3": "ಚಲನ ಶಕ್ತಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಕಾರ್ ಮುಂದಕ್ಕೆ ಏಕೆ ಚಲಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಕಾಂತೀಯ ಬಲದಿಂದ",
+                            "2": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್‌ನ ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಚಲನ ಶಕ್ತಿಯಾಗಿ ಪರಿವರ್ತಿತವಾಗುವುದರಿಂದ",
+                            "3": "ಕೇವಲ ಘರ್ಷಣೆಯಿಂದ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಕಾರ್ ವೇಗವಾಗಿ ಚಲಿಸಲು ನೀವು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಚಿಕ್ಕ ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಬಳಸಿ",
+                            "2": "ಚಕ್ರಗಳ ಸಂಖ್ಯೆ ಕಡಿಮೆ ಮಾಡಿ",
+                            "3": "ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಹೆಚ್ಚು ತಿರುಗಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಎಳೆದ ರಬ್ಬರ್ ಬ್ಯಾಂಡ್‌ನಲ್ಲಿ ಸಂಗ್ರಹಿಸಿದ ಸಂಭಾವ್ಯ ಶಕ್ತಿ ಚಲನ ಶಕ್ತಿಯಾಗಿ ಪರಿವರ್ತಿಸಲು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಏನೂ ಮಾಡಬೇಡಿ",
+                            "2": "ಶಕ್ತಿ ಪರಿವರ್ತಿಸಲು ಮತ್ತೊಂದು ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಬಳಸಿ",
+                            "3": "ತಿರುಗಿಸಿದ ರಬ್ಬರ್ ಬ್ಯಾಂಡ್ ಬಿಟ್ಟುಬಿಡಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U08",
+            "ord": 8,
+            "nm": "Claws Grip Everything 🦾",
+            "desc": "Students will be able to observe and explain how applying force can change the shape and movement of an object.\n\nThey will understand that pressure and force help create a gripping action. When the cup is pressed, the flaps close inward, allowing the claw to grab objects. When released, the flaps open again.\n\nStudents will also learn that design and structure play an important role in how effectively a machine works.",
+            "rwc": "Paper, Cup, Scissors, Straw, Tape, Paint, Crayons",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U08-V01",
+                    "nm": "Can paper cups grip things? 🦾",
+                    "desc": "Students build a simple claw-like grabber using a paper cup and straws. They’ll pull the straw to control movement and grasp small objects, simulating a real claw machine.",
+                    "yt": "Mq7Fa0-5YS4",
+                    "dur": "00:01:58"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U08-A01",
+                    "nm": "Build a Paper Cup Claw 🦾",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಕ್ಲಾ ಮೆಶೀನ್ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U08-Q01",
+                "nm": "Can you build a claw? 🦾",
+                "qs": [
+                    {
+                        "q": "ಮೃದು ಆಟಿಕೆಗಳನ್ನು ಎತ್ತಿಕೊಳ್ಳಲು ಕ್ಲಾ ಬಳಸುವ ಗೇಮಿಂಗ್ ಯಂತ್ರದ ಹೆಸರು ಏನು?",
+                        "opts": {
+                            "1": "ಪಿನ್‌ಬಾಲ್ ಯಂತ್ರ",
+                            "2": "ಸ್ಲಾಟ್ ಯಂತ್ರ",
+                            "3": "ಕ್ಲಾ ಯಂತ್ರ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮನೆಯಲ್ಲಿ ತಯಾರಿಸಿದ ಕ್ಲಾ ಯಂತ್ರದಲ್ಲಿ ಸ್ಟ್ರಾದ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಯಂತ್ರ ಅಲಂಕರಿಸಲು",
+                            "2": "ಕಾಗದದ ಕಪ್‌ಗಳನ್ನು ಕತ್ತರಿಸಲು",
+                            "3": "ಕ್ಲಾ ಸಂಪರ್ಕಿಸಲು ಮತ್ತು ಚಲಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕ್ಲಾ ಯಂತ್ರಕ್ಕಾಗಿ ಕಾಗದದ ಕಪ್‌ಗಳ ಮೇಲೆ ಫ್ಲ್ಯಾಪ್‌ಗಳನ್ನು ರಚಿಸಲು ಯಾವ ಉಪಕರಣ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಕತ್ತರಿ",
+                            "2": "ಅಂಟು",
+                            "3": "ಬಣ್ಣ ಬ್ರಶ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಗದದ ಕಪ್‌ನ ಫ್ಲ್ಯಾಪ್‌ಗಳು ಕ್ಲಾ ರೀತಿಯ ರಚನೆ ಮಾಡದಿದ್ದರೆ ನೀವು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಫ್ಲ್ಯಾಪ್‌ಗಳನ್ನು ಸ್ವಲ್ಪ ಮಡಿಸಿ",
+                            "2": "ಹೆಚ್ಚು ಟೇಪ್ ಬಳಸಿ",
+                            "3": "ಹೆಚ್ಚು ಫ್ಲ್ಯಾಪ್‌ಗಳನ್ನು ಕತ್ತರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಗದದ ಕಪ್‌ನ ರಂಧ್ರದ ಮೂಲಕ ಸ್ಟ್ರಾ ಹೋಗದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಪರಿಹಾರ ಏನಾಗಬಹುದು?",
+                        "opts": {
+                            "1": "ಬೇರೆ ಸ್ಟ್ರಾ ಬಳಸಿ",
+                            "2": "ಸ್ಟ್ರಾ ಸಂಪೂರ್ಣವಾಗಿ ತೆಗೆದುಹಾಕಿ",
+                            "3": "ರಂಧ್ರ ಎಚ್ಚರಿಕೆಯಿಂದ ಅಗಲ ಮಾಡಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U09",
+            "ord": 9,
+            "nm": "Fingers Pick the Fruit 🍎",
+            "desc": "Students will learn that many machines are inspired by nature—this concept is called biomimicry.\n\nThey will understand that when a force is applied by pulling a rope (tension), it creates movement in connected parts. In this model, pulling the threads causes the plastic “fingers” to close, allowing the arm to grip objects.\n\nThey will also explore how structures designed with multiple moving parts can work together like muscles in our body or claws in animals to perform tasks efficiently.",
+            "rwc": "Bottle, Glue, Scissors, Thread, Rope",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U09-V01",
+                    "nm": "Can a bottle pick fruit? 🍎",
+                    "desc": "In this activity, students will build a simple mechanical arm (fruit picker) using a plastic bottle and thread. Inspired by how animals like chameleons and crabs grab objects, students will explore how pulling mechanisms can control movement. This hands-on project helps students understand how nature inspires technology and how simple machines can be designed to perform useful tasks like picking fruits.",
+                    "yt": "V3_Lte3u0b4",
+                    "dur": "00:06:26"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U09-A01",
+                    "nm": "Build a Mechanical Fruit Picker 🍎",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಹಣ್ಣು ಆರಿಸುವ ಸಾಧನ ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U09-Q01",
+                "nm": "Can a bottle be an arm? 💪",
+                "qs": [
+                    {
+                        "q": "ಪ್ರಕೃತಿಯಿಂದ ಪ್ರೇರಿತರಾಗಿ ನಾವು ಏನು ರಚಿಸುತ್ತಿದ್ದೇವೆ?",
+                        "opts": {
+                            "1": "ಯಾಂತ್ರಿಕ ತೋಳು",
+                            "2": "ಹಾರುವ ಕಾರ್",
+                            "3": "ರೋಬೋಟ್ ನಾಯಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಯಾಂತ್ರಿಕ ತೋಳು ಪ್ರಕೃತಿಯ ಯಾವ ಅಂಶದಿಂದ ಪ್ರೇರಿತವಾಗಿದೆ?",
+                        "opts": {
+                            "1": "ಚಾಮಿಲಿಯನ್‌ನ ನಾಲಿಗೆ",
+                            "2": "ಆನೆಯ ಸೊಂಡಿಲು",
+                            "3": "ಜೇಡರ ಬಲೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಯಾಂತ್ರಿಕ ತೋಳಿನ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ವಸ್ತುಗಳನ್ನು ಕೆಳಗೆ ಬೀಳಿಸಲು",
+                            "2": "ವಸ್ತುಗಳನ್ನು ಹಿಡಿಯಲು",
+                            "3": "ವಿದ್ಯುತ್ ಉತ್ಪಾದಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬೆರಳಿನಂತೆ ಕಾರ್ಯ ನಿರ್ವಹಿಸಲು ಬಾಟಲ್‌ನ ಬೇಸ್ ಅನ್ನು ಎಷ್ಟು ಭಾಗಗಳಾಗಿ ಕತ್ತರಿಸುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "4 ಭಾಗಗಳು",
+                            "2": "5 ಭಾಗಗಳು",
+                            "3": "8 ಭಾಗಗಳು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಎಳೆದಾಗ ಪ್ಲಾಸ್ಟಿಕ್ ಬೆರಳುಗಳನ್ನು ತೆರೆಯಲು ಯಾವ ವಸ್ತು ಬಳಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಪೇಪರ್ ಕ್ಲಿಪ್‌ಗಳು",
+                            "2": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್",
+                            "3": "ದಾರಗಳು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U10",
+            "ord": 10,
+            "nm": "Scale Finds the Balance ⚖️",
+            "desc": "Students will learn that a balance weighing scale is a simple machine used to compare the weight of two objects.\n\nThey will understand the concept of equilibrium, where both sides of the scale are equal and balanced. When one side is heavier, it goes down, and the lighter side goes up—just like a see-saw.\n\nThey will also learn that balance depends on equal forces acting on both sides, helping us measure and compare weights accurately.",
+            "rwc": "Cardboard, Paper, Glue, Wooden Sticks, Thread, Scissors",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U10-V01",
+                    "nm": "Can cups balance any weight? ⚖️",
+                    "desc": "In this activity, students will create a working model of a balance weighing scale using simple materials like paper cups, cardboard, and thread. Through a storytelling context, they learn how a weighing scale helps compare weights using balance, similar to a see-saw. This hands-on activity introduces students to simple machines and the concept of balance or equilibrium.",
+                    "yt": "jARzkbfYh7s",
+                    "dur": "00:05:52"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U10-A01",
+                    "nm": "Build a Balance Weighing Scale ⚖️",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎಲ್ಲಾ ಭಾಗಗಳೊಂದಿಗೆ ಬಲೂನ್ ಕಾರು ತೋರಿಸುವ ನಿಮ್ಮ ಚಟುವಟಿಕೆಯ ಸ್ಪಷ್ಟ ಚಿತ್ರ ಅಥವಾ ವೀಡಿಯೊ ಹಂಚಿಕೊಳ್ಳಿ",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U10-Q01",
+                "nm": "Can you balance anything? ⚖️",
+                "qs": [
+                    {
+                        "q": "ಸಮತೋಲನ ತೂಕ ಮಾಪಕದ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ತಾಪಮಾನ ಅಳೆಯಲು",
+                            "2": "ವಸ್ತುಗಳ ದ್ರವ್ಯರಾಶಿ ಅಥವಾ ತೂಕ ಹೋಲಿಸಲು",
+                            "3": "ವಸ್ತುಗಳ ಎತ್ತರ ಅಳೆಯಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನ್ಯಾ ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಯಾವ ಉದ್ದೇಶಕ್ಕಾಗಿ ಬಳಸಿದಳು?",
+                        "opts": {
+                            "1": "ವಸ್ತುಗಳನ್ನು ಹಾನಿಯಿಂದ ರಕ್ಷಿಸಲು",
+                            "2": "ವಸ್ತುಗಳ ಎತ್ತರ ಅಳೆಯಲು",
+                            "3": "ಸಮತೋಲನ ಮಾಪಕಕ್ಕೆ ಕಿರಣ ರಚಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕೆಳಗಿನ ಯಾವ ವಸ್ತುಗಳನ್ನು ತೂಕ ಹಿಡಿಯಲು ಬಳಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಕಾಗದ",
+                            "2": "ಕಡ್ಡಿಗಳು",
+                            "3": "ಕಾಗದದ ಕಪ್‌ಗಳು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಿರಣ ಸಮತೋಲನ ಅಲಂಕರಿಸಲು ಯಾವ ಕೌಶಲ ಸಹಾಯ ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೃಜನಾತ್ಮಕ ಚಿಂತನೆ",
+                            "2": "ಅಳೆಯುವುದು ಮತ್ತು ತೂಗುವುದು",
+                            "3": "ಸಮಸ್ಯೆ ಪರಿಹಾರ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತೂಕ ಮಾಪಕದ ಒಂದು ಭಾಗ ಭಾರ ಇದ್ದರೆ ಅದನ್ನು ಹೇಗೆ ಸಮತೋಲನ ಮಾಡುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಎರಡೂ ಭಾಗಗಳಲ್ಲಿ ಸಮಾನ ತೂಕ ಇಡಿ",
+                            "2": "ಹಗುರ ಭಾಗಕ್ಕೆ ಸ್ವಲ್ಪ ತೂಕ ಸೇರಿಸಿ",
+                            "3": "ವಸ್ತುಗಳ ಸ್ಥಾನ ಸರಿಹೊಂದಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

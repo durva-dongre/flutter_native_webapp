@@ -1,0 +1,889 @@
+{
+    "id": "CSSFL2",
+    "nm": "◈ Smart Savings",
+    "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+    "vrt": "financial-literacy",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "CSSFL2-U01",
+            "ord": 1,
+            "nm": "Idea Becomes a Business 💼",
+            "desc": "Entrepreneurship, Business Loans",
+            "rwc": "Pencil, Eraser",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U01-V01",
+                    "nm": "Can a small idea grow? 💼",
+                    "desc": "In this activity, students will learn how the Pradhan Mantri Mudra Yojana (PMMY) helps small businesses start and grow. Students will design a small “Business Idea Card” and explain how a Mudra loan could support that business and create jobs in the community.",
+                    "yt": "ekk-wNiaJfU",
+                    "dur": "00:04:10"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U01-A01",
+                    "nm": "Design Your Own Business Idea Card 💼",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Business Idea Card and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U01-Q01",
+                "nm": "Can a loan start your business? 💼",
+                "qs": [
+                    {
+                        "q": "What is the Pradhan Mantri Mudra Yojana (PMMY) designed to do?",
+                        "opts": {
+                            "1": "Provide scholarships for education",
+                            "2": "Help people start small businesses by providing loans",
+                            "3": "Offer insurance for small businesses"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is no collateral required for loans under PMMY?",
+                        "opts": {
+                            "1": "To encourage large corporations to apply",
+                            "2": "To make it easier for people to start a business",
+                            "3": "To ensure loans are repaid on time"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your business needs a loan of ₹3 lakh, which PMMY category should you choose?",
+                        "opts": {
+                            "1": "Kishor",
+                            "2": "Tarun",
+                            "3": "Shishu"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to open a stationery shop but lack funds. What would be a smart first step based on the script?",
+                        "opts": {
+                            "1": "Apply for a PMMY loan with a well-thought-out plan",
+                            "2": "Wait until you save up enough money",
+                            "3": "Hire employees immediately"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine your business idea is to start an online craft shop. How can you use the PMMY to create jobs according to the script?",
+                        "opts": {
+                            "1": "Hire a delivery person or assistant",
+                            "2": "Invest all funds in marketing",
+                            "3": "Focus solely on product development"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U02",
+            "ord": 2,
+            "nm": "Small Shop Starts Here 🏪",
+            "desc": "Entrepreneurship, Business Loans",
+            "rwc": "Pencil, Eraser",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U02-V01",
+                    "nm": "Can Ravi start printing shop? 🏪",
+                    "desc": "In this activity, students will learn in a simple way how small businesses work and how government schemes like Pradhan Mantri Mudra Yojana (PMMY) help people start earning. Students will think of a small business idea (like a food stall or shop) and draw it in their notebook. They will also write how this business can help them earn money and support their family.",
+                    "yt": "nr4HuGYyqMI",
+                    "dur": "00:04:26"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U02-A01",
+                    "nm": "Design a Simple Business Card 🏪",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Business Idea Card (Mudra Basics) and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U02-Q01",
+                "nm": "Which loan fits your business? 🏪",
+                "qs": [
+                    {
+                        "q": "What is the purpose of the Pradhan Mantri Mudra Yojana (PMMY)?",
+                        "opts": {
+                            "1": "To offer scholarships for international studies",
+                            "2": "To provide free education to students",
+                            "3": "To help people start and grow small businesses"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is the Pradhan Mantri Mudra Yojana important for SDG 8?",
+                        "opts": {
+                            "1": "It focuses on environmental conservation",
+                            "2": "It supports technological advancements",
+                            "3": "It promotes decent work and economic growth"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which loan category should Ravi initially apply for if he is just starting his printing business?",
+                        "opts": {
+                            "1": "Tarun",
+                            "2": "Kishor",
+                            "3": "Shishu"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Ravi needs to decide how to fund his new printing shop. What should he consider?",
+                        "opts": {
+                            "1": "Applying for a Shishu loan under PMMY",
+                            "2": "Buying expensive equipment immediately",
+                            "3": "Hiring more staff before starting"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Ravi wants to expand his business after a year of successful operation. Which loan category should he consider?",
+                        "opts": {
+                            "1": "Tarun Plus",
+                            "2": "Kishor",
+                            "3": "Shishu"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U03",
+            "ord": 3,
+            "nm": "Future Gets Saved Early 🌸",
+            "desc": "Sukanya Samriddhi Yojana",
+            "rwc": "Pencil, Eraser",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U03-V01",
+                    "nm": "Can girls save for future? 🌸",
+                    "desc": "In this activity, students will be able to explain how the Sukanya Samriddhi Yojana helps girls with education and money, supporting equality and future opportunities.",
+                    "yt": "ASCU2dasN6g",
+                    "dur": "00:03:37"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U03-A01",
+                    "nm": "Answer the Sukanya Scheme Questions 🌸",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Sukanya Samriddhi answers and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U03-Q01",
+                "nm": "Can you save for your daughter? 👧",
+                "qs": [
+                    {
+                        "q": "What is the Sukanya Samriddhi Account?",
+                        "opts": {
+                            "1": "A private investment plan for retirement",
+                            "2": "A government saving scheme for the future of the girl child",
+                            "3": "A loan scheme for purchasing a home"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Who is eligible to open a Sukanya Samriddhi Account?",
+                        "opts": {
+                            "1": "Any individual or organization",
+                            "2": "Parents or legal guardians of a girl child under 10 years",
+                            "3": "Only the girl child herself"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the minimum annual deposit required for the Sukanya Samriddhi Account?",
+                        "opts": {
+                            "1": "500 rupees",
+                            "2": "1,000 rupees",
+                            "3": "250 rupees"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a parent wants to open a Sukanya Samriddhi Account for their two daughters, what is the maximum number of accounts they can open?",
+                        "opts": {
+                            "1": "Three accounts",
+                            "2": "Two accounts",
+                            "3": "One account"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A family wants to save for their daughter's education and marriage using a government scheme. Which account should they consider?",
+                        "opts": {
+                            "1": "Sukanya Samriddhi Account",
+                            "2": "Recurring Deposit Account",
+                            "3": "Fixed Deposit Account"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U04",
+            "ord": 4,
+            "nm": "Girl's Goal Has a Plan 🎯",
+            "desc": "Government Savings Schemes",
+            "rwc": "Pencil, Eraser",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U04-V01",
+                    "nm": "Can Sneha become a doctor? 🎯",
+                    "desc": "In this activity, students will learn in an easy way about Sukanya Samriddhi Yojana and how it helps families save money for a girl’s education and future needs. Students will create a simple “Future Plan Poster” to show how saving money early can help in achieving education goals and better opportunities for girls.",
+                    "yt": "XZkZB2WHET0",
+                    "dur": "00:03:37"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U04-A01",
+                    "nm": "Build a Sukanya Future Plan Poster 🎯",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Sukanya Future Poster and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U04-Q01",
+                "nm": "Can a scheme build her future? 🌟",
+                "qs": [
+                    {
+                        "q": "What is the name of the government saving scheme mentioned in the script?",
+                        "opts": {
+                            "1": "Sukanya Samriddhi Yojana",
+                            "2": "Beti Bachao Beti Padhao",
+                            "3": "Kanyashree Prakalpa"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Who is eligible to benefit from the Sukanya Samriddhi Yojana?",
+                        "opts": {
+                            "1": "Girl children who are 10 years old or younger",
+                            "2": "All children under 18",
+                            "3": "Only college-going students"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can Sneha's parents start saving for her future education through the scheme?",
+                        "opts": {
+                            "1": "By opening a regular savings account",
+                            "2": "By investing in stock markets",
+                            "3": "By opening a Sukanya Samriddhi Yojana account"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a family has two daughters, what is the maximum amount they can deposit in Sukanya Samriddhi Yojana per year for both daughters?",
+                        "opts": {
+                            "1": "1,50,000 rupees",
+                            "2": "2,50,000 rupees",
+                            "3": "3,00,000 rupees"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does the Sukanya Samriddhi Yojana differ from a Piggy Bank?",
+                        "opts": {
+                            "1": "The government pays yearly interest, increasing savings",
+                            "2": "It requires no documentation",
+                            "3": "It allows for unlimited withdrawals"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U05",
+            "ord": 5,
+            "nm": "Money Plans the Future 🗺️",
+            "desc": "Saving and Investment Options",
+            "rwc": "Pencil, Eraser",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U05-V01",
+                    "nm": "Can planning protect your future? 🗺️",
+                    "desc": "In this activity, students will create an Investment Wheel by listing five different savings and investment options. They will link their wheel to SDG 1: No Poverty by understanding how financial services help everyone.",
+                    "yt": "4Xo1B-Ihi9U",
+                    "dur": "00:04:59"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U05-A01",
+                    "nm": "Build a Financial Planning Poster 🗺️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Financial Planning poster and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U05-Q01",
+                "nm": "Can saving fight poverty? 💪",
+                "qs": [
+                    {
+                        "q": "What is the main objective of SDG 1 mentioned in the script?",
+                        "opts": {
+                            "1": "Promote gender equality",
+                            "2": "Ensure clean water and sanitation",
+                            "3": "End poverty"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why did Aisha's parents save and invest money?",
+                        "opts": {
+                            "1": "To go on a vacation",
+                            "2": "To buy a new house",
+                            "3": "To support Aisha's dream of becoming a doctor"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the benefit of keeping money in a bank or post office as explained by Aisha?",
+                        "opts": {
+                            "1": "It helps in immediate spending",
+                            "2": "Money is safe and earns interest",
+                            "3": "Money is only safe"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were to design a creative workshop like Aisha, what resource could you use to make it engaging?",
+                        "opts": {
+                            "1": "Plain text documents",
+                            "2": "Interactive activities and visuals",
+                            "3": "Formal lectures"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to help your community understand financial literacy. What decision can you make to effectively spread awareness?",
+                        "opts": {
+                            "1": "Rely solely on social media posts",
+                            "2": "Organize informative and interactive workshops",
+                            "3": "Distribute pamphlets without explanation"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U06",
+            "ord": 6,
+            "nm": "Plans Protect the Future 🛡️",
+            "desc": "Financial Services",
+            "rwc": "Pencil, Eraser",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U06-V01",
+                    "nm": "Can saving protect from loss? 🛡️",
+                    "desc": "In this activity, students will create a Financial Planning poster covering important money topics like saving, investing, planning for taxes, retirement, and protecting against financial risks. They will learn how these skills connect to SDG 4: Quality Education by helping develop decision-making and critical thinking for real-life financial success.",
+                    "yt": "gUlvSIRomUo",
+                    "dur": "00:03:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U06-A01",
+                    "nm": "Build Your Financial Protection Plan 🛡️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Financial Protection Plan and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U06-Q01",
+                "nm": "Can investing protect your future? 📊",
+                "qs": [
+                    {
+                        "q": "What was the amount Aman saved from his first salary?",
+                        "opts": {
+                            "1": "₹5,000",
+                            "2": "₹15,000",
+                            "3": "₹10,000"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main goal of the lesson in the script?",
+                        "opts": {
+                            "1": "Learn Smart Financial Planning",
+                            "2": "To learn how to save money",
+                            "3": "Understand insurance policies"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a person has ₹10,000 to invest, how should they divide it according to the diversification example in the script?",
+                        "opts": {
+                            "1": "₹5,000 in stocks, ₹3,000 in savings, ₹2,000 in mutual funds",
+                            "2": "₹4,000 in gold, ₹4,000 in FD, ₹2,000 in savings",
+                            "3": "₹5,000 in FD/Savings, ₹3,000 in Mutual Fund, ₹2,000 in Stocks"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Aman wants to invest his savings for both growth and protection. Which two financial actions should he consider?",
+                        "opts": {
+                            "1": "Saving money in a fixed deposit only",
+                            "2": "Investing and buying insurance",
+                            "3": "Putting all money in mutual funds and stocks"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Anjali is planning her finances and wants to ensure she is protected against unexpected medical emergencies. What should she prioritize in her financial plan?",
+                        "opts": {
+                            "1": "Saving money in a savings account",
+                            "2": "Investing heavily in stocks",
+                            "3": "Getting health insurance"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U07",
+            "ord": 7,
+            "nm": "Interest Earns Extra Back 🧮",
+            "desc": "Simple Interest",
+            "rwc": "Pencil, Eraser",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U07-V01",
+                    "nm": "Can interest grow Ankit's money? 🧮",
+                    "desc": "In this activity, students solve two Simple Interest questions using the given values, compare which one gives higher interest, and share a photo of their work before taking the quiz.",
+                    "yt": "u8Cqxvw85j0",
+                    "dur": "00:03:18"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U07-A01",
+                    "nm": "Solve Two Interest Calculations 🧮",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Simple Interest activity and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U07-Q01",
+                "nm": "Which bank gives more interest? 🏦",
+                "qs": [
+                    {
+                        "q": "What does “P” stand for in the Simple Interest formula?",
+                        "opts": {
+                            "1": "Profit",
+                            "2": "Principal",
+                            "3": "Percentage"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why do people keep money in the bank?",
+                        "opts": {
+                            "1": "To keep it safe and earn interest",
+                            "2": "Only for spending",
+                            "3": "To hide it"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "SI for ₹200 at 6% for 1 year is:",
+                        "opts": {
+                            "1": "₹10",
+                            "2": "₹8",
+                            "3": "₹12"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You want to earn more interest. Which bank will you choose?",
+                        "opts": {
+                            "1": "Bank giving 5%",
+                            "2": "Bank giving 3%",
+                            "3": "Bank giving 0%"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which is a good rule for growing your money?",
+                        "opts": {
+                            "1": "Never save money",
+                            "2": "Save in bank to earn interest",
+                            "3": "Spend first, save later"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U08",
+            "ord": 8,
+            "nm": "Growth Powers the Economy 📊",
+            "desc": "Interest, Banking",
+            "rwc": "Pencil, Eraser",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U08-V01",
+                    "nm": "Can interest build an economy? 📊",
+                    "desc": "In this activity, students will explore how interest works in saving, borrowing, and investing, and how it drives business growth, job creation, and economic development, all linked to SDG 8: Decent Work and Economic Growth. They will create an artifact to demonstrate their understanding of how financial decisions impact the economy.",
+                    "yt": "6e_wZF_hjGo",
+                    "dur": "00:05:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U08-A01",
+                    "nm": "Draw the Interest Growth Panels 📊",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Interest poster and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U08-Q01",
+                "nm": "Can interest grow an economy? 📈",
+                "qs": [
+                    {
+                        "q": "What is the main topic of the video?",
+                        "opts": {
+                            "1": "The Power of Interest",
+                            "2": "The Importance of Saving",
+                            "3": "The Basics of Banking"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How does interest contribute to economic growth according to the video?",
+                        "opts": {
+                            "1": "By reducing taxes",
+                            "2": "By helping businesses grow and creating jobs",
+                            "3": "By increasing inflation"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you save ₹1,000 in a bank with an interest rate of 3% per year, how much interest will you earn in one year?",
+                        "opts": {
+                            "1": "₹10",
+                            "2": "₹50",
+                            "3": "₹30"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A person takes a loan to start a business. What is a possible positive outcome of this action, based on decision-making skills discussed in the video?",
+                        "opts": {
+                            "1": "Decreasing the business's revenue",
+                            "2": "Increasing the amount of debt",
+                            "3": "Creating new job opportunities"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A government official is planning to use interest to fund a new infrastructure project. What should they consider to make a smart decision?",
+                        "opts": {
+                            "1": "The popularity of the project",
+                            "2": "The color of the infrastructure",
+                            "3": "The long-term economic impact of the project"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U09",
+            "ord": 9,
+            "nm": "Scan Pay Done 📲",
+            "desc": "Digital Payments",
+            "rwc": "Pencil, Eraser",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U09-V01",
+                    "nm": "Can a QR replace cash? 📲",
+                    "desc": "In this activity, students will create a “Digital Payments Puzzle” poster that illustrates the key modes of digital money transfer (UPI via QR/contacts, IMPS, NEFT/RTGS via internet or mobile banking) and shows how each supports SDG 8: Decent Work & Economic Growth. They will illustrate the SDG 8 theme in the centre, summarize its key benefits around it, and depict various digital payment methods in the other panels.",
+                    "yt": "bzPVpR9pUvo",
+                    "dur": "00:04:28"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U09-A01",
+                    "nm": "Build the Digital Payments Puzzle 📲",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Digital Payments puzzle poster and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U09-Q01",
+                "nm": "Can UPI replace your wallet? 📲",
+                "qs": [
+                    {
+                        "q": "What does UPI stand for in the context of digital payments?",
+                        "opts": {
+                            "1": "Universal Payments Interface",
+                            "2": "Unified Payments Interface",
+                            "3": "Universal Payment Index"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How do digital payments support SDG 8 according to the script?",
+                        "opts": {
+                            "1": "By reducing the need for physical currency and promoting global trade",
+                            "2": "By enabling instant payments that strengthen local economies and create jobs",
+                            "3": "By supporting financial institutions in developing new banking products"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which method allows you to pay instantly without worrying about exact change, according to the script?",
+                        "opts": {
+                            "1": "Scanning a QR code with your phone",
+                            "2": "Writing a check",
+                            "3": "Using coins and cash"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You are a shopkeeper who wants to restock quickly after a busy day. Which payment method should you encourage customers to use to ensure quick access to funds?",
+                        "opts": {
+                            "1": "Digital payments via UPI",
+                            "2": "Credit card payments",
+                            "3": "Cash payments"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You are planning to pay a daily-wage worker as soon as they complete their work. What is the most efficient payment method according to the script?",
+                        "opts": {
+                            "1": "Paying in cash",
+                            "2": "Digital transfer",
+                            "3": "Writing a check"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CSSFL2-U10",
+            "ord": 10,
+            "nm": "Payments Go Digital 💳",
+            "desc": "Digital Payments",
+            "rwc": "Pencil, Eraser",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CSSFL2-U10-V01",
+                    "nm": "Can apps move your money? 💳",
+                    "desc": "In this activity, students will learn in an easy way about important money topics like saving, investing, tax planning, retirement, and financial protection. Students will create a simple “Financial Planning Poster” to show how these ideas help in managing money and making better decisions for the future. They will also understand how these skills connect to SDG 4: Quality Education.",
+                    "yt": "MWqfInivuaE",
+                    "dur": "00:03:42"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CSSFL2-U10-A01",
+                    "nm": "Complete the Digital Payments Chart 💳",
+                    "sub_types": "image,video",
+                    "unguided_text": "Click a clear photo of your Digital Payment chart and upload it",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CSSFL2-U10-Q01",
+                "nm": "Which payment is truly instant? ⚡",
+                "qs": [
+                    {
+                        "q": "What does UPI stand for?",
+                        "opts": {
+                            "1": "Unified Payments Interface",
+                            "2": "Universal Payment Integration",
+                            "3": "United Payment Infrastructure"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which digital payment method is typically not instant and may take some time?",
+                        "opts": {
+                            "1": "IMPS",
+                            "2": "UPI",
+                            "3": "NEFT"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the first step in making a digital payment?",
+                        "opts": {
+                            "1": "Open the app or website",
+                            "2": "Confirm using PIN or OTP",
+                            "3": "Enter the amount"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you need to transfer a large amount of money immediately, which method should you choose?",
+                        "opts": {
+                            "1": "RTGS",
+                            "2": "NEFT",
+                            "3": "UPI"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You are at a store with no cash. What should you do to pay quickly using a mobile app?",
+                        "opts": {
+                            "1": "Wait for NEFT transfer",
+                            "2": "Use RTGS for immediate payment",
+                            "3": "Scan using a payment app and pay instantly"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

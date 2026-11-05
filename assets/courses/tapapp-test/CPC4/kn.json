@@ -1,0 +1,889 @@
+{
+    "id": "CPC4",
+    "nm": "❯ Coding with Python",
+    "desc": "In this activity, Students will code a Python quiz app that tests users on balanced diet knowledge. Correct answers show facts about food groups and nutrition.",
+    "vrt": "coding",
+    "lvl": "4",
+    "units": [
+        {
+            "id": "CPC4-U01",
+            "ord": 1,
+            "nm": "Quiz Feeds the Mind 🥦",
+            "desc": "Concepts: Conditional ranges, logical operators.\n\nFunctions/Keywords: if, elif, else, input(), print().",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U01-V01",
+                    "nm": "Can Python quiz your food? 🥦",
+                    "desc": "In this activity, Students will code a Python quiz that tests users on balanced diet knowledge. Correct answers show facts about food groups and nutrition.",
+                    "yt": "x07ic4NPQek",
+                    "dur": "00:05:11"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U01-A01",
+                    "nm": "Code a Healthy Plate Quiz 🥦",
+                    "sub_types": "image,video",
+                    "unguided_text": "Healthy Plate Quiz ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U01-Q01",
+                "nm": "Can Python quiz your friends? 🐍",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ನಮ್ಮ ದೇಹದಲ್ಲಿ ಪ್ರೋಟೀನ್‌ಗಳ ಪಾತ್ರವೇನು?",
+                        "opts": {
+                            "1": "ಅವು ನಮಗೆ ಚಟುವಟಿಕೆಯಾಗಿ ಇರಲು ಶಕ್ತಿ ನೀಡುತ್ತವೆ",
+                            "2": "ಅವು ನಮ್ಮನ್ನು ರೋಗಗಳಿಂದ ರಕ್ಷಿಸುತ್ತವೆ",
+                            "3": "ಅವು ನಮ್ಮ ದೇಹವನ್ನು ಬಲಿಷ್ಠಗೊಳಿಸಿ ಸ್ನಾಯುಗಳನ್ನು ನಿರ್ಮಿಸುತ್ತವೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕ್ವಿಜ್ ಪ್ರಾರಂಭವಾಗುವ ಮೊದಲು ಏನು ಪ್ರದರ್ಶಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಕ್ವಿಜ್‌ನ ಮೊದಲ ಪ್ರಶ್ನೆ",
+                            "2": "ಕ್ವಿಜ್‌ಗೆ ಸೂಚನೆಗಳು",
+                            "3": "ಹೆಲ್ದಿ ಪ್ಲೇಟ್ ಕ್ವಿಜ್‌ಗೆ ಸ್ವಾಗತ!"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'ಯಾವ ಪೋಷಕಾಂಶ ದೇಹ ನಿರ್ಮಾಣಕ್ಕೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ?' ಎಂಬ ಪ್ರಶ್ನೆಗೆ ಕ್ವಿಜ್ ಲಾಜಿಕ್‌ನಲ್ಲಿ ಯಾವ ಉತ್ತರ ಆಯ್ಕೆ ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಪ್ರೋಟೀನ್‌ಗಳು",
+                            "2": "ಕಾರ್ಬೋಹೈಡ್ರೇಟ್‌ಗಳು",
+                            "3": "ವಿಟಮಿನ್‌ಗಳು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತಪ್ಪಾದ ಸಿಂಟ್ಯಾಕ್ಸ್‌ನಿಂದ ದೋಷ ಎದುರಾದರೆ ಕಾರಣ ಏನಾಗಿರಬಹುದು?",
+                        "opts": {
+                            "1": "ಕ್ವಿಜ್ ಉತ್ತರಗಳಿಗೆ ತಪ್ಪಾದ ಆಯ್ಕೆಗಳು",
+                            "2": "ತಪ್ಪಾದ ಸಮಾನ ಚಿಹ್ನೆ, ಕೋಲನ್, ಅಥವಾ ಡಬಲ್ ಕೋಟ್‌ನಲ್ಲಿ ಆಯ್ಕೆ",
+                            "3": "ತಪ್ಪಾದ ಕ್ವಿಜ್ ಪ್ರಶ್ನೆಗಳು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕ್ವಿಜ್ ಕೋಡ್ ಮಾಡುವ ಸಂದರ್ಭದಲ್ಲಿ ಬಳಕೆದಾರರ ಇನ್‌ಪುಟ್ ಅನ್ನು ಹೇಗೆ ಪರಿಶೀಲಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಕೋಡ್‌ನಲ್ಲಿ ಕಾಮೆಂಟ್‌ಗಳನ್ನು ಬರೆಯುವ ಮೂಲಕ",
+                            "2": "ಕೇವಲ ಪ್ರಿಂಟ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳನ್ನು ಬಳಸಿ",
+                            "3": "if-else ಕಂಡಿಷನಲ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳನ್ನು ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U02",
+            "ord": 2,
+            "nm": "Age Unlocks the Wheel 🚗",
+            "desc": "Concepts: Conditional ranges, logical operators.\n\nFunctions/Keywords: if, elif, else, input(), print().",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U02-V01",
+                    "nm": "Can age unlock a license? 🚗",
+                    "desc": "In this activity, students will write a Python program that uses conditional statements (if, elif, else) to decide whether a person is eligible for a driving license based on their age input.",
+                    "yt": "Cz6tzF4qoFw",
+                    "dur": "00:03:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U02-A01",
+                    "nm": "Build a License Eligibility Checker 🚗",
+                    "sub_types": "image,video",
+                    "unguided_text": "Driving License Eligibility ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U02-Q01",
+                "nm": "Old enough to drive yet? 🚗",
+                "qs": [
+                    {
+                        "q": "ಚಾಲಕ ಪರವಾನಗಿ ಪಡೆಯಲು ಅರ್ಹತೆಯ ಅವಶ್ಯಕತೆ ಏನು?",
+                        "opts": {
+                            "1": "ವಯಸ್ಸು 18 ವರ್ಷ ಅಥವಾ ಅದಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು",
+                            "2": "ವಯಸ್ಸು ನಿಖರವಾಗಿ 16 ವರ್ಷ ಇರಬೇಕು",
+                            "3": "ವಯಸ್ಸು 16 ವರ್ಷಕ್ಕಿಂತ ಕಡಿಮೆ ಇರಬೇಕು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ರೋಗ್ರಾಮಿಂಗ್‌ನಲ್ಲಿ ಕಂಡಿಷನಲ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳ ಪಾತ್ರವೇನು?",
+                        "opts": {
+                            "1": "ಅಂಕಗಣಿತ ಲೆಕ್ಕಾಚಾರ ನಿರ್ವಹಿಸಲು",
+                            "2": "ಪ್ರೋಗ್ರಾಮ್‌ನಲ್ಲಿ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ಸಹಾಯ ಮಾಡಲು",
+                            "3": "ಬಳಕೆದಾರರ ಇನ್‌ಪುಟ್ ಡೇಟಾ ಸಂಗ್ರಹಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "17 ವರ್ಷ ವಯಸ್ಸಿನ ವ್ಯಕ್ತಿ ಲರ್ನರ್ ಲೈಸೆನ್ಸ್‌ಗೆ ಅರ್ಹರೇ ಎಂದು ಕೋಡ್‌ನ ಯಾವ ಭಾಗ ನಿರ್ಧರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "elif 16<= age <18:",
+                            "2": "if age>=18:",
+                            "3": "else:"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರೋಹನ್ ಚಾಲಕ ಪರವಾನಗಿ ಅರ್ಹತೆ ಪರಿಶೀಲಿಸುವ ಪ್ರೋಗ್ರಾಮ್ ಬರೆಯುತ್ತಿದ್ದಾನೆ ಆದರೆ ಬಳಕೆದಾರರ ವಯಸ್ಸನ್ನು ಇನ್‌ಪುಟ್ ಆಗಿ ಪಡೆಯುವುದು ಹೇಗೆ ಎಂದು ತಿಳಿಯುತ್ತಿಲ್ಲ. ಅವನು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಬಳಕೆದಾರರ ವಯಸ್ಸು ಸಂಗ್ರಹಿಸಲು input() ಫಂಕ್ಷನ್ ಬಳಸಿ",
+                            "2": "ವೇರಿಯೇಬಲ್‌ಗೆ ನೇರವಾಗಿ ಯಾದೃಚ್ಛಿಕ ವಯಸ್ಸು ನಿಯೋಜಿಸಿ",
+                            "3": "ಬಳಕೆದಾರರನ್ನು ಕಾಗದದ ಮೇಲೆ ವಯಸ್ಸು ನಮೂದಿಸಲು ಕೇಳಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ರಿಯಾ ತನ್ನ ಪ್ರೋಗ್ರಾಮ್ ಚಾಲಕ ಪರವಾನಗಿ ಅಥವಾ ಲರ್ನರ್ ಲೈಸೆನ್ಸ್ ಅರ್ಹತೆ ನಿರ್ಧರಿಸಬೇಕೆಂದಿದ್ದಾಳೆ. ನಿರ್ಧಾರ ತೆಗೆದುಕೊಳ್ಳುವ ಉತ್ತಮ ವಿಧಾನ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಅರ್ಹತೆ ನಿರ್ಧಾರವಾಗುವವರೆಗೂ ವಯಸ್ಸು ಕೇಳುತ್ತಾ ಲೂಪ್ ಬಳಸಿ",
+                            "2": "if, elif, ಮತ್ತು else ನಂತಹ ಕಂಡಿಷನಲ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳನ್ನು ಅಳವಡಿಸಿ",
+                            "3": "ಪ್ರತಿ ಅರ್ಹತೆ ಪರಿಶೀಲನೆಗೆ ಪ್ರತ್ಯೇಕ ಪ್ರೋಗ್ರಾಮ್‌ಗಳನ್ನು ರಚಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U03",
+            "ord": 3,
+            "nm": "Footprint Gets Calculated 🌍",
+            "desc": "Concepts: Carbon footprint, emission calculation, user input handling, aggregation (total emissions), decision making using thresholds.\n\nFunctions/Keywords: input(), int(), float(), print(), if, else, +, *, variables",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U03-V01",
+                    "nm": "Can code measure your footprint? 🌍",
+                    "desc": "In this activity, Students will create program that asks users questions about travel, electricity, and food habits, calculates estimated carbon footprint, and provides eco-friendly suggestions.",
+                    "yt": "YDe5z732ASU",
+                    "dur": "00:04:09"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U03-A01",
+                    "nm": "Code a Carbon Footprint Calculator 🌍",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಕಾರ್ಬನ್ ಫೂಟ್‌ಪ್ರಿಂಟ್ ಕ್ಯಾಲ್ಕುಲೇಟರ್ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U03-Q01",
+                "nm": "What's your carbon footprint? 🌍",
+                "qs": [
+                    {
+                        "q": "ದೈನಂದಿನ ಚಟುವಟಿಕೆಗಳ ದೃಷ್ಟಿಯಿಂದ ಕಾರ್ಬನ್ ಫುಟ್‌ಪ್ರಿಂಟ್ ಪ್ರಾಥಮಿಕವಾಗಿ ಏನನ್ನು ಅಳೆಯುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಮರುಬಳಕೆ ಮಾಡಿದ ಪ್ಲಾಸ್ಟಿಕ್ ಪ್ರಮಾಣ",
+                            "2": "CO2 ನಂತಹ ಹಸಿರುಮನೆ ಅನಿಲ ಹೊರಸೂಸುವಿಕೆ",
+                            "3": "ಒಟ್ಟು ಶಕ್ತಿ ಬಳಕೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಕೆಯಿಂದ ಕಾರ್ಬನ್ ಹೊರಸೂಸುವಿಕೆ ಹೇಗೆ ಲೆಕ್ಕ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಪ್ಲಾಸ್ಟಿಕ್ ವಸ್ತುಗಳನ್ನು ತೂಗುವ ಮೂಲಕ",
+                            "2": "ಬಳಸಿದ ಪ್ಲಾಸ್ಟಿಕ್‌ನ ಪರಿಮಾಣ ಅಳೆಯುವ ಮೂಲಕ",
+                            "3": "ಪ್ಲಾಸ್ಟಿಕ್ ವಸ್ತುಗಳ ಸಂಖ್ಯೆಯನ್ನು 0.1 ರಿಂದ ಗುಣಿಸುವ ಮೂಲಕ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಬ್ಬ ವ್ಯಕ್ತಿ ದಿನಕ್ಕೆ 30 ಪ್ಲಾಸ್ಟಿಕ್ ವಸ್ತುಗಳನ್ನು ಬಳಸಿದರೆ ಅದು ಎಷ್ಟು CO2 ಹೊರಡಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "3 ಕೆಜಿ CO2",
+                            "2": "3 ಕೆಜಿ CO2",
+                            "3": "0.3 ಕೆಜಿ CO2"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಬ್ಬ ವ್ಯಕ್ತಿ ತಮ್ಮ ಕಾರ್ಬನ್ ಫುಟ್‌ಪ್ರಿಂಟ್ ಕಡಿಮೆ ಇಟ್ಟುಕೊಳ್ಳಲು ಬಯಸುತ್ತಾರೆ. ಅವರು ದಿನಕ್ಕೆ 5 ಪ್ಲಾಸ್ಟಿಕ್ ವಸ್ತುಗಳು ಮತ್ತು ವಾರಕ್ಕೆ 2ಕೆಜಿ ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಿದರೆ ಒಟ್ಟು ಕಾರ್ಬನ್ ಫುಟ್‌ಪ್ರಿಂಟ್ ಎಷ್ಟು?",
+                        "opts": {
+                            "1": "5.5 ಕೆಜಿ CO2",
+                            "2": "15 ಕೆಜಿ CO2",
+                            "3": "7.5 ಕೆಜಿ CO2"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'Good job' ಸ್ಥಿತಿ ಸಾಧಿಸಲು ದಿನದ ಗರಿಷ್ಠ ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಕೆ ಮತ್ತು ವಾರದ ಆಹಾರ ವ್ಯರ್ಥ ಎಷ್ಟಿರಬೇಕು?",
+                        "opts": {
+                            "1": "ದಿನದ ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಕೆ: 15 ವಸ್ತುಗಳು, ವಾರದ ಆಹಾರ ವ್ಯರ್ಥ: 4 ಕೆಜಿ",
+                            "2": "ದಿನದ ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಕೆ: 5 ವಸ್ತುಗಳು, ವಾರದ ಆಹಾರ ವ್ಯರ್ಥ: 1 ಕೆಜಿ",
+                            "3": "ದಿನದ ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಕೆ: 10 ವಸ್ತುಗಳು, ವಾರದ ಆಹಾರ ವ್ಯರ್ಥ: 3 ಕೆಜಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U04",
+            "ord": 4,
+            "nm": "Numbers Track the Carbon 📊",
+            "desc": "Concepts: Carbon footprint calculation, emission factors (per km and per unit electricity), aggregation (total emissions), threshold-based decision making.\n\nFunctions/Keywords: input(), float(), print(), if, else, +, *, variables",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U04-V01",
+                    "nm": "Can Python track car emissions? 📊",
+                    "desc": "In today’s activity students will learn about SDG 13 climate action and  explore how coding can be used as a tool to understand and reduce our environmental impact—specifically through calculating our carbon footprint. They will learn how daily habits, such as driving a car or using electricity, contribute to CO₂ emissions and how we they can measure and analyze that impact using a simple Python program.",
+                    "yt": "OG3HRdfGYeE",
+                    "dur": "00:05:45"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U04-A01",
+                    "nm": "Calculate Travel Carbon Emissions 📊",
+                    "sub_types": "image,video",
+                    "unguided_text": "Carbon Footprint Calculator ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U04-Q01",
+                "nm": "How much CO₂ did you emit? 💨",
+                "qs": [
+                    {
+                        "q": "ಪ್ರತಿ kWh ವಿದ್ಯುತ್ ಉತ್ಪಾದನೆಗೆ ಅಂದಾಜು ಎಷ್ಟು CO₂ ಬಿಡುಗಡೆಯಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "1.5 ಕೆಜಿ",
+                            "2": "0.21 ಕೆಜಿ",
+                            "3": "0.85 ಕೆಜಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ನಮ್ಮ ಕಾರ್ಬನ್ ಫುಟ್‌ಪ್ರಿಂಟ್ ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಪರಿಸರದ ಪ್ರಭಾವ ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ಜಾಗೃತಿ ಹರಡಲು",
+                            "2": "ಕೇವಲ ಕೋಡಿಂಗ್ ಕೌಶಲ್ಯ ಸುಧಾರಿಸಲು",
+                            "3": "ಪಳೆಯುಳಿಕೆ ಇಂಧನಗಳ ಬಳಕೆ ಹೆಚ್ಚಿಸಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾರು 150 ಕಿಲೋಮೀಟರ್ ಪ್ರಯಾಣಿಸಿದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಡೇಟಾ ಪ್ರಕಾರ ಅಂದಾಜು ಕಾರ್ಬನ್ ಹೊರಸೂಸುವಿಕೆ ಎಷ್ಟು?",
+                        "opts": {
+                            "1": "12.5 ಕೆಜಿ",
+                            "2": "31.5 ಕೆಜಿ",
+                            "3": "31.5 ಕೆಜಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಂದು ಕುಟುಂಬ ತಮ್ಮ ಕಾರ್ಬನ್ ಫುಟ್‌ಪ್ರಿಂಟ್ ಕಡಿಮೆ ಮಾಡಲು ಬಯಸುತ್ತಿದ್ದು ತಿಂಗಳಿಗೆ 600 kWh ಬಳಸುತ್ತಿದ್ದಾರೆ. ಸ್ಕ್ರಿಪ್ಟ್ ಆಧಾರಿತ ಒಂದು ಸಲಹೆ ಏನು?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ಹೊರಸೂಸುವಿಕೆ ಸೃಷ್ಟಿಸಿ",
+                            "2": "ವಿದ್ಯುತ್‌ಗಾಗಿ ನವೀಕರಿಸಬಹುದಾದ ಇಂಧನ ಮೂಲಗಳನ್ನು ಬಳಸಿ",
+                            "3": "ಕಾರಿನ ಬಳಕೆ ಹೆಚ್ಚಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಂದು ಸಮುದಾಯದ ಹೊರಸೂಸುವಿಕೆ ಕಡಿಮೆ ಮಾಡಲು ಯಾವ ತಂತ್ರ ಹೆಚ್ಚು ಪರಿಣಾಮಕಾರಿ?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ಕಾರು ಬಳಕೆ ಉತ್ತೇಜಿಸಿ",
+                            "2": "ಸಾರ್ವಜನಿಕ ಸಾರಿಗೆ ಮತ್ತು ಸೌರ ಶಕ್ತಿಯನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ",
+                            "3": "ಕಲ್ಲಿದ್ದಲು ಆಧಾರಿತ ವಿದ್ಯುತ್ ಉತ್ಪಾದನೆ ಹೆಚ್ಚಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U05",
+            "ord": 5,
+            "nm": "Seats Fill the Hall 🎬",
+            "desc": "Concepts: Lists, nested loops (rows and columns), indexing, seat mapping, condition checking (reserved vs available).\n\nFunctions/Keywords: list [], for, range(), if, else, print(), input(), int(), end=\"\"",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U05-V01",
+                    "nm": "Can lists map cinema seats? 🎬",
+                    "desc": "In this activity, students will create a Python program that simulates a movie ticket reservation system. The program should allow users to reserve seats in a cinema hall. The hall has rows and columns of seats, and users can choose a seat to book.",
+                    "yt": "G45K6CGxQ_c",
+                    "dur": "00:04:26"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U05-A01",
+                    "nm": "Build a Seat Booking System 🎬",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಮೂವಿ ಟಿಕೆಟ್ ಬುಕಿಂಗ್ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U05-Q01",
+                "nm": "Can Python book your seat? 🎟️",
+                "qs": [
+                    {
+                        "q": "ಮೂವಿ ಟಿಕೆಟ್ ಬುಕಿಂಗ್ ಸಿಸ್ಟಮ್‌ನಲ್ಲಿ ಶೀರ್ಷಿಕೆ ಪ್ರದರ್ಶಿಸಲು ಯಾವ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "if-else ಸ್ಟೇಟ್‌ಮೆಂಟ್",
+                            "2": "input ಫಂಕ್ಷನ್",
+                            "3": "print ಸ್ಟೇಟ್‌ಮೆಂಟ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಟಿಕೆಟ್ ಬುಕಿಂಗ್ ಸಿಸ್ಟಮ್‌ನಲ್ಲಿ print ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ನಲ್ಲಿ 'end=\"\"' ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಇದು ಹೊಸ ಲಿಸ್ಟ್ ರಚಿಸುತ್ತದೆ",
+                            "2": "ಪ್ರಿಂಟ್ ಮಾಡಿದ ಪ್ರತಿ ಮೌಲ್ಯದ ನಂತರ ಸ್ಪೇಸ್ ಇರುವಂತೆ ಖಚಿತಪಡಿಸುತ್ತದೆ",
+                            "3": "ಪ್ರೋಗ್ರಾಮ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೀಟು ಈಗಾಗಲೇ ರಿಸರ್ವ್ ಆಗಿದೆಯೇ ಎಂದು ಪೈಥಾನ್ ಲಾಜಿಕ್ ಬಳಸಿ ಹೇಗೆ ಪರಿಶೀಲಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಸೀಟು ಸ್ಥಾನ ರಿಸರ್ವ್ಡ್ ಲಿಸ್ಟ್‌ನಲ್ಲಿ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "switch case ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಬಳಸಿ",
+                            "3": "ಡಿಕ್ಷನರಿ ರಚಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಂದು ಥಿಯೇಟರ್‌ನಲ್ಲಿ 3 ಸಾಲುಗಳು ಮತ್ತು 4 ಕಾಲಮ್‌ಗಳಿವೆ. ಬಳಕೆದಾರ ಸಾಲು 1 ಮತ್ತು ಕಾಲಮ್ 2 ಆಯ್ಕೆ ಮಾಡಿದ್ದು ಅದು ಈಗಾಗಲೇ ರಿಸರ್ವ್ ಆಗಿದ್ದರೆ ಔಟ್‌ಪುಟ್ ಏನಾಗಿರುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಯಶಸ್ವಿಯಾಗಿ ಬುಕ್ ಆಯಿತು",
+                            "2": "ಈಗಾಗಲೇ ಬುಕ್ ಆಗಿದೆ",
+                            "3": "ಸೀಟು ಕಂಡುಬಂದಿಲ್ಲ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರು ಒಮ್ಮೆಲೆ ಅನೇಕ ಸೀಟುಗಳನ್ನು ಬುಕ್ ಮಾಡಲು ಫಂಕ್ಷನ್ ಅಳವಡಿಸಲು ಮೊದಲ ಹೆಜ್ಜೆ ಏನು?",
+                        "opts": {
+                            "1": "ರಿಸರ್ವ್ಡ್ ಲಿಸ್ಟ್ ಸಂಪೂರ್ಣವಾಗಿ ತೆಗೆದುಹಾಕಿ",
+                            "2": "ಸೀಟು ಸ್ಥಾನಗಳ ಲಿಸ್ಟ್ ಸ್ವೀಕರಿಸಿ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸಲು ಪ್ರೋಗ್ರಾಮ್ ಮಾರ್ಪಡಿಸಿ",
+                            "3": "ಸೀಟು ವ್ಯವಸ್ಥೆಯನ್ನು 2 ಸಾಲು ಮತ್ತು 5 ಕಾಲಮ್‌ಗಳಿಗೆ ಬದಲಾಯಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U06",
+            "ord": 6,
+            "nm": "The Loop That Lives Inside 🎡",
+            "desc": "Concepts: Nested loops, nested conditions, 2D data representation (tables and seats), indexing, condition checking (membership in list).\n\nFunctions/Keywords: for, range(), if, else, in, print(), list [], tuples (), end=\"\"",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U06-V01",
+                    "nm": "Can Code Save You a Seat? 💺",
+                    "desc": "Students will be able to understand the concept of Nested if & Nested loop by creating a seat reservation system which displays reserved & available seats per table.",
+                    "yt": "p3sPoJ_61Nw",
+                    "dur": "00:06:21"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U06-A01",
+                    "nm": "Build a Seat Booking Brain 💺",
+                    "sub_types": "image,video",
+                    "unguided_text": "Healthy Plate Quiz ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U06-Q01",
+                "nm": "Taken or Free — Which Seat Is It? 🎟️",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ 'tables' ವೇರಿಯೇಬಲ್ ಏನನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಪ್ರತಿ ಟೇಬಲ್‌ನಲ್ಲಿರುವ ಸೀಟುಗಳ ಸಂಖ್ಯೆ",
+                            "2": "ರಿಸರ್ವ್ಡ್ ಸೀಟುಗಳ ಇಂಡೆಕ್ಸ್",
+                            "3": "ಲಭ್ಯವಿರುವ ಟೇಬಲ್‌ಗಳ ಸಂಖ್ಯೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಸಂದರ್ಭದಲ್ಲಿ ನೆಸ್ಟೆಡ್ ಲೂಪ್‌ಗಳನ್ನು ಬಳಸುವ ಮುಖ್ಯ ಉದ್ದೇಶವೇನು?",
+                        "opts": {
+                            "1": "ಸೀಟುಗಳ ರಿಸರ್ವೇಶನ್ ಸ್ಥಿತಿ ಪ್ರದರ್ಶಿಸಲು",
+                            "2": "ಪುನರಾವರ್ತಿತ ಕಾರ್ಯಗಳನ್ನು ನಿರ್ವಹಿಸುವ ಮೂಲಕ ಬಹು-ಲೇಯರ್ ಸಮಸ್ಯೆಗಳನ್ನು ನಿಭಾಯಿಸಲು",
+                            "3": "ಕಲಿಕೆಗಾಗಿ ಸಿಂಟ್ಯಾಕ್ಸ್ ದೋಷ ಸೃಷ್ಟಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೀಟು ರಿಸರ್ವ್ ಆಗಿದೆಯೇ ಎಂದು ಸ್ಕ್ರಿಪ್ಟ್ ಹೇಗೆ ನಿರ್ಧರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸೀಟು ಸಂಖ್ಯೆ ಬೆಸ ಸಂಖ್ಯೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "ಟೇಬಲ್ ಇಂಡೆಕ್ಸ್ ಅನ್ನು ಸೀಟು ಇಂಡೆಕ್ಸ್ 0 ರೊಂದಿಗೆ ತಾಳೆ ನೋಡಿ",
+                            "3": "(table, seat) ಜೋಡಿ reserved_seats ಲಿಸ್ಟ್‌ನಲ್ಲಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ರತಿ ಟೇಬಲ್‌ಗೆ ಐದನೇ ಕುರ್ಚಿ ಸೇರಿಸಬೇಕಾದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಯಾವ ಬದಲಾವಣೆ ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "'seats_per_table' ವೇರಿಯೇಬಲ್ ಅನ್ನು 5 ಗೆ ಹೆಚ್ಚಿಸಿ",
+                            "2": "'tables' ವೇರಿಯೇಬಲ್ ಅನ್ನು 5 ಗೆ ಹೆಚ್ಚಿಸಿ",
+                            "3": "'reserved_seats' ಲಿಸ್ಟ್‌ಗೆ ಹೆಚ್ಚಿನ ರಿಸರ್ವ್ಡ್ ಸೀಟುಗಳನ್ನು ಸೇರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕೋಡ್ 'Reserved' ಅಥವಾ 'Available' ಸರಿಯಾಗಿ ಪ್ರಿಂಟ್ ಮಾಡುತ್ತಿಲ್ಲವೆಂದರೆ ಮೊದಲು ಏನು ಪರಿಶೀಲಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಪ್ರಿಂಟ್ ಸ್ಟೇಟ್‌ಮೆಂಟ್‌ಗಳು ಸರಿಯಾಗಿ ದೊಡ್ಡಕ್ಷರದಲ್ಲಿ ಇವೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "'tables' ವೇರಿಯೇಬಲ್ ಸರಿಯಾದ ಸಂಖ್ಯೆಗೆ ಹೊಂದಿಸಲಾಗಿದೆಯೇ ಎಂದು ನೋಡಿ",
+                            "3": "ನೆಸ್ಟೆಡ್ ಲೂಪ್‌ಗಳು ಮತ್ತು ಕಂಡಿಷನ್‌ಗಳ ಸಿಂಟ್ಯಾಕ್ಸ್ ಮತ್ತು ಲಾಜಿಕಲ್ ರಚನೆ ಸರಿಯಾಗಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U07",
+            "ord": 7,
+            "nm": "Stock Finds Its Value 📦",
+            "desc": "Concepts: Lists, indexing, aggregation (total value), looping over items, tracking maximum value.\n\nFunctions/Keywords: for, range(), len(), print(), list [], +, *.",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U07-V01",
+                    "nm": "Can loops find priciest item? 📦",
+                    "desc": "Students will design an inventory tracker where items (stored in a list) have quantities and prices. The program will calculate the total value of the inventory and display the name of the most expensive item.",
+                    "yt": "P0Yyor1m-fY",
+                    "dur": "00:04:19"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U07-A01",
+                    "nm": "Build an Inventory Tracker 📦",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಇನ್ವೆಂಟರಿ ಟ್ರ್ಯಾಕರ್ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U07-Q01",
+                "nm": "Can a list track stock? 📦",
+                "qs": [
+                    {
+                        "q": "ಪೈಥಾನ್‌ನಲ್ಲಿ ಪಟ್ಟಿಯಲ್ಲಿ ಇಂಡೆಕ್ಸ್ ಏನನ್ನು ಪ್ರತಿನಿಧಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಪಟ್ಟಿಯಲ್ಲಿ ಒಂದು ಐಟಂನ ಸ್ಥಾನ, 1 ರಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+                            "2": "ಪಟ್ಟಿಯಲ್ಲಿ ಒಂದು ಐಟಂನ ಸ್ಥಾನ, 0 ರಿಂದ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ.",
+                            "3": "ಪಟ್ಟಿಯಲ್ಲಿ ಐಟಂನ ಮೌಲ್ಯ."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅಂಗಡಿ ಮಾಲೀಕರಿಗೆ ಇನ್ವೆಂಟರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಅಂಗಡಿಯಿಂದ ಉತ್ಪತ್ತಿಯಾದ ಒಟ್ಟು ವೆಚ್ಚ ಲೆಕ್ಕ ಹಾಕಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.",
+                            "2": "ಒಟ್ಟು ಇನ್ವೆಂಟರಿ ಮೌಲ್ಯ ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಮತ್ತು ಅತ್ಯಂತ ದುಬಾರಿ ವಸ್ತು ಗುರುತಿಸಲು ಅನುಮತಿಸುತ್ತದೆ.",
+                            "3": "ಉದ್ಯೋಗಿಗಳ ವೇಳಾಪಟ್ಟಿ ಮತ್ತು ವೇತನ ನಿರ್ವಹಣೆಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಇನ್ವೆಂಟರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಪ್ರೋಗ್ರಾಂನಲ್ಲಿ ಅತ್ಯಂತ ದುಬಾರಿ ವಸ್ತುವಿನ ಇಂಡೆಕ್ಸ್ ಹೇಗೆ ನವೀಕರಿಸುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಪ್ರಸ್ತುತ ವಸ್ತುವಿನ ಬೆಲೆಯನ್ನು ಸಂಗ್ರಹಿಸಿದ ಅತ್ಯಂತ ದುಬಾರಿ ವಸ್ತುವಿನ ಬೆಲೆಯೊಂದಿಗೆ ಹೋಲಿಸಿ ಮತ್ತು ಅದು ಹೆಚ್ಚಿದ್ದರೆ ನವೀಕರಿಸಿ.",
+                            "2": "ಪ್ರತಿ ಬಾರಿ ವಸ್ತು ಸೇರಿಸಿದಾಗ ಅಥವಾ ತೆಗೆದಾಗ ಎಲ್ಲ ವಸ್ತುಗಳ ಒಟ್ಟು ಮೌಲ್ಯ ಮರು ಲೆಕ್ಕ ಹಾಕಿ.",
+                            "3": "ಬೆಲೆಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಪ್ರತ್ಯೇಕ ಪಟ್ಟಿ ಬಳಸಿ ಮತ್ತು ಅದನ್ನು ನಿಯಮಿತವಾಗಿ ನವೀಕರಿಸಿ."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಂದು ಸಣ್ಣ ಪುಸ್ತಕದ ಅಂಗಡಿ ಇನ್ವೆಂಟರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ ಬಳಸುತ್ತಿದ್ದು ಸ್ಟಾಕ್‌ನಲ್ಲಿ ವ್ಯತ್ಯಾಸ ಗಮನಿಸುತ್ತದೆ. ಈ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಲು ಉತ್ತಮ ಕ್ರಮ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ತಂತ್ರಜ್ಞಾನ ದೋಷಗಳನ್ನು ತಪ್ಪಿಸಲು ಕೈಯಿಂದ ಇನ್ವೆಂಟರಿ ಸಿಸ್ಟಮ್‌ಗೆ ಬದಲಾಯಿಸಿ.",
+                            "2": "ವಸ್ತುಗಳನ್ನು ದೈಹಿಕವಾಗಿ ಎಣಿಸಿ ಮತ್ತು ಸಿಸ್ಟಮ್ ದಾಖಲೆಗಳೊಂದಿಗೆ ಹೋಲಿಸಿ ವ್ಯತ್ಯಾಸ ಗುರುತಿಸಿ.",
+                            "3": "ದೋಷಗಳಿಲ್ಲದೆ ನಿರ್ವಹಿಸಲು ಇನ್ವೆಂಟರಿ ಗಾತ್ರ ಕಡಿಮೆ ಮಾಡಿ."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಬ್ಬ ಚಿಲ್ಲರೆ ಮಾರಾಟ ವ್ಯವಸ್ಥಾಪಕರು ದಕ್ಷತೆ ಸುಧಾರಿಸಲು ಇನ್ವೆಂಟರಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಲು ಪರಿಗಣಿಸುತ್ತಿದ್ದಾರೆ. ಅವರು ಮಾಡಬಹುದಾದ ಉತ್ತಮ ನಿರ್ಧಾರ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ವೆಚ್ಚ ಕಡಿಮೆ ಮಾಡಲು ಕೇವಲ ಮಾರಾಟ ಡೇಟಾ ಟ್ರ್ಯಾಕ್ ಮಾಡುವ ಸಿಸ್ಟಮ್ ಅಳವಡಿಸಿ.",
+                            "2": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಸಿಸ್ಟಮ್ ಮುಂದುವರಿಸಿ ಮತ್ತು ಕೈಯಿಂದ ತಪಾಸಣೆಗೆ ಹೆಚ್ಚು ಸಿಬ್ಬಂದಿ ನೇಮಿಸಿ.",
+                            "3": "ನಿಖರತೆ ಸುಧಾರಿಸಲು ಮತ್ತು ಸ್ಟಾಕ್ ವ್ಯತ್ಯಾಸ ಕಡಿಮೆ ಮಾಡಲು ರಿಯಲ್-ಟೈಮ್ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್‌ಗೆ ಅಪ್‌ಗ್ರೇಡ್ ಮಾಡಿ."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U08",
+            "ord": 8,
+            "nm": "Names Mark Attendance 📓",
+            "desc": "Concepts\nAttendance tracking, Lists, For loops, Input handling, If-else statements, String manipulation, User interaction\n\nFunctions/Keywords\nfor, if, else, list, append(), input(), strip(), upper(), print()",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U08-V01",
+                    "nm": "Can code mark your attendance? 📓",
+                    "desc": "Students will learn to create an attendance tracking system using Python arrays (lists). They will write a program that allows user to mark attendance for students. The program will store student names in an array and allow the programmer to mark each student as present or absent. The system will display the list of students and their attendance status at the end. Additionally, students will implement functions to add a student to the list, mark attendance for each student, and display the final attendance report.",
+                    "yt": "wvu5HlACa0o",
+                    "dur": "00:03:27"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U08-A01",
+                    "nm": "Code an Attendance Tracking System 📓",
+                    "sub_types": "image,video",
+                    "unguided_text": "Attendance Tracking System ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U08-Q01",
+                "nm": "Can Python take attendance? 📋",
+                "qs": [
+                    {
+                        "q": "ಹಾಜರಾತಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್‌ನಲ್ಲಿ ಬಳಕೆದಾರರ ಇನ್‌ಪುಟ್ ಅನ್ನು ದೊಡ್ಡ ಅಕ್ಷರಕ್ಕೆ ಪರಿವರ್ತಿಸಲು ಯಾವ ಫಂಕ್ಷನ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": ".upper()",
+                            "2": ".lower()",
+                            "3": ".capitalize()"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಹಾಜರಾತಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ ಕೋಡ್‌ನಲ್ಲಿ .strip() ಫಂಕ್ಷನ್ ಏಕೆ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಇನ್‌ಪುಟ್ ಅನ್ನು ದೊಡ್ಡ ಅಕ್ಷರಕ್ಕೆ ಪರಿವರ್ತಿಸಲು",
+                            "2": "ಇನ್‌ಪುಟ್‌ನಿಂದ ಮುಂದಿನ ಅಥವಾ ಹಿಂದಿನ ಖಾಲಿ ಜಾಗಗಳನ್ನು ತೆಗೆದುಹಾಕಲು",
+                            "3": "ಪಟ್ಟಿಗೆ ಗೈರುಹಾಜರು ಸೇರಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಹೊಸ ವಿದ್ಯಾರ್ಥಿಯ ಹಾಜರಾತಿ ಗುರುತಿಸಲು ಹಾಜರಾತಿ ಟ್ರ್ಯಾಕಿಂಗ್ ತರ್ಕ ಹೇಗೆ ಅನ್ವಯಿಸುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಬೇರೆ ಪ್ರೋಗ್ರಾಮಿಂಗ್ ಭಾಷೆ ಬಳಸಿ",
+                            "2": "ಹೊಸ ವೇರಿಯೇಬಲ್ ರಚಿಸಿ ಮತ್ತು ತರ್ಕ ಮೊದಲಿನಿಂದ ಪ್ರಾರಂಭಿಸಿ",
+                            "3": "ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರನ್ನು ಪಟ್ಟಿಗೆ ಸೇರಿಸಿ ಮತ್ತು ಅದೇ ಇನ್‌ಪುಟ್ ಮತ್ತು ಅನುಬಂಧ ತರ್ಕ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒಂದು ಶಾಲೆ ಕೈಯಿಂದ ದೋಷಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ಸಮಯ ಉಳಿಸಲು ಡಿಜಿಟಲ್ ಹಾಜರಾತಿ ಟ್ರ್ಯಾಕಿಂಗ್ ಸಿಸ್ಟಮ್ ಅಳವಡಿಸಲು ಪರಿಗಣಿಸುತ್ತಿದೆ. ಸಿಸ್ಟಮ್ ಪರಿಣಾಮಕಾರಿಯಾಗಿರಲು ಶಾಲೆ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಯಾವುದೇ ಪರೀಕ್ಷೆ ಇಲ್ಲದೆ ಸಿಸ್ಟಮ್ ಕೆಲಸ ಮಾಡುತ್ತದೆ ಎಂದು ನಂಬಿ",
+                            "2": "ಡಿಜಿಟಲ್ ಹಾಜರಾತಿ ಸಿಸ್ಟಮ್ ರಚಿಸಿ ಮತ್ತು ವಿವಿಧ ತರಗತಿಗಳಲ್ಲಿ ಪರೀಕ್ಷಿಸಿ",
+                            "3": "ಕೇವಲ ಪರಿಪೂರ್ಣ ಹಾಜರಾತಿ ಹೊಂದಿರುವ ವಿದ್ಯಾರ್ಥಿಗಳೊಂದಿಗೆ ಮಾತ್ರ ಸಿಸ್ಟಮ್ ಬಳಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕೆಲವು ವಿದ್ಯಾರ್ಥಿಗಳು ಗೈರುಹಾಜರಿದ್ದರೂ ಸಿಸ್ಟಮ್ ಇನ್‌ಪುಟ್ ದೋಷಗಳಿಂದ ಹಾಜರಿ ಎಂದು ಗುರುತಿಸುತ್ತದೆ ಎಂದು ಒಬ್ಬ ಶಿಕ್ಷಕರು ಗಮನಿಸುತ್ತಾರೆ. ಭವಿಷ್ಯದಲ್ಲಿ ಅಂತಹ ದೋಷಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಉತ್ತಮ ಮಾರ್ಗ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಸಿಸ್ಟಮ್‌ಗೆ ಹೆಚ್ಚು ಸಂಕೀರ್ಣ ಕೋಡ್ ಸೇರಿಸಿ",
+                            "2": "ಸಲ್ಲಿಸುವ ಮೊದಲು ತಮ್ಮ ಇನ್‌ಪುಟ್ ಅನ್ನು ಎರಡು ಬಾರಿ ಪರಿಶೀಲಿಸಲು ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಶಿಕ್ಷಕರಿಗೆ ತರಬೇತಿ ನೀಡಿ",
+                            "3": "ದೋಷಗಳು ಮಹತ್ವಪೂರ್ಣವಲ್ಲ ಎಂದು ನಿರ್ಲಕ್ಷಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U09",
+            "ord": 9,
+            "nm": "Events Remind You First 📅",
+            "desc": "Concepts: Lists (storing paired data), iteration, data extraction (name and date), condition checking (equal and greater than), event tracking.\n\nFunctions/Keywords: list [], for, if, else, print(), input(), int(), ==, >",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U09-V01",
+                    "nm": "Can dates trigger event reminders? 📅",
+                    "desc": "Students will write a program that stores events and their dates in a list, then reminds you when an event is coming up, with a friendly message displaying the event name and date.",
+                    "yt": "Vi3Im41aQiE",
+                    "dur": "00:03:18"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U09-A01",
+                    "nm": "Build an Event Reminder System 📅",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಈವೆಂಟ್ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U09-Q01",
+                "nm": "Did you miss an event? 📅",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಈವೆಂಟ್ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ಶೀರ್ಷಿಕೆ ಪ್ರದರ್ಶಿಸಲು ಪ್ರಿಂಟ್ ಹೇಳಿಕೆ ಬಳಸಿ",
+                            "2": "ಹೆಸರುಗಳು ಮತ್ತು ದಿನಾಂಕಗಳೊಂದಿಗೆ ಈವೆಂಟ್ಸ್ ಎಂಬ ಪಟ್ಟಿ ರಚಿಸಿ",
+                            "3": "ಇಂದಿನ ದಿನಾಂಕ ತಿಳಿಯಲು ಬಳಕೆದಾರರಿಂದ ಇನ್‌ಪುಟ್ ತೆಗೆದುಕೊಳ್ಳಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರು ಪಟ್ಟಿಯಲ್ಲಿನ ಈವೆಂಟ್ ದಿನಾಂಕಕ್ಕೆ ಹೊಂದಿಕೆಯಾಗುವ ದಿನಾಂಕ ನಮೂದಿಸಿದರೆ ಸಿಸ್ಟಮ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಇಂದು ನಿಮ್ಮ [ಈವೆಂಟ್ ಹೆಸರು] ಎಂದು ಸಂದೇಶ ಮುದ್ರಿಸುತ್ತದೆ",
+                            "2": "ಬಳಕೆದಾರರ ಇನ್‌ಪುಟ್ ನಿರ್ಲಕ್ಷಿಸಿ ಎಲ್ಲ ಈವೆಂಟ್‌ಗಳನ್ನು ಪ್ರದರ್ಶಿಸುತ್ತದೆ",
+                            "3": "ನಮೂದಿಸಿದ ದಿನಾಂಕದ ನಂತರ ಬರುವ ಈವೆಂಟ್‌ಗಳನ್ನು ಮಾತ್ರ ಪ್ರದರ್ಶಿಸುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರ ನಮೂದಿಸಿದ ದಿನಾಂಕದ ನಂತರ ಬರುವ ಈವೆಂಟ್‌ಗಳನ್ನು ಸಿಸ್ಟಮ್ ಹೇಗೆ ನಿರ್ವಹಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಮುಂಬರುವ ಈವೆಂಟ್‌ಗಳ ದಿನಾಂಕಗಳೊಂದಿಗೆ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಮುದ್ರಿಸುತ್ತದೆ",
+                            "2": "ಎಲ್ಲ ಹಿಂದಿನ ಈವೆಂಟ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ",
+                            "3": "ಎಲ್ಲ ಈವೆಂಟ್‌ಗಳನ್ನು ಮರೆಮಾಡುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರು ಇಂದಿನ ದಿನಾಂಕ 20 ಎಂದು ನಮೂದಿಸಿದರೆ ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಸಿಸ್ಟಮ್ ಏನು ಔಟ್‌ಪುಟ್ ನೀಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "20ನೇ ತಾರೀಖಿನ ನಂತರ ಬರುವ ಎಲ್ಲ ಈವೆಂಟ್‌ಗಳ ರಿಮೈಂಡರ್‌ಗಳು ತೋರಿಸಲ್ಪಡುತ್ತವೆ",
+                            "2": "ಸಿಸ್ಟಮ್ ಯಾವುದೇ ಪ್ರತಿಕ್ರಿಯೆ ನೀಡುವುದಿಲ್ಲ",
+                            "3": "ಸಿಸ್ಟಮ್ ಇಂದು ಯಾವುದೇ ಈವೆಂಟ್‌ಗಳಿಲ್ಲ ಎಂದು ಪ್ರದರ್ಶಿಸುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರು 29ನೇ ತಾರೀಖಿಗೆ ಹೊಸ ಈವೆಂಟ್ ಸೇರಿಸಲು ಬಯಸುತ್ತಾರೆ. ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಹಂತಗಳ ಪ್ರಕಾರ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ನೇರವಾಗಿ ಹೊಸ ಈವೆಂಟ್‌ನ ದಿನಾಂಕ ನಮೂದಿಸಿ",
+                            "2": "ಈವೆಂಟ್ಸ್ ಪಟ್ಟಿಗೆ ಹೊಸ ಈವೆಂಟ್ ಮತ್ತು ದಿನಾಂಕ ಸೇರಿಸಿ",
+                            "3": "ಪರದೆಯ ಮೇಲೆ ಈವೆಂಟ್ ಹೆಸರು ಮುದ್ರಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CPC4-U10",
+            "ord": 10,
+            "nm": "Books Return on Time 📚",
+            "desc": "Concepts: Lists (storing paired data), iteration, data extraction (name and date), date comparison, reminder logic.\n\nFunctions/Keywords: list [], for, if, else, print(), input(), int(), ==, <",
+            "rwc": "Mobile, Tablet, Desktop, Laptop, Pydroid3 App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CPC4-U10-V01",
+                    "nm": "Can due dates remind readers? 📚",
+                    "desc": "In this activity students will learn how to create a simple Library Book Reminder System using lists, loops, and conditional statements in Python.\nThey will practice taking user input, comparing dates, and generating reminders, helping them understand real-life applications of basic programming concepts.",
+                    "yt": "IE3JlUOCQqU",
+                    "dur": "00:02:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CPC4-U10-A01",
+                    "nm": "Build a Library Book Reminder 📚",
+                    "sub_types": "image,video",
+                    "unguided_text": "Library Book Reminder System ಪ್ರೋಗ್ರಾಂ ವೀಡಿಯೊ / ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಹಂಚಿಕೊಳ್ಳಿ!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CPC4-U10-Q01",
+                "nm": "Did you return your book? 📚",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಲೈಬ್ರರಿ ಪುಸ್ತಕ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಪುಸ್ತಕ ಎಂಬ ಪಟ್ಟಿ ರಚಿಸಿ",
+                            "2": "ಲೈಬ್ರರಿ ಪುಸ್ತಕ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ಶೀರ್ಷಿಕೆ ಮುದ್ರಿಸಿ",
+                            "3": "ಪ್ರಸ್ತುತ ದಿನಾಂಕ ಇನ್‌ಪುಟ್ ತೆಗೆದುಕೊಳ್ಳಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಳಕೆದಾರರು ನಮೂದಿಸಿದ ಪ್ರಸ್ತುತ ದಿನಾಂಕ ಪಟ್ಟಿಯಲ್ಲಿನ ಯಾವುದೇ ದಿನಾಂಕಕ್ಕಿಂತ ಕಡಿಮೆ ಇದ್ದರೆ ಸಿಸ್ಟಮ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಏನೂ ಮುದ್ರಿಸುವುದಿಲ್ಲ",
+                            "2": "ಕೇವಲ ಪ್ರಸ್ತುತ ದಿನಾಂಕದ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಮುದ್ರಿಸುತ್ತದೆ",
+                            "3": "ಎಲ್ಲ ರಿಮೈಂಡರ್‌ಗಳನ್ನು ಮುದ್ರಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್‌ನಲ್ಲಿ ಪಟ್ಟಿ ವಿಷಯಗಳನ್ನು ಪ್ರತ್ಯೇಕಿಸಲು ಯಾವ ಪೈಥಾನ್ ರಚನೆ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ವೈಲ್ ಲೂಪ್",
+                            "2": "ಫಾರ್ ಲೂಪ್",
+                            "3": "ಇಫ್-ಎಲ್ಸ್ ಹೇಳಿಕೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಇಂದಿನ ದಿನಾಂಕ 25 ಮತ್ತು ಪಟ್ಟಿಯಲ್ಲಿ 20, 25 ಮತ್ತು 30 ದಿನಾಂಕಗಳ ವಾಪಸಾತಿ ದಿನಾಂಕಗಳಿದ್ದರೆ ಏನು ಮುದ್ರಿಸಲ್ಪಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಇಂದು ಗಣಿತ ಪುಸ್ತಕ ಹಿಂದಿರುಗಿಸಿ",
+                            "2": "ಯಾವುದೇ ರಿಮೈಂಡರ್‌ಗಳು ಮುದ್ರಿಸಲ್ಪಡುವುದಿಲ್ಲ",
+                            "3": "ಎಲ್ಲ ರಿಮೈಂಡರ್‌ಗಳು ಮುದ್ರಿಸಲ್ಪಡುತ್ತವೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ರಿಮೈಂಡರ್ ಸಿಸ್ಟಮ್ ಅನ್ನು ಪುಸ್ತಕ ವಾಪಸ್ ಮಾಡುವುದರ ಹೊರತಾಗಿ ದೈನಂದಿನ ರಿಮೈಂಡರ್‌ಗಳಿಗೆ ಹೇಗೆ ಅಳವಡಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಪಟ್ಟಿಗೆ ಹೆಚ್ಚು ಪುಸ್ತಕಗಳನ್ನು ಸೇರಿಸಿ",
+                            "2": "ಇನ್‌ಪುಟ್ ಫಾರ್ಮ್ಯಾಟ್ ಅನ್ನು ಸ್ಟ್ರಿಂಗ್‌ಗೆ ಬದಲಾಯಿಸಿ",
+                            "3": "ದೈನಂದಿನ ಕಾರ್ಯಗಳನ್ನು ಇನ್‌ಪುಟ್ ಮಾಡಲು ಮತ್ತು ಪರಿಶೀಲಿಸಲು ಅದೇ ತರ್ಕ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

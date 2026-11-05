@@ -1,0 +1,889 @@
+{
+    "id": "CASSL2",
+    "nm": "◆ Science Challenges",
+    "desc": "Students make a turmeric solution to test acids and bases in everyday substances like lemon juice and baking soda. They document color changes and create a pH chart for display.",
+    "vrt": "science-lab",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "CASSL2-U01",
+            "ord": 1,
+            "nm": "Haldi Reads the Liquid 🌿",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Turmeric, Wasing Powder",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U01-V01",
+                    "nm": "Can turmeric read acids? 🌿",
+                    "desc": "Students make a turmeric solution to test acids and bases in everyday substances like lemon juice and baking soda. They document color changes and create a pH chart for display.",
+                    "yt": "p-sgqJfNX_8",
+                    "dur": "00:01:47"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U01-A01",
+                    "nm": "Make a Turmeric pH Indicator 🌿",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the Turmeric Indicator Solution with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U01-Q01",
+                "nm": "Can turmeric detect acid? 🌿",
+                "qs": [
+                    {
+                        "q": "What is the chemical in turmeric that reacts with bases to change color?",
+                        "opts": {
+                            "1": "Capsaicin",
+                            "2": "Carotene",
+                            "3": "Curcumin"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens to the color of turmeric when it comes into contact with an acid?",
+                        "opts": {
+                            "1": "It turns blue",
+                            "2": "It turns green",
+                            "3": "It stays yellow"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to test a household item to see if it is a base using turmeric, what would you expect to see if it is a base?",
+                        "opts": {
+                            "1": "The color changes to blue",
+                            "2": "The color remains the same",
+                            "3": "The color changes to red"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You accidentally spill detergent on a turmeric-stained paper. What should you do to return the paper to its original color?",
+                        "opts": {
+                            "1": "Add more detergent",
+                            "2": "Add lemon juice to it",
+                            "3": "Add more turmeric"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "While experimenting, you notice that milk does not change the color of turmeric. What can you conclude about milk based on this observation?",
+                        "opts": {
+                            "1": "Milk is a strong acid",
+                            "2": "Milk is a strong base",
+                            "3": "Milk is neither a strong acid nor a strong base"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U02",
+            "ord": 2,
+            "nm": "Bottle Grows a Garden 🌱",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Bottle",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U02-V01",
+                    "nm": "Can a bottle grow plants? 🌱",
+                    "desc": "Students will learn about vertical gardening and make their own artefact using recycled materials like plastic bottles etc. They will also understand the importance of SDGs on 21st century.",
+                    "yt": "xyPiudYU8GM",
+                    "dur": "00:02:35"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U02-A01",
+                    "nm": "Build a Mini Vertical Garden 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the pot side-view with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U02-Q01",
+                "nm": "Can plants grow without soil? 🌱",
+                "qs": [
+                    {
+                        "q": "What is the first step in creating a Mini Vertical Garden as mentioned in the script?",
+                        "opts": {
+                            "1": "Cut the plastic bottle in half",
+                            "2": "Add water to the bottle",
+                            "3": "Plant the seeds in soil"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of using a cotton wick in the Mini Vertical Garden?",
+                        "opts": {
+                            "1": "To add nutrients to the soil",
+                            "2": "To help transport water to the plants",
+                            "3": "To hold the seeds in place"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which modern farming technique mentioned allows plants to grow without soil?",
+                        "opts": {
+                            "1": "Hydroponics",
+                            "2": "Vertical Gardening",
+                            "3": "Urban Farming"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you live in a city with limited space, how can you still grow plants according to the script?",
+                        "opts": {
+                            "1": "By using large pots on the rooftop",
+                            "2": "By purchasing organic food",
+                            "3": "By adopting Urban Farming techniques like using plastic bottles on windowsills"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you have all the materials but no cotton. What could you use as an alternative to the cotton wick in your Mini Vertical Garden?",
+                        "opts": {
+                            "1": "A plastic straw",
+                            "2": "A piece of cloth",
+                            "3": "A metal wire"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U03",
+            "ord": 3,
+            "nm": "Oil Defies Gravity 🔮",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Oil, Water",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U03-V01",
+                    "nm": "Can salt defy gravity? 🔮",
+                    "desc": "Students create a lava lamp using oil, water, food coloring, and effervescent tablets. They explain density and chemical reactions using the working lamp as an artefact.",
+                    "yt": "ERdYsAwFGDg",
+                    "dur": "00:01:27"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U03-A01",
+                    "nm": "Make a Homemade Lava Lamp 🔮",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture/Video of the Lava Lamp with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U03-Q01",
+                "nm": "Why does oil always float? 🫧",
+                "qs": [
+                    {
+                        "q": "What concept explains why oil floats on water in the lava lamp experiment?",
+                        "opts": {
+                            "1": "Density",
+                            "2": "Gravity",
+                            "3": "Physical Displacement"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens to the salt as it interacts with the oil and water?",
+                        "opts": {
+                            "1": "It sinks, carrying oil with it, and dissolves in water",
+                            "2": "It floats on top of the oil layer",
+                            "3": "It dissolves in the oil"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to make the oil stay at the bottom permanently, what would you need to change?",
+                        "opts": {
+                            "1": "Add more oil",
+                            "2": "Use less water",
+                            "3": "Use a substance heavier than oil to replace salt"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A student notices that the oil in their lava lamp doesn't return to the surface after adding salt. What could be a probable cause?",
+                        "opts": {
+                            "1": "The water is too cold",
+                            "2": "There is not enough salt to carry oil to the bottom",
+                            "3": "The salt is already dissolved"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a student wants to change the color of the oil in the lava lamp, what should they do?",
+                        "opts": {
+                            "1": "Add colored salt to the mixture",
+                            "2": "Add food coloring to the oil before pouring it into the water",
+                            "3": "Mix the oil with colored water"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U04",
+            "ord": 4,
+            "nm": "Layers Clean the Water 💧",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Charcoal, Bottle",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U04-V01",
+                    "nm": "Can layers clean dirty water? 💧",
+                    "desc": "Students will understand water pollution and purification by building a basic water filtration system using household and recyclable materials.",
+                    "yt": "hhasBJGIh_s",
+                    "dur": "00:02:25"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U04-A01",
+                    "nm": "Build a DIY Water Filter 💧",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the filtration bottle with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U04-Q01",
+                "nm": "Can a bottle clean water? 💧",
+                "qs": [
+                    {
+                        "q": "What is the first layer added to the DIY water filtration system in the script?",
+                        "opts": {
+                            "1": "Gravel",
+                            "2": "Cotton",
+                            "3": "Sand"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the primary function of charcoal in the water filtration system described in the script?",
+                        "opts": {
+                            "1": "Traps physical particles",
+                            "2": "Adds minerals to water",
+                            "3": "Absorbs impurities"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you needed to build a water filter like the one in the script, which of the following items would you NOT need?",
+                        "opts": {
+                            "1": "Charcoal",
+                            "2": "Plastic bottle",
+                            "3": "Metal sieve"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you are in a village with no access to clean water. How could you apply the water filtration method from the script to solve this problem?",
+                        "opts": {
+                            "1": "Use locally available materials to create a filter and then boil the water",
+                            "2": "Rely solely on chemical treatment without filtration",
+                            "3": "Use only cotton to filter the water"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you were tasked with improving the water filtration process in an emergency camp, what additional step could you take based on the script?",
+                        "opts": {
+                            "1": "Ensure the filtered water is boiled or chemically treated for safety",
+                            "2": "Use more sand layers",
+                            "3": "Add colorful stones for aesthetics"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U05",
+            "ord": 5,
+            "nm": "Ink Splits Its Colors 🎨",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Paper, Water, Colors",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U05-V01",
+                    "nm": "Can water split ink colors? 🎨",
+                    "desc": "Students separate colors in inks using chromatography paper or filter paper, water, and markers. They display the color patterns as a tangible science artefact.",
+                    "yt": "mlKjYFq8P1M",
+                    "dur": "00:02:01"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U05-A01",
+                    "nm": "Run a Paper Chromatography Experiment 🎨",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the colored strips with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U05-Q01",
+                "nm": "Can ink solve a mystery? 🔍",
+                "qs": [
+                    {
+                        "q": "What is the name of the technique used by forensic scientists to identify the pen used in writing a note?",
+                        "opts": {
+                            "1": "Spectroscopy",
+                            "2": "Electrophoresis",
+                            "3": "Chromatography"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why do different colors in the ink move at different speeds during the Chromatography experiment?",
+                        "opts": {
+                            "1": "Because the molecules have different sizes and weights",
+                            "2": "Because they have the same size and weight",
+                            "3": "Due to the temperature of the water"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the first step in conducting a Chromatography experiment with sketch pens and paper?",
+                        "opts": {
+                            "1": "Dip the paper directly into the water",
+                            "2": "Mix the ink with water before applying it to the paper",
+                            "3": "Cut the paper into strips and draw a line with the sketch pen"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a student notices that the ink colors do not separate on the paper, what could be a possible reason?",
+                        "opts": {
+                            "1": "The paper was left in the water too long",
+                            "2": "The ink line was too close to the water initially",
+                            "3": "The water was too cold"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can the Chromatography experiment help in solving a mystery involving a handwritten note?",
+                        "opts": {
+                            "1": "By determining the handwriting style",
+                            "2": "By identifying the specific pen used through color separation",
+                            "3": "By revealing the age of the ink"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U06",
+            "ord": 6,
+            "nm": "Waste Gets Sorted 🗂️",
+            "desc": "- 40% of the total studetns watch at least 70% of the video\n- 40% of the student submit image of their code\n- 40% students score 3/5 in quiz",
+            "rwc": "Paper, Pen, Cardboard",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U06-V01",
+                    "nm": "Can you audit home waste? 🗂️",
+                    "desc": "Students will learn to seggregate dry and wet waste. They will learn the importancte of SDGs.",
+                    "yt": "G5xZ8hOU8Iw",
+                    "dur": "00:02:22"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U06-A01",
+                    "nm": "Perform a Home Waste Audit 🗂️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the 5 sorted boxes with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U06-Q01",
+                "nm": "Can you audit your trash? 🗑️",
+                "qs": [
+                    {
+                        "q": "Which two main categories can garbage be split into?",
+                        "opts": {
+                            "1": "Paper and Plastic",
+                            "2": "Wet and Metal",
+                            "3": "Wet and Dry"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main problem when different types of waste are mixed in garbage dumps?",
+                        "opts": {
+                            "1": "It looks messy",
+                            "2": "It creates a fire hazard",
+                            "3": "It takes up too much space"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which of these is an example of \"wet waste\"?",
+                        "opts": {
+                            "1": "Food scraps (Organic)",
+                            "2": "Batteries (Metal)",
+                            "3": "Paper"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of labeling five different cardboard boxes in this activity?",
+                        "opts": {
+                            "1": "To throw them away",
+                            "2": "To segregate the waste by category",
+                            "3": "To store new items"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "After sorting the waste, what is the final step in the \"waste audit\" process?",
+                        "opts": {
+                            "1": "To wash the waste",
+                            "2": "To mix the waste back together",
+                            "3": "To create a report listing all the sorted items"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U07",
+            "ord": 7,
+            "nm": "Bottle Cools the Room 🍃",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Thread, Bottle, Stick",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U07-V01",
+                    "nm": "Can a bottle fan you? 🍃",
+                    "desc": "Students will learn about SDGs (SDG 11 - Sustainable cities and Communities) by designing a Bootle fan from recycled materials. They will understand the importance of SDGs with a hands-on-activity.",
+                    "yt": "JzXeCW0tEPc",
+                    "dur": "00:04:20"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U07-A01",
+                    "nm": "Build a Bottle Eco Fan 🍃",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture/Video of the hand-fan with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U07-Q01",
+                "nm": "Can a bottle be a fan? 🌬️",
+                "qs": [
+                    {
+                        "q": "What are the primary materials needed to build the bottle fan?",
+                        "opts": {
+                            "1": "Ice cream sticks, bamboo sticks, glue, thread, thumb tacks, bottle rim, plastic bottle",
+                            "2": "Metal rods, glue, wires, thumb tacks, plastic sheet",
+                            "3": "Paper, scissors, glue, wires, magnets"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to find cooling solutions that do not rely on electricity?",
+                        "opts": {
+                            "1": "Because electricity is too expensive",
+                            "2": "Because using electricity makes cooling devices less effective",
+                            "3": "Because most electricity is generated from fossil fuels which harm the environment"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How is the bamboo stick used in the construction of the bottle fan?",
+                        "opts": {
+                            "1": "As a decorative element",
+                            "2": "As a handle for the fan",
+                            "3": "As the central axis for the fan blades and to connect with the thread"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "You have completed the bottle fan but notice the fan blades are not spinning well. Which step could help improve the rotation?",
+                        "opts": {
+                            "1": "Add more glue to the thread",
+                            "2": "Ensure the bamboo stick is aligned properly and the thread is securely tied",
+                            "3": "Make the bottle taller"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Your friend wants to create a similar eco-friendly cooling device but has no bamboo stick. What alternative can you suggest for the central axis?",
+                        "opts": {
+                            "1": "Use a thicker plastic bottle",
+                            "2": "Use a piece of cardboard",
+                            "3": "Use a sturdy metal wire of similar length and thickness"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U08",
+            "ord": 8,
+            "nm": "Scraps Become Soil 🌱",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Bottle, Vegetable Peels Tea Leaves, Fresh Grass",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U08-V01",
+                    "nm": "Can peels become plant food? 🌱",
+                    "desc": "Students create a mini compost system in a transparent bottle using kitchen waste (vegetable peels, fruit scraps) and dry leaves. They observe decomposition over time and record changes.",
+                    "yt": "S_RY5CEnVyk",
+                    "dur": "00:03:20"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U08-A01",
+                    "nm": "Build a Compost Bottle 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the compost bottle with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U08-Q01",
+                "nm": "Can scraps become compost? 🌿",
+                "qs": [
+                    {
+                        "q": "What is the primary benefit of composting as mentioned in the script?",
+                        "opts": {
+                            "1": "It enriches the soil without polluting it.",
+                            "2": "It reduces the need for plastic bottles.",
+                            "3": "It speeds up the growth of microorganisms."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is it important to add holes to the bottom portion of the compost bottle?",
+                        "opts": {
+                            "1": "To let excess water drain out.",
+                            "2": "To allow air to pass through for decomposition.",
+                            "3": "To prevent insects from entering the bottle."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should be the final layer added to the compost bottle?",
+                        "opts": {
+                            "1": "Brown waste",
+                            "2": "Soil",
+                            "3": "Green waste"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your compost pile is not decomposing properly, what could be a possible solution?",
+                        "opts": {
+                            "1": "Ensure there are enough air holes and the pile is kept moist but not too wet.",
+                            "2": "Keep the compost pile in a shaded area.",
+                            "3": "Reduce the amount of brown waste added."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you accelerate the decomposition process of your compost bottle if you live in a cooler climate?",
+                        "opts": {
+                            "1": "Water the compost pile more frequently.",
+                            "2": "Add more green waste than brown waste.",
+                            "3": "Place the bottle in a sunny spot to increase warmth."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U09",
+            "ord": 9,
+            "nm": "Rain Gets Harvested 🌧️",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Cardboard",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U09-V01",
+                    "nm": "Can rain fill your tank? 🌧️",
+                    "desc": "Students will learn the importance of conserving water by understanding how rainwater harvesting works. By using models or simulations, they will explore how collecting rainwater helps in water conservation and reduces water scarcity. This activity directly supports SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), and SDG 13 (Climate Action).",
+                    "yt": "D8NPRyPWrCc",
+                    "dur": "00:04:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U09-A01",
+                    "nm": "Build a Rainwater Harvesting Model 🌧️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture of the harvesting system with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U09-Q01",
+                "nm": "Can rain be harvested? 🌧️",
+                "qs": [
+                    {
+                        "q": "What is the primary purpose of rainwater harvesting as described in the script?",
+                        "opts": {
+                            "1": "To increase the humidity in the atmosphere",
+                            "2": "To collect and store rainwater for future use",
+                            "3": "To create a decorative water feature"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is a filtration system included in the rainwater harvesting model?",
+                        "opts": {
+                            "1": "To speed up the rainwater collection process",
+                            "2": "To ensure the collected water is clean and usable",
+                            "3": "To prevent water evaporation"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which material is used to make a hole in the plastic container?",
+                        "opts": {
+                            "1": "Ice cream stick",
+                            "2": "Scissors",
+                            "3": "Glue"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you live in a place with frequent rainfall but no access to clean water, how can rainwater harvesting help you?",
+                        "opts": {
+                            "1": "It can collect and store rainwater for essential uses like drinking and washing",
+                            "2": "It can increase soil erosion",
+                            "3": "It can provide water for decorative purposes only"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine your rainwater harvesting model is leaking at the pipe joint. How can you solve this problem using the materials from the script?",
+                        "opts": {
+                            "1": "Add more stones to the filtration system",
+                            "2": "Use sketch pens to mark the leaking area",
+                            "3": "Use sticky tape to secure the joint and prevent leaking"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U10",
+            "ord": 10,
+            "nm": "Starch Becomes Plastic 🌽",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Glycerine Lemon Cornstarch Water",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U10-V01",
+                    "nm": "Can cornstarch replace real plastic? 🌽",
+                    "desc": "Students will make a biodegradable material that mimics the properties of Plastic and make artefacts from this Plastic.",
+                    "yt": "llqZXxUcJeQ",
+                    "dur": "00:03:04"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U10-A01",
+                    "nm": "Make Biodegradable Plastic Bookmark 🌽",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a Picture/Video of bending the plastic with us!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U10-Q01",
+                "nm": "Can plastic be eco-friendly? 🌍",
+                "qs": [
+                    {
+                        "q": "What are the ingredients needed to make biodegradable plastic in the activity?",
+                        "opts": {
+                            "1": "Glycerine, Lemon, Cornstarch, Water",
+                            "2": "Glycerine, Vinegar, Cornstarch, Water",
+                            "3": "Plastic, Lemon, Cornstarch, Oil"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why is making biodegradable plastic important for the environment?",
+                        "opts": {
+                            "1": "It reduces plastic pollution by decomposing quickly.",
+                            "2": "It helps in creating toys easily.",
+                            "3": "It makes plastic more colorful."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the role of glycerine in the biodegradable plastic-making process?",
+                        "opts": {
+                            "1": "It helps in adding color to the plastic.",
+                            "2": "It acts as a preservative.",
+                            "3": "It makes the plastic flexible."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you wanted to create a new eco-friendly product using biodegradable plastic, what should you consider first?",
+                        "opts": {
+                            "1": "The environmental impact and usability of the product.",
+                            "2": "The color of the plastic.",
+                            "3": "The size of the product."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you are tasked with reducing plastic waste in your community. How might creating biodegradable plastic help?",
+                        "opts": {
+                            "1": "It can be used to create more durable plastic items.",
+                            "2": "It requires more resources, thus increasing production costs.",
+                            "3": "It provides an alternative that breaks down quickly and reduces long-term pollution."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

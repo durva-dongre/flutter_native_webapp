@@ -1,0 +1,889 @@
+{
+    "id": "CBSSL1",
+    "nm": "∆ Science Starters",
+    "desc": "In this activity, students will explore the concept of air resistance by observing how a crumpled paper and a flat paper fall differently. They will then create a simple parachute using everyday materials and test how air resistance slows down falling objects. Through this hands-on activity, students will connect scientific concepts with real-life applications like parachutes.",
+    "vrt": "science-lab",
+    "lvl": "1",
+    "units": [
+        {
+            "id": "CBSSL1-U01",
+            "ord": 1,
+            "nm": "Paper Falls with Grace 🪂",
+            "desc": "Students will understand the concept of air resistance, which is a force that opposes the motion of objects moving through air. They will learn that objects with a larger surface area experience more air resistance and fall more slowly, while objects with a smaller surface area fall faster. They will understand how air resistance is used in real life, such as in parachutes, which help in slow and safe landing.",
+            "rwc": "Pen, Scissors, Paper, Thread, Cup, Stick, Sketchpen, Plastic)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U01-V01",
+                    "nm": "Can paper fall without crashing? 🪂",
+                    "desc": "In this activity, students will explore the concept of air resistance by observing how a crumpled paper and a flat paper fall differently. They will then create a simple parachute using everyday materials and test how air resistance slows down falling objects. Through this hands-on activity, students will connect scientific concepts with real-life applications like parachutes.",
+                    "yt": "4qesDAklFrY",
+                    "dur": "00:03:19"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U01-A01",
+                    "nm": "Build and Test a Parachute 🪂",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the parachute with all parts (plastic bag, string and bottle cap)visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U01-Q01",
+                "nm": "Why does a parachute float? 🪂",
+                "qs": [
+                    {
+                        "q": "What causes the crumpled paper to fall faster than the flat paper?",
+                        "opts": {
+                            "1": "Heavier weight",
+                            "2": "Less air resistance",
+                            "3": "Higher height"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why does a parachute help in safe landing?",
+                        "opts": {
+                            "1": "It decreases the surface area",
+                            "2": "It increases air resistance",
+                            "3": "It increases the speed of descent"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main purpose of attaching a weight to the bottom of the parachute?",
+                        "opts": {
+                            "1": "To stabilize the parachute during descent",
+                            "2": "To decrease air resistance",
+                            "3": "To make it heavier"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you notice your parachute is falling too fast, what should you do to improve its performance?",
+                        "opts": {
+                            "1": "Increase the surface area of the parachute",
+                            "2": "Shorten the threads",
+                            "3": "Use a heavier weight"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your parachute is not opening properly, which modification might help solve the problem?",
+                        "opts": {
+                            "1": "Use a lighter material for the parachute",
+                            "2": "Increase the weight at the bottom",
+                            "3": "Ensure the threads are not tangled and are evenly spaced"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U02",
+            "ord": 2,
+            "nm": "Blades Catch the Wind 🌀",
+            "desc": "Students will understand how air affects the movement of objects.\nStudents will understand that air resistance is a force that acts against moving objects. When the paper helicopter falls, air pushes against its blades, causing it to spin.",
+            "rwc": "Pencil, Scissors, Paper, Ruler",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U02-V01",
+                    "nm": "Can paper blades spin fast? 🌀",
+                    "desc": "In this activity, students will create a simple paper helicopter using basic materials and observe how it spins while falling. Through cutting and folding paper, they will design blades that interact with air, helping them understand how air can influence motion. Students will connect this hands-on activity with real-life concepts like helicopters and falling objects.",
+                    "yt": "WIhehSept00",
+                    "dur": "00:03:21"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U02-A01",
+                    "nm": "Build a Paper Helicopter 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the paper helicopter with all parts (top folds and botttom folds)visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U02-Q01",
+                "nm": "Why does paper spin down? 🌀",
+                "qs": [
+                    {
+                        "q": "What materials are needed to create the paper helicopter?",
+                        "opts": {
+                            "1": "Paper, pen, and colours",
+                            "2": "Paper, colours, and glue",
+                            "3": "Paper, pencil, scissors and scale"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the reason the paper helicopter spins when dropped?",
+                        "opts": {
+                            "1": "The shape of the helicopter",
+                            "2": "The air pushes against its blades",
+                            "3": "The weight of the paper"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "After drawing lines on the sheet of paper, what is the next step in making the paper helicopter?",
+                        "opts": {
+                            "1": "Marking dots at every 3 cm",
+                            "2": "Cutting the rectangle",
+                            "3": "Folding the paper"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the paper helicopter does not spin properly, what could be a potential cause?",
+                        "opts": {
+                            "1": "Using a heavier paper",
+                            "2": "Incorrect folding of the blades",
+                            "3": "Throwing it from a low height"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "A student accidentally cuts the rectangle into four parts instead of three. What should they do to fix the helicopter?",
+                        "opts": {
+                            "1": "Rejoin the pieces with cellotape",
+                            "2": "Start over with a new paper",
+                            "3": "Glue the pieces back together"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U03",
+            "ord": 3,
+            "nm": "Spin Never Stops 🌀",
+            "desc": "Students will understand that a force is needed to start motion. Once the spinner starts moving, it continues due to inertia, which means objects in motion tend to stay in motion.\nThey will also learn that balance is important for smooth rotation, and friction can slow down movement. Reducing friction (using a central pivot like a toothpick) helps the spinner move more freely and for a longer time.",
+            "rwc": "Colors, Scissors, Glue, Cardboard, Paints (Optional)",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U03-V01",
+                    "nm": "Can a coin spin forever? 🌀",
+                    "desc": "In this activity, students will create a simple fidget spinner using cardboard, a toothpick, and small circular cutouts. They will explore how a small push can set an object into motion and observe how design elements like balance and reduced friction help the spinner rotate smoothly for a longer time. Through this hands-on activity, students will connect everyday toys with scientific concepts.",
+                    "yt": "HRHji4LofV4",
+                    "dur": "00:03:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U03-A01",
+                    "nm": "Build a Cardboard Fidget Spinner 🌀",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the spinner with all parts (cardboard, circles, toothpick) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U03-Q01",
+                "nm": "What keeps a spinner spinning? 🌀",
+                "qs": [
+                    {
+                        "q": "What is the primary material used to make the fidget spinner in the script?",
+                        "opts": {
+                            "1": "Cardboard",
+                            "2": "Metal",
+                            "3": "Plastic"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What role do the small circles play in the construction of the fidget spinner?",
+                        "opts": {
+                            "1": "They act as handles for holding the fidget spinner.",
+                            "2": "They help balance the fidget spinner for smooth spinning.",
+                            "3": "They are used to decorate the fidget spinner."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of inserting a toothpick through the center hole of the fidget spinner?",
+                        "opts": {
+                            "1": "To reduce friction and allow smooth spinning.",
+                            "2": "To attach the fidget spinner to a motor.",
+                            "3": "To increase the weight of the spinner."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your fidget spinner doesn't spin smoothly, what could be a likely problem?",
+                        "opts": {
+                            "1": "The circles or toothpick might be glued to the center piece, increasing friction.",
+                            "2": "The cardboard might be too thick and heavy.",
+                            "3": "The toothpick is too short."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If your fidget spinner stops spinning quickly, what adjustment could help improve its performance?",
+                        "opts": {
+                            "1": "Add more coins to increase weight.",
+                            "2": "Use a larger coin for tracing the spinner.",
+                            "3": "Ensure the toothpick and circles are not glued to reduce friction."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U04",
+            "ord": 4,
+            "nm": "Balloon Becomes Rocket 🚀",
+            "desc": "The concept of potential energy (air inside the balloon) and kinetic energy (the movement of the rocket).\nNewton’s Third Law of Motion — that forces always occur in pairs: for every action, there is an equal and opposite reaction.\nHow air pressure inside a balloon can act as fuel to move objects.\nThe principle behind how rockets use gases escaping downward to propel themselves upward.\nBasic principles of force and motion in physics.",
+            "rwc": "Scissors, Tape, String, Balloon, Straw",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U04-V01",
+                    "nm": "Can air make balloons fly? 🚀",
+                    "desc": "In this activity, students will create their own balloon rocket to explore the science of Newton's Third Law of Motion. By blowing air into a balloon and using it as fuel, students will understand how the escaping air creates a force that moves the balloon forward, similar to how a rocket works. This fun hands-on activity allows students to learn about the relationship between action and reaction in a simple and interactive way.",
+                    "yt": "Ssy9duF4HmI",
+                    "dur": "00:02:33"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U04-A01",
+                    "nm": "Launch a Balloon Rocket Race 🚀",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the balloon rocket setup with all parts (balloon, straw, string) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U04-Q01",
+                "nm": "What pushes the balloon rocket? 🚀",
+                "qs": [
+                    {
+                        "q": "What do you attach to the balloon to make the rocket move along a string?",
+                        "opts": {
+                            "1": "Straw",
+                            "2": "Tape",
+                            "3": "Paper"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why do we need a long string for the balloon rocket?",
+                        "opts": {
+                            "1": "To make it look neat",
+                            "2": "So the balloon can move a longer distance",
+                            "3": "To tie multiple balloons"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why does the balloon move forward when released?",
+                        "opts": {
+                            "1": "Air inside the balloon disappears",
+                            "2": "The string pulls the balloon",
+                            "3": "Air escaping backward pushes the balloon forward"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which law explains the motion of the balloon rocket?",
+                        "opts": {
+                            "1": "Newton’s Third Law",
+                            "2": "Newton’s First Law",
+                            "3": "Newton’s Second Law"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens when you release the balloon on the string?",
+                        "opts": {
+                            "1": "The balloon stays in place",
+                            "2": "The balloon moves backward",
+                            "3": "The balloon moves forward along the string"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U05",
+            "ord": 5,
+            "nm": "Air Builds the Car 🎈",
+            "desc": "Students will be able to observe and explain how forces create motion.\n\nStudents will understand Newton’s Third Law of Motion, which states that for every action, there is an equal and opposite reaction. When air is pushed out of the balloon (action), the car moves forward (reaction).\n\nThey will also learn that force can create motion, and the direction of force affects how objects move.",
+            "rwc": "Scissors, Cardboard, Tape, Balloon, Bottle, Straw",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U05-V01",
+                    "nm": "Can air push a car? 🎈",
+                    "desc": "In this activity, students will build a balloon-powered car using simple materials and observe how it moves when air is released from the balloon. Through this hands-on experiment, students will explore how forces act in opposite directions and understand how motion is created using air pressure.",
+                    "yt": "HzDPR6DI97A",
+                    "dur": "00:05:29"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U05-A01",
+                    "nm": "Build a Balloon Powered Car 🎈",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the balloon car with all parts visible (cardboard, straw and balloon)",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U05-Q01",
+                "nm": "What pushes the balloon car? 🚗",
+                "qs": [
+                    {
+                        "q": "What law explains why the ball bounces back when dribbled?",
+                        "opts": {
+                            "1": "Law of Gravitation",
+                            "2": "Newton’s Third Law of Motion",
+                            "3": "Law of Inertia"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the role of the ground when a ball is pushed towards it?",
+                        "opts": {
+                            "1": "It absorbs the force completely",
+                            "2": "It pushes back with an equal force",
+                            "3": "It multiplies the force applied"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which material is used to make the wheels of the balloon car?",
+                        "opts": {
+                            "1": "Bottle caps",
+                            "2": "Straws",
+                            "3": "Wooden sticks"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If a balloon car doesn't move forward, which step should you check first for potential issues?",
+                        "opts": {
+                            "1": "Verify that the straws are glued parallel to each other",
+                            "2": "Ensure air is not escaping from the balloon",
+                            "3": "Check if the cardboard is cut into a perfect rectangle"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How can you test the principles of Newton’s Third Law using an easily available item?",
+                        "opts": {
+                            "1": "Spin a top",
+                            "2": "Bounce a ball",
+                            "3": "Jump on a trampoline"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U06",
+            "ord": 6,
+            "nm": "Twist Powers the Boat 🌊",
+            "desc": "Students will learn how energy is stored and transferred. In this case, potential energy is stored when the rubber band is twisted. Upon release, this stored energy converts into kinetic energy, which powers the boat’s movement. The project also introduces basic principles of force and motion, as well as the concept of mechanical work done by a simple machine (the rubber band acting like a motor).",
+            "rwc": "Scissors, Paper, Cardboard, Tape, Bottle, Rubber Band, Paddle)",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U06-V01",
+                    "nm": "Can a twist power boats? 🌊",
+                    "desc": "In this activity, students will create a mini boat powered by a rubber band. By understanding the concept of potential and kinetic energy, they will learn how to store energy in the rubber band and release it to propel the boat forward in water. This hands-on project helps students explore basic principles of physics and engineering while having fun with a simple yet effective design.",
+                    "yt": "yoTMxjG2cAk",
+                    "dur": "00:03:12"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U06-A01",
+                    "nm": "Build a Rubber Band Boat 🌊",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the rubberband boat with all parts (bottle, rubberband and sticks) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U06-Q01",
+                "nm": "What hides inside a rubber band? ⚡",
+                "qs": [
+                    {
+                        "q": "What type of energy is stored when you twist a rubber band?",
+                        "opts": {
+                            "1": "Thermal energy",
+                            "2": "Elastic potential energy",
+                            "3": "Kinetic energy"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What happens to potential energy stored in a rubber band when it is released?",
+                        "opts": {
+                            "1": "It is converted into kinetic energy",
+                            "2": "It is converted into thermal energy",
+                            "3": "It remains as potential energy"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which material is used to attach the wooden sticks to the plastic bottle in the boat experiment?",
+                        "opts": {
+                            "1": "Rubberband",
+                            "2": "Tape",
+                            "3": "Glue"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Imagine you design a balloon-powered car using the same principle as the boat, what can you do to make your car move fast?",
+                        "opts": {
+                            "1": "Use a lighter cardboard base for the body",
+                            "2": "Make the wheels bigger and heavier",
+                            "3": "Add extra balloons to the base without attaching them"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Your boat isn’t moving after releasing the wooden stick. What could be the problem?",
+                        "opts": {
+                            "1": "The water is too shallow for the boat to move",
+                            "2": "The rubber band is not twisted enough to store potential energy",
+                            "3": "The rubber band is too tight and cannot convert potential energy"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U07",
+            "ord": 7,
+            "nm": "Band Turns the Wheels 🔄",
+            "desc": "The concept of potential energy (energy stored in an object, like a twisted rubber band).\nThe concept of kinetic energy (energy in motion, like the movement of the car).\nHow friction helps wheels grip the surface for better movement.\nBasic mechanical design principles and how simple materials can create functional systems.\nThe relationship between energy storage and release in physical objects.",
+            "rwc": "Scissors, Glue, Tape, Straw, Pencil",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U07-V01",
+                    "nm": "Can rubber bands move cars? 🔄",
+                    "desc": "In this activity, students will create a rubber band car to explore how energy is stored and converted. Using simple materials like ice-cream sticks, straws, and rubber bands, students will build a car that moves using potential energy (stored in the twisted rubber band) and converts it into kinetic energy (motion). The activity helps students understand basic principles of energy, motion, and friction in a fun and interactive way.",
+                    "yt": "To_9pyI4JH4",
+                    "dur": "00:03:52"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U07-A01",
+                    "nm": "Build a Rubber Band Car 🔄",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the rubberband car with all parts visible (cardboard, rubberband, wheels)",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U07-Q01",
+                "nm": "Can rubber bands store energy? 🔋",
+                "qs": [
+                    {
+                        "q": "When you stretch a rubber band, what type of energy is stored in it?",
+                        "opts": {
+                            "1": "Kinetic energy",
+                            "2": "Elastic potential energy",
+                            "3": "Heat energy"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "When a rubber band is released, its potential energy changes into:",
+                        "opts": {
+                            "1": "Light energy",
+                            "2": "Chemical energy",
+                            "3": "Kinetic energy"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Why does the rubber band car move forward?",
+                        "opts": {
+                            "1": "Because of magnetic force",
+                            "2": "Because potential energy in rubberband converts to kinetic energy",
+                            "3": "Because of friction only"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want your rubber band car to move faster, what should you do?",
+                        "opts": {
+                            "1": "Use a smaller rubber band",
+                            "2": "Reduce the number of wheels",
+                            "3": "Twist the rubber band more"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If you want to convert the potential energy stored in a stretched rubber band into kinetic energy, what should you do?",
+                        "opts": {
+                            "1": "Do nothing",
+                            "2": "Use another rubber band to convert the energy",
+                            "3": "Release the twisted rubber band"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U08",
+            "ord": 8,
+            "nm": "Claws Grip Everything 🦾",
+            "desc": "Students will be able to observe and explain how applying force can change the shape and movement of an object.\n\nThey will understand that pressure and force help create a gripping action. When the cup is pressed, the flaps close inward, allowing the claw to grab objects. When released, the flaps open again.\n\nStudents will also learn that design and structure play an important role in how effectively a machine works.",
+            "rwc": "Paper, Cup, Scissors, Straw, Tape, Paint, Crayons",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U08-V01",
+                    "nm": "Can paper cups grip things? 🦾",
+                    "desc": "Students build a simple claw-like grabber using a paper cup and straws. They’ll pull the straw to control movement and grasp small objects, simulating a real claw machine.",
+                    "yt": "Mq7Fa0-5YS4",
+                    "dur": "00:01:58"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U08-A01",
+                    "nm": "Build a Paper Cup Claw 🦾",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the claw machine with all parts (paper cups, claws and string) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U08-Q01",
+                "nm": "Can you build a claw? 🦾",
+                "qs": [
+                    {
+                        "q": "What is the name of the gaming machine where you use a claw to pick up soft toys?",
+                        "opts": {
+                            "1": "Pinball Machine",
+                            "2": "Slot Machine",
+                            "3": "Claw Machine"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the main purpose of the straw in the homemade claw machine?",
+                        "opts": {
+                            "1": "To decorate the machine",
+                            "2": "To cut the paper cups",
+                            "3": "To connect and move the claw"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which tool is used to create flaps on the paper cups for the claw machine?",
+                        "opts": {
+                            "1": "Scissors",
+                            "2": "Glue",
+                            "3": "Paintbrush"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What should you do if the paper cup flaps aren’t forming a claw-like structure?",
+                        "opts": {
+                            "1": "Fold the flaps a little",
+                            "2": "Use more tape",
+                            "3": "Cut more flaps"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "If the straw is not fitting through the hole in the paper cup, what could be a possible solution?",
+                        "opts": {
+                            "1": "Use a different straw",
+                            "2": "Remove the straw completely",
+                            "3": "Widen the hole carefully"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U09",
+            "ord": 9,
+            "nm": "Fingers Pick the Fruit 🍎",
+            "desc": "Students will learn that many machines are inspired by nature—this concept is called biomimicry.\n\nThey will understand that when a force is applied by pulling a rope (tension), it creates movement in connected parts. In this model, pulling the threads causes the plastic “fingers” to close, allowing the arm to grip objects.\n\nThey will also explore how structures designed with multiple moving parts can work together like muscles in our body or claws in animals to perform tasks efficiently.",
+            "rwc": "Bottle, Glue, Scissors, Thread, Rope",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U09-V01",
+                    "nm": "Can a bottle pick fruit? 🍎",
+                    "desc": "In this activity, students will build a simple mechanical arm (fruit picker) using a plastic bottle and thread. Inspired by how animals like chameleons and crabs grab objects, students will explore how pulling mechanisms can control movement. This hands-on project helps students understand how nature inspires technology and how simple machines can be designed to perform useful tasks like picking fruits.",
+                    "yt": "V3_Lte3u0b4",
+                    "dur": "00:06:26"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U09-A01",
+                    "nm": "Build a Mechanical Fruit Picker 🍎",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the fruit picker with all parts (bottle, string) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U09-Q01",
+                "nm": "Can a bottle be an arm? 💪",
+                "qs": [
+                    {
+                        "q": "What are we creating inspired by nature?",
+                        "opts": {
+                            "1": "A mechanical arm",
+                            "2": "A flying car",
+                            "3": "A robot dog"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "The mechanical arm is inspired by which element in nature?",
+                        "opts": {
+                            "1": "Chameleon's tongue",
+                            "2": "Elephant's trunk",
+                            "3": "Spider's web"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "What is the purpose of the mechanical arm?",
+                        "opts": {
+                            "1": "To make objects fall",
+                            "2": "To grab objects",
+                            "3": "To generate electricity"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "In how many portions will you cut the base of the bottle to make them act like fingers?",
+                        "opts": {
+                            "1": "4 portions",
+                            "2": "5 portions",
+                            "3": "8 portions"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which material can be used to open the plastic fingers when pulled?",
+                        "opts": {
+                            "1": "Paper clips",
+                            "2": "Cardboard",
+                            "3": "Threads"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CBSSL1-U10",
+            "ord": 10,
+            "nm": "Scale Finds the Balance ⚖️",
+            "desc": "Students will learn that a balance weighing scale is a simple machine used to compare the weight of two objects.\n\nThey will understand the concept of equilibrium, where both sides of the scale are equal and balanced. When one side is heavier, it goes down, and the lighter side goes up—just like a see-saw.\n\nThey will also learn that balance depends on equal forces acting on both sides, helping us measure and compare weights accurately.",
+            "rwc": "Cardboard, Paper, Glue, Wooden Sticks, Thread, Scissors",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CBSSL1-U10-V01",
+                    "nm": "Can cups balance any weight? ⚖️",
+                    "desc": "In this activity, students will create a working model of a balance weighing scale using simple materials like paper cups, cardboard, and thread. Through a storytelling context, they learn how a weighing scale helps compare weights using balance, similar to a see-saw. This hands-on activity introduces students to simple machines and the concept of balance or equilibrium.",
+                    "yt": "jARzkbfYh7s",
+                    "dur": "00:05:52"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CBSSL1-U10-A01",
+                    "nm": "Build a Balance Weighing Scale ⚖️",
+                    "sub_types": "image,video",
+                    "unguided_text": "Share a clear image or video of your activity showing the balance scale with all parts (beam and cups) visible",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CBSSL1-U10-Q01",
+                "nm": "Can you balance anything? ⚖️",
+                "qs": [
+                    {
+                        "q": "What is the purpose of a balance weighing scale?",
+                        "opts": {
+                            "1": "To measure temperature",
+                            "2": "To compare the mass or weight of objects",
+                            "3": "To measure the height of objects"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "For what purpose did Anya use cardboard?",
+                        "opts": {
+                            "1": "To protect the objects from damage",
+                            "2": "To measure the height of objects",
+                            "3": "To create a beam for a balance scale"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which objects from the following can be used to hold weights?",
+                        "opts": {
+                            "1": "Paper",
+                            "2": "Sticks",
+                            "3": "Paper cups"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "Which skill helps you to decorate the beam balance?",
+                        "opts": {
+                            "1": "Creative thinking",
+                            "2": "Measuring and weighing",
+                            "3": "Problem solving"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "How will you balance a weighing scale if one side is heavier than the other?",
+                        "opts": {
+                            "1": "By placing equal weights on both sides",
+                            "2": "By adding some weight to the lighter side",
+                            "3": "By adjusting the position of the objects"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

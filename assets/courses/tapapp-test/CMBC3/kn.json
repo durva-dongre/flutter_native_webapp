@@ -1,0 +1,889 @@
+{
+    "id": "CMBC3",
+    "nm": "◇ Micro:bit Makers",
+    "desc": "Students design a mini LED animation on Microbit’s LED grid to represent emotions or patterns. They learn sequencing and loops using show leds and pause blocks.",
+    "vrt": "coding",
+    "lvl": "3",
+    "units": [
+        {
+            "id": "CMBC3-U01",
+            "ord": 1,
+            "nm": "Lights Tell Your Mood 💡",
+            "desc": "Shoe LEDs, Repeat",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U01-V01",
+                    "nm": "Can LEDs show your mood? 💡",
+                    "desc": "Students design a mini LED animation on Microbit’s LED grid to represent emotions or patterns. They learn sequencing and loops using show leds and pause blocks.",
+                    "yt": "1A2BegLpsfs",
+                    "dur": "00:02:23"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U01-A01",
+                    "nm": "Code an LED Mood Animation 💡",
+                    "sub_types": "image,video",
+                    "unguided_text": "ನಿಮ್ಮ ಕೋಡ್ ಮತ್ತು Micro:bit ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U01-Q01",
+                "nm": "Can arms speak silently? 🤫",
+                "qs": [
+                    {
+                        "q": "'ಸೈಲೆಂಟ್ ಲ್ಯಾಂಗ್ವೇಜ್' ಚಟುವಟಿಕೆಯ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ವಿಭಿನ್ನ ಕೋಡಿಂಗ್ ಭಾಷೆಗಳ ಬಗ್ಗೆ ಕಲಿಯಲು",
+                            "2": "ಮಿಣುಕು ಬೆಳಕು ಬಳಸಿ ಮನಸ್ಥಿತಿ ತಿಳಿಸಲು",
+                            "3": "ಮಾನವ ಅಭಿವ್ಯಕ್ತಿ ಅಧ್ಯಯನ ಮಾಡಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಇನ್‌ಪುಟ್ ಮೆನುವಿನಿಂದ ಬಟನ್ A ಪ್ರೆಸ್ಡ್ ಬ್ಲಾಕ್ ಆಯ್ಕೆ ಮಾಡಿದ ನಂತರ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಲೂಪ್ಸ್ ಮೆನುವಿನಿಂದ ರಿಪೀಟ್ ಬ್ಲಾಕ್ ಆಯ್ಕೆ ಮಾಡಿ",
+                            "2": "ತಕ್ಷಣ ಕ್ಲಿಯರ್ ಸ್ಕ್ರೀನ್ ಬ್ಲಾಕ್ ಸೇರಿಸಿ",
+                            "3": "ಫಾರೆವರ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್‌ಗಳ ನಡುವೆ ವಿರಾಮ ರಚಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಶೋ ಐಕಾನ್ ಬ್ಲಾಕ್",
+                            "2": "ಪಾಸ್ ಬ್ಲಾಕ್",
+                            "3": "ರಿಪೀಟ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'ಆಶ್ಚರ್ಯ' ಭಾವನೆಗೆ ಅನಿಮೇಷನ್ ರಚಿಸಲು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಬ್ಲಾಕ್ ಡುಪ್ಲಿಕೇಟ್ ಮಾಡಿದ ನಂತರ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಐಕಾನ್ ಆಶ್ಚರ್ಯ ಮುಖಕ್ಕೆ ಬದಲಾಯಿಸಿ ಮತ್ತು ಪಾಸ್ ಅವಧಿ ಸರಿಹೊಂದಿಸಿ",
+                            "2": "ಕೇವಲ ಬಟನ್ ಇನ್‌ಪುಟ್ ಬಟನ್ A ಗೆ ಬದಲಾಯಿಸಿ",
+                            "3": "ಪಾಸ್ ಬ್ಲಾಕ್ ತೆಗೆದುಹಾಕಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅನಿಮೇಷನ್ ತುಂಬಾ ವೇಗವಾಗಿದ್ದು ಅನುಸರಿಸಲು ಕಷ್ಟವಾಗುತ್ತಿದ್ದರೆ ಹೇಗೆ ಸುಧಾರಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಅನೇಕ ಶೋ ಐಕಾನ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಬಳಸಿ",
+                            "2": "ಪಾಸ್ ಬ್ಲಾಕ್‌ನ ಅವಧಿ ಹೆಚ್ಚಿಸಿ",
+                            "3": "ರಿಪೀಟ್ ಬ್ಲಾಕ್‌ಗಳ ಸಂಖ್ಯೆ ಹೆಚ್ಚಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U02",
+            "ord": 2,
+            "nm": "Streets Light Themselves 🌙",
+            "desc": "light Level block, if- else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U02-V01",
+                    "nm": "Can darkness turn lights on? 🌙",
+                    "desc": "In this engaging activity, students will harness the power of a light sensor to address a pressing local issue: night-time safety in poorly-lit areas of their community. Using their creativity and technical skills, participants will design and construct a light sensor device aimed at enhancing safety for pedestrians and residents during evening hours.They will learn the use of conitional statements in coding while engaging in real-world problem-solving. This activity will empower students to use their technical skills to to improve community safety, promoting a sense of agency and civic responsibility.",
+                    "yt": "i96W0_Fsq30",
+                    "dur": "00:02:59"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U02-A01",
+                    "nm": "Build a Light Guard System 🌙",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಕತ್ತಲೆಯಲ್ಲಿ LED ಆನ್ ಆಗುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U02-Q01",
+                "nm": "Is it dark enough yet? 🌑",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಬೆಳಕಿನ ಸೆನ್ಸರ್ ಪತ್ತೆ ಮಾಡಬಹುದಾದ ಮೌಲ್ಯಗಳ ವ್ಯಾಪ್ತಿ ಎಷ್ಟು?",
+                        "opts": {
+                            "1": "0 ರಿಂದ 100",
+                            "2": "-5 ರಿಂದ 50",
+                            "3": "0 ರಿಂದ 255"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕತ್ತಲಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಶೋ LED ಬ್ಲಾಕ್",
+                            "2": "if/else ಬ್ಲಾಕ್",
+                            "3": "ಫಾರೆವರ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "'ಲೈಟ್ ಗಾರ್ಡ್' ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಯಾಕೆ ಅವಶ್ಯಕ?",
+                        "opts": {
+                            "1": "ಕೋಡ್ ಒಂದೇ ಬಾರಿ ಚಲಿಸುತ್ತದೆ",
+                            "2": "ಒಂದು ಪರೀಕ್ಷೆ ನಂತರ ಕೋಡ್ ನಿಲ್ಲುತ್ತದೆ",
+                            "3": "ಕೋಡ್ ನಿರಂತರವಾಗಿ ಬೆಳಕಿನ ಮಟ್ಟ ಪರಿಶೀಲಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬೆಳಕಿನ ಸೆನ್ಸರ್ ನಿಖರವಾಗಿ 20 ಓದಿದರೆ ಮೈಕ್ರೋಬಿಟ್ ಏನು ತೋರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "LED ಆನ್ ಆಗುತ್ತದೆ",
+                            "2": "ಪರದೆ ತೆಳಗಾಗುತ್ತದೆ (LED ಆಫ್)",
+                            "3": "ಕೋಡ್ ನಿಲ್ಲುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತುಂಬಾ ಕತ್ತಲಾದಾಗ ಮಾತ್ರ ಬೆಳಕು ಆನ್ ಆಗಬೇಕಿದ್ದರೆ ಕೋಡ್ ಹೇಗೆ ಬದಲಾಯಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಹೋಲಿಕೆ ಮೌಲ್ಯ 20 ರಿಂದ 100 ಗೆ ಹೆಚ್ಚಿಸಿ",
+                            "2": "ಹೋಲಿಕೆ ಮೌಲ್ಯ 20 ರಿಂದ 5 ಗೆ ಕಡಿಮೆ ಮಾಡಿ",
+                            "3": "ಕಡಿಮೆ ಚಿಹ್ನೆಯನ್ನು ಹೆಚ್ಚು ಚಿಹ್ನೆಯಿಂದ ಬದಲಾಯಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U03",
+            "ord": 3,
+            "nm": "Quiz on the Grid 📋",
+            "desc": "On Button Pressed , if-else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U03-V01",
+                    "nm": "Can buttons run a quiz? 📋",
+                    "desc": "Students design a simple quiz on Microbit where pressing buttons displays questions or options on the LED grid, and correct answers trigger a “smiley” icon.",
+                    "yt": "IR7Uqyl4l-M",
+                    "dur": "00:04:12"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U03-A01",
+                    "nm": "Code Your Own Quiz Game 📋",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಸ್ಕೋರ್ ಪ್ರದರ್ಶನ ತೋರಿಸುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U03-Q01",
+                "nm": "Can micro:bit quiz you? 🧠",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ರಸಪ್ರಶ್ನೆ ಪ್ರಶ್ನೆಗಳಂತಹ ಡೇಟಾ ಸಂಗ್ರಹಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಶೋ ಸ್ಟ್ರಿಂಗ್ ಬ್ಲಾಕ್",
+                            "2": "ವೇರಿಯೇಬಲ್ ಬ್ಲಾಕ್",
+                            "3": "If-else ಲಾಜಿಕ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಶೋ ಸ್ಟ್ರಿಂಗ್ ಬ್ಲಾಕ್‌ನ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಆದೇಶಗಳನ್ನು ನಮೂದಿಸಲು",
+                            "2": "LED ಪ್ಯಾನೆಲ್‌ನಲ್ಲಿ ಪಠ್ಯ ಪ್ರದರ್ಶಿಸಲು",
+                            "3": "ಅಂಕ ಸಂಗ್ರಹಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ರಸಪ್ರಶ್ನೆ ಆಟದಲ್ಲಿ ಅಂಕವನ್ನು ಹೇಗೆ ಆರಂಭಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಅಂಕ = 0 ಹೊಂದಿಸಿ",
+                            "2": "ಅಂಕ = 10 ಹೊಂದಿಸಿ",
+                            "3": "ಅಂಕ = 5 ಹೊಂದಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಸಪ್ರಶ್ನೆ ಆಟ ಮೊದಲ ಪ್ರಶ್ನೆ ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಸಂರಚನೆ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "if-else ಬ್ಲಾಕ್ question = 1 ಮತ್ತು ಶೋ ಸ್ಟ್ರಿಂಗ್ ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "2": "ಶೋ ಸ್ಟ್ರಿಂಗ್ ಬ್ಲಾಕ್‌ನೊಳಗೆ ಬಟನ್ A ಬ್ಲಾಕ್ ಇಡಿ",
+                            "3": "ತಕ್ಷಣ change score by 1 ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಉತ್ತರ ನೀಡಿದ ನಂತರ ಮೈಕ್ರೋಬಿಟ್ ರಸಪ್ರಶ್ನೆ ಆಟ ಮುಂದಿನ ಪ್ರಶ್ನೆಗೆ ಹೋಗದಿದ್ದರೆ ಯಾವ ಹಂತ ಪರಿಶೀಲಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಪ್ರತಿ ಪ್ರಶ್ನೆ ನಂತರ 'change question by 1' ಬಳಸಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ",
+                            "2": "ಅಂಕ ಬ್ಲಾಕ್ ಸರಿಯಾಗಿ ಇದೆಯೇ ಎಂದು ಪರೀಕ್ಷಿಸಿ",
+                            "3": "LED ಪ್ಯಾನೆಲ್ ಸರಿಯಾಗಿ ಕಾರ್ಯ ನಿರ್ವಹಿಸುತ್ತಿದೆಯೇ ಎಂದು ಖಚಿತಪಡಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U04",
+            "ord": 4,
+            "nm": "Bin Thinks for Itself 🗑️",
+            "desc": "magnetometer sensor, if-else",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U04-V01",
+                    "nm": "Can a bin alert you? 🗑️",
+                    "desc": "Students will build a model smart dustbin using Micro:bit and a tilt sensor. When the dustbin is full (lid stays open), the system sends a visual or sound alert.",
+                    "yt": "-S1zBmGuhUE",
+                    "dur": "00:04:09"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U04-A01",
+                    "nm": "Build a Smart Dustbin Alert 🗑️",
+                    "sub_types": "image,video",
+                    "unguided_text": "OPEN/CLOSE ಅಲರ್ಟ್ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U04-Q01",
+                "nm": "Is your dustbin full yet? 🗑️",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಬಳಸಿ ರಚಿಸಿದ ಸ್ಮಾರ್ಟ್ ಡಸ್ಟ್‌ಬಿನ್ ಅಲರ್ಟ್ ಸಿಸ್ಟಂನ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಡಸ್ಟ್‌ಬಿನ್ ತುಂಬಿದಾಗ ಅಥವಾ ತುಂಬಾ ಹೊತ್ತು ತೆರೆದಿದ್ದಾಗ ಎಚ್ಚರಿಸಲು",
+                            "2": "ಡಸ್ಟ್‌ಬಿನ್ ಸುರಕ್ಷಿತವಾಗಿ ಲಾಕ್ ಮಾಡಲು",
+                            "3": "ಡಸ್ಟ್‌ಬಿನ್ ತಾನಾಗೇ ಖಾಲಿ ಮಾಡಿಕೊಳ್ಳಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಮಾರ್ಟ್ ಸಿಟಿ ಅಭಿವೃದ್ಧಿಯಲ್ಲಿ ಸ್ವಚ್ಛತೆ ಯಾಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ಪ್ರವಾಸಿಗರನ್ನು ಆಕರ್ಷಿಸಲು",
+                            "2": "ನಗರದ ಸೌಂದರ್ಯ ಹೆಚ್ಚಿಸಲು",
+                            "3": "ಮಾಲಿನ್ಯ ಕಡಿಮೆ ಮಾಡಿ ಆರೋಗ್ಯ ಸುರಕ್ಷತೆ ಖಚಿತಪಡಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಪರದೆಯ ಮೇಲೆ ಸೆನ್ಸರ್ ಪತ್ತೆ ಮಾಡಿದ ದಿಕ್ಕು ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಶೋ LED ಬ್ಲಾಕ್",
+                            "2": "ಪಾಸ್ ಬ್ಲಾಕ್",
+                            "3": "ಪ್ಲೇ ಮೆಲೊಡಿ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಮಾರ್ಟ್ ಡಸ್ಟ್‌ಬಿನ್ ಸಿಸ್ಟಂನಲ್ಲಿ ಟಿಲ್ಟ್ ಸೆನ್ಸರ್ 5 ಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಿಚ್ ಪತ್ತೆ ಮಾಡಿದರೆ ಮೈಕ್ರೋಬಿಟ್ ಪರದೆಯ ಮೇಲೆ ಏನು ತೋರಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "Open",
+                            "2": "Alert",
+                            "3": "Close"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಟಿಲ್ಟ್ ಸೆನ್ಸರ್ ಕಾರ್ಯವಿಧಾನ DIY ಮನೆ ಆಟೊಮೇಷನ್ ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಹೇಗೆ ಅಳವಡಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಕೋಣೆಯ ತಾಪಮಾನ ನಿಯಂತ್ರಿಸಲು",
+                            "2": "ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಗಿಡಗಳಿಗೆ ನೀರು ಹಾಕಲು",
+                            "3": "ಟಿಲ್ಟ್ ಮಾಡಿದಾಗ ದೀಪ ಅಥವಾ ಫ್ಯಾನ್ ಆಕ್ಟಿವೇಟ್ ಮಾಡಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U05",
+            "ord": 5,
+            "nm": "Messages Cross the Air 📡",
+            "desc": "On Radio Recieved",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U05-V01",
+                    "nm": "Can two microbits talk? 📡",
+                    "desc": "Using radio set group and on radio received blocks, students send messages or icons between two Microbits on the simulator. Button A sends one icon, Button B sends another.",
+                    "yt": "3QuNYnSNxro",
+                    "dur": "00:02:47"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U05-A01",
+                    "nm": "Send Radio Messages Between Microbits 📡",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಐಕಾನ್‌ಗಳು ಸ್ವೀಕರಿಸಲ್ಪಡುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U05-Q01",
+                "nm": "Can micro:bits talk wirelessly? 📡",
+                "qs": [
+                    {
+                        "q": "ಒಂದು ಮೈಕ್ರೋಬಿಟ್‌ನಿಂದ ಮತ್ತೊಂದಕ್ಕೆ ಪಠ್ಯ ಸಂಕೇತ ಕಳುಹಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "radio send string ಬ್ಲಾಕ್",
+                            "2": "show icon ಬ್ಲಾಕ್",
+                            "3": "radio received string ಬ್ಲಾಕ್"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ 'radio set group' ಬ್ಲಾಕ್‌ನ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಮತ್ತೊಂದು ಮೈಕ್ರೋಬಿಟ್‌ಗೆ ಸ್ಮೈಲಿ ಕಳುಹಿಸಲು",
+                            "2": "ಮೈಕ್ರೋಬಿಟ್‌ನಲ್ಲಿ ಐಕಾನ್ ತೋರಿಸಲು",
+                            "3": "ಎರಡು ಮೈಕ್ರೋಬಿಟ್‌ಗಳು ಒಂದೇ ಚಾನಲ್‌ನಲ್ಲಿ ಸಂವಹಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಟನ್ A ಒತ್ತಿದಾಗ ಎರಡನೇ ಮೈಕ್ರೋಬಿಟ್‌ನಲ್ಲಿ ಸ್ಮೈಲಿ ತೋರಿಸಲು ಸಂಕೇತ ಸ್ವೀಕರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "radio send number ಬ್ಲಾಕ್",
+                            "2": "clear screen ಬ್ಲಾಕ್",
+                            "3": "radio received string ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಟನ್ B ಒತ್ತಿದಾಗ 'Heart' ಬದಲು 'Wave' ಐಕಾನ್ ಕಳುಹಿಸಲು ಕೋಡ್ ಹೇಗೆ ಬದಲಾಯಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "radio set group ಸಂಖ್ಯೆ ಬದಲಾಯಿಸಿ",
+                            "2": "'Wave' ಜೊತೆ radio send string ಬ್ಲಾಕ್ ಮತ್ತು ವೇವ್ ಐಕಾನ್ ಜೊತೆ show icon ಬ್ಲಾಕ್ ಬಳಸಿ",
+                            "3": "ಹೊಸ ಸಂಖ್ಯೆ ಜೊತೆ radio send number ಬ್ಲಾಕ್ ಮತ್ತು ವೇವ್ ಐಕಾನ್ ಜೊತೆ show icon ಬ್ಲಾಕ್ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಟನ್ ಒತ್ತಿದಾಗ ಮೈಕ್ರೋಬಿಟ್‌ಗಳು ಐಕಾನ್ ತೋರಿಸದಿದ್ದರೆ ಹೇಗೆ ಸಮಸ್ಯೆ ಬಗೆಹರಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಎರಡು ಮೈಕ್ರೋಬಿಟ್‌ಗಳಲ್ಲೂ radio set group ಸಂಖ್ಯೆ ಒಂದೇ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "show icon ಬ್ಲಾಕ್ on start ಬ್ಲಾಕ್‌ನಲ್ಲಿ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "3": "forever ಬ್ಲಾಕ್ ಅಳಿಸಲಾಗಿಲ್ಲ ಎಂದು ಖಚಿತಪಡಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U06",
+            "ord": 6,
+            "nm": "Wrist Reads the Sun 🌞",
+            "desc": "temperature sensor",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U06-V01",
+                    "nm": "Can your wrist read sunlight? 🌞",
+                    "desc": "Students will simulate a wearable device that warns users about high light intensity, encouraging sun safety. Uses Micro:bit's light sensor and a visual/sound alert.",
+                    "yt": "bYDpUSgd92Q",
+                    "dur": ""
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U06-A01",
+                    "nm": "Build a Wearable UV Detector 🌞",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಆಡಿಯೋ ಅಲರ್ಟ್ ಕೆಲಸ ಮಾಡುತ್ತಿರುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U06-Q01",
+                "nm": "Can skin detect UV rays? 🌞",
+                "qs": [
+                    {
+                        "q": "ವೇರಬಲ್ UV ಡಿಟೆಕ್ಟರ್ ಪ್ರಾಜೆಕ್ಟ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯ ಏನು?",
+                        "opts": {
+                            "1": "ಬೆಳಕಿನ ತೀವ್ರತೆ ಅಥವಾ ತಾಪಮಾನ ತುಂಬಾ ಹೆಚ್ಚಾದಾಗ ಬಳಕೆದಾರರನ್ನು ಎಚ್ಚರಿಸಲು",
+                            "2": "ಬಳಕೆದಾರ ನಡೆದ ಹೆಜ್ಜೆಗಳ ಸಂಖ್ಯೆ ಟ್ರ್ಯಾಕ್ ಮಾಡಲು",
+                            "3": "ಬಳಕೆದಾರ ಪ್ರಯಾಣಿಸಿದ ದೂರ ಅಳೆಯಲು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ವೇರಬಲ್ UV ಡಿಟೆಕ್ಟರ್ ಬಳಸಿ ಬೆಳಕಿನ ತೀವ್ರತೆ ಮತ್ತು ತಾಪಮಾನ ಮೇಲ್ವಿಚಾರಣೆ ಯಾಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಸಾಧನದ ಬ್ಯಾಟರಿ ಆಯುಷ್ಯ ಹೆಚ್ಚಿಸಲು",
+                            "2": "ಸೂರ್ಯನ ಕಿರಣಗಳಿಂದ ಚರ್ಮ ಹಾನಿ ಮತ್ತು ಇತರ ಆರೋಗ್ಯ ಸಮಸ್ಯೆ ತಡೆಯಲು",
+                            "3": "ಇಂಟರ್ನೆಟ್ ಸಂಪರ್ಕ ಸುಧಾರಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ವೇರಬಲ್ UV ಡಿಟೆಕ್ಟರ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಕೋಡ್ ನಿರಂತರವಾಗಿ ಚಲಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ರಿಪೀಟ್ ಬ್ಲಾಕ್",
+                            "2": "ಫಾರೆವರ್ ಬ್ಲಾಕ್",
+                            "3": "ವೈಲ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬೆಳಕಿನ ಮಟ್ಟ 250 ಕ್ಕಿಂತ ಹೆಚ್ಚಿದ್ದರೆ ಸಾಧನ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಡೇಟಾ ಲಾಗ್ ಮಾಡಿ ಇಮೇಲ್ ಅಲರ್ಟ್ ಕಳುಹಿಸಿ",
+                            "2": "ಪರದೆಯ ಪ್ರಕಾಶ ಹೆಚ್ಚಿಸಿ",
+                            "3": "ಅಲರ್ಟ್ ನುಡಿಸಿ ಪರದೆ ಐಕಾನ್ ದುಃಖದ ಮುಖಕ್ಕೆ ಬದಲಾಯಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪರೀಕ್ಷಿಸುವಾಗ ಬೆಳಕಿನ ಮಟ್ಟ ಪತ್ತೆ ಕಾರ್ಯ ನಿರೀಕ್ಷಿಸಿದಂತೆ ಕೆಲಸ ಮಾಡದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಅದನ್ನು ನಿರ್ಲಕ್ಷಿಸಿ ಮುಂದುವರಿಸಿ",
+                            "2": "ಕೋಡ್ ಪರೀಕ್ಷಿಸಿ ಬೆಳಕಿನ ಮಟ್ಟ ಬ್ಲಾಕ್ ಸರಿಯಾಗಿ ಹೊಂದಿಸಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ",
+                            "3": "ಕೋಡ್ ಪರೀಕ್ಷಿಸದೆ ತಕ್ಷಣ ಸಾಧನ ರೀಸ್ಟಾರ್ಟ್ ಮಾಡಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U07",
+            "ord": 7,
+            "nm": "Tables Build Themselves 🔢",
+            "desc": "if else, show string",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U07-V01",
+                    "nm": "Can a button make tables? 🔢",
+                    "desc": "Students will use the Addition and Multiplication operations to generate tables Faster. Button A Adds one to current number + updates the Display and Pressing Button B will show the table of current number. Button A+B resets the Tables Generator.",
+                    "yt": "LYSeLGmacQk",
+                    "dur": "00:03:38"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U07-A01",
+                    "nm": "Code a Smart Table Generator 🔢",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಗುಣಾಕಾರ ತರ್ಕದ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U07-Q01",
+                "nm": "Can buttons count for you? 🔢",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್‌ನಲ್ಲಿ ಸಂಖ್ಯೆ ಒಂದರಿಂದ ಹೆಚ್ಚಿಸಲು ಯಾವ ಬಟನ್ ಒತ್ತಬೇಕು?",
+                        "opts": {
+                            "1": "ಬಟನ್ A + B",
+                            "2": "ಬಟನ್ B",
+                            "3": "ಬಟನ್ A"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್‌ನಲ್ಲಿ ಬಟನ್ B ಒತ್ತಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಗುಣಾಕಾರ ಚಿಹ್ನೆ ತೋರಿಸಲಾಗುತ್ತದೆ",
+                            "2": "ಸಂಖ್ಯೆ ಒಂದರಿಂದ ಕಡಿಮೆಯಾಗುತ್ತದೆ",
+                            "3": "ಪ್ರಸ್ತುತ ಸಂಖ್ಯೆಯ ಗುಣಕ ಕೋಷ್ಟಕ ರಚಿಸಲಾಗುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್‌ನಲ್ಲಿ ಪರದೆಯ ಮೇಲೆ ಸಂಖ್ಯೆ ತೋರಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಬೇಕು?",
+                        "opts": {
+                            "1": "change variable",
+                            "2": "show number",
+                            "3": "on button A pressed"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "5 ರ ಗುಣಕ ಕೋಷ್ಟಕ ಬರೆಯಲು 'current' ಮೌಲ್ಯ 0 ಗೆ ಹೊಂದಿಸಿದ ನಂತರ ಮೊದಲ ಹಂತ ಏನು?",
+                        "opts": {
+                            "1": "ಮೈಕ್ರೋಬಿಟ್ ರೀಸೆಟ್ ಮಾಡಿ",
+                            "2": "ಬಟನ್ B ಐದು ಬಾರಿ ಒತ್ತಿ",
+                            "3": "ಬಟನ್ A ಐದು ಬಾರಿ ಒತ್ತಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಗುಣಕ ಕೋಷ್ಟಕ ರೀಸೆಟ್ ಆಗದಿದ್ದರೆ ಯಾವ ಸಂಯೋಜನೆ ಒತ್ತಬೇಕು?",
+                        "opts": {
+                            "1": "ಬಟನ್ B ಹಲವು ಬಾರಿ ಒತ್ತಿ",
+                            "2": "ಬಟನ್ A + B ಒತ್ತಿ",
+                            "3": "ಬಟನ್ A ಒಂದು ಬಾರಿ ಒತ್ತಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U08",
+            "ord": 8,
+            "nm": "Food Habits Get Logged 🥗",
+            "desc": "- 40% of the total studetns watch at least 70% of the video\n- 40% of the student submit image of their code\n- 40% students score 3/5 in quiz",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U08-V01",
+                    "nm": "Can you log food waste? 🥗",
+                    "desc": "Students will create a simple food waste logger on Micro:bit. Every time food is wasted, they press a button and the count is displayed. They reflect on weekly consumption.",
+                    "yt": "cTGzYitHPjE",
+                    "dur": "00:02:43"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U08-A01",
+                    "nm": "Build a Food Waste Logger 🥗",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಒಟ್ಟು ಎಣಿಕೆ ಪ್ರದರ್ಶನದ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U08-Q01",
+                "nm": "How much food got wasted? 🍽️",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಚರ್ಚಿಸಲಾದ ಮೈಕ್ರೋ:ಬಿಟ್ ಪ್ರಾಜೆಕ್ಟ್‌ನ ಮುಖ್ಯ ಕಾರ್ಯವೇನು?",
+                        "opts": {
+                            "1": "ಆಟಗಳನ್ನು ಆಡಲು",
+                            "2": "ಆಹಾರ ವ್ಯರ್ಥದ ಘಟನೆಗಳನ್ನು ದಾಖಲಿಸಲು",
+                            "3": "ಸಮಯವನ್ನು ಪ್ರದರ್ಶಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಹೇಳಿದಂತೆ ಆಹಾರ ವ್ಯರ್ಥ ಕಡಿಮೆ ಮಾಡುವುದು ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಆಹಾರ ಉತ್ಪಾದನೆ ಹೆಚ್ಚಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+                            "2": "ನೀರು, ಶಕ್ತಿ ಮತ್ತು ಶ್ರಮದಂತಹ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಉಳಿಸುತ್ತದೆ",
+                            "3": "ವೇಗವಾದ ಇಂಟರ್ನೆಟ್ ವೇಗವನ್ನು ಸಾಧ್ಯಗೊಳಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಮೈಕ್ರೋ:ಬಿಟ್‌ನಲ್ಲಿ ಬಟನ್ A ಒತ್ತಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಮೈಕ್ರೋ:ಬಿಟ್ ಆಫ್ ಆಗುತ್ತದೆ",
+                            "2": "ಒಟ್ಟು ವ್ಯರ್ಥ ಎಣಿಕೆ ಶೂನ್ಯಕ್ಕೆ ಮರುಹೊಂದಿಸಲ್ಪಡುತ್ತದೆ",
+                            "3": "ವ್ಯರ್ಥ ಎಣಿಕೆ 1 ರಿಂದ ಹೆಚ್ಚಾಗುತ್ತದೆ ಮತ್ತು 'ಆಹಾರ ವ್ಯರ್ಥ ಮಾಡಬೇಡಿ' ಎಂಬ ಸಂದೇಶ ತೋರಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಭಾಗವಹಿಸುವವರು ತಪ್ಪಾಗಿ ಬಟನ್ A ಒತ್ತಿದ್ದಾರೆ ಎಂದು ತಿಳಿದರೆ, ಎಣಿಕೆಯನ್ನು ಸರಿಯಾಗಿ ಸರಿಹೊಂದಿಸಲು ಹೇಗೆ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಬಟನ್ B ಒತ್ತಿ ಎಣಿಕೆ ತೋರಿಸಿ ತಪ್ಪನ್ನು ಮಾನಸಿಕವಾಗಿ ಕಳೆಯಿರಿ",
+                            "2": "ಕೋಡ್ ಸಂಪಾದಿಸಿ ವೇರಿಯೇಬಲ್ ಮೌಲ್ಯವನ್ನು ಕೈಯಾರೆ ಸರಿಹೊಂದಿಸಿ",
+                            "3": "ಎಣಿಕೆ ಮರುಹೊಂದಿಸಲು ಮೈಕ್ರೋ:ಬಿಟ್ ಮರುಪ್ರಾರಂಭಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ವಾರದ ಕೊನೆಯಲ್ಲಿ ಆಹಾರ ವ್ಯರ್ಥ ಎಷ್ಟು ಬಾರಿ ದಾಖಲಾಯಿತು ಎಂದು ತಿಳಿಯಲು ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಒಟ್ಟು ವ್ಯರ್ಥ ಎಣಿಕೆ ತೋರಿಸಲು ಬಟನ್ B ಒತ್ತಿ",
+                            "2": "ಮೈಕ್ರೋ:ಬಿಟ್ ಮರುಪ್ರಾರಂಭಿಸಿ ಮತ್ತು ಆರಂಭಿಕ ಮೌಲ್ಯ ಪರಿಶೀಲಿಸಿ",
+                            "3": "ಬಟನ್ A ಅನ್ನು ಪದೇ ಪದೇ ಒತ್ತಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U09",
+            "ord": 9,
+            "nm": "Rock Paper Shakes 🤜",
+            "desc": "if- else,",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U09-V01",
+                    "nm": "Can a shake pick randomly? 🤜",
+                    "desc": "Students will create the classic game of Rock, Paper, Scissors. The program will use a random number to select an option on shake and display a corresponding icon on the screen, reinforcing game logic and variables.",
+                    "yt": "Ew96pQVsKNc",
+                    "dur": "00:03:34"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U09-A01",
+                    "nm": "Code Rock Paper Scissors Game 🤜",
+                    "sub_types": "image,video",
+                    "unguided_text": "Micro:bit ಅಲ್ಲಾಡಿಸುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U09-Q01",
+                "nm": "Can shaking decide your move? ✊",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಅನಗತ್ಯ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಅಳಿಸಲು ಸರಿಯಾದ ಕ್ರಮ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಆನ್‌ಸ್ಟಾರ್ಟ್ ಮತ್ತು ಫಾರೆವರ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಎಡಕ್ಕೆ ಎಳೆದು ಅಳಿಸಿ",
+                            "2": "ಇನ್‌ಪುಟ್ ಮೆನುವಿನಿಂದ ಆನ್‌ಶೇಕ್ ಬ್ಲಾಕ್ ಆಯ್ಕೆ ಮಾಡಿ",
+                            "3": "ರ್ಯಾಂಡಮ್ ಬ್ಲಾಕ್‌ನ ಮೌಲ್ಯವನ್ನು 10 ರಿಂದ 3 ಗೆ ಬದಲಾಯಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ರಾಕ್, ಪೇಪರ್, ಸಿಸರ್ಸ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ 'ಆನ್‌ಶೇಕ್' ಬ್ಲಾಕ್ ಏನು ಮಾಡುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಪ್ರಾಜೆಕ್ಟ್‌ನಿಂದ ಆನ್‌ಸ್ಟಾರ್ಟ್ ಮತ್ತು ಫಾರೆವರ್ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಅಳಿಸುತ್ತದೆ",
+                            "2": "ಮೈಕ್ರೋಬಿಟ್ ಅಲ್ಲಾಡಿಸಿದಾಗ 'Hello' ಎಂಬ ಸ್ಟ್ರಿಂಗ್ ತೋರಿಸುತ್ತದೆ",
+                            "3": "'value' ವೇರಿಯೇಬಲ್‌ಗೆ ರ್ಯಾಂಡಮ್ ಮೌಲ್ಯ ನಿಯೋಜಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋಬಿಟ್ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ 'ರಾಕ್' ಅನ್ನು ಹೇಗೆ ಪ್ರತಿನಿಧಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಮೌಲ್ಯ 1 ಆದಾಗ 'R' ಸ್ಟ್ರಿಂಗ್ ತೋರಿಸುವ ಮೂಲಕ",
+                            "2": "'Hello' ಎಂಬ ಸ್ಟ್ರಿಂಗ್ ಪ್ರದರ್ಶಿಸುವ ಮೂಲಕ",
+                            "3": "value ವೇರಿಯೇಬಲ್ ಅನ್ನು 0 ಗೆ ಹೊಂದಿಸುವ ಮೂಲಕ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಮೈಕ್ರೋಬಿಟ್ ಪ್ರಾಜೆಕ್ಟ್ 'P' ಫಾರ್ ಪೇಪರ್ ತೋರಿಸದಿದ್ದರೆ, ಸಂಭಾವ್ಯ ಪರಿಹಾರ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಆನ್‌ಸ್ಟಾರ್ಟ್ ಬ್ಲಾಕ್ 0 ಗೆ ಹೊಂದಿಸಲಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "ಫಾರೆವರ್ ಬ್ಲಾಕ್ ಅಳಿಸಲಾಗಿಲ್ಲ ಎಂದು ಖಚಿತಪಡಿಸಿ",
+                            "3": "ಹೋಲಿಕೆ ಬ್ಲಾಕ್ ಮೌಲ್ಯ 2 ಗೆ ಸಮಾನವಾಗಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅಲ್ಲಾಡಿಸಿದಾಗ ಮೈಕ್ರೋಬಿಟ್ ಯಾವುದೇ ಫಲಿತಾಂಶ ತೋರಿಸದಿದ್ದರೆ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಆನ್‌ಶೇಕ್ ಬ್ಲಾಕ್‌ನಲ್ಲಿ ಸರಿಯಾಗಿ ಕಾನ್ಫಿಗರ್ ಮಾಡಿದ ರ್ಯಾಂಡಮ್ ಮೌಲ್ಯ ನಿಯೋಜನೆ ಇದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಿ",
+                            "2": "ಪ್ರಾಜೆಕ್ಟ್‌ನಿಂದ ಇನ್‌ಪುಟ್ ಮೆನು ಅಳಿಸಿ",
+                            "3": "ಮೈಕ್ರೋಬಿಟ್ ಅಪ್ಲಿಕೇಶನ್ ಮರುಸ್ಥಾಪಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CMBC3-U10",
+            "ord": 10,
+            "nm": "Disaster Finds a Signal 🚨",
+            "desc": "onshake block, temperature sensor.",
+            "rwc": "Mobile, Internet, Microbit App",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CMBC3-U10-V01",
+                    "nm": "Can radio signals warn disasters? 🚨",
+                    "desc": "Students will simulate how micro:bit devices can be used in early warning systems by sending and receiving alerts via radio signals.",
+                    "yt": "ZoykCZrt120",
+                    "dur": "00:03:50"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CMBC3-U10-A01",
+                    "nm": "Build a Disaster Alert System 🚨",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಎರಡೂ ಅಲರ್ಟ್‌ಗಳು ಕೆಲಸ ಮಾಡುತ್ತಿರುವ ವೀಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CMBC3-U10-Q01",
+                "nm": "Can micro:bit alert disasters? 🚨",
+                "qs": [
+                    {
+                        "q": "ಮೈಕ್ರೋ:ಬಿಟ್ ಬಳಸಿ ವಿಪತ್ತು ಎಚ್ಚರಿಕೆ ವ್ಯವಸ್ಥೆ ಪ್ರಾಜೆಕ್ಟ್‌ನ ಉದ್ದೇಶವೇನು?",
+                        "opts": {
+                            "1": "ಮೈಕ್ರೋ:ಬಿಟ್ ಬಳಸಿ ಗೇಮಿಂಗ್ ಕನ್ಸೋಲ್ ತಯಾರಿಸಲು",
+                            "2": "ರೇಡಿಯೋ ಸಿಗ್ನಲ್‌ಗಳ ಮೂಲಕ ವಿಪತ್ತಿನ ಸಮಯದಲ್ಲಿ ಎಚ್ಚರಿಕೆ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಲು",
+                            "3": "ರೇಡಿಯೋ ತರಂಗಗಳ ಮೂಲಕ ಸಂಗೀತ ಪ್ರಸಾರ ಮಾಡಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೊದಲ ಮೈಕ್ರೋ:ಬಿಟ್‌ನಲ್ಲಿ ಬಟನ್ A ಒತ್ತಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಮೈಕ್ರೋ:ಬಿಟ್ 1 FLOOD ಸಂದೇಶ ತೋರಿಸುತ್ತದೆ",
+                            "2": "ಮೊದಲ ರೇಡಿಯೋ ಸಿಗ್ನಲ್ ಕಳುಹಿಸಲ್ಪಟ್ಟು ಮೈಕ್ರೋ:ಬಿಟ್ 2 FIRE ತೋರಿಸುತ್ತದೆ",
+                            "3": "ಮೈಕ್ರೋ:ಬಿಟ್ 2 ಮೈಕ್ರೋ:ಬಿಟ್ 1 ಗೆ ಸಿಗ್ನಲ್ ಕಳುಹಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮೈಕ್ರೋ:ಬಿಟ್ ಕೋಡಿಂಗ್ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಸ್ವೀಕರಿಸಿದ ಸಿಗ್ನಲ್ ಪರಿಶೀಲಿಸಲು ಯಾವ ಬ್ಲಾಕ್ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಶೋ ಐಕಾನ್ ಬ್ಲಾಕ್",
+                            "2": "ಫಾರೆವರ್ ಬ್ಲಾಕ್",
+                            "3": "if/else ಲಾಜಿಕ್ ಬ್ಲಾಕ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬರಲಿರುವ ಚಂಡಮಾರುತದ ಬಗ್ಗೆ ಕುಟುಂಬಕ್ಕೆ ತ್ವರಿತವಾಗಿ ಎಚ್ಚರಿಸಬೇಕಿದ್ದರೆ ಮೈಕ್ರೋ:ಬಿಟ್‌ನಲ್ಲಿ ಯಾವ ಬಟನ್ ಒತ್ತಬೇಕು?",
+                        "opts": {
+                            "1": "ಬಟನ್ B",
+                            "2": "ಬಟನ್ A+B",
+                            "3": "ಬಟನ್ A"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಎರಡನೇ ಮೈಕ್ರೋ:ಬಿಟ್‌ಗೆ ಯಾವುದೇ ಪೂರ್ವನಿರ್ಧಾರಿತ ಸಿಗ್ನಲ್ ಸ್ವೀಕರಿಸದಿದ್ದರೆ ರಿಸೀವರ್ ಮೈಕ್ರೋ:ಬಿಟ್‌ನಲ್ಲಿ ಏನು ತೋರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "'ERROR' ಎಂಬ ಸ್ಟ್ರಿಂಗ್",
+                            "2": "ಎಲ್ಲವೂ ಸರಿಯಿದೆ ಎಂದು ಸೂಚಿಸುವ ಟಿಕ್ ಐಕಾನ್",
+                            "3": "'No Signal' ಎಂಬ ಡಿಫಾಲ್ಟ್ ಸಂದೇಶ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

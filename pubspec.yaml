@@ -1,0 +1,72 @@
+name: tapapp
+description: 'A new Flutter project.'
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+  # Pinned: the web renderer (CanvasKit) comes from the Flutter engine, and a 3.41
+  # build rendered incorrectly in WhatsApp's browser on some Android phones.
+  # Upgrade deliberately: test on real phones, then change this range.
+  flutter: ">=3.47.1 <3.48.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  go_router: ^17.3.0
+  flutter_riverpod: ^2.6.1
+  google_fonts: ^8.1.0
+  shared_preferences: ^2.3.3
+  dio: ^5.7.0
+  hive_ce_flutter: ^2.3.4
+  flutter_secure_storage: ^10.3.1
+  isar: ^3.1.0
+  isar_flutter_libs: ^3.1.0
+  path_provider: ^2.1.1
+  riverpod_annotation: ^2.3.3
+  image_picker: ^1.2.0
+  youtube_player_flutter: ^9.0.4
+  url_launcher: ^6.3.2
+
+  web: ^1.1.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  isar_generator: ^3.1.0
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/branding/
+    - assets/images/celebration/
+    - assets/images/classroom/
+    - assets/images/error/
+    - assets/images/home/
+    - assets/images/onboarding/
+    - assets/images/reveal/
+    - assets/images/splash/
+    - assets/flows/
+    - assets/events/
+    - assets/courses/tapapp-test/
+    - assets/courses/tapapp-test/CAATA3/
+    - assets/courses/tapapp-test/CAEKL4K/
+    - assets/courses/tapapp-test/CAESL4/
+    - assets/courses/tapapp-test/CAFFL4/
+    - assets/courses/tapapp-test/CASSL2/
+    - assets/courses/tapapp-test/CBASA1/
+    - assets/courses/tapapp-test/CBEKL3K/
+    - assets/courses/tapapp-test/CBESL3/
+    - assets/courses/tapapp-test/CBSSL1/
+    - assets/courses/tapapp-test/CIAA2/
+    - assets/courses/tapapp-test/CMAEA4/
+    - assets/courses/tapapp-test/CMBC3/
+    - assets/courses/tapapp-test/CMBFL1/
+    - assets/courses/tapapp-test/COC2/
+    - assets/courses/tapapp-test/CPC4/
+    - assets/courses/tapapp-test/CRLMF3/
+    - assets/courses/tapapp-test/CSJC1/
+    - assets/courses/tapapp-test/CSSFL2/

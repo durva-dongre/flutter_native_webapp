@@ -1,0 +1,889 @@
+{
+    "id": "CASSL2",
+    "nm": "◆ Science Challenges",
+    "desc": "Students make a turmeric solution to test acids and bases in everyday substances like lemon juice and baking soda. They document color changes and create a pH chart for display.",
+    "vrt": "science-lab",
+    "lvl": "2",
+    "units": [
+        {
+            "id": "CASSL2-U01",
+            "ord": 1,
+            "nm": "Haldi Reads the Liquid 🌿",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Turmeric, Wasing Powder",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U01-V01",
+                    "nm": "Can turmeric read acids? 🌿",
+                    "desc": "Students make a turmeric solution to test acids and bases in everyday substances like lemon juice and baking soda. They document color changes and create a pH chart for display.",
+                    "yt": "p-sgqJfNX_8",
+                    "dur": "00:01:47"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U01-A01",
+                    "nm": "Make a Turmeric pH Indicator 🌿",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಅರಿಶಿಣ ಸೂಚಕ ದ್ರಾವಣದ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U01-Q01",
+                "nm": "Can turmeric detect acid? 🌿",
+                "qs": [
+                    {
+                        "q": "ಅರಿಶಿನದಲ್ಲಿ ಆಮ್ಲಾಂಶಗಳೊಂದಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಿ ಬಣ್ಣ ಬದಲಾಯಿಸುವ ರಾಸಾಯನಿಕ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಕ್ಯಾಪ್ಸೈಸಿನ್",
+                            "2": "ಕ್ಯಾರೋಟಿನ್",
+                            "3": "ಕರ್ಕ್ಯೂಮಿನ್"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಆಮ್ಲದ ಸಂಪರ್ಕಕ್ಕೆ ಬಂದಾಗ ಅರಿಶಿನದ ಬಣ್ಣ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ನೀಲಿಯಾಗುತ್ತದೆ",
+                            "2": "ಹಸಿರಾಗುತ್ತದೆ",
+                            "3": "ಹಳದಿಯಾಗಿಯೇ ಇರುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅರಿಶಿನ ಬಳಸಿ ಮನೆಯ ವಸ್ತು ಆಮ್ಲಾಂಶವೇ ಎಂದು ಪರೀಕ್ಷಿಸಲು ಆ ವಸ್ತು ಆಮ್ಲಾಂಶ ಆಗಿದ್ದರೆ ಏನು ಕಾಣುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಬಣ್ಣ ನೀಲಿಯಾಗಿ ಬದಲಾಗುತ್ತದೆ",
+                            "2": "ಬಣ್ಣ ಹಾಗೇ ಇರುತ್ತದೆ",
+                            "3": "ಬಣ್ಣ ಕೆಂಪಾಗಿ ಬದಲಾಗುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಅರಿಶಿನ ಕಲೆ ಹತ್ತಿದ ಕಾಗದದ ಮೇಲೆ ಅಕಸ್ಮಾತ್ ಡಿಟರ್ಜೆಂಟ್ ಚೆಲ್ಲಿದರೆ ಕಾಗದ ಮೂಲ ಬಣ್ಣಕ್ಕೆ ಹಿಂದಿರುಗಿಸಲು ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ಡಿಟರ್ಜೆಂಟ್ ಸೇರಿಸಿ",
+                            "2": "ಅದಕ್ಕೆ ನಿಂಬೆ ರಸ ಸೇರಿಸಿ",
+                            "3": "ಹೆಚ್ಚು ಅರಿಶಿನ ಸೇರಿಸಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ರಯೋಗ ಮಾಡುವಾಗ ಹಾಲು ಅರಿಶಿನದ ಬಣ್ಣ ಬದಲಾಯಿಸದ್ದನ್ನು ಗಮನಿಸಿದರೆ ಈ ವೀಕ್ಷಣೆಯ ಆಧಾರದ ಮೇಲೆ ಹಾಲಿನ ಬಗ್ಗೆ ಏನು ತೀರ್ಮಾನಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಹಾಲು ಬಲವಾದ ಆಮ್ಲ",
+                            "2": "ಹಾಲು ಬಲವಾದ ಆಮ್ಲಾಂಶ",
+                            "3": "ಹಾಲು ಬಲವಾದ ಆಮ್ಲವೂ ಅಲ್ಲ ಬಲವಾದ ಆಮ್ಲಾಂಶವೂ ಅಲ್ಲ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U02",
+            "ord": 2,
+            "nm": "Bottle Grows a Garden 🌱",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Bottle",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U02-V01",
+                    "nm": "Can a bottle grow plants? 🌱",
+                    "desc": "Students will learn about vertical gardening and make their own artefact using recycled materials like plastic bottles etc. They will also understand the importance of SDGs on 21st century.",
+                    "yt": "xyPiudYU8GM",
+                    "dur": "00:02:35"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U02-A01",
+                    "nm": "Build a Mini Vertical Garden 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಮಡಿಕೆಯ ಪಕ್ಕದ ನೋಟದ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U02-Q01",
+                "nm": "Can plants grow without soil? 🌱",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಉಲ್ಲೇಖಿಸಿದ ಮಿನಿ ವರ್ಟಿಕಲ್ ಗಾರ್ಡನ್ ರಚಿಸುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್ ಅರ್ಧ ಕತ್ತರಿಸಿ",
+                            "2": "ಬಾಟಲ್‌ಗೆ ನೀರು ಸೇರಿಸಿ",
+                            "3": "ಮಣ್ಣಿನಲ್ಲಿ ಬೀಜ ನೆಡಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮಿನಿ ವರ್ಟಿಕಲ್ ಗಾರ್ಡನ್‌ನಲ್ಲಿ ಹತ್ತಿ ಬತ್ತಿ ಬಳಸುವ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಮಣ್ಣಿಗೆ ಪೋಷಕಾಂಶ ಸೇರಿಸಲು",
+                            "2": "ಸಸ್ಯಗಳಿಗೆ ನೀರು ಸಾಗಿಸಲು ಸಹಾಯ ಮಾಡಲು",
+                            "3": "ಬೀಜಗಳನ್ನು ಜಾಗದಲ್ಲಿ ಹಿಡಿದಿಡಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮಣ್ಣಿಲ್ಲದೆ ಸಸ್ಯಗಳು ಬೆಳೆಯಲು ಅನುಮತಿಸುವ ಆಧುನಿಕ ಕೃಷಿ ತಂತ್ರ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಹೈಡ್ರೋಪೋನಿಕ್ಸ್",
+                            "2": "ವರ್ಟಿಕಲ್ ಗಾರ್ಡನಿಂಗ್",
+                            "3": "ನಗರ ಕೃಷಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸೀಮಿತ ಜಾಗ ಇರುವ ನಗರದಲ್ಲಿ ವಾಸಿಸಿದರೆ ಸ್ಕ್ರಿಪ್ಟ್ ಪ್ರಕಾರ ಇನ್ನೂ ಸಸ್ಯಗಳನ್ನು ಹೇಗೆ ಬೆಳೆಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಛಾವಣಿಯ ಮೇಲೆ ದೊಡ್ಡ ಮಡಕೆಗಳಲ್ಲಿ ಬೆಳೆಸಿ",
+                            "2": "ಸಾವಯವ ಆಹಾರ ಖರೀದಿಸಿ",
+                            "3": "ಕಿಟಕಿ ಚೌಕಟ್ಟಿನ ಮೇಲೆ ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್‌ಗಳನ್ನು ಬಳಸುವಂತಹ ನಗರ ಕೃಷಿ ತಂತ್ರಗಳನ್ನು ಅಳವಡಿಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಎಲ್ಲ ವಸ್ತುಗಳಿದ್ದು ಹತ್ತಿ ಇಲ್ಲದಿದ್ದರೆ ಮಿನಿ ವರ್ಟಿಕಲ್ ಗಾರ್ಡನ್‌ನಲ್ಲಿ ಹತ್ತಿ ಬತ್ತಿಗೆ ಪರ್ಯಾಯವಾಗಿ ಏನು ಬಳಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಪ್ಲಾಸ್ಟಿಕ್ ಸ್ಟ್ರಾ",
+                            "2": "ಬಟ್ಟೆಯ ತುಣುಕು",
+                            "3": "ಲೋಹದ ತಂತಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U03",
+            "ord": 3,
+            "nm": "Oil Defies Gravity 🔮",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Oil, Water",
+            "diff": "Basic",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U03-V01",
+                    "nm": "Can salt defy gravity? 🔮",
+                    "desc": "Students create a lava lamp using oil, water, food coloring, and effervescent tablets. They explain density and chemical reactions using the working lamp as an artefact.",
+                    "yt": "ERdYsAwFGDg",
+                    "dur": "00:01:27"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U03-A01",
+                    "nm": "Make a Homemade Lava Lamp 🔮",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಲಾವಾ ಲ್ಯಾಂಪ್‌ನ ಫೋಟೋ/ವೀಡಿಯೊ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U03-Q01",
+                "nm": "Why does oil always float? 🫧",
+                "qs": [
+                    {
+                        "q": "ಲಾವಾ ಲ್ಯಾಂಪ್ ಪ್ರಯೋಗದಲ್ಲಿ ಎಣ್ಣೆ ನೀರಿನ ಮೇಲೆ ತೇಲುವ ಕಾರಣ ಯಾವ ಪರಿಕಲ್ಪನೆ ವಿವರಿಸುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಸಾಂದ್ರತೆ",
+                            "2": "ಗುರುತ್ವ",
+                            "3": "ದೈಹಿಕ ಸ್ಥಳಾಂತರ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಉಪ್ಪು ಎಣ್ಣೆ ಮತ್ತು ನೀರಿನೊಂದಿಗೆ ಸಂವಹಿಸಿದಾಗ ಏನಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಅದು ಎಣ್ಣೆ ಜೊತೆ ಮುಳುಗಿ ನೀರಿನಲ್ಲಿ ಕರಗುತ್ತದೆ",
+                            "2": "ಅದು ಎಣ್ಣೆ ಪದರದ ಮೇಲ್ಭಾಗದಲ್ಲಿ ತೇಲುತ್ತದೆ",
+                            "3": "ಅದು ಎಣ್ಣೆಯಲ್ಲಿ ಕರಗುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಎಣ್ಣೆ ಶಾಶ್ವತವಾಗಿ ತಳದಲ್ಲಿ ಇರುವಂತೆ ಮಾಡಲು ಏನು ಬದಲಾಯಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚು ಎಣ್ಣೆ ಸೇರಿಸಿ",
+                            "2": "ಕಡಿಮೆ ನೀರು ಬಳಸಿ",
+                            "3": "ಉಪ್ಪಿನ ಬದಲು ಎಣ್ಣೆಗಿಂತ ಭಾರ ವಸ್ತು ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಲಾವಾ ಲ್ಯಾಂಪ್‌ನಲ್ಲಿ ಉಪ್ಪು ಸೇರಿಸಿದ ನಂತರ ಎಣ್ಣೆ ಮೇಲ್ಮೈಗೆ ಹಿಂದಿರುಗದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಕಾರಣ ಏನಾಗಿರಬಹುದು?",
+                        "opts": {
+                            "1": "ನೀರು ತುಂಬಾ ತಣ್ಣಗಿದೆ",
+                            "2": "ಎಣ್ಣೆ ತಳಕ್ಕೆ ತೆಗೆದುಕೊಂಡು ಹೋಗಲು ಸಾಕಷ್ಟು ಉಪ್ಪಿಲ್ಲ",
+                            "3": "ಉಪ್ಪು ಈಗಾಗಲೇ ಕರಗಿದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಲಾವಾ ಲ್ಯಾಂಪ್‌ನಲ್ಲಿ ಎಣ್ಣೆಯ ಬಣ್ಣ ಬದಲಾಯಿಸಲು ವಿದ್ಯಾರ್ಥಿ ಏನು ಮಾಡಬೇಕು?",
+                        "opts": {
+                            "1": "ಮಿಶ್ರಣಕ್ಕೆ ಬಣ್ಣದ ಉಪ್ಪು ಸೇರಿಸಿ",
+                            "2": "ನೀರಿಗೆ ಸುರಿಯುವ ಮೊದಲು ಎಣ್ಣೆಗೆ ಆಹಾರ ಬಣ್ಣ ಸೇರಿಸಿ",
+                            "3": "ಎಣ್ಣೆ ಬಣ್ಣದ ನೀರಿನೊಂದಿಗೆ ಮಿಶ್ರ ಮಾಡಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U04",
+            "ord": 4,
+            "nm": "Layers Clean the Water 💧",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Charcoal, Bottle",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U04-V01",
+                    "nm": "Can layers clean dirty water? 💧",
+                    "desc": "Students will understand water pollution and purification by building a basic water filtration system using household and recyclable materials.",
+                    "yt": "hhasBJGIh_s",
+                    "dur": "00:02:25"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U04-A01",
+                    "nm": "Build a DIY Water Filter 💧",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಶೋಧನೆ ಬಾಟಲಿಯ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U04-Q01",
+                "nm": "Can a bottle clean water? 💧",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ DIY ನೀರು ಶೋಧನ ವ್ಯವಸ್ಥೆಗೆ ಸೇರಿಸಿದ ಮೊದಲ ಪದರ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಜಲ್ಲಿ",
+                            "2": "ಹತ್ತಿ",
+                            "3": "ಮರಳು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ವಿವರಿಸಿದ ನೀರು ಶೋಧನ ವ್ಯವಸ್ಥೆಯಲ್ಲಿ ಇದ್ದಿಲಿನ ಮುಖ್ಯ ಕಾರ್ಯ ಏನು?",
+                        "opts": {
+                            "1": "ದೈಹಿಕ ಕಣಗಳನ್ನು ಸಿಕ್ಕಿಸಿಕೊಳ್ಳುತ್ತದೆ",
+                            "2": "ನೀರಿಗೆ ಖನಿಜಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ",
+                            "3": "ಅಶುದ್ಧತೆ ಹೀರಿಕೊಳ್ಳುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಂತಹ ನೀರು ಫಿಲ್ಟರ್ ನಿರ್ಮಿಸಲು ಕೆಳಗಿನ ಯಾವ ವಸ್ತು ಬೇಕಾಗುವುದಿಲ್ಲ?",
+                        "opts": {
+                            "1": "ಇದ್ದಿಲು",
+                            "2": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್",
+                            "3": "ಲೋಹದ ಜರಡಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಶುದ್ಧ ನೀರು ಲಭ್ಯವಿಲ್ಲದ ಹಳ್ಳಿಯಲ್ಲಿದ್ದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ನೀರು ಶೋಧನ ವಿಧಾನ ಈ ಸಮಸ್ಯೆ ಪರಿಹರಿಸಲು ಹೇಗೆ ಅನ್ವಯಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಸ್ಥಳೀಯವಾಗಿ ಲಭ್ಯ ವಸ್ತುಗಳಿಂದ ಫಿಲ್ಟರ್ ರಚಿಸಿ ನಂತರ ನೀರು ಕುದಿಸಿ",
+                            "2": "ಶೋಧನೆ ಇಲ್ಲದೆ ಕೇವಲ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಮೇಲೆ ಅವಲಂಬಿಸಿ",
+                            "3": "ನೀರು ಶೋಧಿಸಲು ಕೇವಲ ಹತ್ತಿ ಬಳಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತುರ್ತು ಶಿಬಿರದಲ್ಲಿ ನೀರು ಶೋಧನ ಪ್ರಕ್ರಿಯೆ ಸುಧಾರಿಸುವ ಕಾರ್ಯ ವಹಿಸಿಕೊಂಡರೆ ಸ್ಕ್ರಿಪ್ಟ್ ಆಧರಿಸಿ ಯಾವ ಹೆಚ್ಚುವರಿ ಹಂತ ತೆಗೆದುಕೊಳ್ಳಬಹುದು?",
+                        "opts": {
+                            "1": "ಶೋಧಿಸಿದ ನೀರನ್ನು ಸುರಕ್ಷತೆಗಾಗಿ ಕುದಿಸಿ ಅಥವಾ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಮಾಡಿ",
+                            "2": "ಹೆಚ್ಚು ಮರಳು ಪದರ ಬಳಸಿ",
+                            "3": "ಸೌಂದರ್ಯಕ್ಕಾಗಿ ಬಣ್ಣದ ಕಲ್ಲುಗಳು ಸೇರಿಸಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U05",
+            "ord": 5,
+            "nm": "Ink Splits Its Colors 🎨",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Paper, Water, Colors",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U05-V01",
+                    "nm": "Can water split ink colors? 🎨",
+                    "desc": "Students separate colors in inks using chromatography paper or filter paper, water, and markers. They display the color patterns as a tangible science artefact.",
+                    "yt": "mlKjYFq8P1M",
+                    "dur": "00:02:01"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U05-A01",
+                    "nm": "Run a Paper Chromatography Experiment 🎨",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಬಣ್ಣದ ಪಟ್ಟೆಗಳ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U05-Q01",
+                "nm": "Can ink solve a mystery? 🔍",
+                "qs": [
+                    {
+                        "q": "ನೋಟ್ ಬರೆಯಲು ಬಳಸಿದ ಪೆನ್ ಗುರುತಿಸಲು ನ್ಯಾಯವಿಜ್ಞಾನ ವಿಜ್ಞಾನಿಗಳು ಬಳಸುವ ತಂತ್ರದ ಹೆಸರು ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಸ್ಪೆಕ್ಟ್ರೋಸ್ಕೋಪಿ",
+                            "2": "ಎಲೆಕ್ಟ್ರೋಫೋರೆಸಿಸ್",
+                            "3": "ಕ್ರೋಮ್ಯಾಟೋಗ್ರಫಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕ್ರೋಮ್ಯಾಟೋಗ್ರಫಿ ಪ್ರಯೋಗದಲ್ಲಿ ಶಾಯಿಯಲ್ಲಿನ ವಿವಿಧ ಬಣ್ಣಗಳು ಭಿನ್ನ ವೇಗದಲ್ಲಿ ಚಲಿಸಲು ಕಾರಣ ಏನು?",
+                        "opts": {
+                            "1": "ಅಣುಗಳ ಗಾತ್ರ ಮತ್ತು ತೂಕ ಭಿನ್ನ ಇರುವುದರಿಂದ",
+                            "2": "ಅವುಗಳ ಗಾತ್ರ ಮತ್ತು ತೂಕ ಒಂದೇ ಇರುವುದರಿಂದ",
+                            "3": "ನೀರಿನ ತಾಪಮಾನದಿಂದಾಗಿ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ಕೆಚ್ ಪೆನ್ ಮತ್ತು ಕಾಗದ ಬಳಸಿ ಕ್ರೋಮ್ಯಾಟೋಗ್ರಫಿ ಪ್ರಯೋಗ ಮಾಡುವ ಮೊದಲ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಕಾಗದ ನೇರವಾಗಿ ನೀರಿನಲ್ಲಿ ಅದ್ದಿ",
+                            "2": "ಕಾಗದಕ್ಕೆ ಹಚ್ಚುವ ಮೊದಲು ಶಾಯಿ ನೀರಿನಲ್ಲಿ ಮಿಶ್ರ ಮಾಡಿ",
+                            "3": "ಕಾಗದ ಪಟ್ಟಿಗಳಾಗಿ ಕತ್ತರಿಸಿ ಸ್ಕೆಚ್ ಪೆನ್‌ನಿಂದ ರೇಖೆ ಎಳೆಯಿರಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ವಿದ್ಯಾರ್ಥಿ ಕಾಗದದ ಮೇಲೆ ಶಾಯಿ ಬಣ್ಣಗಳು ಬೇರ್ಪಡದ್ದನ್ನು ಗಮನಿಸಿದರೆ ಸಂಭಾವ್ಯ ಕಾರಣ ಏನಾಗಿರಬಹುದು?",
+                        "opts": {
+                            "1": "ಕಾಗದ ಹೆಚ್ಚು ಸಮಯ ನೀರಿನಲ್ಲಿ ಇಡಲಾಯಿತು",
+                            "2": "ಶಾಯಿ ರೇಖೆ ಆರಂಭದಲ್ಲಿ ನೀರಿಗೆ ತುಂಬಾ ಹತ್ತಿರ ಇತ್ತು",
+                            "3": "ನೀರು ತುಂಬಾ ತಣ್ಣಗಿತ್ತು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕ್ರೋಮ್ಯಾಟೋಗ್ರಫಿ ಪ್ರಯೋಗ ಕೈಯಿಂದ ಬರೆದ ನೋಟ್ ಒಳಗೊಂಡ ರಹಸ್ಯ ಬಗೆಹರಿಸಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಕೈಬರಹ ಶೈಲಿ ನಿರ್ಧರಿಸುವ ಮೂಲಕ",
+                            "2": "ಬಣ್ಣ ಬೇರ್ಪಡಿಕೆ ಮೂಲಕ ಬಳಸಿದ ನಿರ್ದಿಷ್ಟ ಪೆನ್ ಗುರುತಿಸುವ ಮೂಲಕ",
+                            "3": "ಶಾಯಿಯ ವಯಸ್ಸು ಬಹಿರಂಗಪಡಿಸುವ ಮೂಲಕ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U06",
+            "ord": 6,
+            "nm": "Waste Gets Sorted 🗂️",
+            "desc": "- 40% of the total studetns watch at least 70% of the video\n- 40% of the student submit image of their code\n- 40% students score 3/5 in quiz",
+            "rwc": "Paper, Pen, Cardboard",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U06-V01",
+                    "nm": "Can you audit home waste? 🗂️",
+                    "desc": "Students will learn to seggregate dry and wet waste. They will learn the importancte of SDGs.",
+                    "yt": "G5xZ8hOU8Iw",
+                    "dur": "00:02:22"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U06-A01",
+                    "nm": "Perform a Home Waste Audit 🗂️",
+                    "sub_types": "image,video",
+                    "unguided_text": "5 ವಿಂಗಡಿಸಿದ ಪೆಟ್ಟಿಗೆಗಳ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U06-Q01",
+                "nm": "Can you audit your trash? 🗑️",
+                "qs": [
+                    {
+                        "q": "ಕಸ ಯಾವ ಎರಡು ಮುಖ್ಯ ವರ್ಗಗಳಾಗಿ ವಿಭಜಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ಕಾಗದ ಮತ್ತು ಪ್ಲಾಸ್ಟಿಕ್",
+                            "2": "ಒದ್ದೆ ಮತ್ತು ಲೋಹ",
+                            "3": "ಒದ್ದೆ ಮತ್ತು ಒಣ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಸದ ರಾಶಿಗಳಲ್ಲಿ ವಿವಿಧ ರೀತಿಯ ತ್ಯಾಜ್ಯ ಮಿಶ್ರವಾದಾಗ ಮುಖ್ಯ ಸಮಸ್ಯೆ ಏನು?",
+                        "opts": {
+                            "1": "ಅದು ಕೊಳಕಾಗಿ ಕಾಣುತ್ತದೆ",
+                            "2": "ಅದು ಬೆಂಕಿ ಅಪಾಯ ಸೃಷ್ಟಿಸುತ್ತದೆ",
+                            "3": "ಅದು ಹೆಚ್ಚು ಜಾಗ ಆಕ್ರಮಿಸುತ್ತದೆ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಒದ್ದೆ ತ್ಯಾಜ್ಯದ ಉದಾಹರಣೆ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಆಹಾರ ಉಳಿಕೆ (ಸಾವಯವ)",
+                            "2": "ಬ್ಯಾಟರಿ (ಲೋಹ)",
+                            "3": "ಕಾಗದ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಈ ಚಟುವಟಿಕೆಯಲ್ಲಿ ಐದು ವಿಭಿನ್ನ ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ಪೆಟ್ಟಿಗೆಗಳಿಗೆ ಲೇಬಲ್ ಹಾಕುವ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ಅವುಗಳನ್ನು ಬಿಸಾಡಲು",
+                            "2": "ತ್ಯಾಜ್ಯ ವರ್ಗದ ಮೂಲಕ ಬೇರ್ಪಡಿಸಲು",
+                            "3": "ಹೊಸ ವಸ್ತುಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ತ್ಯಾಜ್ಯ ವಿಂಗಡಿಸಿದ ನಂತರ ತ್ಯಾಜ್ಯ ಲೆಕ್ಕಪರಿಶೋಧನೆ ಪ್ರಕ್ರಿಯೆಯ ಅಂತಿಮ ಹಂತ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ತ್ಯಾಜ್ಯ ತೊಳೆಯಲು",
+                            "2": "ತ್ಯಾಜ್ಯ ಮತ್ತೆ ಒಟ್ಟಾಗಿ ಮಿಶ್ರ ಮಾಡಲು",
+                            "3": "ಎಲ್ಲ ವಿಂಗಡಿಸಿದ ವಸ್ತುಗಳ ಪಟ್ಟಿ ಮಾಡಿದ ವರದಿ ರಚಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U07",
+            "ord": 7,
+            "nm": "Bottle Cools the Room 🍃",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Thread, Bottle, Stick",
+            "diff": "Intermediate",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U07-V01",
+                    "nm": "Can a bottle fan you? 🍃",
+                    "desc": "Students will learn about SDGs (SDG 11 - Sustainable cities and Communities) by designing a Bootle fan from recycled materials. They will understand the importance of SDGs with a hands-on-activity.",
+                    "yt": "JzXeCW0tEPc",
+                    "dur": "00:04:20"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U07-A01",
+                    "nm": "Build a Bottle Eco Fan 🍃",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಕೈ ಪಂಖೆಯ ಫೋಟೋ/ವೀಡಿಯೊ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U07-Q01",
+                "nm": "Can a bottle be a fan? 🌬️",
+                "qs": [
+                    {
+                        "q": "ಬಾಟಲ್ ಫ್ಯಾನ್ ನಿರ್ಮಿಸಲು ಅಗತ್ಯ ಮೂಲ ವಸ್ತುಗಳು ಯಾವುವು?",
+                        "opts": {
+                            "1": "ಐಸ್‌ಕ್ರೀಂ ಕಡ್ಡಿಗಳು, ಬಿದಿರು ಕಡ್ಡಿಗಳು, ಅಂಟು, ದಾರ, ಥಂಬ್ ಟ್ಯಾಕ್‌ಗಳು, ಬಾಟಲ್ ಅಂಚು, ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್",
+                            "2": "ಲೋಹದ ಕಡ್ಡಿಗಳು, ಅಂಟು, ತಂತಿಗಳು, ಥಂಬ್ ಟ್ಯಾಕ್‌ಗಳು, ಪ್ಲಾಸ್ಟಿಕ್ ಹಾಳೆ",
+                            "3": "ಕಾಗದ, ಕತ್ತರಿ, ಅಂಟು, ತಂತಿಗಳು, ಆಯಸ್ಕಾಂತಗಳು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ವಿದ್ಯುತ್‌ನ ಮೇಲೆ ಅವಲಂಬಿಸದ ತಂಪಾಗಿಸುವ ಪರಿಹಾರಗಳನ್ನು ಹುಡುಕುವುದು ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ವಿದ್ಯುತ್ ತುಂಬಾ ದುಬಾರಿ ಆಗಿರುವುದರಿಂದ",
+                            "2": "ವಿದ್ಯುತ್ ಬಳಸುವುದರಿಂದ ತಂಪಾಗಿಸುವ ಸಾಧನಗಳು ಕಡಿಮೆ ಪರಿಣಾಮಕಾರಿ ಆಗುತ್ತವೆ ಆಗಿರುವುದರಿಂದ",
+                            "3": "ಹೆಚ್ಚಿನ ವಿದ್ಯುತ್ ಪಳೆಯುಳಿಕೆ ಇಂಧನಗಳಿಂದ ಉತ್ಪಾದಿಸಲ್ಪಡುತ್ತದೆ ಮತ್ತು ಇದು ಪರಿಸರಕ್ಕೆ ಹಾನಿ ಮಾಡುತ್ತದೆ ಆಗಿರುವುದರಿಂದ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಾಟಲ್ ಫ್ಯಾನ್ ನಿರ್ಮಾಣದಲ್ಲಿ ಬಿದಿರು ಕಡ್ಡಿ ಹೇಗೆ ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಅಲಂಕಾರಿಕ ಅಂಶವಾಗಿ",
+                            "2": "ಫ್ಯಾನ್‌ಗೆ ಹಿಡಿಯಾಗಿ",
+                            "3": "ಫ್ಯಾನ್ ರೆಕ್ಕೆಗಳಿಗೆ ಕೇಂದ್ರ ಅಕ್ಷವಾಗಿ ಮತ್ತು ದಾರದೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಬಾಟಲ್ ಫ್ಯಾನ್ ಪೂರ್ಣಗೊಳಿಸಿದ ಆದರೆ ಫ್ಯಾನ್ ರೆಕ್ಕೆಗಳು ಚೆನ್ನಾಗಿ ತಿರುಗದಿದ್ದರೆ ಯಾವ ಹಂತ ತಿರುಗುವಿಕೆ ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ದಾರಕ್ಕೆ ಹೆಚ್ಚು ಅಂಟು ಸೇರಿಸಿ",
+                            "2": "ಬಿದಿರು ಕಡ್ಡಿ ಸರಿಯಾಗಿ ಜೋಡಿಸಲಾಗಿದೆ ಮತ್ತು ದಾರ ಭದ್ರವಾಗಿ ಕಟ್ಟಲಾಗಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿ",
+                            "3": "ಬಾಟಲ್ ಎತ್ತರ ಮಾಡಿ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಸ್ನೇಹಿತರು ಇದೇ ರೀತಿ ಪರಿಸರ ಸ್ನೇಹಿ ತಂಪಾಗಿಸುವ ಸಾಧನ ರಚಿಸಲು ಬಯಸುತ್ತಾರೆ ಆದರೆ ಬಿದಿರು ಕಡ್ಡಿ ಇಲ್ಲ. ಕೇಂದ್ರ ಅಕ್ಷಕ್ಕೆ ಏನು ಪರ್ಯಾಯ ಸೂಚಿಸಬಹುದು?",
+                        "opts": {
+                            "1": "ದಪ್ಪ ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್ ಬಳಸಿ",
+                            "2": "ಕಾರ್ಡ್‌ಬೋರ್ಡ್ ತುಣುಕು ಬಳಸಿ",
+                            "3": "ಇದೇ ಉದ್ದ ಮತ್ತು ದಪ್ಪದ ಭದ್ರ ಲೋಹದ ತಂತಿ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U08",
+            "ord": 8,
+            "nm": "Scraps Become Soil 🌱",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Scissors, Bottle, Vegetable Peels Tea Leaves, Fresh Grass",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U08-V01",
+                    "nm": "Can peels become plant food? 🌱",
+                    "desc": "Students create a mini compost system in a transparent bottle using kitchen waste (vegetable peels, fruit scraps) and dry leaves. They observe decomposition over time and record changes.",
+                    "yt": "S_RY5CEnVyk",
+                    "dur": "00:03:20"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U08-A01",
+                    "nm": "Build a Compost Bottle 🌱",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಕಾಂಪೋಸ್ಟ್ ಬಾಟಲಿಯ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U08-Q01",
+                "nm": "Can scraps become compost? 🌿",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ಉಲ್ಲೇಖಿಸಿದ ಕಾಂಪೋಸ್ಟಿಂಗ್‌ನ ಮುಖ್ಯ ಪ್ರಯೋಜನ ಏನು?",
+                        "opts": {
+                            "1": "ಅದು ಮಣ್ಣನ್ನು ಮಲಿನ ಮಾಡದೆ ಸಮೃದ್ಧಗೊಳಿಸುತ್ತದೆ.",
+                            "2": "ಅದು ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಟಲ್‌ಗಳ ಅಗತ್ಯ ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.",
+                            "3": "ಅದು ಸೂಕ್ಷ್ಮಜೀವಿಗಳ ಬೆಳವಣಿಗೆ ವೇಗ ಮಾಡುತ್ತದೆ."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಂಪೋಸ್ಟ್ ಬಾಟಲ್‌ನ ತಳ ಭಾಗಕ್ಕೆ ರಂಧ್ರಗಳನ್ನು ಮಾಡುವುದು ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಹೆಚ್ಚಿನ ನೀರು ಹರಿದು ಹೋಗಲು.",
+                            "2": "ಕೊಳೆಯುವಿಕೆಗೆ ಗಾಳಿ ಹಾಯ್ದು ಹೋಗಲು.",
+                            "3": "ಕ್ರಿಮಿಗಳು ಬಾಟಲ್ ಒಳಗೆ ಬರದಂತೆ ತಡೆಯಲು."
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಕಾಂಪೋಸ್ಟ್ ಬಾಟಲ್‌ಗೆ ಸೇರಿಸಬೇಕಾದ ಅಂತಿಮ ಪದರ ಯಾವುದು?",
+                        "opts": {
+                            "1": "ಕಂದು ತ್ಯಾಜ್ಯ",
+                            "2": "ಮಣ್ಣು",
+                            "3": "ಹಸಿರು ತ್ಯಾಜ್ಯ"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಕಾಂಪೋಸ್ಟ್ ರಾಶಿ ಸರಿಯಾಗಿ ಕೊಳೆಯದಿದ್ದರೆ ಸಂಭಾವ್ಯ ಪರಿಹಾರ ಏನಾಗಬಹುದು?",
+                        "opts": {
+                            "1": "ಸಾಕಷ್ಟು ರಂಧ್ರಗಳಿವೆ ಮತ್ತು ರಾಶಿ ಒದ್ದೆಯಾಗಿ ಆದರೆ ತುಂಬಾ ಒದ್ದೆ ಇಲ್ಲದಂತೆ ಖಚಿತಪಡಿಸಿ.",
+                            "2": "ಕಾಂಪೋಸ್ಟ್ ರಾಶಿ ನೆರಳಿನ ಪ್ರದೇಶದಲ್ಲಿ ಇಡಿ.",
+                            "3": "ಸೇರಿಸಿದ ಕಂದು ತ್ಯಾಜ್ಯ ಪ್ರಮಾಣ ಕಡಿಮೆ ಮಾಡಿ."
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಥಂಡಿ ವಾತಾವರಣದಲ್ಲಿ ವಾಸಿಸಿದರೆ ಕಾಂಪೋಸ್ಟ್ ಬಾಟಲ್‌ನ ಕೊಳೆಯುವ ಪ್ರಕ್ರಿಯೆ ವೇಗ ಮಾಡಲು ಹೇಗೆ?",
+                        "opts": {
+                            "1": "ಕಾಂಪೋಸ್ಟ್ ರಾಶಿಗೆ ಹೆಚ್ಚಾಗಿ ನೀರು ಹಾಕಿ.",
+                            "2": "ಕಂದು ತ್ಯಾಜ್ಯಕ್ಕಿಂತ ಹೆಚ್ಚು ಹಸಿರು ತ್ಯಾಜ್ಯ ಸೇರಿಸಿ.",
+                            "3": "ಬಿಸಿ ಹೆಚ್ಚಿಸಲು ಬಾಟಲ್ ಬಿಸಿಲಿನ ಜಾಗದಲ್ಲಿ ಇಡಿ."
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U09",
+            "ord": 9,
+            "nm": "Rain Gets Harvested 🌧️",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Cardboard",
+            "diff": "Advanced",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U09-V01",
+                    "nm": "Can rain fill your tank? 🌧️",
+                    "desc": "Students will learn the importance of conserving water by understanding how rainwater harvesting works. By using models or simulations, they will explore how collecting rainwater helps in water conservation and reduces water scarcity. This activity directly supports SDG 6 (Clean Water and Sanitation), SDG 11 (Sustainable Cities and Communities), and SDG 13 (Climate Action).",
+                    "yt": "D8NPRyPWrCc",
+                    "dur": "00:04:07"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U09-A01",
+                    "nm": "Build a Rainwater Harvesting Model 🌧️",
+                    "sub_types": "image,video",
+                    "unguided_text": "ನೀರು ಸಂಗ್ರಹ ವ್ಯವಸ್ಥೆಯ ಫೋಟೋ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U09-Q01",
+                "nm": "Can rain be harvested? 🌧️",
+                "qs": [
+                    {
+                        "q": "ಸ್ಕ್ರಿಪ್ಟ್‌ನಲ್ಲಿ ವಿವರಿಸಿದ ಮಳೆನೀರು ಕೊಯ್ಲಿನ ಮುಖ್ಯ ಉದ್ದೇಶ ಏನು?",
+                        "opts": {
+                            "1": "ವಾತಾವರಣದಲ್ಲಿ ತೇವಾಂಶ ಹೆಚ್ಚಿಸಲು",
+                            "2": "ಭವಿಷ್ಯದ ಬಳಕೆಗಾಗಿ ಮಳೆನೀರು ಸಂಗ್ರಹಿಸಿ ಸಂಗ್ರಹಿಸಲು",
+                            "3": "ಅಲಂಕಾರಿಕ ನೀರಿನ ವೈಶಿಷ್ಟ್ಯ ರಚಿಸಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಮಳೆನೀರು ಕೊಯ್ಲು ಮಾದರಿಯಲ್ಲಿ ಶೋಧನ ವ್ಯವಸ್ಥೆ ಏಕೆ ಸೇರಿಸಲಾಗಿದೆ?",
+                        "opts": {
+                            "1": "ಮಳೆನೀರು ಸಂಗ್ರಹ ಪ್ರಕ್ರಿಯೆ ವೇಗ ಮಾಡಲು",
+                            "2": "ಸಂಗ್ರಹಿಸಿದ ನೀರು ಶುದ್ಧ ಮತ್ತು ಬಳಸಲು ಯೋಗ್ಯ ಎಂದು ಖಚಿತಪಡಿಸಲು",
+                            "3": "ನೀರು ಆವಿಯಾಗದಂತೆ ತಡೆಯಲು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಪ್ಲಾಸ್ಟಿಕ್ ಪಾತ್ರೆಯಲ್ಲಿ ರಂಧ್ರ ಮಾಡಲು ಯಾವ ವಸ್ತು ಬಳಸಲಾಗುತ್ತದೆ?",
+                        "opts": {
+                            "1": "ಐಸ್‌ಕ್ರೀಂ ಕಡ್ಡಿ",
+                            "2": "ಕತ್ತರಿ",
+                            "3": "ಅಂಟು"
+                        },
+                        "ans": "2",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಆಗಾಗ ಮಳೆ ಬೀಳುತ್ತದೆ ಆದರೆ ಶುದ್ಧ ನೀರಿಲ್ಲದ ಜಾಗದಲ್ಲಿ ವಾಸಿಸಿದರೆ ಮಳೆನೀರು ಕೊಯ್ಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಕುಡಿಯಲು ಮತ್ತು ತೊಳೆಯಲು ಮುಂತಾದ ಅಗತ್ಯ ಉಪಯೋಗಗಳಿಗೆ ಮಳೆನೀರು ಸಂಗ್ರಹಿಸಿ ಸಂಗ್ರಹಿಸಬಹುದು",
+                            "2": "ಅದು ಮಣ್ಣಿನ ಸವೆತ ಹೆಚ್ಚಿಸಬಹುದು",
+                            "3": "ಅದು ಕೇವಲ ಅಲಂಕಾರಿಕ ಉದ್ದೇಶಗಳಿಗೆ ನೀರು ಒದಗಿಸಬಹುದು"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಮಳೆನೀರು ಕೊಯ್ಲು ಮಾದರಿ ಪೈಪ್ ಸಂಧಿಯಲ್ಲಿ ಸೋರುತ್ತಿದ್ದರೆ ಸ್ಕ್ರಿಪ್ಟ್‌ನ ವಸ್ತುಗಳನ್ನು ಬಳಸಿ ಈ ಸಮಸ್ಯೆ ಹೇಗೆ ಪರಿಹರಿಸುತ್ತೀರಿ?",
+                        "opts": {
+                            "1": "ಶೋಧನ ವ್ಯವಸ್ಥೆಗೆ ಹೆಚ್ಚು ಕಲ್ಲುಗಳು ಸೇರಿಸಿ",
+                            "2": "ಸೋರುತ್ತಿರುವ ಜಾಗ ಗುರುತಿಸಲು ಸ್ಕೆಚ್ ಪೆನ್ ಬಳಸಿ",
+                            "3": "ಸಂಧಿ ಭದ್ರಪಡಿಸಿ ಸೋರಿಕೆ ತಡೆಯಲು ಅಂಟು ಟೇಪ್ ಬಳಸಿ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        },
+        {
+            "id": "CASSL2-U10",
+            "ord": 10,
+            "nm": "Starch Becomes Plastic 🌽",
+            "desc": "- 40% of the total students enrolled watch at least 70% of the video\n- 40% of the student submit image of their artefact\n- 40% students score 3/5 in quiz",
+            "rwc": "Glycerine Lemon Cornstarch Water",
+            "diff": "Remedial",
+            "img": [],
+            "video": [
+                {
+                    "id": "CASSL2-U10-V01",
+                    "nm": "Can cornstarch replace real plastic? 🌽",
+                    "desc": "Students will make a biodegradable material that mimics the properties of Plastic and make artefacts from this Plastic.",
+                    "yt": "llqZXxUcJeQ",
+                    "dur": "00:03:04"
+                }
+            ],
+            "assign": [
+                {
+                    "id": "CASSL2-U10-A01",
+                    "nm": "Make Biodegradable Plastic Bookmark 🌽",
+                    "sub_types": "image,video",
+                    "unguided_text": "ಪ್ಲಾಸ್ಟಿಕ್ ಬಾಗಿಸುವ ಫೋಟೋ/ವೀಡಿಯೊ ನಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ!!",
+                    "examples": []
+                }
+            ],
+            "quiz": {
+                "id": "CASSL2-U10-Q01",
+                "nm": "Can plastic be eco-friendly? 🌍",
+                "qs": [
+                    {
+                        "q": "ಚಟುವಟಿಕೆಯಲ್ಲಿ ಜೈವಿಕ ವಿಘಟನೀಯ ಪ್ಲಾಸ್ಟಿಕ್ ತಯಾರಿಸಲು ಯಾವ ಪದಾರ್ಥಗಳು ಬೇಕು?",
+                        "opts": {
+                            "1": "ಗ್ಲಿಸರಿನ್, ನಿಂಬೆ, ಕಾರ್ನ್‌ಸ್ಟಾರ್ಚ್, ನೀರು",
+                            "2": "ಗ್ಲಿಸರಿನ್, ವಿನೆಗರ್, ಕಾರ್ನ್‌ಸ್ಟಾರ್ಚ್, ನೀರು",
+                            "3": "ಪ್ಲಾಸ್ಟಿಕ್, ನಿಂಬೆ, ಕಾರ್ನ್‌ಸ್ಟಾರ್ಚ್, ಎಣ್ಣೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಜೈವಿಕ ವಿಘಟನೀಯ ಪ್ಲಾಸ್ಟಿಕ್ ತಯಾರಿಸುವುದು ಪರಿಸರಕ್ಕೆ ಏಕೆ ಮುಖ್ಯ?",
+                        "opts": {
+                            "1": "ಇದು ಶೀಘ್ರವಾಗಿ ಕೊಳೆಯುವ ಮೂಲಕ ಪ್ಲಾಸ್ಟಿಕ್ ಮಾಲಿನ್ಯವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ",
+                            "2": "ಇದು ಆಟಿಕೆಗಳನ್ನು ಸುಲಭವಾಗಿ ತಯಾರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+                            "3": "ಇದು ಪ್ಲಾಸ್ಟಿಕ್ ಅನ್ನು ಹೆಚ್ಚು ಬಣ್ಣದಾಗಿ ಮಾಡುತ್ತದೆ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಜೈವಿಕ ವಿಘಟನೀಯ ಪ್ಲಾಸ್ಟಿಕ್ ತಯಾರಿಕೆಯ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ಗ್ಲಿಸರಿನ್‌ನ ಪಾತ್ರವೇನು?",
+                        "opts": {
+                            "1": "ಇದು ಪ್ಲಾಸ್ಟಿಕ್‌ಗೆ ಬಣ್ಣ ಸೇರಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ",
+                            "2": "ಇದು ಸಂರಕ್ಷಕವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತದೆ",
+                            "3": "ಇದು ಪ್ಲಾಸ್ಟಿಕ್ ಅನ್ನು ಮೃದುವಾಗಿ ಮಾಡುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ಜೈವಿಕ ವಿಘಟನೀಯ ಪ್ಲಾಸ್ಟಿಕ್ ಬಳಸಿ ಹೊಸ ಪರಿಸರ ಸ್ನೇಹಿ ಉತ್ಪನ್ನ ತಯಾರಿಸಲು ಮೊದಲು ಏನು ಯೋಚಿಸಬೇಕು?",
+                        "opts": {
+                            "1": "ಉತ್ಪನ್ನದ ಪರಿಸರ ಪ್ರಭಾವ ಮತ್ತು ಬಳಕೆ",
+                            "2": "ಪ್ಲಾಸ್ಟಿಕ್‌ನ ಬಣ್ಣ",
+                            "3": "ಉತ್ಪನ್ನದ ಗಾತ್ರ"
+                        },
+                        "ans": "1",
+                        "hnt": "",
+                        "exp": ""
+                    },
+                    {
+                        "q": "ನಿಮ್ಮ ಸಮುದಾಯದಲ್ಲಿ ಪ್ಲಾಸ್ಟಿಕ್ ತ್ಯಾಜ್ಯ ಕಡಿಮೆ ಮಾಡಲು ಜೈವಿಕ ವಿಘಟನೀಯ ಪ್ಲಾಸ್ಟಿಕ್ ಹೇಗೆ ಸಹಾಯ ಮಾಡಬಹುದು?",
+                        "opts": {
+                            "1": "ಇದನ್ನು ಹೆಚ್ಚು ಬಾಳಿಕೆ ಬರುವ ಪ್ಲಾಸ್ಟಿಕ್ ವಸ್ತುಗಳನ್ನು ತಯಾರಿಸಲು ಬಳಸಬಹುದು",
+                            "2": "ಇದಕ್ಕೆ ಹೆಚ್ಚಿನ ಸಂಪನ್ಮೂಲಗಳ ಅಗತ್ಯವಿದ್ದು ಉತ್ಪಾದನಾ ವೆಚ್ಚ ಹೆಚ್ಚಾಗುತ್ತದೆ",
+                            "3": "ಇದು ಶೀಘ್ರವಾಗಿ ಕೊಳೆಯುವ ಮತ್ತು ದೀರ್ಘಕಾಲೀನ ಮಾಲಿನ್ಯ ಕಡಿಮೆ ಮಾಡುವ ಪರ್ಯಾಯ ಒದಗಿಸುತ್ತದೆ"
+                        },
+                        "ans": "3",
+                        "hnt": "",
+                        "exp": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

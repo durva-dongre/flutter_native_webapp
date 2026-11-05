@@ -1,0 +1,590 @@
+{
+  "courses": {
+    "CAATA3": {
+      "langs": {
+        "en": {
+          "bytes": 40012,
+          "file": "tapapp-test/CAATA3/en.json",
+          "hash": "sha256:e242c115a73ca2d91760aae8ec7af4add8c2107a5e8256fa1449606241c14044"
+        },
+        "hi": {
+          "bytes": 58057,
+          "file": "tapapp-test/CAATA3/hi.json",
+          "hash": "sha256:a57df483f61b6bc5b28ef248562013e3ec5e3c353082f9c78f4e214e7a445fdd"
+        },
+        "kn": {
+          "bytes": 53048,
+          "file": "tapapp-test/CAATA3/kn.json",
+          "hash": "sha256:e0dd426e1d5fd70ce6b6e8c1ac8e42583c2633cd781607116a69d655e7d89cad"
+        },
+        "mr": {
+          "bytes": 57932,
+          "file": "tapapp-test/CAATA3/mr.json",
+          "hash": "sha256:6b6a83459bec71d2eed9442a6383c0c34d450b1af1470f84c3db72404ae1d75e"
+        },
+        "pa": {
+          "bytes": 58247,
+          "file": "tapapp-test/CAATA3/pa.json",
+          "hash": "sha256:32236638ff38a18272c60820df458f1e6fdd6441746d1e7de72782a57fd63efe"
+        }
+      },
+      "lvl": "3",
+      "units_count": 10,
+      "vrt": "arts"
+    },
+    "CAEKL4K": {
+      "langs": {
+        "en": {
+          "bytes": 44432,
+          "file": "tapapp-test/CAEKL4K/en.json",
+          "hash": "sha256:ee43ac404566b3f08f7170463f43c820db48843e29db8fd44f0f369f905fb160"
+        },
+        "hi": {
+          "bytes": 66283,
+          "file": "tapapp-test/CAEKL4K/hi.json",
+          "hash": "sha256:0b55813abaebcc6ee74d8bdbf366b3fef1af8cb0ec67d6c9ba3ce9619a642538"
+        },
+        "kn": {
+          "bytes": 60674,
+          "file": "tapapp-test/CAEKL4K/kn.json",
+          "hash": "sha256:39379bffa0d70a91c53f581776c1b5f35a19e330de8cda4289469ed959637173"
+        },
+        "mr": {
+          "bytes": 65949,
+          "file": "tapapp-test/CAEKL4K/mr.json",
+          "hash": "sha256:adccbdfdd74a3346c0b5fdb2a794cf42a7b8f95cfd230348e7f1880efe1cfb3f"
+        },
+        "pa": {
+          "bytes": 65405,
+          "file": "tapapp-test/CAEKL4K/pa.json",
+          "hash": "sha256:bf677ec471a6cd5c04693dd371c818c0bef36b788523b83ae29e7ba04f44c542"
+        }
+      },
+      "lvl": "4K",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CAESL4": {
+      "langs": {
+        "en": {
+          "bytes": 40448,
+          "file": "tapapp-test/CAESL4/en.json",
+          "hash": "sha256:6050762b9eaf778101f84ea404010aba8b6ac866ee912c67c36e48979314b3fc"
+        },
+        "hi": {
+          "bytes": 58119,
+          "file": "tapapp-test/CAESL4/hi.json",
+          "hash": "sha256:8a3bc39551ab079e9b713fa9bf38b54a5899f36204dc4b8912e8d21182191791"
+        },
+        "kn": {
+          "bytes": 52233,
+          "file": "tapapp-test/CAESL4/kn.json",
+          "hash": "sha256:e9a25d872362f11500de49c56200cece524fb10317b9e1c8bceaddf1d0b9c35d"
+        },
+        "mr": {
+          "bytes": 57080,
+          "file": "tapapp-test/CAESL4/mr.json",
+          "hash": "sha256:b5d9345e4625fd1e5d42b5b00b77d3c80096b9757b49a88858f59d3ee728d232"
+        },
+        "pa": {
+          "bytes": 57099,
+          "file": "tapapp-test/CAESL4/pa.json",
+          "hash": "sha256:1c99b6946201e0a41399c03bc93fe6839e0b58e0f08e1d288597312bb3eae7ef"
+        }
+      },
+      "lvl": "4",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CAFFL4": {
+      "langs": {
+        "en": {
+          "bytes": 40705,
+          "file": "tapapp-test/CAFFL4/en.json",
+          "hash": "sha256:e08794761fed855158c6d5a9108a35cf980f118765b7a052f54d6be9ce1f5bc8"
+        },
+        "hi": {
+          "bytes": 60907,
+          "file": "tapapp-test/CAFFL4/hi.json",
+          "hash": "sha256:0f3badac7bf9e6cf5db0893077e1e8b7bc9306463d73b978ef815ebf5d2b0e04"
+        },
+        "kn": {
+          "bytes": 53251,
+          "file": "tapapp-test/CAFFL4/kn.json",
+          "hash": "sha256:c64a92f7c8d7a185a55012be2e54665314ea567391a430a96e3edbf635ace601"
+        },
+        "mr": {
+          "bytes": 61787,
+          "file": "tapapp-test/CAFFL4/mr.json",
+          "hash": "sha256:3a46f0a4129e98befbb9220fbb994d160aa91d2fae0d5f0f852749dca19de3db"
+        },
+        "pa": {
+          "bytes": 59837,
+          "file": "tapapp-test/CAFFL4/pa.json",
+          "hash": "sha256:8d63f52d6cad46a40395d068261b1e3bbeafed9d27f83d20b5c805a33a71f43c"
+        }
+      },
+      "lvl": "4",
+      "units_count": 10,
+      "vrt": "financial-literacy"
+    },
+    "CASSL2": {
+      "langs": {
+        "en": {
+          "bytes": 41509,
+          "file": "tapapp-test/CASSL2/en.json",
+          "hash": "sha256:6bae58bb886ef68a91cbbb87d675ef57de4c8124295fe2e7d033eba3055d40cf"
+        },
+        "hi": {
+          "bytes": 60170,
+          "file": "tapapp-test/CASSL2/hi.json",
+          "hash": "sha256:c6d254999e0aa21d28a221b9dab7e6d619d1128eb2b8b44320a18264ee89df57"
+        },
+        "kn": {
+          "bytes": 56119,
+          "file": "tapapp-test/CASSL2/kn.json",
+          "hash": "sha256:5265c3ec5ca91fc46706387c641649ee7cee2b39a4cd9cb4388e59c450249ca2"
+        },
+        "mr": {
+          "bytes": 59368,
+          "file": "tapapp-test/CASSL2/mr.json",
+          "hash": "sha256:4979f4f2116a883eb0af405be91ff9b307a3bf1fe6712e2d6de2ff196d9667ee"
+        },
+        "pa": {
+          "bytes": 59852,
+          "file": "tapapp-test/CASSL2/pa.json",
+          "hash": "sha256:11281b212f0c826c9e056608c3192a2b0269d16a803c56fa16d91ccaec425c5a"
+        }
+      },
+      "lvl": "2",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CBASA1": {
+      "langs": {
+        "en": {
+          "bytes": 39993,
+          "file": "tapapp-test/CBASA1/en.json",
+          "hash": "sha256:fe808932fe8e3bccb1a5177d90177cde2b397e52abf525bc42138cd8cb273bb5"
+        },
+        "hi": {
+          "bytes": 58787,
+          "file": "tapapp-test/CBASA1/hi.json",
+          "hash": "sha256:8d75af6f0f8a1d465cab5a6fc5bd1cfc1faee2d59090ad3edb7f01d81a2feeb3"
+        },
+        "kn": {
+          "bytes": 54518,
+          "file": "tapapp-test/CBASA1/kn.json",
+          "hash": "sha256:6679abbb0b82464f2e9f9dea8b70e1ba0fae84da5f373dd3c4f648a3726ee046"
+        },
+        "mr": {
+          "bytes": 58755,
+          "file": "tapapp-test/CBASA1/mr.json",
+          "hash": "sha256:0e7a481a9074e7e98f72189c230b3e98d7d9a67d9a02a41510914d2cef2b64c6"
+        },
+        "pa": {
+          "bytes": 57324,
+          "file": "tapapp-test/CBASA1/pa.json",
+          "hash": "sha256:ed27582d794762649449d7fc3f2579c682442c3fedf001382cef93de2bc14bea"
+        }
+      },
+      "lvl": "1",
+      "units_count": 10,
+      "vrt": "arts"
+    },
+    "CBEKL3K": {
+      "langs": {
+        "en": {
+          "bytes": 43407,
+          "file": "tapapp-test/CBEKL3K/en.json",
+          "hash": "sha256:10d83f4cee59852083da8d339202fc95357cc2402f51ffaa689874a3e2b1ae95"
+        },
+        "hi": {
+          "bytes": 63539,
+          "file": "tapapp-test/CBEKL3K/hi.json",
+          "hash": "sha256:0980bcc28c8f879859b9e784410eace747bb14675ce5d46c4809fe5f98c4285c"
+        },
+        "kn": {
+          "bytes": 55930,
+          "file": "tapapp-test/CBEKL3K/kn.json",
+          "hash": "sha256:10d20eccd7eb6f64a7aaf92f2988be0028f7fbd39aa0e7dea20c67014e515906"
+        },
+        "mr": {
+          "bytes": 62582,
+          "file": "tapapp-test/CBEKL3K/mr.json",
+          "hash": "sha256:b6ce8d4588566480b1a4a9891073b91c4a716e493f28ca59f4f4f20a5b4159df"
+        },
+        "pa": {
+          "bytes": 62988,
+          "file": "tapapp-test/CBEKL3K/pa.json",
+          "hash": "sha256:871b8a272f1a955180067109a960fd0ca99df500e05a3db29c952501ee428b8b"
+        }
+      },
+      "lvl": "3K",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CBESL3": {
+      "langs": {
+        "en": {
+          "bytes": 39863,
+          "file": "tapapp-test/CBESL3/en.json",
+          "hash": "sha256:acbef4a96eadabd897118406463aa5d0c2e21263e49862fb21ebf60e01e04474"
+        },
+        "hi": {
+          "bytes": 56189,
+          "file": "tapapp-test/CBESL3/hi.json",
+          "hash": "sha256:350b8ef08c2be2c1e6e53606a54c1c1e326d5fb8301175d7616b2f916320e434"
+        },
+        "kn": {
+          "bytes": 50944,
+          "file": "tapapp-test/CBESL3/kn.json",
+          "hash": "sha256:1dbf6e173f5c8b056177491a77f922452fd6059586f01f233701ba5ae659b647"
+        },
+        "mr": {
+          "bytes": 55809,
+          "file": "tapapp-test/CBESL3/mr.json",
+          "hash": "sha256:04d56447dafbdfe21594d8f87ebdb23b09488b5b3687c01573930be25c6f1865"
+        },
+        "pa": {
+          "bytes": 55672,
+          "file": "tapapp-test/CBESL3/pa.json",
+          "hash": "sha256:2882b33e82b9e7b6f0b685d189c3db0149cf46bc4c40b0d1c163e7d00ad6a5cb"
+        }
+      },
+      "lvl": "3",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CBSSL1": {
+      "langs": {
+        "en": {
+          "bytes": 45035,
+          "file": "tapapp-test/CBSSL1/en.json",
+          "hash": "sha256:9a5c855023b0046ddbde7c1c72a19c4bd324763713f011d8dc661c5613259fe1"
+        },
+        "hi": {
+          "bytes": 64432,
+          "file": "tapapp-test/CBSSL1/hi.json",
+          "hash": "sha256:820a26bf79711cb4c465354543eb81a5766788ec1a9143085e90f5f2012287d8"
+        },
+        "kn": {
+          "bytes": 57662,
+          "file": "tapapp-test/CBSSL1/kn.json",
+          "hash": "sha256:e20a6f982e64f1aacbe584512e84af5651c9fb60469815f8c46102997e27b0d9"
+        },
+        "mr": {
+          "bytes": 63279,
+          "file": "tapapp-test/CBSSL1/mr.json",
+          "hash": "sha256:c793cceaecc7a1857df5c593b8cbab415c6ebc9ae3e33210c74a7f372c2dde09"
+        },
+        "pa": {
+          "bytes": 62038,
+          "file": "tapapp-test/CBSSL1/pa.json",
+          "hash": "sha256:90024eb32e8348f0b619c23335c1c38baba5d768f67c39ad9452c473a10531f9"
+        }
+      },
+      "lvl": "1",
+      "units_count": 10,
+      "vrt": "science-lab"
+    },
+    "CIAA2": {
+      "langs": {
+        "en": {
+          "bytes": 38274,
+          "file": "tapapp-test/CIAA2/en.json",
+          "hash": "sha256:d47981a2008d9481cd9d0580173420f4163d977c93a8efb36c26f375ce6eaa35"
+        },
+        "hi": {
+          "bytes": 53463,
+          "file": "tapapp-test/CIAA2/hi.json",
+          "hash": "sha256:d7422585e01606a3162dfe3478c26f15ac12d92d66c12da1dbdace488e17aa1b"
+        },
+        "kn": {
+          "bytes": 50888,
+          "file": "tapapp-test/CIAA2/kn.json",
+          "hash": "sha256:8f2a631cdfa7d13011bf35344262f33a7579ebc50b37db22d913fb5bbc09931f"
+        },
+        "mr": {
+          "bytes": 54454,
+          "file": "tapapp-test/CIAA2/mr.json",
+          "hash": "sha256:816a52925f9c8fc0e10aa2aa5e1da1e2f6d3c45f77cbd62c8a8e5f2c68506192"
+        },
+        "pa": {
+          "bytes": 53752,
+          "file": "tapapp-test/CIAA2/pa.json",
+          "hash": "sha256:9d04363d5c5c948c730dd40c49f23037858cb623df817c08211205fa2abf22c3"
+        }
+      },
+      "lvl": "2",
+      "units_count": 10,
+      "vrt": "arts"
+    },
+    "CMAEA4": {
+      "langs": {
+        "en": {
+          "bytes": 40515,
+          "file": "tapapp-test/CMAEA4/en.json",
+          "hash": "sha256:46f8536b6596b929540340e113357c8c9584e11d9fe5abffa32f1fe130d1a55f"
+        },
+        "hi": {
+          "bytes": 60565,
+          "file": "tapapp-test/CMAEA4/hi.json",
+          "hash": "sha256:f95575933080fcc4314bd1f9d63243872b0bf3a026481996da7e947de763b56c"
+        },
+        "kn": {
+          "bytes": 54567,
+          "file": "tapapp-test/CMAEA4/kn.json",
+          "hash": "sha256:a06ff78e33b47da3d5b07f5a8d07ea0cde845bc6fda7a0d87825daab742d2c7b"
+        },
+        "mr": {
+          "bytes": 59676,
+          "file": "tapapp-test/CMAEA4/mr.json",
+          "hash": "sha256:0ed59e4c9dbdc0daf5fc855efebf63d1e7873d03667e29f33aafa6a6ff96cc8a"
+        },
+        "pa": {
+          "bytes": 59235,
+          "file": "tapapp-test/CMAEA4/pa.json",
+          "hash": "sha256:1c2a8e4d9682bff1ea1a22cd8b5072edd59f22015e76a4e34a1b58f765d8dd58"
+        }
+      },
+      "lvl": "4",
+      "units_count": 10,
+      "vrt": "arts"
+    },
+    "CMBC3": {
+      "langs": {
+        "en": {
+          "bytes": 40877,
+          "file": "tapapp-test/CMBC3/en.json",
+          "hash": "sha256:58e893d015e67bcf7c7cddbe96b6b7886d213a0657b4bdbca5ae07809091c33b"
+        },
+        "hi": {
+          "bytes": 60967,
+          "file": "tapapp-test/CMBC3/hi.json",
+          "hash": "sha256:5ddabec37755ab08c63e30ce1ccc900bea956b3be946fa779e633b841dc8a791"
+        },
+        "kn": {
+          "bytes": 54121,
+          "file": "tapapp-test/CMBC3/kn.json",
+          "hash": "sha256:936c09de0b6d956eb7533b7b698a76b360b5dddb91db8ddb69d8e51f5ec16f14"
+        },
+        "mr": {
+          "bytes": 59381,
+          "file": "tapapp-test/CMBC3/mr.json",
+          "hash": "sha256:9a7ae2fe8f02eb0a318932b5fe74e95471881bfe6c41d8fa1f8adbd3bc393c4e"
+        },
+        "pa": {
+          "bytes": 60198,
+          "file": "tapapp-test/CMBC3/pa.json",
+          "hash": "sha256:f8d626b899744a314bf9ebf6589bd910e8d9e3a7878bf545529a1cfdc01ed7a9"
+        }
+      },
+      "lvl": "3",
+      "units_count": 10,
+      "vrt": "coding"
+    },
+    "CMBFL1": {
+      "langs": {
+        "en": {
+          "bytes": 41412,
+          "file": "tapapp-test/CMBFL1/en.json",
+          "hash": "sha256:0a4d8eadae4f0654f32bbf3600f5ea5b643e489cc1534e43a1136566f1f3e62f"
+        },
+        "hi": {
+          "bytes": 60922,
+          "file": "tapapp-test/CMBFL1/hi.json",
+          "hash": "sha256:207735aa5ca02acd97cc585a6b821402eb1c92720538dcd76aafdf64b079b429"
+        },
+        "kn": {
+          "bytes": 54765,
+          "file": "tapapp-test/CMBFL1/kn.json",
+          "hash": "sha256:8b2a751422d08c7d41acdfc1af4f890ff9f02ec6380287edc90fb8e71a5fb256"
+        },
+        "mr": {
+          "bytes": 62043,
+          "file": "tapapp-test/CMBFL1/mr.json",
+          "hash": "sha256:faadf847c4bd3049f91197816a9533ea2fc6e590de4ae6ae208cca7b2fdc6cf5"
+        },
+        "pa": {
+          "bytes": 60085,
+          "file": "tapapp-test/CMBFL1/pa.json",
+          "hash": "sha256:e8837e5ae6f021430660bca10fe7789ff1632a5474305e178b244f71519a06cb"
+        }
+      },
+      "lvl": "1",
+      "units_count": 10,
+      "vrt": "financial-literacy"
+    },
+    "COC2": {
+      "langs": {
+        "en": {
+          "bytes": 43858,
+          "file": "tapapp-test/COC2/en.json",
+          "hash": "sha256:32148a5704809adb57ab76df1ca7d6840401ebcab01adf340d4d365b148b943b"
+        },
+        "hi": {
+          "bytes": 65041,
+          "file": "tapapp-test/COC2/hi.json",
+          "hash": "sha256:9969b23f1df51eae935ad658d9e94bf207916c660d880ebe9abad1b63aa96561"
+        },
+        "kn": {
+          "bytes": 56598,
+          "file": "tapapp-test/COC2/kn.json",
+          "hash": "sha256:a759a0d550f5486f949dc4ec3909e8955471a7f94e3c294a1c5906729ba25723"
+        },
+        "mr": {
+          "bytes": 64307,
+          "file": "tapapp-test/COC2/mr.json",
+          "hash": "sha256:13e5eb8a56948ebd206358230c4fb944220c357c8020cffbc1bfbfa4fc23afa4"
+        },
+        "pa": {
+          "bytes": 64509,
+          "file": "tapapp-test/COC2/pa.json",
+          "hash": "sha256:fc3f85c2000e67fcf4cba3d696f8bea3a30e5cdde47674ab7b84311007bd2f5b"
+        }
+      },
+      "lvl": "2",
+      "units_count": 10,
+      "vrt": "coding"
+    },
+    "CPC4": {
+      "langs": {
+        "en": {
+          "bytes": 43954,
+          "file": "tapapp-test/CPC4/en.json",
+          "hash": "sha256:58c4dbe8dc26d86834ecd3341beea7eaf86391353de53c7f3c246c19cb096614"
+        },
+        "hi": {
+          "bytes": 68297,
+          "file": "tapapp-test/CPC4/hi.json",
+          "hash": "sha256:47834067e7bf0f0144f43ef3070f8f170cc8f9ea42633a3700c69395d1bbddc2"
+        },
+        "kn": {
+          "bytes": 62834,
+          "file": "tapapp-test/CPC4/kn.json",
+          "hash": "sha256:fc2a6a205f2be19c9d2d6e62006658e9d98b3d704781ca87cad4ff36fb07e7bc"
+        },
+        "mr": {
+          "bytes": 66813,
+          "file": "tapapp-test/CPC4/mr.json",
+          "hash": "sha256:f810099f6e7085f269d965291924c3dffa9ca8d4e8d9abeac656857abc8e1169"
+        },
+        "pa": {
+          "bytes": 66042,
+          "file": "tapapp-test/CPC4/pa.json",
+          "hash": "sha256:d7d91ab8f018055fdb0ec4146b380f6613625ac3c4f0f0db1f9a3a3242b99de1"
+        }
+      },
+      "lvl": "4",
+      "units_count": 10,
+      "vrt": "coding"
+    },
+    "CRLMF3": {
+      "langs": {
+        "en": {
+          "bytes": 41217,
+          "file": "tapapp-test/CRLMF3/en.json",
+          "hash": "sha256:6853cf8427c0bbb63684bd5784ba8084bd4db53329f469a44e10ef0d781b3110"
+        },
+        "hi": {
+          "bytes": 62060,
+          "file": "tapapp-test/CRLMF3/hi.json",
+          "hash": "sha256:6984a83737ecbc0f0d2c8deed510039adce36e0234f2b4e4572eb1acbac0a1d1"
+        },
+        "kn": {
+          "bytes": 53997,
+          "file": "tapapp-test/CRLMF3/kn.json",
+          "hash": "sha256:7ebde19146930f4dbc89a6e129a7f55f84596ffb9b6635d71ff25daea9a230de"
+        },
+        "mr": {
+          "bytes": 61563,
+          "file": "tapapp-test/CRLMF3/mr.json",
+          "hash": "sha256:281c044a499223f4bfcd201e94c203e577cdbf8701fad8b20dd1079448cd5a57"
+        },
+        "pa": {
+          "bytes": 61016,
+          "file": "tapapp-test/CRLMF3/pa.json",
+          "hash": "sha256:b9647757c0566085729631f924c6ac7abe4da2d3439b7407ded05f34b97dd7ae"
+        }
+      },
+      "lvl": "3",
+      "units_count": 10,
+      "vrt": "financial-literacy"
+    },
+    "CSJC1": {
+      "langs": {
+        "en": {
+          "bytes": 47902,
+          "file": "tapapp-test/CSJC1/en.json",
+          "hash": "sha256:38d8a09241ba62339fc6883ab61cfd4e002882eca03fb1d9b09490a43c663855"
+        },
+        "hi": {
+          "bytes": 73252,
+          "file": "tapapp-test/CSJC1/hi.json",
+          "hash": "sha256:a7e31092fabc08e5d40fdde67fe7052194a4c3f0e0e17a425264e9524b531f2b"
+        },
+        "kn": {
+          "bytes": 61914,
+          "file": "tapapp-test/CSJC1/kn.json",
+          "hash": "sha256:1ffc1069de557900139510f10aba55c6e5c06d2aa8bc78627cb4f5a27afb9209"
+        },
+        "mr": {
+          "bytes": 74414,
+          "file": "tapapp-test/CSJC1/mr.json",
+          "hash": "sha256:c2528a2c8ce80fb9af72b69d3c46fe47cfafbefbd5b9f2ad6c3a8cabf54c3e34"
+        },
+        "pa": {
+          "bytes": 68838,
+          "file": "tapapp-test/CSJC1/pa.json",
+          "hash": "sha256:cce82d95ff8a2261a7171076ae9d6b22414a691c69fa3e6c769f975f4417350a"
+        }
+      },
+      "lvl": "1",
+      "units_count": 10,
+      "vrt": "coding"
+    },
+    "CSSFL2": {
+      "langs": {
+        "en": {
+          "bytes": 40304,
+          "file": "tapapp-test/CSSFL2/en.json",
+          "hash": "sha256:57b0d0b3150bbfd370e43296839e855726cda685f01bc37633314e0778af9365"
+        },
+        "hi": {
+          "bytes": 58546,
+          "file": "tapapp-test/CSSFL2/hi.json",
+          "hash": "sha256:309ce9e4fa35231f62002e8ce4e086c249dce35474db4d5f8d23194454962851"
+        },
+        "kn": {
+          "bytes": 52354,
+          "file": "tapapp-test/CSSFL2/kn.json",
+          "hash": "sha256:f546dccff9f021d58a3c64899e8d32164f058826009c74a86001f00739582380"
+        },
+        "mr": {
+          "bytes": 59606,
+          "file": "tapapp-test/CSSFL2/mr.json",
+          "hash": "sha256:916c3de4019a86ffeeb8766e6e4575205828a5ada281f21beb19578e143c54b7"
+        },
+        "pa": {
+          "bytes": 58511,
+          "file": "tapapp-test/CSSFL2/pa.json",
+          "hash": "sha256:70517ecc8cb6471ec35103c5c75e0f300804ff96f7b9779c83b4c1466aebe040"
+        }
+      },
+      "lvl": "2",
+      "units_count": 10,
+      "vrt": "financial-literacy"
+    }
+  },
+  "generated_at": "2026-11-02T19:18:53.048818+00:00",
+  "languages": [
+    "en",
+    "hi",
+    "kn",
+    "mr",
+    "pa"
+  ],
+  "schema": "manifest/1",
+  "version": 1
+}

@@ -1,0 +1,75 @@
+{
+  "events": {
+    "en": {
+      "bytes": 373,
+      "count": 1,
+      "file": "en.json",
+      "hash": "sha256:8e2952f07b6b1031798bf85c44a6e549ff446ca63b222eaf12c7ca2c8da05e1e"
+    },
+    "hi": {
+      "bytes": 501,
+      "count": 1,
+      "file": "hi.json",
+      "hash": "sha256:6222388aa11dfcd0bc301b13065fdaae1b8ecdd0cf9400ff128d71f9f22b7070"
+    },
+    "kn": {
+      "bytes": 552,
+      "count": 1,
+      "file": "kn.json",
+      "hash": "sha256:c6168d73eca554e0b0f46b858309b1dbdf811bca1133a657c0827bd06431c3f1"
+    },
+    "mr": {
+      "bytes": 495,
+      "count": 1,
+      "file": "mr.json",
+      "hash": "sha256:8cb925e639093c2ae991ee76b975c9072d7f897e909ae0bed18da6950d16e43c"
+    },
+    "pa": {
+      "bytes": 497,
+      "count": 1,
+      "file": "pa.json",
+      "hash": "sha256:ad16880f0788603b297ae1fd7f1b029198db4c987d3e10991351e3d0afc2c134"
+    }
+  },
+  "generated_at": "2026-11-02T19:37:26.180896+00:00",
+  "languages": [
+    "en",
+    "hi",
+    "kn",
+    "mr",
+    "pa"
+  ],
+  "schema": "manifest/1",
+  "units": {
+    "EV-00001": {
+      "langs": {
+        "en": {
+          "bytes": 1378,
+          "file": "EV-00001/en.json",
+          "hash": "sha256:db63e6598b0ff6c9ca178a7619f350bca4b9d05b6639fbfbf53af27137f8530b"
+        },
+        "hi": {
+          "bytes": 2234,
+          "file": "EV-00001/hi.json",
+          "hash": "sha256:491c7f94035fd8613981a89d11a97629844027a05446e5c9754b285216675776"
+        },
+        "kn": {
+          "bytes": 2519,
+          "file": "EV-00001/kn.json",
+          "hash": "sha256:7aa6150c4218c67235b847d92bf2df29bc938014021bc77a2bef565648a7a0cf"
+        },
+        "mr": {
+          "bytes": 2127,
+          "file": "EV-00001/mr.json",
+          "hash": "sha256:2cf477daa70ab36d32ac3e34878ea42faaedeab99eb51547752e2499b8ad97d2"
+        },
+        "pa": {
+          "bytes": 2155,
+          "file": "EV-00001/pa.json",
+          "hash": "sha256:2c541f1ce775926bc7153b9876def091015bb15b2e950f5143c6a0dc61c2acf4"
+        }
+      }
+    }
+  },
+  "version": 1
+}

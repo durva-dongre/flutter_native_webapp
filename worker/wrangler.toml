@@ -1,0 +1,22 @@
+name = "tapapp-worker"
+main = "src/worker.js"
+compatibility_date = "2026-07-01"
+
+[vars]
+FRAPPE_BASE_URL = "https://opened.lol:8081"
+ALLOWED_ORIGINS = "*"
+GROQ_MODEL = "qwen/qwen3.6-27b"
+GALLERY_DEFAULT_LIMIT = "50"
+GALLERY_MAX_LIMIT = "100"
+GALLERY_CACHE_TTL_SECONDS = "86400"
+R2_SIGN_TTL_SECONDS = "604800"
+R2_ACCOUNT_ID = "your-r2-account-id"
+R2_BUCKET = "tapapp-public"
+
+kv_namespaces = [
+  { binding = "KV", id = "e3d834d9f35d4954bc25a0a392e8be09" }
+]
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "tapapp-public"

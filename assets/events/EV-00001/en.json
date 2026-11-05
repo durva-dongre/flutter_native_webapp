@@ -1,0 +1,44 @@
+{
+    "id": "EV-00001",
+    "ord": 1,
+    "nm": "The Diwali Lantern Lab",
+    "desc": "Build a lantern circuit and understand safe, energy-efficient lighting for the festival.",
+    "rwc": "Mobile, Internet, Everycircuit App",
+    "diff": "Basic",
+    "img": [],
+    "video": [
+        {
+            "id": "EV-00001-V01",
+            "nm": "Can a Lantern Teach You About Energy?",
+            "desc": "Students build a lantern circuit and observe how switching and resistance affect brightness and energy use.",
+            "yt": "UhqR-9N_4kw",
+            "dur": "00:03:00"
+        }
+    ],
+    "assign": [
+        {
+            "id": "EV-00001-A01",
+            "nm": "Light Your Own Diwali Lantern",
+            "sub_types": "image,video",
+            "unguided_text": "Share a Video / Picture of your lantern circuit!",
+            "examples": []
+        }
+    ],
+    "quiz": {
+        "id": "EV-00001-Q01",
+        "nm": "Does Your Lantern Glow Safely?",
+        "qs": [
+            {
+                "q": "What happens when the switch is turned off in the lantern circuit?",
+                "opts": {
+                    "1": "The LED stays on",
+                    "2": "The LED turns off",
+                    "3": "The LED gets brighter"
+                },
+                "ans": "2",
+                "hnt": "",
+                "exp": ""
+            }
+        ]
+    }
+}

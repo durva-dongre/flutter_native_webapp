@@ -1,0 +1,16 @@
+[
+    {
+        "id": "EV-00001",
+        "nm": "Diwali Lantern Challenge",
+        "unit": "EV-00001",
+        "text": "Light up Diwali! Make a lantern and share it with us.",
+        "status": "Published",
+        "start": "2026-11-01",
+        "end": "2026-11-30",
+        "region_scope": "State",
+        "region": [
+            "MH",
+            "KA"
+        ]
+    }
+]
