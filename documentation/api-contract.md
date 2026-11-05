@@ -161,9 +161,9 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
 | `mark_app_student(student_id)` | Worker, at the first login | Records that this student uses the app. |
 | `make_feedback_link(submission_id)` | Glific, through a webhook | Returns a signed link that opens the Results step of that submission. Uses the shared secret (A16). The Worker checks the link (task C7). |
 
-### 3.9 Profile edit (task B17, P2)
+### 3.9 Profile edit (task B17, later)
 
-**`update_profile(student_id, fields)`**: first name, last name, language, the brother or sister question (R-74). It needs the product team's approval to write to `Student` (A2). It is not needed for the first test.
+**`update_profile(student_id, fields)`**: first name, last name, language, the brother or sister question (R-74). It needs the product team's approval to write to `Student` (A2). It is **later**: not built in v1 (R-74).
 
 ## 4. Not in this contract
 

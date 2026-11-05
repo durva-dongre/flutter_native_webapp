@@ -56,7 +56,7 @@ These must be fixed before any real child uses the module.
 | **Progress counters** | `update_content_progress` keeps counters (`videos_completed`, `quizzes_completed`, `submission_index`) and uses the SQL function GREATEST, which keeps the larger number. | A row for each step (video marked as watched, each quiz answer, work sent), each with a key that stops the same step from being saved twice (the `idempotency_key`). | R-38, R-40 |
 | **Points** | The client sends the XP. `SUBMISSION_XP = 25` is given when a webhook arrives. | The server decides. Video +10, sharing the work +25 (at once), each correct quiz answer +1, correct submission +10 (after valid feedback only). Values are settings. | R-37, R-41, R-75 |
 | **Level** | A string, `"Level 1"` by default. | Worked out from the points with thresholds in settings. | R-41 |
-| **Profile edits** (P2, task B17) | Written to the Tapapp tables only. `school` cannot be edited. | Writing to `Student` is a change to production data and needs approval. Ask before you add it. Until then the screen shows the data and cannot save. | R-74, "Rules for our changes" |
+| **Profile edits** (later, task B17, R-74) | Written to the Tapapp tables only. `school` cannot be edited. | Writing to `Student` is a change to production data and needs approval. It is not built in v1. | R-74, "Rules for our changes" |
 | **Content export** | `export_program_content` returns the whole payload in the HTTP answer. `include_r2` is not used. `export_content` reads the table `Citizenship Content` (the wrong one). It includes quiz data. | Write JSON files to R2 as in `content-spec.md`, one for each unit and language, with a manifest. Remove the correct answers from files the browser gets. | R-18, R-91 |
 
 ## 4. Missing: please add
@@ -75,7 +75,7 @@ These must be fixed before any real child uses the module.
 12. **Audio clips, example works and the quiz answer key (task B18).** Build the part of the content that is not the unit and flow files: the audio clips with their status (a clip is out of date when its text changed, R-54, R-55), the curriculum's example works (R-58), and the quiz answer key for the server only. This is needed even if the first test bundles the content in the app.
 13. **Smaller points:** +1 point for each correct quiz answer (R-75). The level thresholds (the points needed for each level) go in the settings (R-41). The idempotency key for an upload is made for each upload attempt, so "send again" after an invalid result (R-76) makes a new `submit_artwork` call.
 
-**Needed in v1 (P1):** saving every interaction of the student, including the chat, and sending it to a new BigQuery table in the same format as the WhatsApp events if possible (tasks B15 and B16, R-84, O-18). **P2 (it can follow the first test):** the edit-profile route (task B17, R-74). The plan and the effort are in `v1-task-breakdown.md`.
+**Needed in v1 (P1):** saving every interaction of the student, including the chat, and sending it to a new BigQuery table in the same format as the WhatsApp events if possible (tasks B15 and B16, R-84, O-18). **Later (not in v1):** the edit-profile route (task B17, R-74). The plan and the effort are in `v1-task-breakdown.md`.
 
 ## 5. Leave out of v1
 
