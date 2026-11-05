@@ -23,7 +23,7 @@ Out of scope for v1: teacher or parent roles, the installed app, voice recording
 - **Simple English.** The team are not native speakers: short sentences, common words, in chat and in docs.
 - **Ask only blocking questions.** If a safe default exists, state it and continue.
 - **Say "done" only after the user says yes.** Do not claim a change is finished before that.
-- **The v1 test runs on the dev server, not on production.** Do not change production `frappe_tap` logic, and do not deploy to production, without the product team's approval. The list of items that need approval is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
+- **The v1 test runs on the dev server, not on production.** Do not change production `frappe_tap` logic, and do not deploy to production, without approval. Most items were approved on 2026-11-05; the exception is making `submit_artwork` refuse calls with no key. The list is in `v1-requirements.md`, "Rules for our changes". New backend work lives in the `tapapp` module. Reading `frappe_tap` data is fine.
 - **The Frappe key lives only in the Worker** (R-82). The app and the browser never see it.
 - **Flutter is pinned to 3.47.1** (`pubspec.yaml`: `>=3.47.1 <3.48.0`). Build releases with `scripts/build_web.sh`, not plain `flutter build web`.
 - **Follow `architecture-tenets.md`:** dependencies go `app → features → shared → domain → core`. A feature never uses another feature. Repositories are the only way to data. Screens stay thin. Move code or change code, not both in one commit. Check with `dart scripts/check_architecture.dart`.
@@ -112,13 +112,13 @@ Frappe calls the Worker may use: the read calls in `api.py` (`get_student_by_pho
 
 ## 8. Open items (do not wait for them)
 
-The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, O-18, O-28. The backend questions are in `system-understanding.md`, section 9. The ones that touch the build:
+The product team's list is in `v1-requirements.md`, section 11: O-1, O-9, O-13, O-18. (O-28 was approved on 2026-11-05.) The backend questions are in `system-understanding.md`, section 9. The ones that touch the build:
 
 | Open | Effect on the build |
 |---|---|
 | Header check on `submit_artwork` (the branch is confirmed: `journey_2026`) | Test `submit_artwork` against the dev server early (the v1 test runs there). Test production before any later production release. |
-| O-28: we recommend a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork` (needs the product team's approval and the Glific team) | M5 stays on a fake message until it is approved |
-| The WhatsApp nudge (R-66) needs a new Glific message and approval | Leave it out until it is approved |
+| O-28: a new Glific flow for app students, chosen by setting `Submission.feedback_flow_id` right after `submit_artwork`. **Approved on 2026-11-05.** The Glific team still has to build the flow (A10). | M5 stays on a fake message until the flow exists |
+| The WhatsApp nudge (R-66) needs a new Glific template and flow (new WhatsApp messages are approved in principle, 2026-11-05) | Leave it out of the test unless the Glific team builds it (A14) |
 | Where the test content lives (B0): the quiz questions and the answer key are in a Google Sheet, not in the Frappe quiz tables | Find out first. B5, B11 and D4 wait for it. |
 | Do all test kids have a Glific contact with `student_id`, and do the siblings exist as separate `Student` records? | If not, the feedback job skips the kid, and the name picker shows one child. |
 

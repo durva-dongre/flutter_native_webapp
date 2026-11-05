@@ -115,7 +115,7 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
 - `media_type`: `image` or `video`. `file_ref`: the storage path of the uploaded file (never a public link).
 - Out: `data: {submission_id, points_awarded, points_total, repeat}`.
 - Errors: `UPSTREAM_ERROR` if `submit_artwork` fails. Safe to retry with the same key.
-- Notes: one upload makes one `submit_artwork` call. A new attempt after a not-valid result has a new key and makes a new `Submission`. The call also sets `feedback_flow_id` for app students (task B14, only after O-28 is approved).
+- Notes: one upload makes one `submit_artwork` call. A new attempt after a not-valid result has a new key and makes a new `Submission`. The call also sets `feedback_flow_id` for app students (task B14, O-28 approved on 2026-11-05).
 
 ### 3.6 Feedback and projects
 
@@ -154,7 +154,7 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
   - Events carry `student_id`. Never the phone number. Never a name field. Text typed by the student is allowed and is stored as typed.
   - The final table format comes from the WhatsApp events (A15). Until then, use this shape.
 
-### 3.8 Feedback link for app students (task B14, only if O-28 is approved)
+### 3.8 Feedback link for app students (task B14, O-28 approved on 2026-11-05)
 
 | Call | Who calls | What |
 |---|---|---|
@@ -163,7 +163,7 @@ The Worker makes the short upload link (task C5). The app uploads the file strai
 
 ### 3.9 Profile edit (task B17, later)
 
-**`update_profile(student_id, fields)`**: first name, last name, language, the brother or sister question (R-74). It needs the product team's approval to write to `Student` (A2). It is **later**: not built in v1 (R-74).
+**`update_profile(student_id, fields)`**: first name, last name, language, the brother or sister question (R-74). Writes to `Student` are approved (A2). It is **later**: not built in v1 (R-74).
 
 ## 4. Not in this contract
 
