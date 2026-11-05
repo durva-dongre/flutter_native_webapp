@@ -100,7 +100,7 @@ Changes from today:
 - **The phone is the only waiting place for the interaction events.** The app keeps each event until the backend confirms that it is saved, and sends it again after a "not saved" answer (D18).
 - **A failed upload does not lose the work.** The student can try again (R-13). The photo is made smaller and saved as a JPEG before upload (R-12). The video is limited to 90 seconds (R-9).
 - **Offline:** the app shows "I am not able to talk to you. Looks like you're offline" and a Retry button. The student cannot go on until the connection is back, and then continues from the same step (R-71). The quiz exception is above.
-- **Content** comes from the CDN, or is bundled for the first test (R-18). Quiz answers are **not** in the content files. They come with the quiz start call.
+- **Content** comes from the CDN (R-18, `build-bootstrap.md`). Bundling the content in the app for the first test is only a way to cut work. It needs the tech lead's agreement (`v1-task-breakdown.md`, "How to cut", item 2). Quiz answers are **not** in the content files. They come with the quiz start call.
 - **Switching profile** asks the Worker for a new student token (R-34).
 
 ## Errors and responsiveness (v1)

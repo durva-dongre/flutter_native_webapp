@@ -1,7 +1,8 @@
 # UI gaps: Figma "Student App Direction" vs the app
 
-Source: six PNG exports in `/home/rjs/dev/tap/app_design_v1/Student App Direction/`
-(F1 Who is learning, F2 Home, F3 Event, F4 Class, F5 Gallery, F6 Me).
+Source: the design has six screens (Screen 1 Who is learning, Screen 2 Home, Screen 3 Event, Screen 4 Class, Screen 5 Gallery, Screen 6 Me). The **45 separate frames** are PNG files in `/home/rjs/Documents/TAP/Requirements/student-app-direction-export/`. The first six large exports are in `/home/rjs/dev/tap/app_design_v1/Student App Direction/`.
+
+**Names:** "Screen 1" to "Screen 6" are the screens of the design. "F-1" to "F-8" are the frames that must be corrected (in the requirements). They are different lists.
 
 **Updated 2026-11-05** to follow `v1-requirements.md`. **The requirements always win.** Where the design and the requirements differ, we follow the requirements. The Figma frames that must be corrected are listed in section 3 of the requirements, "Figma frames that need correcting" ("F-1" to "F-8"). The R-numbers below point to the requirements. The task numbers (D1, D2 and so on) are in `v1-task-breakdown.md`.
 
@@ -12,7 +13,7 @@ Check them in Figma before you build.
 
 ## Decisions that change the design
 
-- **3 tabs, no Class tab** (R-1, R-2). The bottom nav has Home, Gallery and Me. The mockups for F2, F3 and F5 still show 4 tabs (F-3). F4 "Class" is the **activity flow** (Watch, Make, Quiz, Results). The student opens it from Home.
+- **3 tabs, no Class tab** (R-1, R-2). The bottom nav has Home, Gallery and Me. The mockups for Screen 2, Screen 3 and Screen 5 still show 4 tabs (F-3). Screen 4 "Class" is the **activity flow** (Watch, Make, Quiz, Results). The student opens it from Home.
 - **The v1 test release is mid-November** for 30 to 100 kids. The flow is hardcoded and linear (R-61).
 - **No deadline in v1** (R-72). Remove the countdown and the "time left" pills (F-8).
 - **No theme switch in v1** (R-73, F-4). The app stays light.
@@ -27,12 +28,12 @@ Check them in Figma before you build.
 | Figma screen | App today | In v1? | Gap |
 |---|---|---|---|
 | Bottom nav | 4 tabs (Home, Class, Passport, Profile) | Yes (R-1) | Change to 3 tabs: Home, Gallery, Me (task D1) |
-| F1 Who is learning | `profile_select_screen.dart` | Yes (R-3) | Small to medium (D1, D2) |
-| F2 Home | `home_screen.dart` | Yes (R-4) | Medium (D7) |
-| F3 Event | None | **No, v1.1** (R-5, R-86) | Not built in v1 |
-| F4 Class / activity flow | `class_screen.dart` | Yes (R-61 to R-70) | Medium to large (D3 to D6) |
-| F5 Gallery | None (Passport is different) | The tab: yes. The content: P2 (D9) | New |
-| F6 Me | `passport_screen.dart` + `settings_screen.dart` | Yes, without Edit profile (R-7) | Large (D8) |
+| Screen 1 Who is learning | `profile_select_screen.dart` | Yes (R-3) | Small to medium (D1, D2) |
+| Screen 2 Home | `home_screen.dart` | Yes (R-4) | Medium (D7) |
+| Screen 3 Event | None | **No, v1.1** (R-5, R-86) | Not built in v1 |
+| Screen 4 Class / activity flow | `class_screen.dart` | Yes (R-61 to R-70) | Medium to large (D3 to D6) |
+| Screen 5 Gallery | None (Passport is different) | The tab: yes. The content: P2 (D9) | New |
+| Screen 6 Me | `passport_screen.dart` + `settings_screen.dart` | Yes, without Edit profile (R-7) | Large (D8) |
 
 ## Shared pieces
 
@@ -50,7 +51,7 @@ Check them in Figma before you build.
   - The app header is a different layout, with a bigger brand block and dividers.
   - Build one new header for Home, Gallery and Me.
   - The points pill shows the total from the server (R-75). In the Results step, the header points update **after the "Yes" tap**, when the "YOU WON" card shows them, so the reveal is not spoiled (R-68).
-- **Back header for the activity flow** (F4):
+- **Back header for the activity flow** (Screen 4):
   - Design: round back button, title or points pill, "Ask TAP" pill.
   - The app has a long bar with dividers and a large back icon.
 - **Theme** (`lib/core/theme/app_theme.dart`):
@@ -70,7 +71,7 @@ Check them in Figma before you build.
   - Today's picture badge, 0/4 to 4/4 (R-69, task D16)
 - **Offline screen** (R-71): "I am not able to talk to you. Looks like you're offline", with a Retry button. One exception: a quiz that has already started can be finished without a network (R-91).
 
-## F1: Who is learning
+## Screen 1: Who is learning
 
 Screens: choose a profile, a profile selected, "Welcome Back, Aarav! Are you ready for a New Year?".
 
@@ -97,7 +98,7 @@ Screens: choose a profile, a profile selected, "Welcome Back, Aarav! Are you rea
   - Add the welcome-back screen.
   - Use the translated fallback for "Champ" when the name is missing (R-25).
 
-## F2: Home
+## Screen 2: Home
 
 - **Design**:
   - Header (logos, "Hi Aarav 👋", points pill, "Ask TAP").
@@ -114,13 +115,13 @@ Screens: choose a profile, a profile selected, "Welcome Back, Aarav! Are you rea
   - The card states are: start, submission pending, send submission.
   - The banner place is **empty in v1**. The app reads banners from one place in the Worker, which returns an empty list. Keep the room above the card.
   - No time-left tag (R-72).
-  - The points on the card follow R-75, not "+40".
+  - The points on the card: **not decided** (open question 3). R-75 gives points for each step, not one total, so "+40" is not right.
 - **To do** (task D7):
   - Restyle the cards to the new look.
   - Keep the banner place (empty).
   - Check that every state in the app has a design. The design shows only "start" and "send submission". There is no design for "quiz pending" or "completed". The designer has to add them or confirm that we reuse the existing ones.
 
-## F3: Event (Builder Festival)
+## Screen 3: Event (Builder Festival)
 
 **Later (v1.1).** Not built in v1 (R-5, R-86). Events are a new feature in `frappe_tap`. They are standalone, not linked to a course, and only one event is active for a batch at a time.
 
@@ -130,7 +131,7 @@ Screens: choose a profile, a profile selected, "Welcome Back, Aarav! Are you rea
 - **For v1**: only leave room for it (R-94). Do not build the screen.
 - **Still open for v1.1**: is the chat scripted or does it use the buddy API? Is the "students across India" number real data?
 
-## F4: Class (activity flow)
+## Screen 4: Class (activity flow)
 
 About 30 frames. This is the biggest design.
 
@@ -162,9 +163,9 @@ About 30 frames. This is the biggest design.
   - Restyle the chat bubbles and the cards.
   - Skip the voice-recording frames and the text mode (later).
   - Ask the designer for the missing frames: "I watched it" (F-7), the waiting screen label (F-6), the "not valid" state, the quiz states (answers could not be sent, quiz continues) and "taking longer than expected".
-  - Zoom into the 11251px export in Figma for detail. It was too small to read here.
+  - Use the 45 separate frames in `student-app-direction-export/` for detail. The large export was too small to read.
 
-## F5: Gallery (new tab)
+## Screen 5: Gallery (new tab)
 
 - **Design**:
   - Header, then "THIS WEEK'S ACTIVITY", the activity title, a time-left pill and a points pill.
@@ -179,12 +180,13 @@ About 30 frames. This is the biggest design.
   - Other students' work is shown only if its feedback says it is **valid**. Only pictures and videos. The order is random. A few items at a time (5 to 10). Each shows **initials only** (R-59, R-85).
   - The Gallery reads **copies in R2**, made after valid feedback. The student's own work stays private in GCS (R-88).
   - No time-left pill (R-72).
+  - **Frame mismatches** (frame "M-GA-02 · Gallery — not shared yet"): (a) each card shows a **name** ("Priya S.") next to the initials chip, but R-85 says **initials only**; (b) the caption "Class 4 · same activity · shared from schools across TAP" says the work is filtered by class and activity, but in v1 the order is random and any valid work is shown (R-85); (c) the pill "Ends in 2 days 15 hrs" and the text "Share it before the timer ends to earn +25 points" show a deadline, which v1 does not have (R-72), and the points follow R-75. The designer has to fix these frames.
   - The designer says the Gallery design is still being shaped (R-6).
   - The Gallery content is **P2**: it can follow the first test.
 - **To do**: the tab and an empty state with the examples first. Then the grid, the viewer and a provider (task D9). The data side is the risk.
 - **Passport content**: Passport is replaced by Me (R-7). Gems and streaks are dropped (R-39).
 
-## F6: Me
+## Screen 6: Me
 
 About 10 frames.
 
@@ -235,13 +237,13 @@ This follows the task list (`v1-task-breakdown.md`, group D).
 
 1. **Clean up and the theme** (D0): remove hard-coded values, streaks and gems, bundle the fonts, text styles, tokens, shared widgets, the new header. Put the **Hindi and English text** (D14) in place here, so new screens use translation files from the start.
 2. **App shell and nav** (D1): 3 tabs, with Class as a pushed route, the offline screen.
-3. **Login screens** (D2): the magic link, the name picker, switch profile. And **F1** (the welcome-back screen).
-4. **F4 the activity flow, one step at a time**: Watch (D3), Make (D5), Quiz (D4), Results (D6, D17), then the badge (D16) and the audio player (D15). Add the **interaction events** (D18) after the Quiz (D4) and Results (D6) exist, because it logs their steps.
-5. **F2 Home** (D7).
-6. **F6 Me** (D8).
+3. **Login screens** (D2): the magic link, the name picker, switch profile. And **Screen 1** (the welcome-back screen).
+4. **Screen 4 the activity flow, one step at a time**: Watch (D3), Make (D5), Quiz (D4), then the **audio player (D15) before Results**, because Results uses the speaker icons (D6 depends on D15), then Results (D6, D17) and the badge (D16). Add the **interaction events** (D18) after the Quiz (D4) and Results (D6) exist, because it logs their steps.
+5. **Screen 2 Home** (D7).
+6. **Screen 6 Me** (D8).
 7. **Feedback link** (D13) if the product team approves it (O-28).
-8. After the first test (P2): **F5 Gallery** content (D9) and **Ask TAP** (D10).
-9. **F3 Event** is v1.1.
+8. After the first test (P2): **Screen 5 Gallery** content (D9) and **Ask TAP** (D10).
+9. **Screen 3 Event** is v1.1.
 
 Each step is its own commit on its own branch, so you can review it by itself.
 
@@ -260,6 +262,8 @@ Still open:
    - "I watched it" (F-7) and the waiting label (F-6);
    - "quiz pending" and "completed" on Home, and the "not valid" state;
    - **new quiz states:** the answers could not be sent (with Retry), and the student comes back and the quiz continues from the saved answers (R-91);
+   - the **Gallery frames**: initials only, no "Class 4 · same activity" caption, no timer;
    - **"taking longer than expected"** when the feedback does not arrive (task D17, decision A13).
-3. Does the accent color change to green (R-8)?
-4. The Gallery design is still being shaped (R-6).
+3. **What does the Home card show for points, if anything?** The design shows "+40 points". R-75 gives points for each step (video +10, sharing +25, each correct quiz answer +1, valid work +10), not one total for the activity. Neither the requirements nor the docs say which number the card shows. Options: show nothing, show the sum of the steps, or show only the steps that give points at once. The product team has to decide (R-4).
+4. Does the accent color change to green (R-8)?
+5. The Gallery design is still being shaped (R-6).
