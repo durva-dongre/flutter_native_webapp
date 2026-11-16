@@ -1,3 +1,11 @@
+/**
+ * cache/turnBudget.ts — "at most N calls to this route per student within
+ * TURN_WINDOW_SECONDS." Windowed the same way cache/rateLimitCache.ts::checkBurst
+ * windows its own counter: windowStart = floor(now / windowSeconds), so the budget
+ * actually resets every windowSeconds rather than accumulating in a single
+ * never-expiring bucket for an actively-calling student.
+ */
+
 export interface TurnCheckResult {
   allowed: boolean;
   count: number;
@@ -8,7 +16,6 @@ const NAMESPACE = "turn-budget";
 
 export async function checkAndIncrementTurn(
   identityKey: string,
-  turnId: string,
   routePath: string,
   turnBudgets: Readonly<Record<string, number>>,
   defaultBudget: number,
@@ -16,7 +23,10 @@ export async function checkAndIncrementTurn(
 ): Promise<TurnCheckResult> {
   const maxCalls = turnBudgets[routePath] ?? defaultBudget;
   const cache = await caches.open(NAMESPACE);
-  const key = new Request(`https://turn.internal/${encodeURIComponent(identityKey)}/${encodeURIComponent(turnId)}`);
+  const windowStart = Math.floor(Date.now() / 1000 / windowSeconds);
+  const key = new Request(
+    `https://turn.internal/${encodeURIComponent(identityKey)}/${encodeURIComponent(routePath)}/${windowStart}`
+  );
 
   const hit = await cache.match(key);
   const count = hit ? Number(await hit.text()) : 0;

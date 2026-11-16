@@ -1,31 +1,13 @@
 /**
- * handlers/galleryHandlers.ts — Contract §8.2, read top to bottom:
- * 1. App calls GET /gallery with only assignment_id/grade/sort/limit/cursor, plus
- *    optionally a scope_cache_token from a previous response.
- * 2. Worker resolves scope: a valid scope_cache_token is trusted directly with NO
- *    Frappe call; otherwise Frappe's get_profile_scope is called, cached, and a fresh
- *    scope_cache_token is minted for the app to echo back next time.
- * 3. Worker queries D1's gallery_items — always the listing source, never Frappe,
- *    never a raw R2 list(), via the config-driven fallback cascade
- *    (cfg.GALLERY_FALLBACK_CASCADE / cfg.GALLERY_FALLBACK_ENABLED).
- * 4. Worker checks its signed-URL cache before minting new signatures (inside
- *    fetchGalleryPage / db/gallery.ts).
- * 5. Response includes the page, matched_level, fallback_applied, and the
- *    (possibly freshly-minted) scope_cache_token for next time.
+ * handlers/galleryHandlers.ts
+ * Both the query-param and profile-derived assignment_id are run through
+ * normalizeAssignmentIdForScope() right after shape validation, so the
+ * value bound into the D1 WHERE clause always matches what the nightly
+ * sweep wrote, regardless of spaces in the raw id.
  *
- * state/district/school are never read from the frontend (§2.1) and never echoed in
- * the top-level response — that display concern belongs to /profile/get_profile's
- * state_name/district_name/school_name, which the app already has from login.
- *
- * The page-cache key (cache/galleryPageCache.ts::GalleryCacheKeyParams) is keyed by
- * every dimension that affects the query, including `scopeMode`, which here just
- * records whether this query was scoped by assignment_id or purely by location
- * (school/district/state) — it is derived locally from whether assignmentId is
- * present, not read from config (there is no such config key).
- *
- * No `refreshed_token` anywhere (Contract §3/§4.5, Reference §0): tokens are
- * fixed-TTL, minted once at redeem/select_profile, never refreshed by any later call,
- * gallery included.
+ * FIX: analytics threaded through and passed into enforceRateLimit with
+ * this route's own path (read-class, so no turn budget configured by
+ * default, but still gets burst-remaining recorded correctly now).
  */
 
 import { requireStudentToken } from "../auth/middleware";
@@ -34,33 +16,52 @@ import { invalidInput } from "../env";
 import { ok } from "../util/errors";
 import { enforceRateLimit } from "../util/rateLimit";
 import { config } from "../config/index";
-import { fetchGalleryPage } from "../db/gallery";
+import { fetchGalleryPage, normalizeAssignmentIdForScope } from "../db/gallery";
 import { getCachedGalleryPage, putCachedGalleryPage, type GalleryCacheKeyParams } from "../cache/galleryPageCache";
 import { getProfileScope } from "../storage/profileScope";
 import { mintScopeToken, verifyScopeToken } from "../storage/scopeToken";
 import { collectTelemetry } from "../telemetry/collector";
+import { FIELD_PATTERNS } from "../storage/keys";
+import type { RequestAnalyticsContext } from "../router";
 
-const ASSIGNMENT_ID_PATTERN = /^[A-Za-z0-9_-]{3,80}$/;
+const ASSIGNMENT_ID_PATTERN = FIELD_PATTERNS.assignment_id;
 const GRADE_PATTERN = /^[1-9][0-9]?$/;
+const GALLERY_CACHE_GENERATION_KEY = "gallery_cache_generation";
+const ROUTE_GALLERY = "/gallery";
+
+const UNRESOLVED_GRADE = 0;
+
+function resolveProfileGrade(raw: unknown): number {
+  const n = typeof raw === "number" ? raw : Number(raw);
+  return Number.isInteger(n) && n > 0 ? n : UNRESOLVED_GRADE;
+}
+
+async function readGalleryCacheGeneration(db: D1Database): Promise<number> {
+  const row = await db
+    .prepare(`SELECT value FROM app_config WHERE key = ?1`)
+    .bind(GALLERY_CACHE_GENERATION_KEY)
+    .first<{ value: string }>();
+  if (!row) return 0;
+  const n = Number(row.value);
+  return Number.isFinite(n) ? n : 0;
+}
 
 async function gallery(
   req: Request,
   env: Env,
   ctx: ExecutionContext,
-  setStudentId: (sid: string) => void
+  setStudentId: (sid: string) => void,
+  analytics: RequestAnalyticsContext
 ): Promise<Response> {
   const { studentId } = await requireStudentToken(req, env);
   setStudentId(studentId);
-  await enforceRateLimit(env, studentId, "read");
+  await enforceRateLimit(env, studentId, "read", ROUTE_GALLERY, analytics);
 
   const cfg = config(env, env as unknown as Record<string, string>, ctx);
   const url = new URL(req.url);
 
-  // Only assignment_id/grade/sort/limit/cursor/scope_cache_token are ever read from
-  // the query string — never state/district/school, not even as optional overrides.
-  const assignmentId = url.searchParams.get("assignment_id") ?? undefined;
-  const assignmentIdSource = assignmentId !== undefined ? "query" : "default";
-  if (assignmentId !== undefined && !ASSIGNMENT_ID_PATTERN.test(assignmentId)) {
+  const queryAssignmentIdRaw = url.searchParams.get("assignment_id") ?? undefined;
+  if (queryAssignmentIdRaw !== undefined && !ASSIGNMENT_ID_PATTERN.test(queryAssignmentIdRaw)) {
     throw invalidInput("assignment_id is malformed");
   }
 
@@ -92,18 +93,35 @@ async function gallery(
     cursor = n;
   }
 
-  // Step 2: resolve scope. A valid token skips Frappe entirely; otherwise Frappe is
-  // consulted (and the result cached) and a fresh token is minted at the end.
   const scopeTokenParam = url.searchParams.get("scope_cache_token");
   let profileScope = await verifyScopeToken(scopeTokenParam, env.GALLERY_SCOPE_TOKEN_SECRET);
   if (!profileScope) {
     profileScope = await getProfileScope(env, cfg, studentId);
   }
-  if (grade === undefined) grade = profileScope.grade;
+  if (grade === undefined) {
+    grade = resolveProfileGrade(profileScope.grade);
+  }
 
-  // Step 3/4: D1 query with page+row caching. scopeMode records whether assignment_id
-  // narrows this query (vs. pure location/grade scoping) — purely a cache-key
-  // dimension, independent of the fallback cascade itself.
+  // Normalize both possible sources the exact same way the nightly sweep
+  // normalized assignment_id when writing to D1 — this is what makes the
+  // bound WHERE-clause value match a space-containing assignment_id.
+  let assignmentId: string | undefined;
+  let assignmentIdSource: "query" | "profile" | "default" = "default";
+
+  if (queryAssignmentIdRaw) {
+    assignmentId = normalizeAssignmentIdForScope(queryAssignmentIdRaw);
+    if (assignmentId) assignmentIdSource = "query";
+  }
+  if (!assignmentId && profileScope.assignmentId && ASSIGNMENT_ID_PATTERN.test(profileScope.assignmentId)) {
+    const normalized = normalizeAssignmentIdForScope(profileScope.assignmentId);
+    if (normalized) {
+      assignmentId = normalized;
+      assignmentIdSource = "profile";
+    }
+  }
+
+  const generation = await readGalleryCacheGeneration(env.DB);
+
   const cacheParams: GalleryCacheKeyParams = {
     scopeMode: assignmentId ? "assignment" : "school_grade",
     assignmentId,
@@ -113,19 +131,26 @@ async function gallery(
     grade,
     limit,
     cursor,
+    generation,
   };
 
   let page = await getCachedGalleryPage(cacheParams);
   if (!page) {
-    page = await fetchGalleryPage(env.DB, env, cfg, {
-      assignmentId,
-      state: profileScope.state,
-      district: profileScope.district,
-      school: profileScope.school,
-      grade,
-      cursor,
-      limit,
-    });
+    page = await fetchGalleryPage(
+      env.DB,
+      env,
+      cfg,
+      {
+        assignmentId,
+        state: profileScope.state,
+        district: profileScope.district,
+        school: profileScope.school,
+        grade,
+        cursor,
+        limit,
+      },
+      env
+    );
     ctx.waitUntil(putCachedGalleryPage(cacheParams, page, cfg));
   }
 
@@ -139,6 +164,7 @@ async function gallery(
     sort,
     params_source: { assignment_id: assignmentIdSource, grade: gradeSource, sort: sortSource },
     matched_level: page.matched_level,
+    matched_grade_mode: page.matched_grade_mode,
     fallback_applied: page.fallback_applied,
     images: page.images,
     cursor: page.cursor,

@@ -9,8 +9,10 @@ CREATE TABLE IF NOT EXISTS gallery_items (
   school          TEXT NOT NULL,
   grade           INTEGER NOT NULL,
   media_type      TEXT NOT NULL DEFAULT 'image',
+  object_key      TEXT NOT NULL,
   score           REAL,
   promoted_at     INTEGER NOT NULL,
+  updated_at      INTEGER NOT NULL DEFAULT 0,
   visible         INTEGER NOT NULL DEFAULT 1
 );
 CREATE INDEX IF NOT EXISTS idx_gallery_school_grade ON gallery_items(school, grade, visible, promoted_at);

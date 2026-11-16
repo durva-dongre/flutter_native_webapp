@@ -4,7 +4,7 @@
  * ever blocks on it. Handlers call config(env, env, ctx) — never read env vars directly.
  */
 
-import { DEFAULT_CONFIG, RUNTIME_OVERRIDABLE_KEYS, GALLERY_SCOPE_FIELDS, type ConfigSchema } from "./defaults";
+import { DEFAULT_CONFIG, RUNTIME_OVERRIDABLE_KEYS, GALLERY_SCOPE_FIELDS, type ConfigSchema, type GalleryCascadeStep } from "./defaults";
 
 export interface ConfigEnv {
   DB: D1Database;
@@ -77,6 +77,16 @@ export function config(
   return { ...DEFAULT_CONFIG, ...varsLayer, ...cachedOverrides };
 }
 
+function isValidCascadeStep(step: unknown): step is GalleryCascadeStep {
+  if (!step || typeof step !== "object") return false;
+  const s = step as Record<string, unknown>;
+  return (
+    typeof s.field === "string" &&
+    (GALLERY_SCOPE_FIELDS as readonly string[]).includes(s.field) &&
+    (s.gradeMode === "exact" || s.gradeMode === "any")
+  );
+}
+
 export function assertConfigValid(cfg: ConfigSchema): void {
   if (cfg.GALLERY_PAGE_DEFAULT > cfg.GALLERY_PAGE_MAX) {
     throw new Error("GALLERY_PAGE_DEFAULT must be <= GALLERY_PAGE_MAX");
@@ -94,12 +104,24 @@ export function assertConfigValid(cfg: ConfigSchema): void {
     throw new Error("GALLERY_ROW_CACHE_SECONDS must be <= PRESIGN_EXPIRY_SECONDS");
   }
   if (cfg.GALLERY_PAGE_CACHE_SECONDS > cfg.PRESIGN_EXPIRY_SECONDS) {
-    // Soft guard: page cache shouldn't outlive the presign window without a re-sign
-    // path. Raise PRESIGN_EXPIRY_SECONDS if you intentionally want a longer cache.
     throw new Error("GALLERY_PAGE_CACHE_SECONDS must be <= PRESIGN_EXPIRY_SECONDS");
   }
-  if (cfg.GALLERY_FALLBACK_CASCADE.some((f) => !GALLERY_SCOPE_FIELDS.includes(f))) {
-    throw new Error("GALLERY_FALLBACK_CASCADE can only contain fields listed in GALLERY_SCOPE_FIELDS");
+  if (cfg.GALLERY_LEVEL_EMPTY_CACHE_SECONDS > cfg.GALLERY_PAGE_CACHE_SECONDS) {
+    throw new Error(
+      "GALLERY_LEVEL_EMPTY_CACHE_SECONDS must be <= GALLERY_PAGE_CACHE_SECONDS — an empty-level marker must " +
+        "expire no slower than a full page cache entry, or newly-promoted rows could be hidden longer than a " +
+        "stale page would be."
+    );
+  }
+  if (cfg.GALLERY_FALLBACK_CASCADE.length === 0) {
+    throw new Error("GALLERY_FALLBACK_CASCADE must contain at least one step");
+  }
+  if (!cfg.GALLERY_FALLBACK_CASCADE.every(isValidCascadeStep)) {
+    throw new Error(
+      "GALLERY_FALLBACK_CASCADE entries must each be {field: one of " +
+        GALLERY_SCOPE_FIELDS.join("|") +
+        ", gradeMode: 'exact'|'any'}"
+    );
   }
   if (cfg.STUDENT_TOKEN_TTL_SECONDS <= 0 || cfg.PHONE_TOKEN_TTL_SECONDS <= 0) {
     throw new Error("STUDENT_TOKEN_TTL_SECONDS and PHONE_TOKEN_TTL_SECONDS must be positive");

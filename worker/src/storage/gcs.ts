@@ -3,11 +3,22 @@
  * directly (Contract §1.1). A submission's media stays on GCS at grading time; R2
  * promotion happens later as a separate background job outside this request path
  * (§0, §7.4) — nothing here ever deletes from GCS.
+ *
+ * v7 change: gcsSignUpload now takes the CONTENT TYPE explicitly (resolved by the
+ * caller via storage/keys.ts::resolveAcceptedFormat) instead of hardcoding it from
+ * SubmissionType alone — this is what lets request_upload accept more than one
+ * image/video format (webp/jpg/jpeg/png/heic for images; mp4/mov/webm/3gp for video)
+ * while keeping webp/mp4 as the default when no format hint is given.
+ *
+ * v6 change: gcsSignRead now takes the bucket explicitly rather than always reading
+ * env.GCS_AUTHENTICATED_BUCKET. storage/resign.ts parses the bucket straight out of
+ * whatever GCS url Frappe handed it (submission media, audio feedback — any bucket),
+ * so this function needs to be able to sign against any of them, not just the
+ * Worker's own primary bucket. gcsSignUpload keeps using GCS_AUTHENTICATED_BUCKET —
+ * that one's about the Worker's own upload destination, unrelated to this change.
  */
 
 import type { ConfigSchema } from "../config/defaults";
-import type { SubmissionType } from "./keys";
-import { CONTENT_TYPE_FOR } from "./keys";
 import { getGoogleAccessTokenCached, importRsaPrivateKey, parseServiceAccountJson, type ServiceAccount } from "./gcsAuth";
 
 const HOST = "storage.googleapis.com";
@@ -91,14 +102,22 @@ export interface SignedUploadResult {
   uploadHeaders: Record<string, string>;
 }
 
+/** Still signs against the Worker's own primary upload bucket (GCS_AUTHENTICATED_BUCKET)
+ *  — this is the Worker's own managed upload destination, not an arbitrary read.
+ *
+ *  contentType is now passed in explicitly by the caller (resolved via
+ *  storage/keys.ts::resolveAcceptedFormat against the client's optional `format`
+ *  hint, defaulting to image/webp or video/mp4) rather than hardcoded here — this is
+ *  what lets the Worker sign for any of the accepted formats, not just the single
+ *  default per submission type. */
 export async function gcsSignUpload(
   env: { GCS_SERVICE_ACCOUNT_JSON: string; GCS_AUTHENTICATED_BUCKET: string },
   objectKey: string,
-  submissionType: SubmissionType,
+  submissionType: "image" | "video",
+  contentType: string,
   cfg: Pick<ConfigSchema, "UPLOAD_MAX_BYTES_IMAGE" | "UPLOAD_MAX_BYTES_VIDEO" | "UPLOAD_URL_EXPIRY_SECONDS">
 ): Promise<SignedUploadResult> {
   const sa = parseServiceAccountJson(env.GCS_SERVICE_ACCOUNT_JSON);
-  const contentType = CONTENT_TYPE_FOR[submissionType];
   const maxSizeBytes = submissionType === "image" ? cfg.UPLOAD_MAX_BYTES_IMAGE : cfg.UPLOAD_MAX_BYTES_VIDEO;
 
   const uploadHeaders: Record<string, string> = {
@@ -118,14 +137,20 @@ export async function gcsSignUpload(
   return { uploadUrl, contentType, maxSizeBytes, expiresIn: cfg.UPLOAD_URL_EXPIRY_SECONDS, uploadHeaders };
 }
 
-/** view_url/audio_url are signed fresh on every call, per Contract §7.2. */
+/**
+ * Signs a fresh, time-limited GET url against WHATEVER bucket the caller names — no
+ * longer tied to env.GCS_AUTHENTICATED_BUCKET. storage/resign.ts parses the bucket
+ * straight out of the GCS url Frappe sent (submission media and audio feedback can
+ * live in different buckets) and passes it here explicitly.
+ */
 export async function gcsSignRead(
-  env: { GCS_SERVICE_ACCOUNT_JSON: string; GCS_AUTHENTICATED_BUCKET: string },
+  env: { GCS_SERVICE_ACCOUNT_JSON: string },
+  bucket: string,
   objectKey: string,
   expiresInSeconds: number
 ): Promise<string> {
   const sa = parseServiceAccountJson(env.GCS_SERVICE_ACCOUNT_JSON);
-  return signV4Url({ sa, bucket: env.GCS_AUTHENTICATED_BUCKET, objectKey, method: "GET", expiresInSeconds });
+  return signV4Url({ sa, bucket, objectKey, method: "GET", expiresInSeconds });
 }
 
 export interface UploadConfirmation {

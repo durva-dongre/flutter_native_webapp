@@ -110,7 +110,7 @@ export class ChatSession {
       ...history,
     ];
 
-    const res = await fetch(`${this.env.AI_PROVIDER_BASE_URL}/v1/chat/completions`, {
+    const res = await fetch(`${this.env.AI_PROVIDER_BASE_URL}/chat/completions`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${this.env.AI_PROVIDER_API_KEY}`,

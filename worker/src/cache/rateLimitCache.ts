@@ -5,6 +5,10 @@ const NAMESPACE = "rate-limit";
 
 export interface BurstCheckResult {
   allowed: boolean;
+  /** Remaining calls in the current window after this check, clamped to 0. Lets
+   *  callers (util/rateLimit.ts) report a real number into request analytics instead
+   *  of leaving rateLimitRemaining permanently null. */
+  remaining: number;
 }
 
 export async function checkBurst(
@@ -19,8 +23,8 @@ export async function checkBurst(
 
   const hit = await cache.match(cacheKey);
   const count = hit ? Number(await hit.text()) : 0;
-  if (count >= limit.max) return { allowed: false };
+  if (count >= limit.max) return { allowed: false, remaining: 0 };
 
   await cache.put(cacheKey, new Response(String(count + 1), { headers: { "Cache-Control": `max-age=${limit.windowSeconds}` } }));
-  return { allowed: true };
+  return { allowed: true, remaining: Math.max(limit.max - (count + 1), 0) };
 }

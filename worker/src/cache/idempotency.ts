@@ -1,7 +1,7 @@
 /**
- * cache/idempotency.ts — Contract §2 rule table: every write takes idempotency_key,
- * unique per action-attempt. The same key sent twice performs the work once and
- * returns the first result again, with "repeat": true.
+ * cache/idempotency.ts — every write takes idempotency_key, unique per action-attempt.
+ * The same key sent twice performs the work once and returns the first result again,
+ * with "repeat": true.
  */
 
 const NAMESPACE = "idempotency";

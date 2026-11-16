@@ -2,24 +2,9 @@
  * config/defaults.ts — every tunable in one place, three-layer precedence resolved by
  * config/index.ts: D1 app_config > wrangler [vars] > these defaults.
  *
- * v5 changes (this rewrite):
- *  - Tokens are fixed-TTL, not rolling. STUDENT_TOKEN_TTL_SECONDS / PHONE_TOKEN_TTL_SECONDS
- *    replace TOKEN_ROLLING_WINDOW_SECONDS. Nothing refreshes a token on a call anymore —
- *    the student token is minted once (redeem, or select_profile as a fallback) and the
- *    app re-derives a new one via select_profile (using its still-valid phone token)
- *    once it expires.
- *  - Gallery scope is fully configurable now: GALLERY_SCOPE_FIELDS declares every field
- *    that CAN scope a query, in fixed physical priority order (this mirrors the object
- *    key's own field order and must never be reordered independently of it).
- *    GALLERY_FALLBACK_CASCADE declares which of those fields the read path actually
- *    tries, in order, when a narrower level comes back empty — e.g. start scoped at
- *    assignment_id, fall back to school, then district, then state. Both are
- *    [vars]/D1-overridable so you can start scoped at assignment and widen later
- *    without a code change.
- *  - GALLERY_SORT: "recent" (promoted_at desc) or "updated" (sort by last updated).
- *    [vars]-overridable default; the app can still override per-request via ?sort=.
- *  - GALLERY_PAGE_CACHE_SECONDS default is one day (86400) — worker-side page cache,
- *    per Worker-side caching requirement.
+ * BUGFIX (this rewrite): added "request_upload" to IDEMPOTENCY_TTL_BY_ROUTE, needed by
+ * the request_upload idempotency fix in handlers/submissionHandlers.ts (previously
+ * request_upload had no idempotency key support at all — see that file's docblock).
  */
 
 export type RouteClass = "write" | "read" | "chat" | "telemetry" | "auth";
@@ -27,11 +12,33 @@ export type SubmissionType = "image" | "video" | "text";
 export type ActivityContext = "program" | "event";
 export type GallerySortMode = "recent" | "updated";
 
-/** Every field that can ever scope a gallery query, in fixed physical priority order.
- *  This order mirrors the object key's own field layout and the fallback cascade must
- *  always be a subset of this list, in this relative order. */
-export const GALLERY_SCOPE_FIELDS = ["assignment_id", "state", "district", "school", "grade"] as const;
+/** Every LOCATION/identity field the gallery can ever scope a query by. "grade" is
+ *  deliberately NOT a member of this list — it is never a standalone scoping level on
+ *  its own; it is instead an optional AND-filter layered onto any of the levels below,
+ *  controlled per-cascade-step by GalleryCascadeStep.gradeMode (see below). This is
+ *  what makes "fall back to this same level, but ANY grade" an explicit, orderable
+ *  step in the cascade rather than a hardcoded special case. */
+export const GALLERY_SCOPE_FIELDS = ["assignment_id", "state", "district", "school"] as const;
 export type GalleryScopeField = (typeof GALLERY_SCOPE_FIELDS)[number];
+
+/**
+ * One step in the gallery's fallback cascade. `field` names which identity column to
+ * filter on ("assignment_id" | "state" | "district" | "school"); `gradeMode` says
+ * whether THIS step also filters by the caller's grade ("exact") or ignores grade
+ * entirely ("any"). "assignment_id" always implies "exact" grade semantics are the
+ * normal, narrowest case — but even that level supports "any" (handed the same
+ * assignment, any grade) and is spelled out explicitly rather than assumed, so every
+ * step's semantics is visible by reading the cascade, not by special-casing a level
+ * name.
+ *
+ * The cascade is walked in array order, stopping at the first step whose query (or
+ * whose cached empty-marker — see cache/galleryLevelCache.ts) returns at least one
+ * row. GALLERY_FALLBACK_ENABLED:false means only the first step is ever tried.
+ */
+export interface GalleryCascadeStep {
+  field: GalleryScopeField;
+  gradeMode: "exact" | "any";
+}
 
 export interface RateLimitRule {
   max: number;
@@ -41,8 +48,6 @@ export interface RateLimitRule {
 export interface ConfigSchema {
   ID_RANDOM_CHARS: number;
 
-  // Default context ("program" | "event") used when submit_video/submit_quiz/
-  // request_upload/submit_artwork omit `context` entirely.
   DEFAULT_SUBMISSION_CONTEXT: ActivityContext;
 
   MEDIA_MODE_GALLERY: "public" | "presigned";
@@ -54,17 +59,20 @@ export interface ConfigSchema {
   UPLOAD_MAX_BYTES_VIDEO: number;
   UPLOAD_URL_EXPIRY_SECONDS: number;
 
-  // Gallery scoping — fully configurable. GALLERY_FALLBACK_CASCADE is the ordered list
-  // of levels the read path actually tries (each entry must be one of
-  // GALLERY_SCOPE_FIELDS). Start scoped at assignment_id by putting it first; drop it
-  // later by editing this list — no code change needed either way.
-  GALLERY_FALLBACK_CASCADE: readonly GalleryScopeField[];
+  GALLERY_FALLBACK_CASCADE: readonly GalleryCascadeStep[];
   GALLERY_FALLBACK_ENABLED: boolean;
   GALLERY_SORT: GallerySortMode;
   GALLERY_PAGE_DEFAULT: number;
   GALLERY_PAGE_MAX: number;
   GALLERY_PAGE_CACHE_SECONDS: number;
   GALLERY_ROW_CACHE_SECONDS: number;
+  /** TTL for the "this cascade step currently has zero matching rows" marker
+   *  (cache/galleryLevelCache.ts). Short relative to GALLERY_PAGE_CACHE_SECONDS --
+   *  this cache only exists to skip D1 queries for steps that keep coming back empty
+   *  within a short window (e.g. a school with no gallery-eligible submissions yet);
+   *  it must not silently hide newly-promoted rows for as long as a full page cache
+   *  entry would. */
+  GALLERY_LEVEL_EMPTY_CACHE_SECONDS: number;
   GALLERY_SHOW_NAMES: "own_school" | "all" | "none";
   PROFILE_SCOPE_TTL_SECONDS: number;
 
@@ -78,7 +86,6 @@ export interface ConfigSchema {
   MAGIC_TTL_SECONDS_SUBMIT: number;
   MAGIC_TTL_SECONDS_LATER: number;
 
-  // Fixed-TTL tokens — minted once, never refreshed on a call. [vars]-overridable.
   STUDENT_TOKEN_TTL_SECONDS: number;
   PHONE_TOKEN_TTL_SECONDS: number;
 
@@ -110,6 +117,7 @@ export const RUNTIME_OVERRIDABLE_KEYS: ReadonlySet<keyof ConfigSchema> = new Set
   "GALLERY_PAGE_MAX",
   "GALLERY_PAGE_CACHE_SECONDS",
   "GALLERY_ROW_CACHE_SECONDS",
+  "GALLERY_LEVEL_EMPTY_CACHE_SECONDS",
   "GALLERY_SHOW_NAMES",
   "PROFILE_SCOPE_TTL_SECONDS",
   "INDEX_BATCH_MAX",
@@ -118,6 +126,26 @@ export const RUNTIME_OVERRIDABLE_KEYS: ReadonlySet<keyof ConfigSchema> = new Set
   "PHONE_TOKEN_TTL_SECONDS",
 ]);
 
+const ONE_DAY_SECONDS = 24 * 60 * 60;
+const SEVEN_DAYS_SECONDS = 7 * ONE_DAY_SECONDS;
+
+/**
+ * Default cascade: narrowest-and-most-specific first, widening gradually, and for
+ * every location level, trying the caller's own grade before giving up grade
+ * filtering at that same level — so a student sees their own grade's work from their
+ * own school before ever seeing a different grade from their own school, and sees
+ * their own school before ever falling back to district/state.
+ */
+export const DEFAULT_GALLERY_CASCADE: readonly GalleryCascadeStep[] = [
+  { field: "assignment_id", gradeMode: "exact" },
+  { field: "school", gradeMode: "exact" },
+  { field: "school", gradeMode: "any" },
+  { field: "district", gradeMode: "exact" },
+  { field: "district", gradeMode: "any" },
+  { field: "state", gradeMode: "exact" },
+  { field: "state", gradeMode: "any" },
+];
+
 export const DEFAULT_CONFIG: ConfigSchema = {
   ID_RANDOM_CHARS: 10,
 
@@ -125,25 +153,23 @@ export const DEFAULT_CONFIG: ConfigSchema = {
 
   MEDIA_MODE_GALLERY: "presigned",
   MEDIA_MODE_OWN: "presigned",
-  PRESIGN_WINDOW_SECONDS: 6 * 60 * 60,
-  PRESIGN_EXPIRY_SECONDS: 24 * 60 * 60,
+  PRESIGN_WINDOW_SECONDS: ONE_DAY_SECONDS,
+  PRESIGN_EXPIRY_SECONDS: SEVEN_DAYS_SECONDS,
 
   UPLOAD_MAX_BYTES_IMAGE: 10 * 1024 * 1024,
   UPLOAD_MAX_BYTES_VIDEO: 50 * 1024 * 1024,
   UPLOAD_URL_EXPIRY_SECONDS: 3600,
 
-  // Start scoped at assignment_id (narrowest, highest priority); fall back through
-  // school -> district -> state as assignment-level results run out. Edit this array
-  // (via [vars] or D1 app_config) to change scoping without a redeploy.
-  GALLERY_FALLBACK_CASCADE: ["assignment_id", "school", "district", "state"],
+  GALLERY_FALLBACK_CASCADE: DEFAULT_GALLERY_CASCADE,
   GALLERY_FALLBACK_ENABLED: true,
   GALLERY_SORT: "recent",
   GALLERY_PAGE_DEFAULT: 24,
   GALLERY_PAGE_MAX: 50,
-  GALLERY_PAGE_CACHE_SECONDS: 86400, // one day, worker-side
-  GALLERY_ROW_CACHE_SECONDS: 86400,
+  GALLERY_PAGE_CACHE_SECONDS: ONE_DAY_SECONDS,
+  GALLERY_ROW_CACHE_SECONDS: SEVEN_DAYS_SECONDS,
+  GALLERY_LEVEL_EMPTY_CACHE_SECONDS: 15 * 60, // 15 minutes
   GALLERY_SHOW_NAMES: "own_school",
-  PROFILE_SCOPE_TTL_SECONDS: 3600,
+  PROFILE_SCOPE_TTL_SECONDS: ONE_DAY_SECONDS,
 
   INDEX_BATCH_MAX: 100,
 
@@ -155,8 +181,8 @@ export const DEFAULT_CONFIG: ConfigSchema = {
   MAGIC_TTL_SECONDS_SUBMIT: 14 * 24 * 60 * 60,
   MAGIC_TTL_SECONDS_LATER: 14 * 24 * 60 * 60,
 
-  STUDENT_TOKEN_TTL_SECONDS: 30 * 24 * 60 * 60, // 30 days, fixed — no refresh
-  PHONE_TOKEN_TTL_SECONDS: 90 * 24 * 60 * 60, // 90 days, fixed — outlives student tokens
+  STUDENT_TOKEN_TTL_SECONDS: 30 * 24 * 60 * 60,
+  PHONE_TOKEN_TTL_SECONDS: 90 * 24 * 60 * 60,
 
   CONFIG_REFRESH_SECONDS: 300,
 
@@ -173,10 +199,14 @@ export const DEFAULT_CONFIG: ConfigSchema = {
   DEFAULT_TURN_BUDGET: 1,
 
   IDEMPOTENCY_TTL_BY_ROUTE: {
-    submit_artwork: 86400,
-    submit_video: 3600,
+    // BUGFIX: added so request_upload's new, optional idempotency support
+    // (handlers/submissionHandlers.ts) has a configured TTL of its own,
+    // same pattern as every other idempotent route below.
+    request_upload: 3600,
+    submit_artwork: 3600,
+    submit_video_watched: 3600,
     submit_quiz: 3600,
-    enroll_event: 86400,
+    enroll_event: 3600,
   },
   DEFAULT_IDEMPOTENCY_TTL_SECONDS: 3600,
 

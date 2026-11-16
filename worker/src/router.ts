@@ -13,6 +13,34 @@ import { writeAnalyticsPoint, sanitizeQueryStringForAnalytics } from "./analytic
 import { failFromAppError, fail } from "./util/errors";
 import { AppError, type Env } from "./env";
 
+/**
+ * BUGFIX (router-level analytics wiring): previously, every RouteDefinition.handler
+ * was typed to accept a 5th `analytics: RequestAnalyticsContext` argument, and this
+ * file dutifully constructed one (createAnalyticsContext) and passed it into every
+ * handler call — but NOT ONE actual handler function anywhere in handlers/*.ts
+ * declared a 5th parameter to receive it. TypeScript's structural typing happily
+ * allowed a 4-parameter function to satisfy the 5-parameter RouteDefinition.handler
+ * type (extra call-site arguments are simply ignored), so this compiled cleanly while
+ * silently dropping the analytics object on every single request.
+
+ * The practical effect: `frappeMethodCalled`, `frappeCallCount`, `durableObjectClass`,
+ * `rateLimitRemaining`, `turnBudgetUsed`, and `idempotencyRepeat` were ALWAYS written
+ * to Analytics Engine as null/unset — an entire analytics-enrichment subsystem was
+ * fully wired up on the write side (writeAnalyticsPoint below) and fully inert on the
+ * populate side. This also meant the configured per-route turn budgets
+ * (ConfigSchema.TURN_BUDGETS) were never actually CHECKED either, since
+ * util/rateLimit.ts::enforceRateLimit only runs its turn-budget branch when a caller
+ * passes both `routePath` and `analytics` — and no handler was doing that.
+ *
+ * Fix: every handler in handlers/*.ts is updated to accept `analytics` as its 5th
+ * parameter and to use it — passing it (with the route's own path) into
+ * enforceRateLimit, and calling analytics.noteFrappeCall / noteDurableObject /
+ * noteIdempotencyRepeat around the relevant calls. This file's own plumbing
+ * (createAnalyticsContext, the call to def.handler, and writeAnalyticsPoint) was
+ * already correct and needs no change — the fix lives in the handlers themselves,
+ * matching this router's own already-correct contract.
+ */
+
 export interface RouteDefinition {
   method: "GET" | "POST";
   path: string;
@@ -72,11 +100,15 @@ export function createAnalyticsContext(): RequestAnalyticsContext {
 // route for "move past this assignment without submitting" — it's a server-side no-op
 // (see handlers/laterHandlers.ts), not a listed/removable item, so there's no
 // later_list or do_later_remove route either.
+//
+// /internal/gallery/* routes are called only by Frappe's nightly
+// gallery_promotion_sweep job, never by the app — all three (index, visibility,
+// known_ids) share the same internal-secret auth and "write" routeClass.
 const ROUTES: RouteDefinition[] = [
   { method: "POST", path: "/auth/redeem", routeClass: "auth", handler: authHandlers.redeem },
   { method: "POST", path: "/auth/select_profile", routeClass: "auth", handler: authHandlers.selectProfile },
   { method: "POST", path: "/profile/get_profile", routeClass: "read", handler: profileHandlers.getProfile },
-  { method: "POST", path: "/progress/submit_video", routeClass: "write", handler: progressHandlers.submitVideo },
+  { method: "POST", path: "/progress/submit_video_watched", routeClass: "write", handler: progressHandlers.submitVideoWatched },
   { method: "POST", path: "/progress/submit_quiz", routeClass: "write", handler: progressHandlers.submitQuiz },
   { method: "POST", path: "/progress/sync", routeClass: "read", handler: progressHandlers.sync },
   { method: "POST", path: "/progress/last_submission", routeClass: "read", handler: progressHandlers.lastSubmission },
@@ -102,6 +134,12 @@ const ROUTES: RouteDefinition[] = [
     path: "/internal/gallery/visibility",
     routeClass: "write",
     handler: internalHandlers.visibility as RouteDefinition["handler"],
+  },
+  {
+    method: "POST",
+    path: "/internal/gallery/known_ids",
+    routeClass: "write",
+    handler: internalHandlers.knownIds as RouteDefinition["handler"],
   },
 ];
 

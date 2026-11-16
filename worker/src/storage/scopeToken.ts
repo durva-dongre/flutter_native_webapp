@@ -1,9 +1,10 @@
 /**
  * storage/scopeToken.ts — Contract §8.2's scope_cache_token: a short HMAC-signed token,
- * payload {state, district, school, grade, exp}, a dedicated GALLERY_SCOPE_TOKEN_SECRET.
- * exp is set to PROFILE_SCOPE_TTL_SECONDS at mint time so this token and the Worker's
- * own Frappe-scope Cache API entry (storage/profileScope.ts) go stale together. Opaque
- * to the app — it only ever echoes the string back, never decodes it.
+ * payload {state, district, school, grade, assignmentId, exp}, a dedicated
+ * GALLERY_SCOPE_TOKEN_SECRET. exp is set to PROFILE_SCOPE_TTL_SECONDS at mint time so
+ * this token and the Worker's own Frappe-scope Cache API entry (storage/profileScope.ts)
+ * go stale together. Opaque to the app — it only ever echoes the string back, never
+ * decodes it.
  */
 
 import { base64urlDecode, base64urlEncode, hmacSign, hmacVerify } from "../auth/hmac";
@@ -34,7 +35,13 @@ export async function verifyScopeToken(token: string | null | undefined, secret:
     if (!verified) return null;
     const payload = JSON.parse(new TextDecoder().decode(base64urlDecode(payloadB64))) as ScopeTokenPayload;
     if (payload.exp < nowSeconds()) return null;
-    return { state: payload.state, district: payload.district, school: payload.school, grade: payload.grade };
+    return {
+      state: payload.state,
+      district: payload.district,
+      school: payload.school,
+      grade: payload.grade,
+      assignmentId: payload.assignmentId ?? null,
+    };
   } catch {
     return null;
   }

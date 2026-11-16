@@ -1,6 +1,12 @@
 /**
  * cache/galleryPageCache.ts — keyed from EVERY value that affects the query result, so
  * a cache key missing a dimension can never poison the cache for a different caller.
+ *
+ * `generation` is the Worker's own gallery_cache_generation counter (D1 app_config,
+ * bumped unconditionally every night by internalHandlers.ts::knownIds). Folding it
+ * into the key means every page cached under a prior generation becomes permanently
+ * unreachable the moment the counter bumps — no explicit invalidation sweep needed,
+ * old entries just expire naturally via their own Cache-Control max-age.
  */
 
 import type { GalleryPage } from "../db/gallery";
@@ -17,6 +23,7 @@ export interface GalleryCacheKeyParams {
   grade: number;
   limit: number;
   cursor: number | null;
+  generation: number;
 }
 
 function cacheKeyFor(params: GalleryCacheKeyParams): Request {
@@ -29,6 +36,7 @@ function cacheKeyFor(params: GalleryCacheKeyParams): Request {
     String(params.grade),
     String(params.limit),
     params.cursor === null ? "start" : String(params.cursor),
+    String(params.generation),
   ].map(encodeURIComponent);
   return new Request(`https://gallery-page.internal/${parts.join("/")}`);
 }

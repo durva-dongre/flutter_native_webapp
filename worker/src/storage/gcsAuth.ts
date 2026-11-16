@@ -55,8 +55,6 @@ export async function getGoogleAccessToken(sa: ServiceAccount, scope: string): P
   return json.access_token;
 }
 
-// Token cached per (service_account_email, scope) in the Worker Cache API — a token is
-// valid 3600s; without this, every confirmUploaded/BQ-flush call mints a fresh one.
 const TOKEN_CACHE_NAMESPACE = "google-oauth-token";
 const TOKEN_SAFETY_MARGIN_SECONDS = 120;
 

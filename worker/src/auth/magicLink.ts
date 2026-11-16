@@ -1,11 +1,20 @@
 /**
- * auth/magicLink.ts — Contract §4.1. Payload is cleartext base32 (tamper-evident, not
- * confidential); protection is a 12-byte HMAC-SHA256 tag over every payload byte. There
- * is no lookup, no "used" flag, no nonce-store anywhere in verify() — recomputing the
- * tag and comparing it constant-time is the entire check, which is what makes a link
- * reusable by construction: the same code verifies identically every time until its own
- * encoded `expiry` passes. The nonce exists only so two links minted for the same
- * phone/dest/expiry are never byte-identical; it is never checked against anything.
+ * auth/magicLink.ts  
+ *
+ * Two fixes:
+ *  1. ID_PATTERN widened from /^[A-Za-z0-9_-]{1,80}$/ to
+ *     /^[A-Za-z0-9_ -]{1,255}$/ -- matching storage/keys.ts::
+ *     FIELD_PATTERNS.assignment_id (space-tolerant) and the only real limit
+ *     Frappe's create_magic_link_v2 enforces (len(id_bytes) > 255). The old,
+ *     tighter pattern rejected a legitimate, space-containing assignment id
+ *     ("Spaceship Assignment-62591") that Frappe already happily mints links
+ *     for.
+ *  2. verifyMagicLinkV2 no longer silently drops `dest` when the decoded id
+ *     fails ID_PATTERN.test(id). The signature still verified -- the link is
+ *     genuine -- but a malformed embedded dest id used to just become
+ *     `dest = undefined`, sending the student to the generic home screen with
+ *     zero indication anything was wrong. Now it throws invalidInput instead,
+ *     surfacing the real bug rather than swallowing it.
  */
 
 import { unauthorized, invalidInput } from "../env";
@@ -23,9 +32,13 @@ export interface ParsedDest {
   id?: string;
 }
 
-const ID_PATTERN = /^[A-Za-z0-9_-]{1,80}$/;
+// Matches storage/keys.ts::FIELD_PATTERNS.assignment_id exactly -- space-tolerant,
+// up to 255 bytes to match what create_magic_link_v2 actually accepts on the
+// Frappe side (shared/auth/magic_link.py: len(id_bytes) > 255 is the only
+// rejection). Used both for parsing an inbound `dest` query param and for
+// validating a decoded link's embedded id.
+const ID_PATTERN = /^[A-Za-z0-9_ -]{1,255}$/;
 
-/** "feedback:SUB-0503" / "submit:CAATA3-U01-A01" / "gallery:..." / "gallery" / "later" / "home" (default, omitted). */
 export function parseDest(raw: string | undefined): ParsedDest | undefined {
   if (!raw || raw === "home") return undefined;
   const [typePart, idPart] = raw.split(":", 2);
@@ -71,7 +84,6 @@ export interface MagicLinkPayload {
 const VERSION = 2;
 const PHONE_FIXED_LEN = 12;
 const NONCE_LEN = 8;
-// version(1) + dest_type(1) + expiry(4) + nonce(8) + phone(6, BCD-packed) = 20
 const HEADER_LEN = 1 + 1 + 4 + NONCE_LEN + 6;
 const TAG_BYTES = 12;
 
@@ -145,13 +157,6 @@ async function constantTimeTagCompare(a: Uint8Array, b: Uint8Array): Promise<boo
   return diff === 0;
 }
 
-/**
- * Verification is pure, stateless signature recomputation: decode, recompute the tag,
- * compare constant-time, check only the embedded `expiry`. No side effect is recorded
- * anywhere, which is exactly what makes the same code verify identically forever until
- * `expiry` passes — there is nothing here that could make a second redemption differ
- * from the first.
- */
 export async function verifyMagicLinkV2(secret: string, code: string): Promise<MagicLinkPayload> {
   if (!code || typeof code !== "string") throw invalidInput("code missing");
   const stripped = stripDashes(code.trim());
@@ -194,17 +199,19 @@ export async function verifyMagicLinkV2(secret: string, code: string): Promise<M
   const idBytes = payloadBytes.slice(HEADER_LEN + 1);
   const id = idBytes.length > 0 ? new TextDecoder().decode(idBytes) : undefined;
 
-  // expiry is the ONLY thing that ever stops a link from verifying again.
   if (exp < nowSeconds()) throw unauthorized("magic link has expired");
 
   const destType = BYTE_TO_DEST_TYPE[destTypeByte];
   let dest: ParsedDest | undefined;
   if (destType && destType !== "home") {
     if (id !== undefined && !ID_PATTERN.test(id)) {
-      dest = undefined;
-    } else {
-      dest = { type: destType, id };
+      // The signature verified -- this link is genuine -- but its embedded
+      // dest id is malformed. Fail loudly instead of silently dropping the
+      // whole dest and sending the student to the generic home screen with
+      // no indication anything was wrong.
+      throw invalidInput("magic link's destination id is malformed");
     }
+    dest = { type: destType, id };
   }
 
   return { phone, exp, dest };

@@ -2,6 +2,8 @@
  * storage/r2.ts — true direct-to-R2 presigned GET via SigV4 against R2's S3-compatible
  * endpoint. The client fetches bytes straight from R2's edge; the Worker is never in
  * the read path, which matters since gallery reads happen far more often than writes.
+ * Single configured bucket: env.R2_SUBMISSIONS_BUCKET_NAME — this must be the same
+ * bucket Frappe's gallery_r2_promotion.py writes to (Shared Settings.r2_bucket).
  */
 
 import type { ConfigSchema } from "../config/defaults";
@@ -35,8 +37,6 @@ function amzDate(d: Date): string {
   return d.toISOString().replace(/[:-]|\.\d{3}/g, "");
 }
 
-// Memoised per (secret prefix, dateStamp) in module scope — a 50-image gallery page
-// signs with one key derivation, not 50.
 const signingKeyCache = new Map<string, Uint8Array>();
 
 async function derivedSigningKey(secretAccessKey: string, dstamp: string): Promise<Uint8Array> {
@@ -59,6 +59,12 @@ async function derivedSigningKey(secretAccessKey: string, dstamp: string): Promi
  * Signs on the START of the current PRESIGN_WINDOW_SECONDS window, not "now" — keeps
  * the URL string identical for the whole window so the app's URL-keyed image cache
  * actually caches, and guarantees every URL has at least (expiry - window) seconds left.
+ *
+ * BUGFIX: removed a leftover debug console.log that printed env.R2_ACCOUNT_ID on
+ * every single call — this function runs once per gallery image signed (a hot path,
+ * called for every row of every gallery page that isn't already row-cached), so the
+ * stray log line was pure noise/cost with no diagnostic value once R2 signing was
+ * already working in production.
  */
 export async function r2SignGetDirect(
   key: string,

@@ -8,24 +8,39 @@
  *     app can always call /auth/select_profile as a fallback to re-derive a student
  *     token for any student on the phone, regardless of how many there are.
  *
- * v5 change: tokens are no longer rolling/refreshed. Each token is minted once with a
- * FIXED expiry (ConfigSchema.STUDENT_TOKEN_TTL_SECONDS / PHONE_TOKEN_TTL_SECONDS) and
- * nothing extends it on subsequent calls — there is no more refreshed_token anywhere
- * in the response surface. When a student token expires or the app's local cache of
- * it is cleared, the app re-derives one via /auth/select_profile using its still-valid
- * phone token.
+ * Tokens are fixed-TTL, minted once (ConfigSchema.STUDENT_TOKEN_TTL_SECONDS /
+ * PHONE_TOKEN_TTL_SECONDS) and nothing extends it on subsequent calls — there is no
+ * refreshed_token anywhere in the response surface (Contract §4.5). When a student
+ * token expires or the app's local cache of it is cleared, the app re-derives one via
+ * /auth/select_profile using its still-valid phone token.
+ *
+ * FORMAT — standard JWT (header.payload.signature, base64url JSON, HS256), NOT the
+ * custom binary-packed-then-base32-dashed shape magic links use (auth/magicLink.ts).
+ * This is a deliberate split:
+ *   - Magic links (auth/magicLink.ts) stay a compact, dash-grouped base32 string —
+ *     meant to be typed/read/shared as a short code, so byte-density matters.
+ *   - Session tokens (this file) are carried in an Authorization header and consumed
+ *     only by code (the app, never a human), so there's no benefit to a dense custom
+ *     encoding — a normal JWT is simpler to inspect, log, and debug, and every claim
+ *     (typ, sid/phone, iat, exp) is visible without writing a custom decoder.
+ *
+ * The JWT's own "exp" claim (seconds since epoch, per RFC 7519) is what verification
+ * checks — not a custom binary expiry field. There is still no "used"/nonce tracking:
+ * the same token verifies identically on every call until its own exp passes, exactly
+ * as before.
+ *
+ * Header is always the fixed, literal JSON {"alg":"HS256","typ":"JWT"} — verification
+ * re-derives and compares the encoded header rather than trusting whatever header the
+ * token carries, so a token can never select its own algorithm (this also closes the
+ * classic "alg: none" JWT confusion attack by construction: there is only ever one
+ * algorithm, and it is never read from the token itself).
  */
 
 import { unauthorized, invalidInput } from "../env";
-import { base32Decode, base32Encode, dashGroup, hmacSign, stripDashes } from "./hmac";
+import { base64urlEncode, base64urlDecode, hmacSign, hmacVerify } from "./hmac";
 import { nowSeconds } from "../util/time";
 
 export type TokenKind = "student" | "phone";
-
-const VERSION = 1;
-const TAG_BYTES = 12;
-const KIND_BYTE: Record<TokenKind, number> = { student: 0, phone: 1 };
-const BYTE_TO_KIND: Record<number, TokenKind> = { 0: "student", 1: "phone" };
 
 export interface StudentTokenClaims {
   sid: string;
@@ -40,36 +55,38 @@ interface TokenSecrets {
   PHONE_TOKEN_SECRET: string;
 }
 
+/** The one, fixed JWT header this codebase ever issues or accepts — see module
+ *  docblock for why this is a hardcoded literal rather than read from the token. */
+const JWT_HEADER_JSON = '{"alg":"HS256","typ":"JWT"}';
+
 function secretFor(kind: TokenKind, env: TokenSecrets): string {
   return kind === "student" ? env.STUDENT_TOKEN_SECRET : env.PHONE_TOKEN_SECRET;
 }
 
+interface RawClaims {
+  typ: TokenKind;
+  sid?: string;
+  phone?: string;
+  iat: number;
+  exp: number;
+}
+
 async function mintToken(kind: TokenKind, subject: string, secret: string, ttlSeconds: number): Promise<string> {
-  const exp = nowSeconds() + ttlSeconds;
-  const subjectBytes = new TextEncoder().encode(subject);
-  if (subjectBytes.length > 255) throw invalidInput("token subject too long");
+  const iat = nowSeconds();
+  const exp = iat + ttlSeconds;
 
-  // version(1) + kind(1) + exp(4) + subjectLen(1) + subject(n)
-  const bodyLen = 1 + 1 + 4 + 1 + subjectBytes.length;
-  const buf = new Uint8Array(bodyLen);
-  const view = new DataView(buf.buffer);
+  const claims: RawClaims =
+    kind === "student" ? { typ: "student", sid: subject, iat, exp } : { typ: "phone", phone: subject, iat, exp };
 
-  let offset = 0;
-  buf[offset++] = VERSION;
-  buf[offset++] = KIND_BYTE[kind];
-  view.setUint32(offset, exp, false);
-  offset += 4;
-  buf[offset++] = subjectBytes.length;
-  buf.set(subjectBytes, offset);
+  const encoder = new TextEncoder();
+  const headerB64 = base64urlEncode(encoder.encode(JWT_HEADER_JSON));
+  const payloadB64 = base64urlEncode(encoder.encode(JSON.stringify(claims)));
+  const signingInput = `${headerB64}.${payloadB64}`;
 
-  const tagFull = await hmacSign(secret, buf);
-  const tag = tagFull.slice(0, TAG_BYTES);
+  const signature = await hmacSign(secret, encoder.encode(signingInput));
+  const signatureB64 = base64urlEncode(signature);
 
-  const combined = new Uint8Array(buf.length + tag.length);
-  combined.set(buf, 0);
-  combined.set(tag, buf.length);
-
-  return dashGroup(base32Encode(combined));
+  return `${signingInput}.${signatureB64}`;
 }
 
 /** Fixed-TTL mint — ttlSeconds is required (caller passes cfg.STUDENT_TOKEN_TTL_SECONDS). */
@@ -82,13 +99,19 @@ export async function mintPhoneToken(phone: string, env: TokenSecrets, ttlSecond
   return mintToken("phone", phone, secretFor("phone", env), ttlSeconds);
 }
 
-async function constantTimeTagCompare(a: Uint8Array, b: Uint8Array): Promise<boolean> {
-  if (a.length !== b.length) return false;
-  let diff = 0;
-  for (let i = 0; i < a.length; i++) diff |= (a[i] as number) ^ (b[i] as number);
-  return diff === 0;
-}
-
+/**
+ * Verifies a JWT-shaped session token: splits on ".", recomputes the expected
+ * signature over "header.payload" using the kind-appropriate secret, compares it
+ * constant-time against the token's own signature segment, then checks typ and exp.
+ *
+ * The header is NEVER read to decide the algorithm or re-derived from the token's own
+ * bytes for signing — it is only ever compared, byte-for-byte (via the recomputed
+ * headerB64 baked from the fixed JWT_HEADER_JSON constant), against what the token
+ * actually carries. A token whose header segment doesn't decode to exactly
+ * JWT_HEADER_JSON fails verification outright, before the signature is even checked —
+ * this is what prevents an attacker from asking the verifier to use a different
+ * algorithm (e.g. "alg":"none") than the one this code always signs with.
+ */
 export async function verifySessionToken(
   token: string | null,
   expectedKind: TokenKind,
@@ -96,46 +119,50 @@ export async function verifySessionToken(
 ): Promise<TokenClaims> {
   if (!token) throw unauthorized("missing bearer token");
 
-  const stripped = stripDashes(token.trim());
-  if (!/^[A-Za-z2-7]+$/.test(stripped)) throw unauthorized("token is not in the expected format");
+  const trimmed = token.trim();
+  const parts = trimmed.split(".");
+  if (parts.length !== 3) throw unauthorized("token is not in the expected format");
+  const [headerB64, payloadB64, signatureB64] = parts as [string, string, string];
 
-  let combined: Uint8Array;
-  try {
-    combined = base32Decode(stripped);
-  } catch {
-    throw unauthorized("token could not be decoded");
+  const encoder = new TextEncoder();
+  const expectedHeaderB64 = base64urlEncode(encoder.encode(JWT_HEADER_JSON));
+  if (headerB64 !== expectedHeaderB64) {
+    throw unauthorized("token header is not recognized");
   }
 
-  const HEADER_LEN = 1 + 1 + 4 + 1; // version + kind + exp + subjectLen
-  if (combined.length < HEADER_LEN + TAG_BYTES) throw unauthorized("token is too short to be valid");
+  // Secret selection must happen based on expectedKind (the route's own
+  // requirement), not on anything read from the still-unverified token — otherwise a
+  // token forged/signed under one kind's secret could claim to be the other kind and
+  // get verified against the wrong secret.
+  const secret = secretFor(expectedKind, env);
 
-  const version = combined[0] as number;
-  if (version !== VERSION) throw unauthorized("unsupported token version");
+  let signatureBytes: Uint8Array;
+  try {
+    signatureBytes = base64urlDecode(signatureB64);
+  } catch {
+    throw unauthorized("token signature could not be decoded");
+  }
 
-  const kindByte = combined[1] as number;
-  const kind = BYTE_TO_KIND[kindByte];
-  if (!kind || kind !== expectedKind) throw unauthorized("token kind does not match this route");
-
-  const subjectLen = combined[HEADER_LEN - 1] as number;
-  const bodyLen = HEADER_LEN + subjectLen;
-  if (combined.length !== bodyLen + TAG_BYTES) throw unauthorized("token length does not match its declared payload length");
-
-  const payloadBytes = combined.slice(0, bodyLen);
-  const tag = combined.slice(bodyLen, bodyLen + TAG_BYTES);
-
-  const secret = secretFor(kind, env);
-  const expectedFull = await hmacSign(secret, payloadBytes);
-  const expectedTag = expectedFull.slice(0, TAG_BYTES);
-  if (!(await constantTimeTagCompare(expectedTag, tag))) {
+  const signingInput = `${headerB64}.${payloadB64}`;
+  const verified = await hmacVerify(secret, encoder.encode(signingInput), signatureBytes);
+  if (!verified) {
     throw unauthorized("token signature does not verify");
   }
 
-  const view = new DataView(payloadBytes.buffer, payloadBytes.byteOffset, payloadBytes.byteLength);
-  const exp = view.getUint32(2, false);
-  if (exp < nowSeconds()) throw unauthorized("token has expired");
+  let claims: RawClaims;
+  try {
+    claims = JSON.parse(new TextDecoder().decode(base64urlDecode(payloadB64))) as RawClaims;
+  } catch {
+    throw unauthorized("token payload could not be decoded");
+  }
 
-  const subjectBytes = payloadBytes.slice(HEADER_LEN);
-  const subject = new TextDecoder().decode(subjectBytes);
+  if (claims.typ !== expectedKind) throw unauthorized("token kind does not match this route");
+  if (typeof claims.exp !== "number" || claims.exp < nowSeconds()) throw unauthorized("token has expired");
 
-  return kind === "student" ? { sid: subject } : { phone: subject };
+  if (expectedKind === "student") {
+    if (!claims.sid) throw invalidInput("token missing sid claim");
+    return { sid: claims.sid };
+  }
+  if (!claims.phone) throw invalidInput("token missing phone claim");
+  return { phone: claims.phone };
 }

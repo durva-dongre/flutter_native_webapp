@@ -1,31 +1,18 @@
 /**
- * env.ts — bindings/secrets Cloudflare injects, plus the error vocabulary every handler
- * throws against. Error codes match API_Contract.md §2.2.
+ * env.ts  
  *
- * v5 state (carried forward from v4, still true):
- *  - No attempt-cap / event-cap / reward-ceiling enforcement lives here or anywhere in
- *    the Worker. Frappe owns all caps and all reward computation (including the quiz
- *    1-point-per-correct-answer total and a submission's first-attempt bonus) — the
- *    Worker is a thin, trusted pass-through for student_id + context + payload.
- *    CONFLICT is still a valid wire error code (Frappe can still return it and the
- *    Worker forwards it untouched), but the Worker never independently decides "cap
- *    reached" itself.
- *  - Every activity route (submit_video, submit_quiz, request_upload, submit_artwork)
- *    accepts an explicit `context: "program" | "event"` field, defaulting to
- *    DEFAULT_SUBMISSION_CONTEXT when omitted — parseActivityContext() is the single
- *    shared validator every handler uses. do_later accepts and echoes the same field,
- *    purely inertly (it calls Frappe for nothing and writes no state).
- *  - Tokens are fixed-TTL, minted once (student token: at /auth/redeem, inline per
- *    student, or at /auth/select_profile as a fallback re-derivation; phone token: at
- *    /auth/redeem only). NOTHING refreshes a token on a later call — there is no
- *    `refreshed_token` field anywhere in the response surface, on any route. This file
- *    intentionally carries no TOKEN_ROLLING_WINDOW_SECONDS or similar rolling-refresh
- *    knob — that concept does not exist in this version of the API.
+ * What changed: AppError now carries an optional `subCode` -- Frappe's own
+ * error_code, preserved as a distinguishable sub-code instead of being
+ * discarded or jammed into the `message` field. `forbidden` (403) is now its
+ * own error factory/code, separate from `unauthorized` (401) -- both are real,
+ * permanent, non-retryable failures and must never be mapped to a "safe to
+ * retry" code (that fix lives in frappe/client.ts; this file just adds the
+ * pieces it needs).
  */
 
 export interface Env {
-  DB: D1Database; 
-  
+  DB: D1Database;
+
   R2_ACCESS_KEY_ID: string;
   R2_SECRET_ACCESS_KEY: string;
   R2_ACCOUNT_ID: string;
@@ -53,7 +40,6 @@ export interface Env {
   BQ_DATASET: string;
   BQ_ENABLED?: string;
 
-  // ── Non-secret [vars] — all strings, resolved through config/index.ts::config() ──
   GALLERY_FALLBACK_ENABLED?: string;
   GALLERY_FALLBACK_CASCADE?: string;
   GALLERY_SORT?: string;
@@ -72,11 +58,8 @@ export interface Env {
   ID_RANDOM_CHARS?: string;
   POINT_TIERS_VERSION?: string;
 
-  // Default submission/activity context when the app omits one — "program" by
-  // default, settable per-environment without a code change.
   DEFAULT_SUBMISSION_CONTEXT?: string;
 
-  // Fixed-TTL token lifetimes — [vars]-overridable, never a rolling window.
   STUDENT_TOKEN_TTL_SECONDS?: string;
   PHONE_TOKEN_TTL_SECONDS?: string;
 
@@ -107,6 +90,7 @@ export type ActivityContext = "program" | "event";
 
 export type ErrorCode =
   | "UNAUTHORIZED"
+  | "FORBIDDEN"
   | "STUDENT_NOT_FOUND"
   | "INVALID_INPUT"
   | "NOT_FOUND"
@@ -122,33 +106,39 @@ export type ErrorCode =
 export class AppError extends Error {
   readonly code: ErrorCode;
   readonly httpStatus: number;
-  constructor(code: ErrorCode, message: string, httpStatus = 400) {
+  /** Frappe's own error_code, when this AppError was built from a Frappe response.
+   *  Lets a client distinguish "course_completed" from "weekly_cap_reached" from a
+   *  message-derived slug, without parsing `message` as if it were a machine code. */
+  readonly subCode?: string;
+  constructor(code: ErrorCode, message: string, httpStatus = 400, subCode?: string) {
     super(message);
     this.code = code;
     this.httpStatus = httpStatus;
+    this.subCode = subCode;
   }
 }
 
-export const unauthorized = (msg = "Unauthorized") => new AppError("UNAUTHORIZED", msg, 401);
-export const studentNotFound = (msg = "Student not found") => new AppError("STUDENT_NOT_FOUND", msg, 404);
-export const invalidInput = (msg: string) => new AppError("INVALID_INPUT", msg, 400);
-export const notFound = (msg: string) => new AppError("NOT_FOUND", msg, 404);
+export const unauthorized = (msg = "Unauthorized", subCode?: string) => new AppError("UNAUTHORIZED", msg, 401, subCode);
+export const forbidden = (msg = "Forbidden", subCode?: string) => new AppError("FORBIDDEN", msg, 403, subCode);
+export const studentNotFound = (msg = "Student not found", subCode?: string) =>
+  new AppError("STUDENT_NOT_FOUND", msg, 404, subCode);
+export const invalidInput = (msg: string, subCode?: string) => new AppError("INVALID_INPUT", msg, 400, subCode);
+export const notFound = (msg: string, subCode?: string) => new AppError("NOT_FOUND", msg, 404, subCode);
 export const notReady = (msg = "Not ready yet") => new AppError("NOT_READY", msg, 409);
 export const upstreamError = (msg: string) => new AppError("UPSTREAM_ERROR", msg, 502);
 export const rateLimited = (msg = "Rate limit exceeded") => new AppError("RATE_LIMITED", msg, 429);
-export const conflict = (msg: string) => new AppError("CONFLICT", msg, 409);
+export const conflict = (msg: string, subCode?: string) => new AppError("CONFLICT", msg, 409, subCode);
 export const serverError = (msg = "Internal server error") => new AppError("SERVER_ERROR", msg, 500);
+
+export const uploadNotConfirmed = (msg = "Upload not confirmed on storage") =>
+  new AppError("upload_not_confirmed", msg, 400);
+export const uploadSizeInvalid = (msg = "Uploaded file size is out of bounds") =>
+  new AppError("upload_size_invalid", msg, 400);
+export const uploadTypeMismatch = (msg = "Uploaded file content type does not match") =>
+  new AppError("upload_type_mismatch", msg, 400);
 
 export const VALID_ACTIVITY_CONTEXTS: readonly ActivityContext[] = ["program", "event"] as const;
 
-/**
- * The ONE place every activity route (submit_video, submit_quiz, request_upload,
- * submit_artwork, do_later) validates/defaults `context`. Shared so every endpoint
- * behaves identically — omit context → fallback (DEFAULT_SUBMISSION_CONTEXT); anything
- * other than "program"/"event" → INVALID_INPUT; no Worker-side cap logic keyed off this
- * value anywhere, it is purely routing information forwarded to Frappe as-is (or, for
- * do_later, not forwarded anywhere at all — see handlers/laterHandlers.ts).
- */
 export function parseActivityContext(raw: unknown, fallback: ActivityContext): ActivityContext {
   if (raw === undefined || raw === null || raw === "") return fallback;
   if (raw === "program" || raw === "event") return raw;

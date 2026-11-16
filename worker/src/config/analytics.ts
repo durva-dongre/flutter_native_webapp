@@ -2,12 +2,6 @@
  * config/analytics.ts — every Durable Object / BigQuery / chat timing+size knob. DO
  * duration billing is allocated_memory (fixed 128MB) × active_seconds, so the idle
  * timeout is the only lever on DO cost — kept short on purpose.
- *
- * bqMaxFlushRetries is the cost-safety cap on the BQ retry loop: without it, a
- * persistently-failing BQ call (bad creds, outage, budget exhausted every day) would
- * keep re-arming the alarm forever, which directly costs DO active-seconds with no
- * bound. After this many consecutive failed retries, the DO drops the buffered batch
- * (logs it) instead of scheduling another retry — the alarm chain terminates.
  */
 
 export interface AnalyticsConfig {
@@ -19,9 +13,6 @@ export interface AnalyticsConfig {
   chatMaxExchangesPerStudentPerDay: number;
   chatMaxContextBytes: number;
   bqFlushRetryDelayMs: number;
-  /** Max number of retry attempts after the first failed flush, before giving up and
-   *  dropping the buffer. 0 = no retries (fail once, drop immediately). Default 1 —
-   *  exactly one retry, per the "only one retry" requirement. */
   bqMaxFlushRetries: number;
   bqDailyByteBudget: number;
   maxTapsPerRow: number;
@@ -64,7 +55,6 @@ function positiveNumberOr(value: string | undefined, fallback: number): number {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
 }
 
-/** Like positiveNumberOr but allows 0 (valid for bqMaxFlushRetries — "no retries"). */
 function nonNegativeIntegerOr(value: string | undefined, fallback: number): number {
   if (value === undefined) return fallback;
   const parsed = Number(value);

@@ -1,11 +1,25 @@
 /**
- * frappe/client.ts — every Worker -> Frappe call carries Frappe's own API Key/Secret
- * header (Contract §3), against a dedicated service-account User scoped to only what
- * one dispatch module needs. A write is never blindly retried — a timed-out write that
- * actually committed, then retried, would double-award points or double-create a row.
+ * frappe/client.ts 
+ *
+ * mapFrappeError rewritten to stop throwing away information:
+ *  - 401 and 403 no longer collapse into a retryable UPSTREAM_ERROR (502). A bad/
+ *    expired credential (401) and a real permission denial (403) are both
+ *    permanent failures -- they will fail identically on every retry -- so they
+ *    now map to `unauthorized`/`forbidden` respectively, non-retryable.
+ *  - Frappe's real `message` is now forwarded as the client-visible message
+ *    instead of being discarded (404/409) or having the error_code jammed into
+ *    it in its place (400). Frappe's own error_code rides along separately as
+ *    `subCode` on the AppError, which util/errors.ts serializes as `sub_code`
+ *    on the wire -- so the client gets a real sentence AND a stable machine
+ *    code, never one masquerading as the other.
+ *  - The dead `417` branch is removed -- Frappe never returns 417 anywhere in
+ *    this codebase.
  */
 
-import { upstreamError, studentNotFound, notFound, conflict, invalidInput, serverError } from "../env";
+import {
+  upstreamError, studentNotFound, notFound, conflict, invalidInput,
+  serverError, unauthorized, forbidden,
+} from "../env";
 
 interface FrappeEnv {
   FRAPPE_BASE_URL: string;
@@ -36,23 +50,42 @@ async function fetchWithTimeout(url: string, init: RequestInit, timeoutMs: numbe
   }
 }
 
-async function mapFrappeError(res: Response): Promise<never> {
-  let frappeErrorCode = "";
-  try {
-    const body = (await res.json()) as { error_code?: string };
-    frappeErrorCode = body.error_code ?? "";
-  } catch {
-    // unparseable error body — fall through to status-based mapping
-  }
+interface FrappeErrorBody {
+  error_code?: string;
+  message?: string;
+}
 
-  if (res.status === 404) throw notFound("The requested resource was not found.");
-  if (res.status === 409) throw conflict("This action has already reached its limit.");
-  if (res.status === 403 || res.status === 401) throw upstreamError("Upstream authorization failure.");
-  if (res.status === 417 || res.status === 400) {
-    if (frappeErrorCode === "student_not_found") throw studentNotFound();
-    throw invalidInput(frappeErrorCode || "Invalid input.");
+async function mapFrappeError(res: Response): Promise<never> {
+  let body: FrappeErrorBody = {};
+  try {
+    body = (await res.json()) as FrappeErrorBody;
+  } catch {
+    // unparseable body -- fall through to a status-only mapping below
   }
-  if (res.status >= 500) throw upstreamError("Upstream service error — safe to retry.");
+  const code = body.error_code ?? "";
+  const message = body.message && body.message.trim() ? body.message : null;
+
+  if (res.status === 404) {
+    throw notFound(message ?? "The requested resource was not found.", code || undefined);
+  }
+  if (res.status === 409) {
+    throw conflict(message ?? "This action has already reached its limit.", code || undefined);
+  }
+  if (res.status === 403) {
+    // Real, permanent permission denial -- never "safe to retry".
+    throw forbidden(message ?? "You do not have permission to do this.", code || undefined);
+  }
+  if (res.status === 401) {
+    // Real, permanent auth failure -- never "safe to retry".
+    throw unauthorized(message ?? "Authentication failed.", code || undefined);
+  }
+  if (res.status === 400) {
+    if (code === "student_not_found") throw studentNotFound(message ?? undefined);
+    throw invalidInput(message ?? "Invalid input.", code || undefined);
+  }
+  if (res.status >= 500) {
+    throw upstreamError("Upstream service error — safe to retry.");
+  }
   throw serverError();
 }
 
